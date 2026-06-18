@@ -1,6 +1,6 @@
 # AI News Station
 
-**Live →** [yehloolau-afk.github.io/ai-news-station](https://yehloolau-afk.github.io/ai-news-station/)
+**Live →** [github.com/yehloolau-afk/ai-news-station](https://github.com/yehloolau-afk/ai-news-station)
 
 A 7-channel AI news aggregator built for design teams. Pulls from 20+ Chinese and English sources, auto-translates, and updates every hour via GitHub Actions.
 
