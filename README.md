@@ -1,6 +1,6 @@
 # AI News Station
 
-**Live →** [7-ai-station.netlify.app](https://7-ai-station.netlify.app)
+**Live →** [yehloolau-afk.github.io/ai-news-station/](https://yehloolau-afk.github.io/ai-news-station/)
 
 A 7-channel AI news aggregator built for design teams. Pulls from 20+ Chinese and English sources, auto-translates, and updates every hour via GitHub Actions.
 
