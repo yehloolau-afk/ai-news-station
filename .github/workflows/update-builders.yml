@@ -1,0 +1,38 @@
+name: Update Builders Data
+
+on:
+  schedule:
+    - cron: "0 2 * * *"   # 每天 UTC 02:00 = 北京时间 10:00
+  workflow_dispatch:        # 允许手动触发
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch builders data
+        run: |
+          mkdir -p data
+          curl -sf --max-time 15 \
+            "https://cdn.jsdelivr.net/gh/zarazhangrui/follow-builders@main/feed-x.json" \
+            -o data/builders-x.json || \
+          curl -sf --max-time 15 \
+            "https://ghfast.top/https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json" \
+            -o data/builders-x.json
+
+          curl -sf --max-time 15 \
+            "https://cdn.jsdelivr.net/gh/zarazhangrui/follow-builders@main/feed-podcasts.json" \
+            -o data/builders-podcasts.json || \
+          curl -sf --max-time 15 \
+            "https://ghfast.top/https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-podcasts.json" \
+            -o data/builders-podcasts.json
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/builders-x.json data/builders-podcasts.json
+          git diff --cached --quiet || git commit -m "chore: update builders data $(date -u +%Y-%m-%d)"
+          git push
+
