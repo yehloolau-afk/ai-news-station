@@ -1811,7 +1811,7 @@ function renderNav() {
 
   // PC 侧边栏
   const nav = document.getElementById('tabNav');
-  nav.innerHTML = `<div class="tab-group-label">资讯频道</div>` + tabs.map(t => `
+  const makeBtn = t => `
     <button class="tab-btn ${t.id === activeTab ? 'active' : ''}"
             id="btn-${t.id}"
             onclick="switchTab('${t.id}')"
@@ -1819,7 +1819,12 @@ function renderNav() {
       <span class="tab-icon">${t.icon}</span>
       <span>${t.name}</span>
       ${counts[t.id] != null ? `<span class="tab-count">${counts[t.id]}</span>` : ''}
-    </button>`).join('');
+    </button>`;
+  const builderTabs = tabs.filter(t => t.id === 'builders');
+  const newsTabs    = tabs.filter(t => t.id !== 'builders');
+  nav.innerHTML =
+    `<div class="tab-group-label">创作者频道</div>` + builderTabs.map(makeBtn).join('') +
+    `<div class="tab-group-label" style="margin-top:12px">资讯频道</div>` + newsTabs.map(makeBtn).join('');
 
   // 移动端底部导航（固定5个）
   const mobileNav = document.getElementById('mobileNav');
