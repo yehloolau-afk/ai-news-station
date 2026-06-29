@@ -878,7 +878,7 @@
         overflow: visible;
       }
       .sidebar { display: none !important; }
-      .builders-wrap { grid-template-columns: 1fr; }
+      .builders-wrap { column-count: 1; }
 
       /* 主内容区全宽，底部留底栏空间 */
       .main {
@@ -1010,8 +1010,10 @@
     }
 
     /* ── AI Builder tab ── */
-    .builders-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-items: start; }
-    .builders-section-label-row { grid-column: 1 / -1; }
+    .builders-wrap { column-count: 2; column-gap: 10px; }
+    .builders-wrap .builder-card,
+    .builders-wrap .podcast-card-b { break-inside: avoid; margin-bottom: 10px; }
+    .builders-section-label-row { column-span: all; }
     .builders-section-label {
       font-size: 11px; font-weight: 700; text-transform: uppercase;
       letter-spacing: 0.08em; color: var(--muted);
