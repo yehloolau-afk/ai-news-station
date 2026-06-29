@@ -1658,8 +1658,8 @@ function renderArchivePanel() {
   if (!archiveList?.length || !panel) return;
 
   const activeDate = archiveActiveDate || archiveList[0]?.date;
-  const recentDays = archiveList.slice(0, 10);
-  const olderDays  = archiveList.slice(10);
+  const recentDays = archiveList.slice(0, 14);
+  const olderDays  = archiveList.slice(14);
   const activeInOlder = olderDays.some(d => d.date === activeDate);
 
   function groupByMonth(days) {
