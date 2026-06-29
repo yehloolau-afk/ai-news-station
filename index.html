@@ -136,20 +136,27 @@
     }
 
     /* ── Daily 三列布局 ── */
-    .main.daily-mode { padding: 0; overflow: hidden; display: flex; }
+    .main.daily-mode { padding: 0; overflow: visible; display: flex; flex-direction: column; }
     .daily-archive-col {
-      width: 88px;
-      min-width: 88px;
-      border-right: 1px solid var(--border);
+      width: 100%; min-width: unset;
+      border-right: none; border-bottom: 1px solid var(--border);
       background: var(--sidebar-bg);
-      overflow-y: auto;
+      overflow-x: auto; overflow-y: hidden;
       display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      text-align: center;
-      scrollbar-width: thin;
-      scrollbar-color: var(--border) transparent;
+      flex-direction: row;
+      align-items: center;
+      height: 52px;
+      padding: 6px 16px;
+      gap: 4px;
+      scrollbar-width: none;
     }
+    .daily-archive-col::-webkit-scrollbar { display: none; }
+    .archive-panel-hd,
+    .archive-month-label, .archive-month-label-static,
+    .archive-more-btn { display: none !important; }
+    .archive-month-group + .archive-month-group { margin-top: 0; padding-top: 0; border-top: none; }
+    .archive-month-rows { display: flex !important; flex-direction: row; gap: 2px; }
+    .archive-day-row { min-width: 42px; padding: 5px 8px; margin: 0; font-size: 13px; }
     .daily-content-col {
       flex: 1;
       overflow-y: auto;
@@ -878,23 +885,9 @@
         padding: 14px 16px 80px;
         height: auto;
       }
-      /* 日报三列 → 纵向堆叠 */
-      .main.daily-mode { flex-direction: column; overflow: visible; }
-      .daily-archive-col {
-        width: 100%; min-width: unset;
-        border-right: none; border-bottom: 1px solid var(--border);
-        flex-direction: row; height: 50px;
-        overflow-x: auto; overflow-y: hidden;
-        padding: 6px 10px; gap: 4px;
-        align-items: center; scrollbar-width: none;
-      }
-      .daily-archive-col::-webkit-scrollbar { display: none; }
-      .archive-panel-hd,
-      .archive-month-label, .archive-month-label-static,
-      .archive-more-btn { display: none !important; }
-      .archive-month-group + .archive-month-group { margin-top: 0; padding-top: 0; border-top: none; }
-      .archive-month-rows { display: flex !important; flex-direction: row; gap: 2px; }
-      .archive-day-row { min-width: 38px; padding: 5px 6px; margin: 0; font-size: 12px; }
+      /* 日报存档横向导航：移动端微调间距 */
+      .daily-archive-col { padding: 6px 10px; }
+      .archive-day-row { min-width: 36px; padding: 5px 6px; font-size: 12px; }
       .daily-content-col { overflow: visible; padding: 14px 16px 20px; }
 
       /* 日报大标题缩小 */
