@@ -1027,6 +1027,15 @@
       padding: 16px;
       margin-bottom: 10px;
       transition: box-shadow 0.15s, border-color 0.15s;
+      position: relative;
+    }
+    .builder-bio-tag {
+      position: absolute; top: 12px; right: 12px;
+      font-size: 10px; color: var(--muted);
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: 4px; padding: 2px 7px;
+      max-width: 110px; line-height: 1.4;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     }
     .builder-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.08); border-color: rgba(208,25,34,0.2); }
     .builder-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
@@ -1229,17 +1238,29 @@ async function xlatText(text) {
 
 async function translateBuilderTweets(builders) {
   const CHUNK = 4;
-  const targets = builders.map(b => {
+
+  // 翻译最热推文
+  const tweetTargets = builders.map(b => {
     const top = [...(b.tweets||[])].sort((a,z) => (z.likes||0)-(a.likes||0))[0];
     return top && isEnglish(top.text) && !top._translated ? top : null;
   }).filter(Boolean);
-
-  for (let i = 0; i < targets.length; i += CHUNK) {
-    await Promise.all(targets.slice(i, i + CHUNK).map(async t => {
+  for (let i = 0; i < tweetTargets.length; i += CHUNK) {
+    await Promise.all(tweetTargets.slice(i, i + CHUNK).map(async t => {
       const zh = await xlatText(t.text);
-      if (zh) { t._translated = zh; }
+      if (zh) t._translated = zh;
     }));
-    if (i + CHUNK < targets.length) await new Promise(r => setTimeout(r, 200));
+    if (i + CHUNK < tweetTargets.length) await new Promise(r => setTimeout(r, 200));
+  }
+
+  // 翻译个人简介（≤20汉字）
+  const bioTargets = builders.filter(b => !b._bioZh && b.bio);
+  for (let i = 0; i < bioTargets.length; i += CHUNK) {
+    await Promise.all(bioTargets.slice(i, i + CHUNK).map(async b => {
+      const rawBio = (b.bio || '').split('\n')[0].trim().substring(0, 80);
+      const zh = await xlatText(rawBio);
+      if (zh) b._bioZh = zh.substring(0, 20);
+    }));
+    if (i + CHUNK < bioTargets.length) await new Promise(r => setTimeout(r, 200));
   }
 }
 
@@ -2036,13 +2057,15 @@ function renderBuilders(xData, podData) {
     const top = [...b.tweets].sort((a, z) => (z.likes||0) - (a.likes||0))[0];
     if (!top) return '';
     const translated = top._translated || '';
+    const bioTag = b._bioZh ? `<div class="builder-bio-tag">${esc(b._bioZh)}</div>` : '';
     return `
       <div class="builder-card">
+        ${bioTag}
         <div class="builder-head">
           <div class="builder-av" style="background:${builderAvColor(b.name||b.handle)}">${esc((b.name||b.handle||'?')[0].toUpperCase())}</div>
           <div>
             <div class="builder-name">${esc(b.name||b.handle)}</div>
-            <div class="builder-handle">@${esc(b.handle)}${bio ? ' · '+esc(bio) : ''}</div>
+            <div class="builder-handle">@${esc(b.handle)}</div>
           </div>
         </div>
         <div class="builder-tweet-text" style="margin-bottom:10px">${esc(translated || top.text)}</div>
