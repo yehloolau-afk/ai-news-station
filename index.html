@@ -1031,14 +1031,14 @@
     }
     .builder-bio-tag {
       position: absolute; top: 12px; right: 12px;
-      font-size: 10px; color: var(--muted);
+      font-size: 10.5px; color: var(--muted);
       background: var(--bg); border: 1px solid var(--border);
-      border-radius: 4px; padding: 2px 7px;
-      max-width: 110px; line-height: 1.4;
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      border-radius: 6px; padding: 4px 8px;
+      max-width: 130px; line-height: 1.55;
+      word-break: break-all;
     }
     .builder-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.08); border-color: rgba(208,25,34,0.2); }
-    .builder-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .builder-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; padding-right: 100px; }
     .builder-av {
       width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0;
       display: flex; align-items: center; justify-content: center;
@@ -1256,9 +1256,9 @@ async function translateBuilderTweets(builders) {
   const bioTargets = builders.filter(b => !b._bioZh && b.bio);
   for (let i = 0; i < bioTargets.length; i += CHUNK) {
     await Promise.all(bioTargets.slice(i, i + CHUNK).map(async b => {
-      const rawBio = (b.bio || '').split('\n')[0].trim().substring(0, 80);
+      const rawBio = (b.bio || '').split('\n')[0].trim().substring(0, 120);
       const zh = await xlatText(rawBio);
-      if (zh) b._bioZh = zh.substring(0, 20);
+      if (zh) b._bioZh = zh.substring(0, 50);
     }));
     if (i + CHUNK < bioTargets.length) await new Promise(r => setTimeout(r, 200));
   }
