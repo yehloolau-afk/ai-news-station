@@ -1669,7 +1669,7 @@ const MOB_GROUP_IDS = ['products', 'design', 'videos'];
 const MOB_NAV_ORDER = ['builders', 'featured', 'daily', 'official'];
 
 // State
-let activeTab = 'builders';
+let activeTab = 'featured';
 let mobGroupActiveId = 'products'; // 产品组当前选中的 sub-tab
 let jobsRegion = 'global';   // 'global' | 'domestic'
 let allCatFilter = 'all';    // 'all' | 'ai-models' | 'ai-products' | 'industry' | 'paper'
@@ -1679,6 +1679,7 @@ let refreshTimer = null;
 let countdownTimer = null;
 let nextRefreshAt = 0;
 const REFRESH_INTERVAL = 30 * 60 * 1000; // 30 min
+const IS_MOBILE = window.innerWidth <= 768;
 
 // ── Archive panel ─────────────────────────────────────
 let archiveList = null;      // array of { date, headline }
@@ -1848,15 +1849,17 @@ function init() {
   if (sl && ml) ml.src = sl.src;
 
   renderNav();
-  switchTab('builders');
+  switchTab('featured');
   scheduleAutoRefresh();
 
-  // 等精选有内容显示出来，再依次预取其余频道（500ms 一个，不争带宽）
-  featuredPainted.then(() => {
-    const others = TABS.filter(t => !t.hidden && t.id !== 'featured');
-    others.forEach((t, i) => setTimeout(() => prefetchTab(t.id), 500 + i * 2000));
-    prefetchDailyDates();
-  });
+  // 移动端不做后台预取，节省带宽；PC端精选加载完再依次预取
+  if (!IS_MOBILE) {
+    featuredPainted.then(() => {
+      const others = TABS.filter(t => !t.hidden && t.id !== 'featured');
+      others.forEach((t, i) => setTimeout(() => prefetchTab(t.id), 500 + i * 2000));
+      prefetchDailyDates();
+    });
+  }
 }
 
 // ── Navigation ────────────────────────────────────────
@@ -1942,8 +1945,14 @@ function scheduleFullLoad(id, tab, activeFeedList, cacheKey, prevErrors, aiHotIt
     let items = mergeItems([...aiHotItems, ...rssArr], tab);
     // 继承 Phase 1 已翻译的内容
     inheritTranslations(items, cache[cacheKey]?.items);
-    // 先翻译再渲染，避免英文内容闪现
-    if (tab.translate) await translateItems(items);
+    // 移动端先渲染再延迟翻译，避免翻译阻塞首屏
+    if (tab.translate) {
+      if (IS_MOBILE) {
+        setTimeout(() => translateItems(items).then(() => { if (activeTab === id) renderTab(tab, items, feedErrors); }), 3000);
+      } else {
+        await translateItems(items);
+      }
+    }
     if (activeTab !== id) return;
     cache[cacheKey] = { items, feedErrors, aiHotData: null, ts: Date.now() };
     saveFeedCache(cacheKey, cache[cacheKey]);
@@ -2357,7 +2366,8 @@ function mergeItems(items, tab) {
 // ── Fetch ─────────────────────────────────────────────
 // quick=true → 10条快速预览；full → arxiv 15 / 其他 30
 function feedLimit(url, quick = false) {
-  if (quick) return 10;
+  if (quick) return IS_MOBILE ? 5 : 10;
+  if (IS_MOBILE) return 8;
   return url.includes('arxiv.org') ? 15 : 30;
 }
 
