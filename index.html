@@ -1221,6 +1221,14 @@ function isEnglish(text) {
   return (text.match(/[a-zA-Z]/g) || []).length / text.length > 0.5;
 }
 
+async function fetchJsonSafe(url) {
+  try {
+    const r = await fetch(url, { signal: timeoutSignal(6000) });
+    if (r.ok) return await r.json();
+  } catch {}
+  return null;
+}
+
 async function xlatText(text) {
   try {
     const r = await fetch(
@@ -1852,7 +1860,21 @@ function init() {
   switchTab('featured');
   scheduleAutoRefresh();
 
-  // 移动端不做后台预取，节省带宽；PC端精选加载完再依次预取
+  // builders 数据始终后台预取（数据小，同域直连，不影响带宽）
+  fetchJsonSafe(BUILDERS_FEED_X).then(xData => {
+    if (xData) {
+      fetchJsonSafe(BUILDERS_FEED_PODCAST).then(podData => {
+        cache['builders'] = { xData, podData, ts: Date.now() };
+        if (activeTab === 'builders') renderBuilders(xData, podData);
+        const builders = ((xData.x) || []).filter(b => b.tweets?.length);
+        if (builders.length) translateBuilderTweets(builders).then(() => {
+          if (activeTab === 'builders') renderBuilders(xData, podData);
+        });
+      });
+    }
+  });
+
+  // 移动端不做其他频道后台预取，节省带宽；PC端精选加载完再依次预取
   if (!IS_MOBILE) {
     featuredPainted.then(() => {
       const others = TABS.filter(t => !t.hidden && t.id !== 'featured');
@@ -2144,30 +2166,18 @@ async function switchTab(id) {
   // ── Builders tab: 直接拉取 Follow Builders 数据 ──
   if (tab.layout === 'builders') {
     const cached = cache['builders'];
-    if (cached && Date.now() - cached.ts < REFRESH_INTERVAL) {
+    // 只使用有效缓存（xData 不为空才算命中）
+    if (cached && cached.xData && Date.now() - cached.ts < REFRESH_INTERVAL) {
       renderBuilders(cached.xData, cached.podData);
       return;
     }
-    async function fetchJson(url) {
-      // 先直连，失败则走 allorigins 代理（应对 raw.githubusercontent.com 被墙）
-      try {
-        const r = await fetch(url, { signal: timeoutSignal(5000) });
-        if (r.ok) return await r.json();
-      } catch {}
-      try {
-        const proxied = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
-        const r = await fetch(proxied, { signal: timeoutSignal(8000) });
-        if (r.ok) { const d = await r.json(); return JSON.parse(d.contents); }
-      } catch {}
-      return null;
-    }
     const [xData, podData] = await Promise.all([
-      fetchJson(BUILDERS_FEED_X),
-      fetchJson(BUILDERS_FEED_PODCAST)
+      fetchJsonSafe(BUILDERS_FEED_X),
+      fetchJsonSafe(BUILDERS_FEED_PODCAST)
     ]);
-    cache['builders'] = { xData, podData, ts: Date.now() };
+    // 只缓存成功的结果
+    if (xData) cache['builders'] = { xData, podData, ts: Date.now() };
     if (activeTab === 'builders') renderBuilders(xData, podData);
-    // 翻译推文后重渲染
     const builders = ((xData && xData.x) || []).filter(b => b.tweets?.length);
     if (builders.length) {
       await translateBuilderTweets(builders);
