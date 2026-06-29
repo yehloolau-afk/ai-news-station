@@ -1,0 +1,359 @@
+{
+  "generatedAt": "2026-06-29T08:08:26.128Z",
+  "lookbackHours": 24,
+  "x": [
+    {
+      "source": "x",
+      "name": "Swyx",
+      "handle": "swyx",
+      "bio": "achieve ambition with intentionality, intensity, integrity & insanity.\n\naffiliations:\n- @dxtipshq \n- @cognition\n- @temporalio\n- @aidotengineer\n- @latentspacepod",
+      "tweets": [
+        {
+          "id": "2071480924810969331",
+          "text": "we registered 1000 people today. this is what it looked like at hour 3.\n\ntmr and tuesday going to be absolutely batshit https://t.co/GXHMEG7dlN",
+          "createdAt": "2026-06-29T06:28:33.000Z",
+          "url": "https://x.com/swyx/status/2071480924810969331",
+          "likes": 17,
+          "retweets": 2,
+          "replies": 6,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2071478551950614586",
+          "text": "if youre a speaker make your own https://t.co/eWyUjkEY7F",
+          "createdAt": "2026-06-29T06:19:07.000Z",
+          "url": "https://x.com/swyx/status/2071478551950614586",
+          "likes": 6,
+          "retweets": 0,
+          "replies": 0,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2071478390172049555",
+          "text": "because i'm not a design engineer myself, this track is one of the harder ones I struggle to curate.\n\nvery fortunate to befriend Geoff who has lent a hand to the past 2 years of AI UX meetups, and now is the opener for the Design Engineers at AIE! see you wednesday https://t.co/TrqetNnJQB https://t.co/SE8lTOGP7q",
+          "createdAt": "2026-06-29T06:18:29.000Z",
+          "url": "https://x.com/swyx/status/2071478390172049555",
+          "likes": 17,
+          "retweets": 0,
+          "replies": 9,
+          "isQuote": true,
+          "quotedTweetId": "2071319131144790064"
+        }
+      ]
+    },
+    {
+      "source": "x",
+      "name": "Boris Cherny",
+      "handle": "bcherny",
+      "bio": "Claude Code @anthropicai",
+      "tweets": [
+        {
+          "id": "2071379474277613732",
+          "text": "As engineering, product, design, DS, etc. melt into a new kind of role, I was reflecting on what roles might look like in the future. For example, when I look at the Claude Code team I see what I think is five archetypes:\n\n1. Prototyper: comes up with brand new ideas; churns out many ideas, most of which don't ship\n2. Builder: quickly turns a prototype/idea into production-grade product/infra\n3. Sweeper: cleans up the UI, simplifies the code and system, unships, optimizes performance\n4. Grower: takes a product that has been built and iterates on it to improve Product-Market Fit\n5. Maintainer: owns a mature system to make it secure, reliable, fast, and efficient as it scales\n\nMany people span across 2 roles, and sometimes 3 roles. I also notice that these roles are not really tied to job function -- eg. across Anthropic, some designers match category 1, some 2, some 3; same for engineers, PM, DS.\n\nA healthy team needs a mix of these, depending on the product:\n\n- A product that is new and pre-PMF needs people that are strong at 1+2+3\n- A product that is growing and has found PMF needs 2+3+4 and some 5\n- A product that has strong PMF needs 3+4+5 and some 2\n\nMaybe product roles of the future will look more like this, and less like the domain-specific roles of today?",
+          "createdAt": "2026-06-28T23:45:25.000Z",
+          "url": "https://x.com/bcherny/status/2071379474277613732",
+          "likes": 11598,
+          "retweets": 1254,
+          "replies": 533,
+          "isQuote": false,
+          "quotedTweetId": null
+        }
+      ]
+    },
+    {
+      "source": "x",
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "bio": "Codex & ChatGPT @OpenAI",
+      "tweets": [
+        {
+          "id": "2071383430634344902",
+          "text": "If you happened to have used your previous reset in the few hours before and didn't go through your usage, do not worry, you will get more manual resets after we conclude the investigation.",
+          "createdAt": "2026-06-29T00:01:08.000Z",
+          "url": "https://x.com/thsottiaux/status/2071383430634344902",
+          "likes": 747,
+          "retweets": 18,
+          "replies": 107,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2071381664853319742",
+          "text": "As we are still investigating, I have reset everyone's Codex usage limits. This is a hard reset given some users had stacked up to three banked resets already that they can apply on their own schedule.\n\nFunnily enough, this week at OpenAI is called the RESET week, which is meant for folks to relax a bit. However it will be a different kind of RESET week. Enjoy.",
+          "createdAt": "2026-06-28T23:54:07.000Z",
+          "url": "https://x.com/thsottiaux/status/2071381664853319742",
+          "likes": 4714,
+          "retweets": 245,
+          "replies": 572,
+          "isQuote": true,
+          "quotedTweetId": "2071357473659707441"
+        },
+        {
+          "id": "2071357473659707441",
+          "text": "Codex team is in a warroom on a Sunday combing through logs and checking whether there is anything that could lead to increased usage drains for some users. Taking it very seriously and won't rest until we get to the bottom of it. https://t.co/r7kYwqKjT2",
+          "createdAt": "2026-06-28T22:18:00.000Z",
+          "url": "https://x.com/thsottiaux/status/2071357473659707441",
+          "likes": 3667,
+          "retweets": 94,
+          "replies": 375,
+          "isQuote": true,
+          "quotedTweetId": "2071268204157018511"
+        }
+      ]
+    },
+    {
+      "source": "x",
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "bio": "Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6",
+      "tweets": [
+        {
+          "id": "2071353107242774863",
+          "text": "I’ll be honest with you all I still don’t know what Agentforce is https://t.co/NksangcHzz",
+          "createdAt": "2026-06-28T22:00:39.000Z",
+          "url": "https://x.com/petergyang/status/2071353107242774863",
+          "likes": 45,
+          "retweets": 1,
+          "replies": 18,
+          "isQuote": true,
+          "quotedTweetId": "2071295201608687839"
+        },
+        {
+          "id": "2071292628302434361",
+          "text": "How Anthropic PMs use agents internally to get closer to the product from Jess, product lead for Claude Managed Agents:\n\n“Access to our codebase has been the biggest unlock for me.\n\nIt helps me manage state more easily. Rather than poking a bunch of engineers on what they’re doing, I can just track the PRs directly and see which ones are merged, which ones are deployed.\n\nI deeply understand and interact with my product so much more than I’ve ever been able to in the past.”\n\n📌 Watch the full episode here: https://t.co/rYIC7uyDpJ\n\nhttps://t.co/8YMfGN06fl",
+          "createdAt": "2026-06-28T18:00:20.000Z",
+          "url": "https://x.com/petergyang/status/2071292628302434361",
+          "likes": 75,
+          "retweets": 8,
+          "replies": 8,
+          "isQuote": true,
+          "quotedTweetId": "2071235979369972033"
+        },
+        {
+          "id": "2071288846046884051",
+          "text": "Taste 😅 https://t.co/TE9MyaL4Kk",
+          "createdAt": "2026-06-28T17:45:18.000Z",
+          "url": "https://x.com/petergyang/status/2071288846046884051",
+          "likes": 8,
+          "retweets": 0,
+          "replies": 3,
+          "isQuote": false,
+          "quotedTweetId": null
+        }
+      ]
+    },
+    {
+      "source": "x",
+      "name": "Thariq",
+      "handle": "trq212",
+      "bio": "Claude Code @anthropicai.   prev YC W20, @southpkcommons, @medialab",
+      "tweets": [
+        {
+          "id": "2071474384456573329",
+          "text": "not true! https://t.co/YhpPps2XNW",
+          "createdAt": "2026-06-29T06:02:34.000Z",
+          "url": "https://x.com/trq212/status/2071474384456573329",
+          "likes": 28,
+          "retweets": 0,
+          "replies": 3,
+          "isQuote": true,
+          "quotedTweetId": "2071470342195785894"
+        },
+        {
+          "id": "2071419473433854221",
+          "text": "this has to be because coding agents change the engineering math on how it is to work with or port a legacy codebase, right?\n\nanyone at Riot able to confirm? https://t.co/9vsCzsbmYY",
+          "createdAt": "2026-06-29T02:24:22.000Z",
+          "url": "https://x.com/trq212/status/2071419473433854221",
+          "likes": 660,
+          "retweets": 3,
+          "replies": 42,
+          "isQuote": true,
+          "quotedTweetId": "2070602208157003935"
+        }
+      ]
+    },
+    {
+      "source": "x",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "bio": "@vercel CEO",
+      "tweets": [
+        {
+          "id": "2071287181650653372",
+          "text": "You need a Link, not a LinkedIn 😂",
+          "createdAt": "2026-06-28T17:38:41.000Z",
+          "url": "https://x.com/rauchg/status/2071287181650653372",
+          "likes": 500,
+          "retweets": 12,
+          "replies": 38,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2071284129275285580",
+          "text": "You don't need a LinkedIn, you need a page on your website describing and linking to what you shipped",
+          "createdAt": "2026-06-28T17:26:33.000Z",
+          "url": "https://x.com/rauchg/status/2071284129275285580",
+          "likes": 6235,
+          "retweets": 304,
+          "replies": 452,
+          "isQuote": false,
+          "quotedTweetId": null
+        }
+      ]
+    },
+    {
+      "source": "x",
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "bio": "ceo @box - your business lives in content. unleash it with AI",
+      "tweets": [
+        {
+          "id": "2071253118252356001",
+          "text": "It should be 100% obvious that there will soon be mythos level models on cyber security that are open and available to anyone. As a byproduct of this, alternative tech stacks will emerge that also drive more economic value and control away from the US’s tech stack.\n\nThis is what should be considered when thinking through the gate keeping you want to have in AI. If advanced models will become open and available regardless, then by not allowing the release of models you’re neither more secure nor better off strategically.\n\nSo much of the regulatory approach to AI has to assume China can’t catch up, when all current evidence suggests they can and are. And further, hard to imagine a higher priority than winning in AI for China; so you’re basically betting against their long term ingenuity, talent and motivation. Seems like a bad bet.\n\nSo your options are either to create gates around your best models, which means you’re asymmetrically disadvantaging yourself, or you work to ensure you’re always at the frontier and driving the future architectures of AI.",
+          "createdAt": "2026-06-28T15:23:20.000Z",
+          "url": "https://x.com/levie/status/2071253118252356001",
+          "likes": 659,
+          "retweets": 80,
+          "replies": 77,
+          "isQuote": true,
+          "quotedTweetId": "2071039148484378891"
+        }
+      ]
+    },
+    {
+      "source": "x",
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "bio": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+      "tweets": [
+        {
+          "id": "2071434797176516691",
+          "text": "\"Forget your perfect offering / There is a crack in everything / That's how the light gets in.\"\n\n—Leonard Cohen",
+          "createdAt": "2026-06-29T03:25:15.000Z",
+          "url": "https://x.com/garrytan/status/2071434797176516691",
+          "likes": 275,
+          "retweets": 25,
+          "replies": 35,
+          "isQuote": false,
+          "quotedTweetId": null
+        }
+      ]
+    },
+    {
+      "source": "x",
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "bio": "Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w",
+      "tweets": [
+        {
+          "id": "2071335200802648420",
+          "text": "Watch this video in which I walk through\n- How to install &amp; use the skill (beginner-friendly)\n- How I built the skill\n- How you can build your own skill https://t.co/FVBCFHXAqK",
+          "createdAt": "2026-06-28T20:49:30.000Z",
+          "url": "https://x.com/zarazhangrui/status/2071335200802648420",
+          "likes": 12,
+          "retweets": 0,
+          "replies": 1,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2071319754128978030",
+          "text": "For every hour you spend on building the product, spend two hours on explaining it, demonstrating it, selling it, teaching it…\n\nThis is my favorite part about building: telling the world about it and then refining it based on contact with reality https://t.co/9uOj0ocrUM",
+          "createdAt": "2026-06-28T19:48:07.000Z",
+          "url": "https://x.com/zarazhangrui/status/2071319754128978030",
+          "likes": 557,
+          "retweets": 44,
+          "replies": 29,
+          "isQuote": true,
+          "quotedTweetId": "1982476318639079784"
+        }
+      ]
+    },
+    {
+      "source": "x",
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "bio": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧",
+      "tweets": [
+        {
+          "id": "2071408480456691868",
+          "text": "just put the taxes in the bag bro\n\n📍Summit Loop Trail, San Bruno https://t.co/ovpZJtarpK",
+          "createdAt": "2026-06-29T01:40:41.000Z",
+          "url": "https://x.com/nikunj/status/2071408480456691868",
+          "likes": 81,
+          "retweets": 0,
+          "replies": 3,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2071270787517132892",
+          "text": "Sundays are for recreating memes with your toddler 👻 https://t.co/sn0ZQvJqeI",
+          "createdAt": "2026-06-28T16:33:32.000Z",
+          "url": "https://x.com/nikunj/status/2071270787517132892",
+          "likes": 48,
+          "retweets": 0,
+          "replies": 3,
+          "isQuote": false,
+          "quotedTweetId": null
+        },
+        {
+          "id": "2071237834162549001",
+          "text": "Every time I meet an exceptionally smart founder, I play it cool but internally.. https://t.co/oLrccdBnsg",
+          "createdAt": "2026-06-28T14:22:36.000Z",
+          "url": "https://x.com/nikunj/status/2071237834162549001",
+          "likes": 29,
+          "retweets": 1,
+          "replies": 5,
+          "isQuote": false,
+          "quotedTweetId": null
+        }
+      ]
+    },
+    {
+      "source": "x",
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "bio": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.\n@OpenClaw🦞 + @OpenAI",
+      "tweets": [
+        {
+          "id": "2071382416703500510",
+          "text": "Tried to sign up to @ATT four times now and they reject me and aren’t telling me why.\n\nWhat’s the next best unlimited phone/data plan for the SF area?\n\nOr do I know anyone who can work around corp bs?",
+          "createdAt": "2026-06-28T23:57:07.000Z",
+          "url": "https://x.com/steipete/status/2071382416703500510",
+          "likes": 582,
+          "retweets": 7,
+          "replies": 272,
+          "isQuote": false,
+          "quotedTweetId": null
+        }
+      ]
+    },
+    {
+      "source": "x",
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "bio": "ceo @every | the only subscription you need to stay at the edge of AI",
+      "tweets": [
+        {
+          "id": "2071304948390752557",
+          "text": "self recommending https://t.co/4MjFgRiefz",
+          "createdAt": "2026-06-28T18:49:17.000Z",
+          "url": "https://x.com/danshipper/status/2071304948390752557",
+          "likes": 44,
+          "retweets": 4,
+          "replies": 2,
+          "isQuote": true,
+          "quotedTweetId": "2071294324999115057"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "xBuilders": 12,
+    "totalTweets": 23
+  }
+}
