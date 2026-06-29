@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://api.allorigins.win">
   <link rel="preconnect" href="https://corsproxy.io">
   <link rel="preconnect" href="https://api.codetabs.com">
-  <link rel="preconnect" href="https://api.mymemory.translated.net">
+  <link rel="preconnect" href="https://translate.googleapis.com">
   <style>
     :root {
       --bg: #f4f6f8;
@@ -134,59 +134,21 @@
       background: rgba(208,25,34,0.1);
       color: var(--accent);
     }
-    .tab-new-badge {
-      margin-left: auto;
-      font-size: 10px;
-      font-weight: 700;
-      background: var(--accent);
-      color: #fff;
-      padding: 1px 6px;
-      border-radius: 10px;
-      animation: badgePop 0.25s ease;
-    }
-    @keyframes badgePop { from { transform: scale(0.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
 
-    /* ── Daily 布局：存档横条置顶 ── */
-    .main.daily-mode { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
+    /* ── Daily 三列布局 ── */
+    .main.daily-mode { padding: 0; overflow: hidden; display: flex; }
     .daily-archive-col {
-      width: 100%; min-width: unset;
-      border-right: none; border-bottom: 1px solid var(--border);
+      width: 88px;
+      min-width: 88px;
+      border-right: 1px solid var(--border);
       background: var(--sidebar-bg);
-      display: flex; flex-direction: row; align-items: center;
-      height: 52px; flex-shrink: 0;
-      overflow-x: auto; overflow-y: hidden;
-      padding: 0 20px; gap: 0;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      text-align: center;
       scrollbar-width: thin;
       scrollbar-color: var(--border) transparent;
-    }
-    .daily-archive-col::-webkit-scrollbar { height: 3px; }
-    .daily-archive-col::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
-    /* 存档横条内：月份组横向排列 */
-    .daily-archive-col .archive-panel-hd {
-      padding: 0 14px 0 0; font-size: 10px; font-weight: 700;
-      letter-spacing: 0.08em; white-space: nowrap; flex-shrink: 0;
-      border-bottom: none; color: var(--muted);
-    }
-    .daily-archive-col .archive-month-group { display: flex; align-items: center; }
-    .daily-archive-col .archive-month-group + .archive-month-group {
-      margin-top: 0; padding-top: 0; border-top: none;
-      border-left: 1px solid var(--border); margin-left: 4px; padding-left: 4px;
-    }
-    .daily-archive-col .archive-month-label,
-    .daily-archive-col .archive-month-label-static {
-      padding: 0 6px; font-size: 9px; font-weight: 700;
-      white-space: nowrap; writing-mode: unset; flex-shrink: 0;
-    }
-    .daily-archive-col .archive-toggle { display: none; }
-    .daily-archive-col #archiveOlderSection { display: flex !important; }
-    .daily-archive-col .archive-month-rows { display: flex !important; flex-direction: row; gap: 2px; }
-    .daily-archive-col .archive-day-row {
-      min-width: 36px; padding: 5px 9px; margin: 0;
-      font-size: 12px; white-space: nowrap;
-    }
-    .daily-archive-col .archive-more-btn {
-      margin: 0 0 0 6px; padding: 5px 10px;
-      white-space: nowrap; flex-shrink: 0; flex-direction: row;
     }
     .daily-content-col {
       flex: 1;
@@ -916,21 +878,23 @@
         padding: 14px 16px 80px;
         height: auto;
       }
-      /* 日报 mobile：archive 横条紧凑化 */
-      .main.daily-mode { overflow: visible; }
+      /* 日报三列 → 纵向堆叠 */
+      .main.daily-mode { flex-direction: column; overflow: visible; }
       .daily-archive-col {
-        height: 46px; padding: 0 10px;
-        scrollbar-width: none;
+        width: 100%; min-width: unset;
+        border-right: none; border-bottom: 1px solid var(--border);
+        flex-direction: row; height: 50px;
+        overflow-x: auto; overflow-y: hidden;
+        padding: 6px 10px; gap: 4px;
+        align-items: center; scrollbar-width: none;
       }
       .daily-archive-col::-webkit-scrollbar { display: none; }
-      .daily-archive-col .archive-panel-hd,
-      .daily-archive-col .archive-month-label,
-      .daily-archive-col .archive-month-label-static,
-      .daily-archive-col .archive-more-btn { display: none !important; }
-      .daily-archive-col .archive-month-group + .archive-month-group {
-        border-left: none; margin-left: 0; padding-left: 0;
-      }
-      .daily-archive-col .archive-day-row { min-width: 38px; padding: 5px 6px; }
+      .archive-panel-hd,
+      .archive-month-label, .archive-month-label-static,
+      .archive-more-btn { display: none !important; }
+      .archive-month-group + .archive-month-group { margin-top: 0; padding-top: 0; border-top: none; }
+      .archive-month-rows { display: flex !important; flex-direction: row; gap: 2px; }
+      .archive-day-row { min-width: 38px; padding: 5px 6px; margin: 0; font-size: 12px; }
       .daily-content-col { overflow: visible; padding: 14px 16px 20px; }
 
       /* 日报大标题缩小 */
@@ -1100,18 +1064,18 @@
     .builder-tweet-link:hover { background: var(--accent-muted); }
     .podcast-card-b {
       background: var(--card-bg); border: 1px solid var(--border);
-      border-left: 3px solid #7c3aed;
+      border-left: 3px solid var(--purple);
       border-radius: 10px; padding: 16px; margin-bottom: 10px;
     }
     .podcast-head-b { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 10px; }
     .podcast-icon-b { font-size: 24px; flex-shrink: 0; line-height: 1; }
-    .podcast-name-b { font-size: 11px; font-weight: 700; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 3px; }
+    .podcast-name-b { font-size: 11px; font-weight: 700; color: var(--purple); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 3px; }
     .podcast-title-b { font-size: 14px; font-weight: 700; color: var(--text); line-height: 1.35; }
     .podcast-date-b { font-size: 11px; color: var(--muted); margin-top: 3px; }
     .podcast-preview-b { font-size: 12px; color: var(--muted); line-height: 1.75; margin-bottom: 10px; }
     .podcast-link-b {
       display: inline-flex; align-items: center; gap: 5px;
-      font-size: 12px; font-weight: 600; color: #7c3aed;
+      font-size: 12px; font-weight: 600; color: var(--purple);
       padding: 5px 12px; border: 1px solid rgba(124,58,237,0.3); border-radius: 7px;
       text-decoration: none; transition: background 0.12s;
     }
@@ -1202,8 +1166,8 @@ const AIHOT = 'https://aihot.virxact.com/api/public';
 
 // 静态数据层：优先读取 GitHub Actions 预生成的 JSON，失败则降级到 CORS 代理
 const STATIC_BASE = 'https://yehloolau-afk.github.io/designer-tool/data';
-const STATIC_TTL  = 60 * 60 * 1000; // 1 小时有效期，与更新频率匹配
-const STATIC_TABS = new Set(['featured', 'all', 'official', 'products', 'design', 'videos', 'daily']);
+const STATIC_TTL  = 2 * 60 * 60 * 1000; // 2 小时有效期，与更新频率匹配
+const STATIC_TABS = new Set(['featured', 'all', 'official', 'products', 'design', 'videos']);
 
 async function fetchStaticData(tabId) {
   if (!STATIC_TABS.has(tabId)) return null;
@@ -1246,20 +1210,36 @@ function timeoutSignal(ms) {
   return ctrl.signal;
 }
 
-// ── 自动翻译（MyMemory，国内可用）────────────────────
+// ── 自动翻译（Google Translate 免费接口，英文标题→中文）──────
 function isEnglish(text) {
   if (!text || text.length < 8) return false;
   return (text.match(/[a-zA-Z]/g) || []).length / text.length > 0.5;
 }
 
 async function translateItems(items) {
-  const CHUNK = 8; // 并发8条，无批次间延迟
+  const CHUNK = 3;       // 每批3条，减少并发压力
+  const CHUNK_DELAY = 250; // 批次间间隔250ms，避免触发频率限制
 
   async function xlat(text) {
+    // 主：Google Translate（2次重试）
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try {
+        const r = await fetch(
+          `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q=${encodeURIComponent(text)}`,
+          { signal: timeoutSignal(5000) }
+        );
+        if (!r.ok) throw new Error('http ' + r.status);
+        const d = await r.json();
+        const result = d?.[0]?.map(p => p?.[0]).filter(Boolean).join('') || '';
+        if (result && result !== text) return result;
+      } catch {}
+      if (attempt === 0) await new Promise(r => setTimeout(r, 500));
+    }
+    // 备：MyMemory（Google 失败时兜底）
     try {
       const r = await fetch(
         `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=en|zh-CN`,
-        { signal: timeoutSignal(5000) }
+        { signal: timeoutSignal(8000) }
       );
       if (r.ok) {
         const d = await r.json();
@@ -1270,7 +1250,7 @@ async function translateItems(items) {
     return '';
   }
 
-  // 翻译标题（已预翻译的静态数据直接跳过）
+  // 翻译标题
   const titleTargets = items.filter(i => isEnglish(i.title) && !i._translated);
   for (let i = 0; i < titleTargets.length; i += CHUNK) {
     await Promise.all(
@@ -1281,6 +1261,7 @@ async function translateItems(items) {
         } catch {}
       })
     );
+    if (i + CHUNK < titleTargets.length) await new Promise(r => setTimeout(r, CHUNK_DELAY));
   }
 
   // 翻译摘要（英文 description 取前150字）
@@ -1298,6 +1279,7 @@ async function translateItems(items) {
         } catch {}
       })
     );
+    if (i + CHUNK < descTargets.length) await new Promise(r => setTimeout(r, CHUNK_DELAY));
   }
   return items;
 }
@@ -1432,7 +1414,6 @@ const TABS = [
   {
     id: 'builders',
     name: 'AI Builder',
-    mobName: 'AI大牛',
     icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
     layout: 'builders',
     desc: '追踪 26 位 AI 顶尖建造者的最新动态',
@@ -1499,14 +1480,12 @@ const TABS = [
     icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/><line x1="9" y1="15" x2="12" y2="15"/></svg>',
     layout: 'daily',
     desc: '每日 AI 资讯速览',
-    aiHotPath: null,
+    aiHotPath: '/daily',
     feeds: [
       { url: 'https://www.qbitai.com/feed', name: '量子位', color: '#bc8cff' },
       { url: 'https://www.ifanr.com/feed', name: '爱范儿', color: '#ffa657' },
       { url: 'https://www.geekpark.net/rss', name: '极客公园', color: '#3fb950' },
       { url: 'https://sspai.com/feed', name: '少数派', color: '#58a6ff' },
-      { url: 'https://36kr.com/feed', name: '36Kr', color: '#1677ff' },
-      { url: 'https://www.jiqizhixin.com/rss', name: '机器之心', color: '#58a6ff' },
     ]
   },
   {
@@ -1558,17 +1537,23 @@ const TABS = [
     desc: 'AI 设计工具与创意趋势',
     aiHotPath: '/items?mode=all&take=80',
     feeds: [
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UChpleBmo18P08aKCIgti38g', name: 'Matt Wolfe', color: '#f59e0b' },
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UC_HhOkzorAO4_rRsTiiHZ_w', name: 'AI Explained', color: '#8b5cf6' },
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCUBqu_z5uP0AZhYtuyFZB3g', name: 'Runway',      color: '#06b6d4' },
+      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UChpleBmo18P08aKCIgti38g', name: 'Matt Wolfe',       color: '#f59e0b' },
+      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UC_HhOkzorAO4_rRsTiiHZ_w', name: 'AI Explained',   color: '#8b5cf6' },
+      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCUBqu_z5uP0AZhYtuyFZB3g', name: 'Runway',         color: '#06b6d4' },
       { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg', name: 'Two Minute Papers', color: '#ef4444' },
+      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCJ0-OtVpF0wOKEqT2Z1HEtA', name: 'The Futur',      color: '#1a1a1a' },
+      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UC-b3c7kxa5vU-bnmaROgvog', name: 'Sam Santala',    color: '#7c3aed' },
       { url: 'https://www.theverge.com/ai-artificial-intelligence/rss', name: 'The Verge AI', color: '#e40045' },
+      { url: 'https://uxdesign.cc/feed',               name: 'UX Collective', color: '#0ea5e9' },
+      { url: 'https://www.smashingmagazine.com/feed/', name: 'Smashing Mag',  color: '#e8552f' },
+      { url: 'https://www.creativebloq.com/feeds/all.xml', name: 'Creative Bloq', color: '#ff6b6b' },
+      { url: 'https://www.uisdc.com/feed',             name: '优设网',   color: '#3fb950' },
+      { url: 'https://www.woshipm.com/feed',           name: '人人都是PM', color: '#ffa657' },
       { url: 'https://www.qbitai.com/feed',            name: '量子位',   color: '#bc8cff' },
-      { url: 'https://www.ifanr.com/feed',             name: '爱范儿',   color: '#3fb950' },
+      { url: 'https://www.ifanr.com/feed',             name: '爱范儿',   color: '#06b6d4' },
       { url: 'https://www.jiqizhixin.com/rss',         name: '机器之心', color: '#58a6ff' },
-      { url: 'https://www.geekpark.net/rss',           name: '极客公园', color: '#ffa657' },
+      { url: 'https://www.geekpark.net/rss',           name: '极客公园', color: '#f59e0b' },
       { url: 'https://sspai.com/feed',                 name: '少数派',   color: '#8b949e' },
-      { url: 'https://36kr.com/feed',                  name: '36Kr',    color: '#1677ff' },
       { url: 'https://www.huxiu.com/rss/0.xml',        name: '虎嗅',    color: '#e67e22' },
       { url: 'https://xinzhiyuan.com/feed',             name: '新智元',  color: '#8b5cf6' },
     ]
@@ -1631,14 +1616,14 @@ const TABS = [
   }
 ];
 
-// 移动端"更多"组：日报/产品/设计/视频
-const MOB_GROUP_IDS = ['daily', 'products', 'design', 'videos'];
-// 移动端固定5个 tab 的顺序（精选 | 构建者 | 官方动态 | 全部动态 | 更多）
-const MOB_NAV_ORDER = ['featured', 'builders', 'official', 'all'];
+// 移动端产品组：这三个 tab 在移动端合并为第5个 tab
+const MOB_GROUP_IDS = ['products', 'design', 'videos'];
+// 移动端固定5个 tab 的顺序（Builder | 精选 | 日报 | 官方动态 | 更多）
+const MOB_NAV_ORDER = ['builders', 'featured', 'daily', 'official'];
 
 // State
-let activeTab = 'featured';
-let mobGroupActiveId = 'daily'; // 更多组默认选中日报
+let activeTab = 'builders';
+let mobGroupActiveId = 'products'; // 产品组当前选中的 sub-tab
 let jobsRegion = 'global';   // 'global' | 'domestic'
 let allCatFilter = 'all';    // 'all' | 'ai-models' | 'ai-products' | 'industry' | 'paper'
 const cache = {};          // { tabId: { items, feedErrors, ts } }
@@ -1647,18 +1632,6 @@ let refreshTimer = null;
 let countdownTimer = null;
 let nextRefreshAt = 0;
 const REFRESH_INTERVAL = 30 * 60 * 1000; // 30 min
-
-// ── 新条数徽标：记录用户上次查看各 Tab 时的条数 ──────────
-const LS_SEEN_KEY = 'ai_station_seen_v1';
-const seenCounts = (() => { try { return JSON.parse(localStorage.getItem(LS_SEEN_KEY) || '{}'); } catch { return {}; } })();
-function saveSeenCounts() { try { localStorage.setItem(LS_SEEN_KEY, JSON.stringify(seenCounts)); } catch {} }
-function markTabSeen(id) {
-  if (counts[id] != null) { seenCounts[id] = counts[id]; saveSeenCounts(); }
-}
-function getNewCount(id) {
-  if (seenCounts[id] == null) return 0; // 从未访问过，不显示
-  return Math.max(0, (counts[id] || 0) - seenCounts[id]);
-}
 
 // ── Archive panel ─────────────────────────────────────
 let archiveList = null;      // array of { date, headline }
@@ -1828,13 +1801,13 @@ function init() {
   if (sl && ml) ml.src = sl.src;
 
   renderNav();
-  switchTab('featured');
+  switchTab('builders');
   scheduleAutoRefresh();
 
-  // 精选出现后立即预取其余频道（静态 Tab 只需一次 JSON 请求，间隔缩短）
+  // 等精选有内容显示出来，再依次预取其余频道（500ms 一个，不争带宽）
   featuredPainted.then(() => {
     const others = TABS.filter(t => !t.hidden && t.id !== 'featured');
-    others.forEach((t, i) => setTimeout(() => prefetchTab(t.id), 100 + i * 500));
+    others.forEach((t, i) => setTimeout(() => prefetchTab(t.id), 500 + i * 2000));
     prefetchDailyDates();
   });
 }
@@ -1845,32 +1818,22 @@ function renderNav() {
 
   // PC 侧边栏
   const nav = document.getElementById('tabNav');
-  const creatorTabs = tabs.filter(t => t.layout === 'builders');
-  const newsTabs    = tabs.filter(t => t.layout !== 'builders');
-  const renderTabBtn = t => `
+  nav.innerHTML = `<div class="tab-group-label">资讯频道</div>` + tabs.map(t => `
     <button class="tab-btn ${t.id === activeTab ? 'active' : ''}"
             id="btn-${t.id}"
             onclick="switchTab('${t.id}')"
             onmouseenter="prefetchTab('${t.id}')">
       <span class="tab-icon">${t.icon}</span>
       <span>${t.name}</span>
-      ${(() => {
-        const n = getNewCount(t.id);
-        if (n > 0 && t.id !== activeTab) return `<span class="tab-new-badge">+${n}</span>`;
-        if (counts[t.id] != null) return `<span class="tab-count">${counts[t.id]}</span>`;
-        return '';
-      })()}
-    </button>`;
-  nav.innerHTML =
-    `<div class="tab-group-label">创作者频道</div>` + creatorTabs.map(renderTabBtn).join('') +
-    `<div class="tab-group-label" style="margin-top:12px">资讯频道</div>` + newsTabs.map(renderTabBtn).join('');
+      ${counts[t.id] != null ? `<span class="tab-count">${counts[t.id]}</span>` : ''}
+    </button>`).join('');
 
   // 移动端底部导航（固定5个）
   const mobileNav = document.getElementById('mobileNav');
   if (mobileNav) {
     const isGroupActive = MOB_GROUP_IDS.includes(activeTab);
     if (isGroupActive) mobGroupActiveId = activeTab;
-    const groupTab = TABS.find(t => t.id === mobGroupActiveId) || TABS.find(t => t.id === 'daily');
+    const groupTab = TABS.find(t => t.id === mobGroupActiveId) || TABS.find(t => t.id === 'products');
     const groupLabel = isGroupActive ? groupTab.name.replace(/^AI\s/, '') : '更多';
 
     mobileNav.innerHTML = MOB_NAV_ORDER.map(id => {
@@ -1879,7 +1842,7 @@ function renderNav() {
       return `<button class="mob-tab-btn ${t.id === activeTab ? 'active' : ''}"
               onclick="switchTab('${t.id}')">
         <span class="mob-tab-icon">${t.icon}</span>
-        <span class="mob-tab-label">${t.mobName || t.name.replace(/^AI\s/, '')}</span>
+        <span class="mob-tab-label">${t.name.replace(/^AI\s/, '')}</span>
       </button>`;
     }).join('') + `
     <button class="mob-tab-btn ${isGroupActive ? 'active' : ''}" id="mob-more-btn"
@@ -1913,7 +1876,7 @@ function inheritTranslations(newItems, fromItems) {
 // ── Phase 2 full load（第一阶段10条展示后，后台补充完整数量）───
 function scheduleFullLoad(id, tab, activeFeedList, cacheKey, prevErrors, aiHotItems = []) {
   if (tab.layout === 'daily' || tab.layout === 'jobs' || !activeFeedList.length) return;
-  setTimeout(async () => { // 400ms 后补足完整数据（原 1500ms）
+  setTimeout(async () => {
     if (activeTab !== id) return;
     const results = await Promise.allSettled(activeFeedList.map(f => fetchFeed(f))); // 默认 full limit
     if (activeTab !== id) return;
@@ -1935,7 +1898,7 @@ function scheduleFullLoad(id, tab, activeFeedList, cacheKey, prevErrors, aiHotIt
     counts[id] = items.length;
     renderNav();
     renderTab(tab, items, feedErrors);
-  }, 400);
+  }, 1500);
 }
 
 // ── 移动端产品组浮层 ─────────────────────────────────────
@@ -1979,30 +1942,9 @@ function prefetchTab(id) {
   if (id === activeTab) return;
   const tab = TABS.find(t => t.id === id);
   if (!tab) return;
-  if (tab.layout === 'builders') return; // 由 switchTab 单独处理
   const cacheKey = tab.layout === 'jobs' ? `jobs_${jobsRegion}` : id;
   if (cache[cacheKey] && Date.now() - cache[cacheKey].ts < REFRESH_INTERVAL) return;
-
-  // 静态 Tab：直接拉预生成 JSON，比 CORS 代理快得多
-  if (STATIC_TABS.has(id)) {
-    (async () => {
-      const staticData = await fetchStaticData(id);
-      if (!staticData || activeTab === id) return;
-      const items = staticData.items;
-      cache[cacheKey] = { items, feedErrors: [], aiHotData: null, ts: Date.now() };
-      saveFeedCache(cacheKey, cache[cacheKey]);
-      counts[id] = items.length;
-      renderNav();
-      if (tab.translate) {
-        await translateItems(items);
-        cache[cacheKey].ts = Date.now();
-        saveFeedCache(cacheKey, cache[cacheKey]);
-      }
-    })();
-    return;
-  }
-
-  // 非静态 Tab：CORS 代理路径（静默预加载，不改变 UI）
+  // 静默预加载：不改变 UI，只填充缓存
   (async () => {
     const activeFeedList = tab.layout === 'jobs'
       ? (jobsRegion === 'global' ? (tab.feedsGlobal || []) : (tab.feedsDomestic || []))
@@ -2010,8 +1952,9 @@ function prefetchTab(id) {
     const aiHotPromise = tab.aiHotPath ? fetchAiHot(tab.aiHotPath) : Promise.resolve(null);
     const rssPromise = Promise.allSettled(activeFeedList.map(f => fetchFeed(f)));
     const aiHotData = await aiHotPromise;
+    // 等 RSS 全部完成（无论 AI HOT 是否成功，都合并两路数据）
     const results = await rssPromise;
-    if (activeTab === id) return;
+    if (activeTab === id) return; // 用户已切过来，交给 switchTab
     if (tab.layout === 'daily' && aiHotData?.sections) {
       cache[id] = { items: [], feedErrors: [], aiHotData, ts: Date.now() };
       const todayKey = new Date().toISOString().slice(0, 10);
@@ -2040,75 +1983,21 @@ function prefetchTab(id) {
 }
 
 // ── AI Builder tab: fetch from Follow Builders feeds ──────────────────────
-const BUILDERS_FEED_X       = 'https://cdn.jsdelivr.net/gh/zarazhangrui/follow-builders@main/feed-x.json';
-const BUILDERS_FEED_PODCAST = 'https://cdn.jsdelivr.net/gh/zarazhangrui/follow-builders@main/feed-podcasts.json';
-const AV_COLORS_B = ['#d01922','#7c3aed','#0891b2','#16a34a','#ea580c','#1677ff','#c026d3','#0f766e'];
-function builderAvColor(name = '') { return AV_COLORS_B[name.charCodeAt(0) % AV_COLORS_B.length]; }
+const BUILDERS_FEED_X       = 'https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json';
+const BUILDERS_FEED_PODCAST = 'https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-podcasts.json';
+const AV_COLORS = ['#d01922','#7c3aed','#0891b2','#16a34a','#ea580c','#1677ff','#c026d3','#0f766e'];
+function builderAvColor(name = '') { return AV_COLORS[name.charCodeAt(0) % AV_COLORS.length]; }
 function fmtBigNum(n) { if (!n) return '0'; return n >= 1000 ? (n/1000).toFixed(1)+'k' : String(n); }
 function fmtPodDate(iso) {
   if (!iso) return '';
   try { return new Date(iso).toLocaleDateString('zh-CN', { month:'long', day:'numeric' }); } catch { return ''; }
 }
 
-async function translateBuilders(xData, podData) {
-  const CHUNK = 4;
-  async function xlat(text) {
-    if (!text || !isEnglish(text)) return '';
-    const q = text.slice(0, 450);
-    // 主：Google Translate 非官方接口（无需 key，无配额限制）
-    try {
-      const r = await fetch(
-        `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q=${encodeURIComponent(q)}`,
-        { signal: timeoutSignal(6000) }
-      );
-      if (r.ok) {
-        const d = await r.json();
-        const res = (d?.[0] || []).map(s => s?.[0] || '').join('');
-        if (res && res !== text) return res;
-      }
-    } catch {}
-    // 备：MyMemory（国内可用，但有每日配额）
-    try {
-      const r = await fetch(
-        `https://api.mymemory.translated.net/get?q=${encodeURIComponent(q)}&langpair=en|zh-CN`,
-        { signal: timeoutSignal(5000) }
-      );
-      if (r.ok) {
-        const d = await r.json();
-        const res = d?.responseData?.translatedText || '';
-        if (res && res !== text && !res.includes('MYMEMORY WARNING')) return res;
-      }
-    } catch {}
-    return '';
-  }
-
-  const builders = ((xData && xData.x) || []).filter(b => b.tweets && b.tweets.length);
-  const tweetTargets = [];
-  builders.forEach(b => b.tweets.forEach(t => { if (!t._translated) tweetTargets.push(t); }));
-
-  for (let i = 0; i < tweetTargets.length; i += CHUNK) {
-    await Promise.all(tweetTargets.slice(i, i + CHUNK).map(async t => {
-      const zh = await xlat(t.text);
-      if (zh) { t.textOriginal = t.text; t.text = zh; t._translated = true; }
-    }));
-    if (activeTab === 'builders') renderBuilders(xData, podData);
-  }
-
-  // 播客标题翻译
-  const podcasts = (podData && podData.podcasts) || [];
-  await Promise.all(podcasts.map(async p => {
-    if (!p._titleTranslated) {
-      const zh = await xlat(p.title || '');
-      if (zh) { p.titleOriginal = p.title; p.title = zh; p._titleTranslated = true; }
-    }
-  }));
-  if (activeTab === 'builders') renderBuilders(xData, podData);
-}
-
 function renderBuilders(xData, podData) {
   const builders = ((xData && xData.x) || []).filter(b => b.tweets && b.tweets.length);
   const podcasts = (podData && podData.podcasts) || [];
   const main = document.getElementById('main');
+  const now = new Date().toLocaleDateString('zh-CN', { month:'long', day:'numeric' });
 
   const builderHtml = builders.map(b => {
     const bio = (b.bio || '').split('\n')[0].trim().substring(0, 60);
@@ -2181,7 +2070,6 @@ function renderBuilders(xData, podData) {
 
 async function switchTab(id) {
   activeTab = id;
-  markTabSeen(id); // 标记已读，清除新条数徽标
   renderNav();
   setArchivePanel(id === 'daily');
   showLoading();
@@ -2194,7 +2082,7 @@ async function switchTab(id) {
   // ── Builders tab: 直接拉取 Follow Builders 数据 ──
   if (tab.layout === 'builders') {
     const cached = cache['builders'];
-    if (cached && cached.xData && Date.now() - cached.ts < REFRESH_INTERVAL) {
+    if (cached && Date.now() - cached.ts < REFRESH_INTERVAL) {
       renderBuilders(cached.xData, cached.podData);
       return;
     }
@@ -2203,10 +2091,7 @@ async function switchTab(id) {
       fetch(BUILDERS_FEED_PODCAST).then(r => r.ok ? r.json() : null).catch(() => null)
     ]);
     cache['builders'] = { xData, podData, ts: Date.now() };
-    if (activeTab === 'builders') {
-      renderBuilders(xData, podData);
-      translateBuilders(xData, podData); // 非阻塞，后台逐批翻译
-    }
+    if (activeTab === 'builders') renderBuilders(xData, podData);
     return;
   }
 
@@ -2229,25 +2114,19 @@ async function switchTab(id) {
     const staticData = await fetchStaticData(id);
     if (staticData && activeTab === id) {
       const items = staticData.items;
-      // Phase 1：先渲染前10条，让用户立刻看到内容
-      renderTab(tab, items.slice(0, 10), []);
+      cache[cacheKey] = { items, feedErrors: [], aiHotData: null, ts: Date.now() };
+      saveFeedCache(cacheKey, cache[cacheKey]);
+      counts[id] = items.length;
+      renderNav();
+      renderTab(tab, items, []);
       if (id === 'featured') _featuredPaintResolve?.();
-      // Phase 2：600ms 后渲染全量并写入缓存
-      setTimeout(() => {
-        if (activeTab !== id) return;
-        cache[cacheKey] = { items, feedErrors: [], aiHotData: null, ts: Date.now() };
-        saveFeedCache(cacheKey, cache[cacheKey]);
-        counts[id] = items.length;
-        renderNav();
-        renderTab(tab, items, []);
-        if (tab.translate) {
-          translateItems(items).then(() => {
-            if (activeTab === id) renderTab(tab, items, []);
-            cache[cacheKey].ts = Date.now();
-            saveFeedCache(cacheKey, cache[cacheKey]);
-          });
-        }
-      }, 600);
+      if (tab.translate) {
+        translateItems(items).then(() => {
+          if (activeTab === id) renderTab(tab, items, []);
+          cache[cacheKey].ts = Date.now();
+          saveFeedCache(cacheKey, cache[cacheKey]);
+        });
+      }
       return; // 静态数据命中，跳过 CORS 代理
     }
   }
