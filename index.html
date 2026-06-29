@@ -2148,9 +2148,22 @@ async function switchTab(id) {
       renderBuilders(cached.xData, cached.podData);
       return;
     }
+    async function fetchJson(url) {
+      // 先直连，失败则走 allorigins 代理（应对 raw.githubusercontent.com 被墙）
+      try {
+        const r = await fetch(url, { signal: timeoutSignal(5000) });
+        if (r.ok) return await r.json();
+      } catch {}
+      try {
+        const proxied = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+        const r = await fetch(proxied, { signal: timeoutSignal(8000) });
+        if (r.ok) { const d = await r.json(); return JSON.parse(d.contents); }
+      } catch {}
+      return null;
+    }
     const [xData, podData] = await Promise.all([
-      fetch(BUILDERS_FEED_X).then(r => r.ok ? r.json() : null).catch(() => null),
-      fetch(BUILDERS_FEED_PODCAST).then(r => r.ok ? r.json() : null).catch(() => null)
+      fetchJson(BUILDERS_FEED_X),
+      fetchJson(BUILDERS_FEED_PODCAST)
     ]);
     cache['builders'] = { xData, podData, ts: Date.now() };
     if (activeTab === 'builders') renderBuilders(xData, podData);
