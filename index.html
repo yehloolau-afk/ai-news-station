@@ -878,6 +878,7 @@
         overflow: visible;
       }
       .sidebar { display: none !important; }
+      .builders-wrap { grid-template-columns: 1fr; }
 
       /* 主内容区全宽，底部留底栏空间 */
       .main {
@@ -1009,7 +1010,8 @@
     }
 
     /* ── AI Builder tab ── */
-    .builders-wrap { display: flex; flex-direction: column; gap: 0; }
+    .builders-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-items: start; }
+    .builders-section-label-row { grid-column: 1 / -1; }
     .builders-section-label {
       font-size: 11px; font-weight: 700; text-transform: uppercase;
       letter-spacing: 0.08em; color: var(--muted);
@@ -1207,6 +1209,36 @@ function timeoutSignal(ms) {
 function isEnglish(text) {
   if (!text || text.length < 8) return false;
   return (text.match(/[a-zA-Z]/g) || []).length / text.length > 0.5;
+}
+
+async function xlatText(text) {
+  try {
+    const r = await fetch(
+      `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q=${encodeURIComponent(text)}`,
+      { signal: timeoutSignal(5000) }
+    );
+    if (r.ok) {
+      const d = await r.json();
+      return d?.[0]?.map(p => p?.[0]).filter(Boolean).join('') || '';
+    }
+  } catch {}
+  return '';
+}
+
+async function translateBuilderTweets(builders) {
+  const CHUNK = 4;
+  const targets = builders.map(b => {
+    const top = [...(b.tweets||[])].sort((a,z) => (z.likes||0)-(a.likes||0))[0];
+    return top && isEnglish(top.text) && !top._translated ? top : null;
+  }).filter(Boolean);
+
+  for (let i = 0; i < targets.length; i += CHUNK) {
+    await Promise.all(targets.slice(i, i + CHUNK).map(async t => {
+      const zh = await xlatText(t.text);
+      if (zh) { t._translated = zh; }
+    }));
+    if (i + CHUNK < targets.length) await new Promise(r => setTimeout(r, 200));
+  }
 }
 
 async function translateItems(items) {
@@ -1998,16 +2030,10 @@ function renderBuilders(xData, podData) {
   const now = new Date().toLocaleDateString('zh-CN', { month:'long', day:'numeric' });
 
   const builderHtml = builders.map(b => {
-    const bio = (b.bio || '').split('\n')[0].trim().substring(0, 60);
-    const tweets = b.tweets.map(t => `
-      <div class="builder-tweet">
-        <div class="builder-tweet-text">${esc(t.text)}</div>
-        <div class="builder-tweet-foot">
-          <span class="builder-tweet-stat">♥ ${fmtBigNum(t.likes)}</span>
-          <span class="builder-tweet-stat">↺ ${fmtBigNum(t.retweets)}</span>
-          ${t.url ? `<a href="${esc(t.url)}" target="_blank" class="builder-tweet-link">原文 →</a>` : ''}
-        </div>
-      </div>`).join('');
+    const bio = (b.bio || '').split('\n')[0].trim().substring(0, 50);
+    const top = [...b.tweets].sort((a, z) => (z.likes||0) - (a.likes||0))[0];
+    if (!top) return '';
+    const translated = top._translated || '';
     return `
       <div class="builder-card">
         <div class="builder-head">
@@ -2017,7 +2043,12 @@ function renderBuilders(xData, podData) {
             <div class="builder-handle">@${esc(b.handle)}${bio ? ' · '+esc(bio) : ''}</div>
           </div>
         </div>
-        ${tweets}
+        <div class="builder-tweet-text" style="margin-bottom:10px">${esc(translated || top.text)}</div>
+        <div class="builder-tweet-foot">
+          <span class="builder-tweet-stat">♥ ${fmtBigNum(top.likes)}</span>
+          <span class="builder-tweet-stat">↺ ${fmtBigNum(top.retweets)}</span>
+          ${top.url ? `<a href="${esc(top.url)}" target="_blank" class="builder-tweet-link">原文 →</a>` : ''}
+        </div>
       </div>`;
   }).join('');
 
@@ -2057,10 +2088,10 @@ function renderBuilders(xData, podData) {
     </div>
     <div class="builders-wrap">
       ${builders.length > 0 ? `
-        <div class="builders-section-label">X · 建造者动态</div>
+        <div class="builders-section-label builders-section-label-row">X · 建造者动态</div>
         ${builderHtml}` : ''}
       ${podcasts.length > 0 ? `
-        <div class="builders-section-label">播客精华</div>
+        <div class="builders-section-label builders-section-label-row" style="grid-column:1/-1">播客精华</div>
         ${podcastHtml}` : ''}
       ${empty}
     </div>`;
@@ -2090,6 +2121,12 @@ async function switchTab(id) {
     ]);
     cache['builders'] = { xData, podData, ts: Date.now() };
     if (activeTab === 'builders') renderBuilders(xData, podData);
+    // 翻译推文后重渲染
+    const builders = ((xData && xData.x) || []).filter(b => b.tweets?.length);
+    if (builders.length) {
+      await translateBuilderTweets(builders);
+      if (activeTab === 'builders') renderBuilders(xData, podData);
+    }
     return;
   }
 
