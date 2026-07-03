@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI日报 2026-07-02：今日AI行业大事汇总 | 飞翔的AI资讯站</title>
+<meta name="description" content="2026-07-02 AI日报（22 条）：美团 LongCat-2.0 正式发布：国产算力集群训练的万亿参数大模型；NVIDIA 发布 Nemotron-Labs-TwoTower 开放权重扩散语言模型；xAI 发布 Voice Agent Builder 测试版">
+<link rel="canonical" href="https://yehloolau-afk.github.io/ai-news-station/daily/2026-07-02.html">
+<meta property="og:title" content="AI日报 2026-07-02：今日AI行业大事汇总 | 飞翔的AI资讯站">
+<meta property="og:description" content="2026-07-02 AI日报（22 条）：美团 LongCat-2.0 正式发布：国产算力集群训练的万亿参数大模型；NVIDIA 发布 Nemotron-Labs-TwoTower 开放权重扩散语言模型；xAI 发布 Voice Agent Builder 测试版">
+<meta property="og:type" content="article">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI 日报 2026-07-02","datePublished":"2026-07-02","inLanguage":"zh-CN","description":"2026-07-02 AI日报（22 条）：美团 LongCat-2.0 正式发布：国产算力集群训练的万亿参数大模型；NVIDIA 发布 Nemotron-Labs-TwoTower 开放权重扩散语言模型；xAI 发布 Voice Agent Builder 测试版","author":{"@type":"Organization","name":"飞翔的AI资讯站","url":"https://yehloolau-afk.github.io/ai-news-station/"},"mainEntityOfPage":"https://yehloolau-afk.github.io/ai-news-station/daily/2026-07-02.html"}</script>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;
+    background:#f4f6f8; color:#111827; line-height:1.7; }
+  .wrap { max-width:760px; margin:0 auto; padding:28px 18px 60px; }
+  .top { font-size:13px; margin-bottom:18px; }
+  .top a { color:#6b7280; text-decoration:none; }
+  .top a:hover { color:#d92b2b; }
+  h1 { font-size:24px; margin-bottom:6px; }
+  .sub { font-size:13px; color:#6b7280; margin-bottom:24px; }
+  h2 { font-size:16px; margin:28px 0 12px; padding-left:10px; border-left:3px solid #d92b2b; }
+  article { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:14px 16px; margin-bottom:10px; }
+  article h3 { font-size:15px; margin-bottom:6px; }
+  article h3 a { color:#111827; text-decoration:none; }
+  article h3 a:hover { color:#d92b2b; }
+  article p { font-size:13.5px; color:#4b5563; }
+  .src { font-size:12px; color:#9ca3af; margin-top:6px; }
+  .nav { display:flex; justify-content:space-between; margin-top:32px; font-size:13px; }
+  .nav a { color:#d92b2b; text-decoration:none; }
+  ul.archive { list-style:none; }
+  ul.archive li { background:#fff; border:1px solid #e5e7eb; border-radius:10px; margin-bottom:8px; }
+  ul.archive a { display:block; padding:12px 16px; color:#111827; text-decoration:none; font-size:14px; }
+  ul.archive a:hover { color:#d92b2b; }
+  ul.archive .count { color:#9ca3af; font-size:12px; margin-left:8px; }
+  footer { margin-top:40px; font-size:12px; color:#9ca3af; text-align:center; }
+  footer a { color:#6b7280; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="top"><a href="https://yehloolau-afk.github.io/ai-news-station/">← 飞翔的AI资讯站</a> · <a href="https://yehloolau-afk.github.io/ai-news-station/daily/">日报存档</a></div>
+<h1>AI 日报 · 2026-07-02</h1>
+<div class="sub">共 22 条 · 覆盖产品发布、行业动态、论文研究等 · 每日自动汇总</div><h2>模型发布/更新</h2><article>
+<h3><a href="https://mp.weixin.qq.com/s/9XFcx3fmFcmbry5bHMJsow" rel="noopener" target="_blank">美团 LongCat-2.0 正式发布：国产算力集群训练的万亿参数大模型</a></h3>
+<p>美团于6月30日发布新一代万亿参数大模型LongCat-2.0并开源。总参数1.6T，平均激活约48B，原生支持1M超长上下文，在五万卡国产算力集群上完成全流程训练与推理。采用LSA稀疏注意力、零计算专家、ScMoE及MOPD多专家融合（Agent/Reasoning/Interaction三组专家）架构。评测中SWE-bench Pro获59.5，SWE-bench Multilingual获77.3。预览版已通过OpenRouter和longcat.ai开放，月调用量跻身OpenRouter全球前三。</p>
+<div class="src">来源：公众号：龙猫LongCat（美团）</div>
+</article><article>
+<h3><a href="https://www.marktechpost.com/2026/07/01/nvidia-releases-nemotron-labs-twotower" rel="noopener" target="_blank">NVIDIA 发布 Nemotron-Labs-TwoTower 开放权重扩散语言模型</a></h3>
+<p>NVIDIA 发布 Nemotron-Labs-TwoTower，基于冻结的自回归骨干 Nemotron-3-Nano-30B-A3B 的扩散语言模型。采用双塔架构：上下文塔冻结，降噪器塔训练，通过层对齐交叉注意力和状态播种协作。在 2×H100 上 BF16 评估，保留 98.7% 的 AR 基线质量，生成吞吐量提升 2.42 倍（γ=0.8，块大小 S=16）。降噪器在约 2.1T token 上训练，骨干使用 25T token 预训练。总参数约 60B，每 token 活跃参数约 3B/塔。支持扩散、模拟 AR 和 AR 三种解码模式。</p>
+<div class="src">来源：MarkTechPost（RSS）</div>
+</article><h2>产品发布/更新</h2><article>
+<h3><a href="https://x.ai/news/grok-voice-agent-builder" rel="noopener" target="_blank">xAI 发布 Voice Agent Builder 测试版</a></h3>
+<p>xAI 推出 Voice Agent Builder 测试版，这是一个基于 Grok Voice 的无代码平台，可在两分钟内创建生产级语音智能体。它集成电话、知识检索、工具、MCP、Guardrails 及可观测性，支持连接现有 SIP 号码、API 和 WebSocket，采用语音到语音路径。在 τ-voice Bench 上，Grok Voice Think Fast 1.0 得分 67.3%，领先 Gemini 3.1 Flash Live（43.8%）和 GPT Realtime 1.5（35.3%）。定价为每分钟音频 0.05 美元、电话费 0.01 美元，提供 80+ 种语音及声音克隆，每个账户附赠一个免费电话号码。</p>
+<div class="src">来源：xAI：News（网页）</div>
+</article><article>
+<h3><a href="https://developers.googleblog.com/ml-development-in-vs-code-with-google-cloud-power-workbench-extension-now-available" rel="noopener" target="_blank">Google Cloud Workbench Notebooks 扩展发布：在 VS Code 中连接云端 Jupyter 环境</a></h3>
+<p>Google Cloud Workbench Notebooks 扩展正式上线，开发者可在 VS Code 中直接连接可扩展的云端 Jupyter 环境，无需切换上下文即可利用高性能 Google Cloud 基础设施完成机器学习全流程。该扩展已完全开源，可在 GitHub 和 VS Code Marketplace 获取。</p>
+<div class="src">来源：Google Developers Blog（RSS）</div>
+</article><article>
+<h3><a href="https://x.com/Zai_org/status/2072349453361557898" rel="noopener" target="_blank">智谱推出GLM-5.2官方开发环境ZCode</a></h3>
+<p>推出 ZCode，GLM-5.2 的官方开发环境 - GLM Coding Plan 订阅用户：现可在 ZCode 获得 1.5 倍使用配额 - 支持 BYOK：可与您现有的订阅和 API 配合使用 - 适用于 macOS、Windows 和 Linux 立即下载：http://zcode.z.ai/en</p>
+<div class="src">来源：X：智谱 Z.ai (@Zai_org)</div>
+</article><article>
+<h3><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.198" rel="noopener" target="_blank">Claude Code v2.1.198 发布</a></h3>
+<p>Claude Code v2.1.198 更新。Claude in Chrome 现已全面可用。为 claude agents 新增后台智能体通知（agent_needs_input / agent_completed）。新增 /dataviz 技能，提供图表与仪表盘设计指导及配色验证器。Gateway 增加 AWS 上的 Claude Platform 作为上游提供商。后台智能体在 worktree 中完成代码后自动提交、推送并创建草稿 PR。内置 Explore 智能体现继承主会话模型（上限 opus）。修复网络短暂断开导致响应中断、后台任务卡在“Running”状态、智能体团队队友因 API 错误失败等问题。</p>
+<div class="src">来源：Claude Code：GitHub Releases（RSS）</div>
+</article><article>
+<h3><a href="https://blog.cloudflare.com/content-independence-day-ai-options" rel="noopener" target="_blank">Cloudflare 推出全新AI流量管理选项：区分搜索、智能体与训练爬虫，保护广告页面</a></h3>
+<p>Cloudflare 为所有网站所有者提供更精细的AI流量管控选项，取代一刀切的屏蔽方式。用户可轻松区分并管理搜索爬虫、AI智能体爬虫和训练爬虫，同时新增保护广告变现页面的能力。</p>
+<div class="src">来源：Cloudflare Blog</div>
+</article><article>
+<h3><a href="https://developers.googleblog.com/build-agentic-full-stack-apps-with-genkit" rel="noopener" target="_blank">用 Genkit 构建智能体全栈应用</a></h3>
+<p>开源框架 Genkit 推出 Agents API，将消息历史、工具循环和流式传输封装为单一接口，简化对话 AI 开发。该 API 支持服务器或客户端管理的状态持久化，可实现历史分支、长时间运行的分离任务及多智能体协调等高级工作流，并通过统一线协议连接前后端。目前以 TypeScript 和 Go 预览版发布，集成 Genkit Developer UI，开发者无需编写客户端代码即可测试、调试和检查智能体快照。</p>
+<div class="src">来源：Google Developers Blog（RSS）</div>
+</article><article>
+<h3><a href="https://blog.cloudflare.com/monetization-gateway" rel="noopener" target="_blank">Cloudflare 推出 Monetization Gateway：通过 x402 协议为任何资源收费</a></h3>
+<p>Cloudflare 开放 Monetization Gateway 候补名单，允许对 Cloudflare 背后的任何网页、数据集、API 或 MCP 工具收费。费用通过 x402 开放协议以稳定币结算，用户无需自建支付栈。</p>
+<div class="src">来源：Cloudflare Blog</div>
+</article><article>
+<h3><a href="https://developers.googleblog.com/why-we-built-adk-20" rel="noopener" target="_blank">我们为何构建ADK 2.0</a></h3>
+<p>Google官方博客阐述了构建ADK 2.0的动机——包括核心特性与升级理由，并解释了开发者应考虑迁移的原因。该文章发布于ADK 2.0正式上线次日。</p>
+<div class="src">来源：Google Developers Blog（RSS）</div>
+</article><h2>行业动态</h2><article>
+<h3><a href="https://mp.weixin.qq.com/s/yLb4T2UC16ebKHApdBbgWw" rel="noopener" target="_blank">Anthropic在Claude Code中植入隐写术代码识别中国用户</a></h3>
+<p>Anthropic在Claude Code中植入隐写术：读取本地时区（Asia/Shanghai或Asia/Urumqi）和ANTHROPIC_BASE_URL环境变量，与一份经base64+XOR（密钥91）加密的147个域名列表（含美团、字节跳动、月之暗面等）比对，识别中国用户。识别后，在请求发送前将系统提示词中日期字符串的单引号（U+0027）替换为其他Unicode字符，连字符改为斜杠，作为2-3比特分类标记传回服务器。该隐蔽行为被社区逆向发现后引发争议，被认为破坏用户信任。</p>
+<div class="src">来源：公众号：数字生命卡兹克</div>
+</article><article>
+<h3><a href="https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash" rel="noopener" target="_blank">Meta效仿SpaceX，将过剩AI算力变现</a></h3>
+<p>据Bloomberg报道，Meta正计划推出云基础设施业务Meta Compute，对外出售AI计算能力和模型访问权限，直接与AWS、Google Cloud及Azure竞争。Meta已承诺未来几年投入1829亿美元建设AI基础设施，其中俄亥俄州数据中心（规模如曼哈顿）将于今年上线。新业务由基础设施主管Santosh Janardhan、Meta超级智能实验室负责人Daniel Gross和总裁Dina Powell McCormick领导。Meta可能效仿CoreWeave出售裸计算能力，并像AWS一样托管AI模型（包括近期发布的闭源模型Muse Spark）。扎克伯格此前已表示云业务“definitely on the tabl…</p>
+<div class="src">来源：TechCrunch：AI（RSS）</div>
+</article><article>
+<h3><a href="https://the-decoder.com/openai-paper-reveals-three-gpt-5-6-pro-models-breaking-with-single-top-tier-strategy" rel="noopener" target="_blank">OpenAI论文揭示GPT-5.6三个Pro变体，打破单一顶级策略</a></h3>
+<p>OpenAI论文首次列出GPT-5.6的三个Pro变体：Luna Pro、Terra Pro和Sol Pro，取代以往单一Pro模式。在基因组学基准中，Sol Pro通过率31.5%居60个测试模型之首，领先标准Sol（28.7%）和Claude Opus 4.8（16.0%）。Pro相比标准版本提升逐级递减：Luna Pro提升7.1个百分点（16.5%→23.6%），Terra Pro提升5.2（23.3%→28.5%），Sol Pro仅提升2.8（28.7%→31.5%）。Terra Pro（28.5%）几乎与标准Sol（28.7%）持平。论文未披露Pro运行的token用量，也不清楚该分层是否会在ChatGPT中实际推出。</p>
+<div class="src">来源：The Decoder：AI News（RSS）</div>
+</article><article>
+<h3><a href="https://www.ithome.com/0/971/071.htm" rel="noopener" target="_blank">亚马逊 AWS 砸 10 亿美元，派遣工程师进驻客户公司</a></h3>
+<p>亚马逊 AWS 宣布设立新部门，组建前置驻场工程师团队，先期投入 10 亿美元（约 67.97 亿元人民币）。团队分批派驻客户企业，每批 5-6 组工程师，驻场周期 45 天，协助客户落地人工智能软件与智能体应用。该模式在 Palantir、Salesforce、Anthropic、谷歌云等企业已有先例，领英数据显示 2023 至 2025 年间同类岗位需求增长 42 倍。新部门员工规模将达数千人，首批客户包括 NBA 与理光。</p>
+<div class="src">来源：IT之家（RSS）</div>
+</article><article>
+<h3><a href="https://runwayml.com/news/runway-announces-creative-partnership-with-bertelsmann" rel="noopener" target="_blank">Runway 宣布与 Bertelsmann 达成创意合作</a></h3>
+<p>Runway 宣布与 Bertelsmann 建立创意合作伙伴关系。双方将在创意内容领域展开合作，具体合作细节尚未披露。</p>
+<div class="src">来源：Runway：News（网页）</div>
+</article><article>
+<h3><a href="https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026" rel="noopener" target="_blank">Google 2026年6月AI更新汇总</a></h3>
+<p>Google在6月发布多项AI更新：推出Gemini 3.5 Live Translate实时语音翻译；</p>
+<div class="src">来源：Google Blog：AI（RSS）</div>
+</article><article>
+<h3><a href="https://blog.google/products-and-platforms/products/education/nyc-ai-summit" rel="noopener" target="_blank">纽约市教育界和行业领袖齐聚Google AI教育峰会 共议AI课堂未来</a></h3>
+<p>Google与New York Jobs CEO Council、Urban Assembly联合举办AI教育峰会，150名教育及行业领袖参与。通过aiEDU的“Vibe Coding”和Google的“Meet LEA”实践环节，与会者探索了Google AI mode和NotebookLM如何激发好奇心、提升AI素养。行业领袖指出，AI的真正价值在于赋能问题解决，而适应性、协作、批判性判断等“人类技能”愈发关键。与会者一致同意，需坚守隐私和公平访问原则。最终共识：技术创新必须与学校合作，而非绕开学校。</p>
+<div class="src">来源：Google Blog：AI（RSS）</div>
+</article><h2>技巧与观点</h2><article>
+<h3><a href="https://x.com/shao__meng/status/2072126769986220157" rel="noopener" target="_blank">mattpocockuk 的 /writing-great-skills：编写可预测 AI Skill 的指南</a></h3>
+<p>mattpocockuk 的 /writing-great-skills 成为其最常调用的 Skill，指导如何编写稳定可预测的 AI Skill。核心：以过程可预测为目标；区分 model-invoked（自动触发）与 user-invoked（用户调用），description 应作触发器；采用三层信息结构（主步骤、参考、外部文件）实现渐进式披露；每步骤需明确完成标准；拆分 Skill 是为了控制模型注意力；利用 leading word 压缩行为要求。同时诊断五种失败模式：Premature completion、Duplication、Sediment、Sprawl、No-op，并提供 No-op 测试作为判断句子是否有效的…</p>
+<div class="src">来源：X：邵猛 (@shao__meng)</div>
+</article><article>
+<h3><a href="https://engineering.fb.com/2026/07/01/data-infrastructure/metas-ai-storage-blueprint-at-scale" rel="noopener" target="_blank">Meta 大规模 AI 存储蓝图</a></h3>
+<p>Meta 运营数百 EB 级存储集群，基于 Tectonic 分层存储层构建 BLOB 存储架构，以应对两大挑战：最大化 GPU 利用率与研究迭代速度。传统 BLOB 架构的多层元数据查询可导致数百毫秒延迟，使 GPU 因 I/O 等待停顿。新架构将训练栈逐步迁移到 BLOB 存储接口上，利用闪存提供可预测的低 pMax 延迟，避免单 GPU 慢速拖慢整批任务。同时，统一的数据湖访问支持地理分布 GPU 间的数据高速注入与跨区移动，提升研究效率。</p>
+<div class="src">来源：Meta Engineering Blog（RSS）</div>
+</article><article>
+<h3><a href="https://www.tomtunguz.com/ai-execution-routing" rel="noopener" target="_blank">构建AI智能体应优先设计路由</a></h3>
+<p>构建AI智能体时，应优先设计路由（router）而非选择模型。路由决定每个请求由哪层模型处理。正确路由可使70-80%流量运行在免费本地模型或异步推理上，将AI开销降低90%+。Brian Armstrong指出Coinbase通过更好的默认设置、路由和缓存，在token使用量增长的同时将AI支出减半。路由分三层：技能分类器、路由器、模型选择器。本地计算近乎零成本，异步批量推理比实时推理便宜两个数量级。大多数工作无需秒级返回。同步预测器标记复杂任务，夜间批量评估器更新路由权重。技能蒸馏后，非编码类任务中70-80%智能体流量可由本地模型处理。</p>
+<div class="src">来源：Tomer Tunguz 博客（VC 分析）</div>
+</article><article>
+<h3><a href="https://www.dwarkesh.com/p/blog-prize-winners" rel="noopener" target="_blank">关于AI重大问题的获奖征文</a></h3>
+<p>Dwarkesh Patel举办的AI征文比赛评选出三位获奖者。第一名Jassi Pannu主张OpenAI基金会应投入数十亿美元终结空气传播疾病，利用AI加速自主生物学发现，可带来超1万亿美元年GDP增长并消除灾难性流行病风险。第二名Ege Erdil建议AI供应链外的国家通过强产权、低资本税和开放监管政策抓住增长机会。第三名Michael Li类比香港地铁商业模式，提出AI实验室可通过收购互补性资产盈利。</p>
+<div class="src">来源：Dwarkesh Patel：Podcast &amp; Blog（RSS）</div>
+</article><article>
+<h3><a href="https://blog.cloudflare.com/agentic-internet-bot-report" rel="noopener" target="_blank">内容独立日一周年：构建智能体互联网的商业模型</a></h3>
+<p>内容独立日宣布一年后，一个付费内容的动态市场已正式形成。自主AI智能体的兴起正在颠覆传统搜索推荐模式，构建可持续的网络经济需要一套全新基础设施来支撑。</p>
+<div class="src">来源：Cloudflare Blog</div>
+</article><div class="nav">
+<span><a href="2026-07-01.html">← 2026-07-01</a></span>
+<span><a href="2026-07-03.html">2026-07-03 →</a></span>
+</div>
+<footer>由 <a href="https://yehloolau-afk.github.io/ai-news-station/">飞翔的AI资讯站</a> 自动生成 · 聚合国内外主流 AI 媒体 · 内容版权归原出处所有</footer>
+</div>
+</body>
+</html>
