@@ -1,10 +1,11 @@
 // 拉取 Umami 与百度统计数据，生成 data/stats.json 供 admin.html 渲染
-// 密钥通过环境变量传入（GitHub Secrets）：UMAMI_API_KEY、BAIDU_API_KEY、BAIDU_SECRET_KEY、BAIDU_REFRESH_TOKEN
+// 密钥通过环境变量传入（GitHub Secrets）：UMAMI_SHARE_ID、BAIDU_API_KEY、BAIDU_SECRET_KEY、BAIDU_REFRESH_TOKEN
+// Umami 走分享链接的只读接口（免费版没有 API key）：先用 share id 换临时 token，再带
+// x-umami-share-token + x-umami-share-context 两个头访问数据接口
 
 import { writeFileSync, mkdirSync } from 'node:fs';
 
-const WEBSITE_ID = 'd3344cc5-a125-43ce-a1e1-88d5e94537bf';
-const UMAMI_API = 'https://api.umami.is/v1';
+const UMAMI_GATEWAY = 'https://gateway-us.umami.is/api';
 const SITE_DOMAIN = 'yehloolau-afk.github.io';
 const DAYS = 30;
 
@@ -26,11 +27,13 @@ async function getJson(url, headers = {}) {
 }
 
 async function fetchUmami() {
-  const key = process.env.UMAMI_API_KEY;
-  if (!key) return { error: '未配置 UMAMI_API_KEY' };
-  const headers = { 'x-umami-api-key': key };
+  const shareId = process.env.UMAMI_SHARE_ID;
+  if (!shareId) return { error: '未配置 UMAMI_SHARE_ID' };
+  const share = await getJson(`${UMAMI_GATEWAY}/share/${shareId}`);
+  if (!share.token) throw new Error('Umami 分享 token 获取失败，检查分享链接是否被删除');
+  const headers = { 'x-umami-share-token': share.token, 'x-umami-share-context': '1' };
   const api = (path, params) =>
-    getJson(`${UMAMI_API}/websites/${WEBSITE_ID}${path}?${new URLSearchParams(params)}`, headers);
+    getJson(`${UMAMI_GATEWAY}/websites/${share.websiteId}${path}?${new URLSearchParams(params)}`, headers);
 
   const now = Date.now();
   const rangeStart = dayStartMs(-(DAYS - 1));
