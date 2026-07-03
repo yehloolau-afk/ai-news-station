@@ -105,12 +105,25 @@
 
     document.getElementById('gateForm').addEventListener('submit', async (e) => {
       e.preventDefault();
-      const v = document.getElementById('pass').value;
-      if (await sha256(v) === PASS_HASH) {
-        sessionStorage.setItem('admin_ok', '1');
-        unlock();
-      } else {
-        document.getElementById('gateMsg').textContent = '口令不对';
+      const msg = document.getElementById('gateMsg');
+      try {
+        // 全角转半角并去掉首尾空格，避免输入法带来的差异
+        const v = document.getElementById('pass').value
+          .replace(/[！-～]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xFEE0))
+          .trim();
+        if (!window.crypto?.subtle) {
+          msg.textContent = '浏览器不支持加密接口，请确认用 https:// 地址打开';
+          return;
+        }
+        msg.textContent = '验证中…';
+        if (await sha256(v) === PASS_HASH) {
+          sessionStorage.setItem('admin_ok', '1');
+          unlock();
+        } else {
+          msg.textContent = '口令不对，请检查输入';
+        }
+      } catch (err) {
+        msg.textContent = '出错了：' + err;
       }
     });
 
