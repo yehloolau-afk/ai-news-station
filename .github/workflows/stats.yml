@@ -1,0 +1,35 @@
+name: 更新访问统计
+
+on:
+  schedule:
+    # UTC 01:30 / 13:30 → 北京时间 09:30 / 21:30，每天两次
+    - cron: '30 1,13 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 拉取统计数据
+        run: node scripts/fetch-stats.mjs
+        env:
+          UMAMI_API_KEY: ${{ secrets.UMAMI_API_KEY }}
+          BAIDU_API_KEY: ${{ secrets.BAIDU_API_KEY }}
+          BAIDU_SECRET_KEY: ${{ secrets.BAIDU_SECRET_KEY }}
+          BAIDU_REFRESH_TOKEN: ${{ secrets.BAIDU_REFRESH_TOKEN }}
+
+      - name: 提交 stats.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/stats.json
+          git diff --cached --quiet || (git commit -m "更新访问统计数据" && git push)

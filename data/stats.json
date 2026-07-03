@@ -1,0 +1,9 @@
+{
+  "generatedAt": "2026-07-03T06:15:35.687Z",
+  "umami": {
+    "error": "未配置 UMAMI_API_KEY"
+  },
+  "baidu": {
+    "error": "未配置百度统计密钥"
+  }
+}
