@@ -4,6 +4,8 @@
 
 **📊 数据看板 →** [admin.html](https://yehloolau-afk.github.io/ai-news-station/admin.html)（站长专用，需口令）
 
+**📰 AI 日报存档 →** [daily/](https://yehloolau-afk.github.io/ai-news-station/daily/)（每日静态页，搜索引擎与 AI 引擎可抓取，Actions 每天三次自动更新）
+
 A 7-channel AI news aggregator built for design teams. Pulls from 20+ Chinese and English sources, auto-translates, and updates every hour via GitHub Actions.
 
 ---
