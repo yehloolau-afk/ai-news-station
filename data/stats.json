@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-07-03T07:01:15.289Z",
+  "generatedAt": "2026-07-03T15:33:28.571Z",
   "umami": {
     "error": null,
     "today": {
-      "visitors": 2,
-      "pageviews": 4
+      "visitors": 4,
+      "pageviews": 24
     },
     "last30d": {
-      "visitors": 2,
-      "pageviews": 4,
-      "visits": 3
+      "visitors": 4,
+      "pageviews": 24,
+      "visits": 9
     },
     "series": [
       {
@@ -154,8 +154,8 @@
       },
       {
         "date": "2026-07-02",
-        "pageviews": 4,
-        "visitors": 2
+        "pageviews": 24,
+        "visitors": 4
       },
       {
         "date": "2026-07-03",
@@ -165,11 +165,20 @@
     ],
     "countries": [
       {
+        "code": "CN",
+        "visitors": 2
+      },
+      {
         "code": "US",
         "visitors": 2
       }
     ],
-    "referrers": []
+    "referrers": [
+      {
+        "domain": "weixin110.qq.com",
+        "visitors": 1
+      }
+    ]
   },
   "baidu": {
     "error": "未配置百度统计密钥"
