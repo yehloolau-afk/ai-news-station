@@ -191,6 +191,14 @@ ${archiveItems}
   },
 }));
 
+// ── 3.5 日期索引：站内日报频道用它发现永久存档 ──
+writeFileSync('data/daily-index.json', JSON.stringify(
+  dates.map((date) => {
+    const data = JSON.parse(readFileSync(`data/daily/${date}.json`, 'utf8'));
+    return { date, count: data.sections.reduce((s, x) => s + (x.items?.length || 0), 0) };
+  })
+) + '\n');
+
 // ── 4. sitemap.xml + robots.txt ──
 const urls = [
   { loc: `${SITE}/`, freq: 'hourly', pri: '1.0' },

@@ -1726,6 +1726,7 @@ let archiveList = null;      // array of { date, headline }
 let archiveLoading = false;  // 防止并发重复触发
 let archiveActiveDate = null;
 const dailyCache = {};       // { 'YYYY-MM-DD': aiHotData }
+const STATIC_DAILY_DATES = new Set(); // 已生成永久静态存档的日期（data/daily-index.json）
 
 function initArchive() {
   if (archiveList) return;
@@ -1739,6 +1740,15 @@ function initArchive() {
   }
   archiveList = dates.map(date => ({ date, headline: '' }));
   renderArchivePanel();
+  // 合并永久存档索引：日报静态页每天累积，可回溯到 90 天以外的任意历史
+  fetch('data/daily-index.json').then(r => r.ok ? r.json() : null).then(idx => {
+    if (!idx?.length) return;
+    idx.forEach(e => STATIC_DAILY_DATES.add(e.date));
+    const known = new Set(archiveList.map(d => d.date));
+    const extra = idx.filter(e => !known.has(e.date)).map(e => ({ date: e.date, headline: '' }));
+    if (extra.length) archiveList = [...archiveList, ...extra].sort((a, b) => b.date.localeCompare(a.date));
+    renderArchivePanel();
+  }).catch(() => {});
 }
 
 function renderArchiveInCol() {
@@ -1860,10 +1870,18 @@ async function loadDailyDate(date) {
   }
   if (body) body.innerHTML = `<div class="loading-state"><div class="spinner"></div><span>加载中...</span></div>`;
   const apiPath = date ? `/daily/${date}` : '/daily';
-  const aiHotData = await fetchAiHot(apiPath);
+  const fetchLocal = () => fetch(`data/daily/${cacheKey}.json`)
+    .then(r => r.ok ? r.json() : null).catch(() => null);
+  const isToday = cacheKey === new Date().toISOString().slice(0, 10);
+  // 今天优先 API（当日内容持续增长）；历史日期优先站内永久存档（秒开、不受 API 只留 10 天限制）
+  const aiHotData = isToday
+    ? (await fetchAiHot(apiPath) || await fetchLocal())
+    : (await fetchLocal() || await fetchAiHot(apiPath));
   if (aiHotData?.sections) {
     dailyCache[cacheKey] = aiHotData;
     if (body) body.innerHTML = renderAiHotDaily(aiHotData);
+  } else if (body) {
+    body.innerHTML = `<div class="empty-state"><div class="empty-icon">📭</div><p>这一天暂无日报数据</p></div>`;
   }
 }
 
@@ -2861,6 +2879,7 @@ function renderAiHotDaily(data) {
         <span>${zhDate} ${WEEKS[now.getDay()]}</span>
         <span class="dnp-tag">DAILY</span>
         <span class="dnp-tag">AI HOT</span>
+        ${STATIC_DAILY_DATES.has(date) ? `<a class="dnp-tag" href="daily/${date}.html" target="_blank" rel="noopener" style="text-decoration:none;cursor:pointer;" title="本期固定网址，秒开、可转发分享">🔗 分享网页版</a>` : ''}
       </div>
     </div>
     ${sectionsHtml||'<div class="empty-state"><div class="empty-icon">📭</div><p>暂无内容</p></div>'}`;
