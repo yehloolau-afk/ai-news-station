@@ -2,6 +2,8 @@
 
 **Live →** [yehloolau-afk.github.io/ai-news-station/](https://yehloolau-afk.github.io/ai-news-station/)
 
+**📊 数据看板 →** [admin.html](https://yehloolau-afk.github.io/ai-news-station/admin.html)（站长专用，需口令）
+
 A 7-channel AI news aggregator built for design teams. Pulls from 20+ Chinese and English sources, auto-translates, and updates every hour via GitHub Actions.
 
 ---
@@ -56,7 +58,7 @@ GitHub Actions (hourly) → fetch RSS/APIs → process + translate → write JSO
 
 ### 数据看板
 
-- 地址：`https://yehloolau-afk.github.io/ai-news-station/admin.html`（不在站内任何导航出现，已设 noindex）
+- 地址：[yehloolau-afk.github.io/ai-news-station/admin.html](https://yehloolau-afk.github.io/ai-news-station/admin.html)（站点侧边栏底部有「📊 站点数据」小入口，页面已设 noindex）
 - 需要输入访问口令（口令不写在公开仓库里；口令的 SHA-256 哈希存在 `admin.html` 的 `PASS_HASH`，仅用于挡路人）
 - 一屏展示：今日/近30天访客与浏览量、30 天趋势图、国内/海外占比、来源渠道、国内来源类型（百度统计，待接入）
 
