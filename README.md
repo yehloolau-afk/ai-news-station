@@ -6,6 +6,8 @@
 
 **📰 AI 日报存档 →** [daily/](https://yehloolau-afk.github.io/ai-news-station/daily/)（每日静态页，搜索引擎与 AI 引擎可抓取，Actions 每天三次自动更新）
 
+**🕐 AI 模型发布时间线 →** [timeline/](https://yehloolau-afk.github.io/ai-news-station/timeline/)（哪家、什么模型、哪天发布、关键规格，2023 至今持续维护）
+
 **📡 RSS 订阅 →** [feed.xml](https://yehloolau-afk.github.io/ai-news-station/feed.xml)
 
 A 7-channel AI news aggregator built for design teams. Pulls from 20+ Chinese and English sources, auto-translates, and updates every hour via GitHub Actions.
@@ -49,7 +51,7 @@ GitHub Actions (hourly) → fetch RSS/APIs → process + translate → write JSO
 | 工作流 | 频率 | 产出 |
 |---|---|---|
 | 更新频道数据 | 每小时 | `data/{featured,all,official,products,design,videos}.json` + `feed.xml`（页面首屏的同源快速数据层） |
-| 生成日报静态页 | 每天 3 次 | `daily/*.html` 永久存档 + `sitemap.xml`（GEO/SEO 抓取层，站内日报频道同源复用） |
+| 生成日报静态页 | 每天 3 次 | `daily/*.html` 永久存档 + `sitemap.xml`（GEO/SEO 抓取层，站内日报频道同源复用）；同时从日报「模型发布」板块抽取时间线候选（`data/model-candidates.json`，人工审核后并入 `data/models.json`）并重建 `timeline/` 静态页 |
 | 更新访问统计 | 每天 2 次 | `data/stats.json`（数据看板） |
 
 ### 加载策略
