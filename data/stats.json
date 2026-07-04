@@ -1,22 +1,17 @@
 {
-  "generatedAt": "2026-07-03T15:33:28.571Z",
+  "generatedAt": "2026-07-04T05:08:14.243Z",
   "umami": {
     "error": null,
     "today": {
-      "visitors": 4,
-      "pageviews": 24
+      "visitors": 3,
+      "pageviews": 18
     },
     "last30d": {
-      "visitors": 4,
-      "pageviews": 24,
-      "visits": 9
+      "visitors": 7,
+      "pageviews": 42,
+      "visits": 15
     },
     "series": [
-      {
-        "date": "2026-06-04",
-        "pageviews": 0,
-        "visitors": 0
-      },
       {
         "date": "2026-06-05",
         "pageviews": 0,
@@ -159,24 +154,29 @@
       },
       {
         "date": "2026-07-03",
+        "pageviews": 18,
+        "visitors": 3
+      },
+      {
+        "date": "2026-07-04",
         "pageviews": 0,
         "visitors": 0
       }
     ],
     "countries": [
       {
-        "code": "CN",
-        "visitors": 2
+        "code": "US",
+        "visitors": 4
       },
       {
-        "code": "US",
-        "visitors": 2
+        "code": "CN",
+        "visitors": 3
       }
     ],
     "referrers": [
       {
         "domain": "weixin110.qq.com",
-        "visitors": 1
+        "visitors": 2
       }
     ]
   },
