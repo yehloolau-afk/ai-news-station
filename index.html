@@ -160,12 +160,25 @@
       scrollbar-width: none;
     }
     .daily-archive-col::-webkit-scrollbar { display: none; }
-    .archive-panel-hd,
-    .archive-month-label, .archive-month-label-static,
-    .archive-more-btn { display: none !important; }
-    .archive-month-group + .archive-month-group { margin-top: 0; padding-top: 0; border-top: none; }
-    .archive-month-rows { display: flex !important; flex-direction: row; gap: 2px; }
-    .archive-day-row { min-width: 42px; padding: 5px 8px; margin: 0; font-size: 13px; }
+    .archive-month-chip {
+      flex-shrink: 0;
+      font-size: 10px; font-weight: 700; color: var(--muted);
+      padding: 3px 7px; margin: 0 4px 0 6px;
+      background: var(--bg); border-radius: 10px;
+      letter-spacing: 0.03em; white-space: nowrap;
+    }
+    .archive-month-chip:first-child { margin-left: 0; }
+    .archive-day-row {
+      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      min-width: 42px; padding: 5px 8px;
+      font-size: 13px; font-weight: 500; color: var(--text);
+      cursor: pointer; border-radius: 6px;
+      transition: background 0.1s, color 0.1s;
+      font-variant-numeric: tabular-nums; white-space: nowrap;
+    }
+    .archive-day-row:hover { background: var(--accent-muted); color: var(--accent); }
+    .archive-day-row.active { background: var(--accent); color: #fff; font-weight: 700; }
     .daily-content-col {
       flex: 1;
       overflow-y: auto;
@@ -175,59 +188,6 @@
     }
     .daily-content-col::-webkit-scrollbar { width: 5px; }
     .daily-content-col::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
-
-    .archive-panel-hd {
-      padding: 14px 8px 6px;
-      font-size: 10px; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--muted); text-align: center;
-    }
-    .archive-month-group { margin-bottom: 0; }
-    .archive-month-group + .archive-month-group {
-      margin-top: 10px;
-      padding-top: 10px;
-      border-top: 1px solid var(--border);
-    }
-    .archive-month-label {
-      display: flex; justify-content: center; align-items: center; gap: 4px;
-      padding: 0 4px 4px;
-      font-size: 9px; font-weight: 700;
-      color: var(--muted); letter-spacing: 0.03em;
-      cursor: pointer; user-select: none;
-      transition: color 0.1s; text-align: center;
-    }
-    .archive-month-label:hover { color: var(--accent); }
-    .archive-month-label-static {
-      padding: 0 4px 4px;
-      font-size: 9px; font-weight: 700;
-      color: var(--muted); letter-spacing: 0.03em; text-align: center;
-    }
-    .archive-toggle { font-size: 9px; color: var(--muted); transition: transform 0.2s; display: inline-block; }
-    .archive-month-group.collapsed .archive-toggle { transform: rotate(-90deg); }
-    .archive-month-group.collapsed .archive-month-rows { display: none; }
-    .archive-day-row {
-      display: flex; align-items: center; justify-content: center;
-      padding: 8px 4px;
-      font-size: 13px; font-weight: 500; color: var(--text);
-      cursor: pointer;
-      border-radius: 6px;
-      margin: 0 4px 1px;
-      transition: background 0.1s, color 0.1s;
-      font-variant-numeric: tabular-nums;
-    }
-    .archive-day-row:hover { background: var(--accent-muted); color: var(--accent); }
-    .archive-day-row.active { background: var(--accent); color: #fff; font-weight: 700; }
-    .archive-more-btn {
-      display: flex; align-items: center; justify-content: space-between;
-      margin: 10px 8px 8px;
-      padding: 7px 10px;
-      font-size: 11px; color: var(--muted);
-      cursor: pointer; border-radius: 6px;
-      border: 1px solid var(--border);
-      transition: color 0.1s, border-color 0.1s;
-      user-select: none;
-    }
-    .archive-more-btn:hover { color: var(--accent); border-color: var(--accent-border); }
 
     /* ── Refresh footer ── */
     .sidebar-footer {
@@ -1773,72 +1733,22 @@ function renderArchivePanel() {
   if (!archiveList?.length || !panel) return;
 
   const activeDate = archiveActiveDate || archiveList[0]?.date;
-  const recentDays = archiveList.slice(0, 14);
-  const olderDays  = archiveList.slice(14);
-  const activeInOlder = olderDays.some(d => d.date === activeDate);
+  const thisYear = String(new Date().getFullYear());
 
-  function groupByMonth(days) {
-    const map = {};
-    days.forEach(d => { const k = d.date.slice(0, 7); (map[k] = map[k] || []).push(d); });
-    return Object.entries(map);
-  }
+  // 扁平单行结构：月份小徽标 + 日期块，全部日期在一条横向滚动条里，PC/移动统一
+  const byMonth = {};
+  archiveList.forEach(d => { const k = d.date.slice(0, 7); (byMonth[k] = byMonth[k] || []).push(d); });
 
-  function monthLabel(ym) {
+  panel.innerHTML = Object.entries(byMonth).map(([ym, days]) => {
     const [y, m] = ym.split('-');
-    return `${y}年${parseInt(m)}月`;
-  }
+    const label = `${y === thisYear ? '' : y + '年'}${parseInt(m)}月`;
+    return `<span class="archive-month-chip">${label}</span>` + days.map(d =>
+      `<div class="archive-day-row${d.date === activeDate ? ' active' : ''}" onclick="loadDailyDate('${d.date}')">${parseInt(d.date.slice(8))} 日</div>`
+    ).join('');
+  }).join('');
 
-  function dayRowsHtml(days) {
-    return days.map(d => `
-      <div class="archive-day-row${d.date === activeDate ? ' active' : ''}" onclick="loadDailyDate('${d.date}')">
-        ${parseInt(d.date.slice(8))} 日
-      </div>`).join('');
-  }
-
-  // 近7天：月份标题不可折叠，日期行始终显示
-  const recentHtml = groupByMonth(recentDays).map(([ym, days]) => `
-    <div class="archive-month-group">
-      <div class="archive-month-label-static">${monthLabel(ym)}</div>
-      <div class="archive-month-rows">${dayRowsHtml(days)}</div>
-    </div>`).join('');
-
-  // 更早部分：月份标题可折叠
-  let olderHtml = '';
-  if (olderDays.length) {
-    const olderGroupsHtml = groupByMonth(olderDays).map(([ym, days]) => {
-      const hasActive = days.some(d => d.date === activeDate);
-      return `
-        <div class="archive-month-group${hasActive ? '' : ' collapsed'}">
-          <div class="archive-month-label" onclick="toggleArchiveMonthGroup(this)">
-            <span>${monthLabel(ym)}</span>
-            <span class="archive-toggle">▾</span>
-          </div>
-          <div class="archive-month-rows">${dayRowsHtml(days)}</div>
-        </div>`;
-    }).join('');
-    olderHtml = `
-      <div id="archiveOlderSection"${activeInOlder ? '' : ' style="display:none"'}>${olderGroupsHtml}</div>
-      <div class="archive-more-btn" id="archiveMoreBtn" onclick="toggleArchiveOlder()">
-        <span>${activeInOlder ? '收起' : '更多'}</span>
-        <span class="archive-toggle"${activeInOlder ? ' style="transform:rotate(180deg)"' : ''}>▾</span>
-      </div>`;
-  }
-
-  panel.innerHTML = `<div class="archive-panel-hd">日报存档</div>${recentHtml}${olderHtml}`;
-}
-
-function toggleArchiveMonthGroup(label) {
-  label.closest('.archive-month-group').classList.toggle('collapsed');
-}
-
-function toggleArchiveOlder() {
-  const section = document.getElementById('archiveOlderSection');
-  const btn = document.getElementById('archiveMoreBtn');
-  if (!section || !btn) return;
-  const open = section.style.display !== 'none';
-  section.style.display = open ? 'none' : 'block';
-  btn.querySelector('span:first-child').textContent = open ? '更多' : '收起';
-  btn.querySelector('.archive-toggle').style.transform = open ? '' : 'rotate(180deg)';
+  // 选中日期滚动到可视区域中间
+  panel.querySelector('.archive-day-row.active')?.scrollIntoView({ block: 'nearest', inline: 'center' });
 }
 
 async function prefetchDailyDates() {
