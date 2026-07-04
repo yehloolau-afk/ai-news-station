@@ -189,6 +189,38 @@
     .daily-content-col::-webkit-scrollbar { width: 5px; }
     .daily-content-col::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 
+    /* ── AI 大事记时间线 ── */
+    .tl-wrap { max-width: 780px; }
+    .tl-year {
+      display: flex; align-items: baseline; gap: 10px;
+      font-size: 18px; font-weight: 800; color: var(--text);
+      margin: 26px 0 12px; padding-left: 10px;
+      border-left: 3px solid var(--accent);
+    }
+    .tl-year:first-child { margin-top: 0; }
+    .tl-year-count { font-size: 12px; font-weight: 500; color: var(--muted); }
+    .section-sub { font-size: 12px; color: var(--muted); }
+    .tl-card {
+      background: var(--card-bg); border: 1px solid var(--border);
+      border-radius: 10px; padding: 13px 16px; margin-bottom: 8px;
+      transition: border-color 0.12s;
+    }
+    .tl-card:hover { border-color: var(--accent-border, rgba(208,25,34,0.35)); }
+    .tl-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 12px; margin-bottom: 5px; }
+    .tl-date { color: var(--accent); font-weight: 700; font-variant-numeric: tabular-nums; }
+    .tl-company { font-weight: 600; color: var(--text); }
+    .tl-type { color: var(--muted); background: var(--bg); padding: 1px 8px; border-radius: 10px; }
+    .tl-model { font-size: 15px; font-weight: 700; margin-bottom: 3px; }
+    .tl-model a { color: var(--text); text-decoration: none; }
+    .tl-model a:hover { color: var(--accent); }
+    .tl-highlight { font-size: 13px; color: var(--muted); }
+    .tl-specs { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .tl-specs span {
+      font-size: 11.5px; color: var(--muted);
+      background: var(--bg); border: 1px solid var(--border);
+      padding: 2px 8px; border-radius: 10px;
+    }
+
     /* ── Refresh footer ── */
     .sidebar-footer {
       padding: 12px 12px 16px;
@@ -1564,6 +1596,15 @@ const TABS = [
     ]
   },
   {
+    id: 'timeline',
+    name: 'AI 大事记',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+    layout: 'timeline',
+    desc: 'AI 模型发布时间线：哪家、什么模型、哪天发布、关键规格',
+    aiHotPath: null,
+    feeds: []
+  },
+  {
     id: 'products',
     name: 'AI 产品',
     filterCat: 'ai-products',
@@ -1674,7 +1715,7 @@ const TABS = [
 ];
 
 // 移动端产品组：这三个 tab 在移动端合并为第5个 tab
-const MOB_GROUP_IDS = ['products', 'design', 'videos'];
+const MOB_GROUP_IDS = ['timeline', 'products', 'design', 'videos'];
 // 移动端固定5个 tab 的顺序（Builder | 精选 | 日报 | 官方动态 | 更多）
 const MOB_NAV_ORDER = ['builders', 'featured', 'daily', 'official'];
 
@@ -2023,6 +2064,12 @@ function prefetchTab(id) {
   if (id === activeTab) return;
   const tab = TABS.find(t => t.id === id);
   if (!tab) return;
+  if (tab.layout === 'timeline') { // 大事记：预取同源 models.json，走自己的缓存结构
+    if (!cache['timeline']?.data) fetch('data/models.json?v=' + Math.floor(Date.now() / 3600e3))
+      .then(r => r.ok ? r.json() : null)
+      .then(d => { if (d?.entries) cache['timeline'] = { data: d, ts: Date.now() }; }).catch(() => {});
+    return;
+  }
   const cacheKey = tab.layout === 'jobs' ? `jobs_${jobsRegion}` : id;
   if (cache[cacheKey] && Date.now() - cache[cacheKey].ts < REFRESH_INTERVAL) return;
   // 静默预加载：不改变 UI，只填充缓存
@@ -2090,6 +2137,39 @@ function fmtBigNum(n) { if (!n) return '0'; return n >= 1000 ? (n/1000).toFixed(
 function fmtPodDate(iso) {
   if (!iso) return '';
   try { return new Date(iso).toLocaleDateString('zh-CN', { month:'long', day:'numeric' }); } catch { return ''; }
+}
+
+// ── Render: AI 大事记（模型发布时间线）──────────────────
+function renderModelTimeline(data) {
+  const main = document.getElementById('main');
+  const entries = [...data.entries].sort((a, b) => b.date.localeCompare(a.date));
+
+  const byYear = {};
+  entries.forEach(e => { const y = e.date.slice(0, 4); (byYear[y] = byYear[y] || []).push(e); });
+
+  const yearsHtml = Object.entries(byYear).sort((a, b) => b[0].localeCompare(a[0])).map(([year, list]) => `
+    <div class="tl-year"><span>${year}</span><span class="tl-year-count">${list.length} 条</span></div>
+    ${list.map(e => `
+      <div class="tl-card">
+        <div class="tl-meta">
+          <span class="tl-date">${e.date}</span>
+          <span class="tl-company">${esc(e.company)}</span>
+          <span class="tl-type">${esc(e.type)}</span>
+        </div>
+        <div class="tl-model">${e.sourceUrl
+          ? `<a href="${esc(e.sourceUrl)}" target="_blank" rel="noopener">${esc(e.model)}</a>`
+          : esc(e.model)}</div>
+        <div class="tl-highlight">${esc(e.highlight || '')}</div>
+        ${e.specs?.length ? `<div class="tl-specs">${e.specs.map(s => `<span>${esc(s)}</span>`).join('')}</div>` : ''}
+      </div>`).join('')}`).join('');
+
+  main.innerHTML = `
+    <div class="section-header">
+      <div class="section-title">🕐 AI 大事记 · 模型发布时间线</div>
+      <div class="section-sub">${entries.length} 条 · 更新于 ${data.updatedAt}</div>
+    </div>
+    <div class="source-pills">哪家 · 什么模型 · 哪天发布 · 关键规格 —— 条目均附官方信源，<a href="timeline/" target="_blank" rel="noopener" style="color:var(--accent);">网页版（可分享）</a></div>
+    <div class="tl-wrap">${yearsHtml}</div>`;
 }
 
 function renderBuilders(xData, podData) {
@@ -2199,6 +2279,23 @@ async function switchTab(id) {
     if (builders.length) {
       await translateBuilderTweets(builders);
       if (activeTab === 'builders') renderBuilders(xData, podData);
+    }
+    return;
+  }
+
+  // ── AI 大事记：读取仓库内 models.json（同源，秒开）──
+  if (tab.layout === 'timeline') {
+    const cached = cache['timeline'];
+    if (cached?.data && Date.now() - cached.ts < 6 * 3600e3) { renderModelTimeline(cached.data); return; }
+    const data = await fetch('data/models.json?v=' + Math.floor(Date.now() / 3600e3))
+      .then(r => r.ok ? r.json() : null).catch(() => null);
+    if (data?.entries) {
+      cache['timeline'] = { data, ts: Date.now() };
+      counts['timeline'] = data.entries.length;
+      renderNav();
+      if (activeTab === 'timeline') renderModelTimeline(data);
+    } else if (activeTab === 'timeline') {
+      document.getElementById('main').innerHTML = '<div class="empty-state"><div class="empty-icon">📭</div><p>时间线数据加载失败，请刷新重试</p></div>';
     }
     return;
   }
