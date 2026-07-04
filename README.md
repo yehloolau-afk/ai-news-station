@@ -6,6 +6,8 @@
 
 **📰 AI 日报存档 →** [daily/](https://yehloolau-afk.github.io/ai-news-station/daily/)（每日静态页，搜索引擎与 AI 引擎可抓取，Actions 每天三次自动更新）
 
+**📡 RSS 订阅 →** [feed.xml](https://yehloolau-afk.github.io/ai-news-station/feed.xml)
+
 A 7-channel AI news aggregator built for design teams. Pulls from 20+ Chinese and English sources, auto-translates, and updates every hour via GitHub Actions.
 
 ---
@@ -41,6 +43,26 @@ A 7-channel AI news aggregator built for design teams. Pulls from 20+ Chinese an
 ```
 GitHub Actions (hourly) → fetch RSS/APIs → process + translate → write JSON → static site serves it
 ```
+
+### 数据管道（全部在本仓库 Actions 运行）
+
+| 工作流 | 频率 | 产出 |
+|---|---|---|
+| 更新频道数据 | 每小时 | `data/{featured,all,official,products,design,videos}.json` + `feed.xml`（页面首屏的同源快速数据层） |
+| 生成日报静态页 | 每天 3 次 | `daily/*.html` 永久存档 + `sitemap.xml`（GEO/SEO 抓取层，站内日报频道同源复用） |
+| 更新访问统计 | 每天 2 次 | `data/stats.json`（数据看板） |
+
+### 加载策略
+
+- 首屏 `<link rel="preload">` 预载精选数据，同源 JSON 一次请求出内容，无 CORS 代理依赖
+- 静态数据过期时 stale-while-revalidate：先展示旧内容，后台走 RSS 代理路径刷新
+- 桌面端全量后台预取；移动端轻量预取（仅同源静态 JSON + 今日日报，不走代理，省流量）
+- 日报频道历史日期直接读仓库内永久存档，不受上游 API 仅保留 10 天的限制
+
+### 移动端
+
+- 底部 Tab 导航 + 「更多」浮层（频道分组 + 日报存档 / 订阅周报 / 站点数据入口）
+- 翻译延迟执行不阻塞首屏，Phase 2 数据量减半
 
 ---
 

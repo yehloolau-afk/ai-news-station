@@ -1016,6 +1016,8 @@
       }
       .mob-more-opt-icon { width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
       .mob-more-opt-icon svg { width: 18px; height: 18px; }
+      a.mob-more-opt { text-decoration: none; }
+      .mob-more-divider { height: 1px; background: var(--border); margin: 6px 2px; }
       .mob-more-opt-label { font-size: 14px; font-weight: 500; }
       .mob-more-opt.active .mob-more-opt-label { font-weight: 700; }
     }
@@ -1927,12 +1929,26 @@ function init() {
     }
   });
 
-  // 移动端不做其他频道后台预取，节省带宽；PC端精选加载完再依次预取
+  // PC端：精选加载完后全量预取其他频道
   if (!IS_MOBILE) {
     featuredPainted.then(() => {
       const others = TABS.filter(t => !t.hidden && t.id !== 'featured');
       others.forEach((t, i) => setTimeout(() => prefetchTab(t.id), 500 + i * 2000));
       prefetchDailyDates();
+    });
+  } else {
+    // 移动端：轻量预取——只拉同源静态 JSON（prefetchTab 内有移动端守卫，静态未命中不走代理）
+    // + 今日日报一次请求，切频道即秒开，流量成本每频道一个小 JSON
+    featuredPainted.then(() => {
+      [...STATIC_TABS].filter(id => id !== 'featured')
+        .forEach((id, i) => setTimeout(() => prefetchTab(id), 1500 + i * 800));
+      setTimeout(async () => {
+        const todayKey = new Date().toISOString().slice(0, 10);
+        if (!dailyCache[todayKey]) {
+          const d = await fetchAiHot('/daily');
+          if (d?.sections) dailyCache[todayKey] = d;
+        }
+      }, 6000);
     });
   }
 }
@@ -2061,7 +2077,21 @@ function renderMobMorePanel() {
         <span class="mob-more-opt-icon">${t.icon}</span>
         <span class="mob-more-opt-label">${t.name}</span>
       </button>`;
-    }).join('');
+    }).join('') +
+    // PC 侧边栏专属功能，移动端从这里进入
+    `<div class="mob-more-divider"></div>
+    <a class="mob-more-opt" href="daily/">
+      <span class="mob-more-opt-icon">📰</span>
+      <span class="mob-more-opt-label">AI 日报存档</span>
+    </a>
+    <a class="mob-more-opt" href="https://aistation.substack.com/subscribe" target="_blank" rel="noopener">
+      <span class="mob-more-opt-icon">📮</span>
+      <span class="mob-more-opt-label">订阅周报</span>
+    </a>
+    <a class="mob-more-opt" href="admin.html">
+      <span class="mob-more-opt-icon">📊</span>
+      <span class="mob-more-opt-label">站点数据</span>
+    </a>`;
 }
 function selectMobMore(id) {
   closeMobMore();
@@ -2099,6 +2129,7 @@ function prefetchTab(id) {
         return;
       }
     }
+    if (IS_MOBILE) return; // 移动端只做零成本静态预取，静态未命中不走多路代理
     const activeFeedList = tab.layout === 'jobs'
       ? (jobsRegion === 'global' ? (tab.feedsGlobal || []) : (tab.feedsDomestic || []))
       : tab.feeds;
