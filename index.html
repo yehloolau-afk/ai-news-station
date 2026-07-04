@@ -2259,6 +2259,7 @@ function renderBuilders(xData, podData) {
 }
 
 async function switchTab(id) {
+  closeMobMore(); // 无论从哪里切换频道，先收起移动端「更多」浮层
   activeTab = id;
   renderNav();
   setArchivePanel(id === 'daily');
