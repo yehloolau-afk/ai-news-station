@@ -18,14 +18,19 @@ sorted.forEach((e) => { const y = e.date.slice(0, 4); (byYear[y] = byYear[y] || 
 const body = `<h1>AI 模型发布时间线</h1>
 <div class="sub">哪家 · 什么模型 · 哪天发布 · 关键规格 —— 持续维护的结构化档案，共 ${sorted.length} 条 · 更新于 ${updatedAt}</div>
 ${Object.entries(byYear).sort((a, b) => b[0].localeCompare(a[0])).map(([year, list]) => `
-<h2 id="y${year}">${year} 年（${list.length} 条）</h2>
-${list.map((e) => `<article id="${esc(slug(e))}">
-<div class="meta"><span class="date">${e.date}</span><span class="company">${esc(e.company)}</span><span class="type">${esc(e.type)}</span></div>
+<div class="year-node" id="y${year}"><span class="year-dot"></span><h2>${year} 年<span class="year-count">${list.length} 条</span></h2></div>
+<div class="tl-list">
+${list.map((e) => `<div class="tl-row" id="${esc(slug(e))}">
+<div class="tl-time" title="${e.date}"><span class="tl-time-label">${e.date.slice(5)}</span><span class="tl-time-dot"></span></div>
+<article>
+<div class="meta"><span class="company">${esc(e.company)}</span><span class="type">${esc(e.type)}</span></div>
 <h3>${e.sourceUrl ? `<a href="${esc(e.sourceUrl)}" rel="noopener" target="_blank">${esc(e.model)}</a>` : esc(e.model)}</h3>
 <p>${esc(e.highlight)}</p>
 ${e.specs?.length ? `<ul class="specs">${e.specs.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>` : ''}
-${e.sourceName ? `<div class="src">信源：${esc(e.sourceName)}</div>` : ''}
-</article>`).join('\n')}`).join('\n')}`;
+${e.sourceName ? `<div class="src">信源：${esc(e.sourceName)} · ${e.date}</div>` : ''}
+</article>
+</div>`).join('\n')}
+</div>`).join('\n')}`;
 
 const description = `AI 模型发布时间线：${sorted.length} 条主流大模型发布档案（${sorted[sorted.length - 1].date.slice(0, 7)} 至 ${sorted[0].date.slice(0, 7)}），含发布日期、厂商、关键规格与官方信源，持续更新。`;
 
@@ -67,10 +72,18 @@ writeFileSync('timeline/index.html', `<!DOCTYPE html>
   .top a:hover { color:#d92b2b; }
   h1 { font-size:24px; margin-bottom:6px; }
   .sub { font-size:13px; color:#6b7280; margin-bottom:24px; }
-  h2 { font-size:17px; margin:30px 0 12px; padding-left:10px; border-left:3px solid #d92b2b; }
-  article { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:14px 16px; margin-bottom:10px; }
+  .year-node { display:grid; grid-template-columns:64px 1fr; align-items:center; margin:28px 0 10px; }
+  .year-dot { justify-self:center; width:13px; height:13px; border-radius:50%; background:#d92b2b; box-shadow:0 0 0 4px rgba(217,43,43,0.15); }
+  .year-node h2 { font-size:19px; display:flex; align-items:baseline; gap:10px; }
+  .year-count { font-size:12px; font-weight:500; color:#6b7280; }
+  .tl-list { display:flex; flex-direction:column; gap:10px; position:relative; }
+  .tl-list::after { content:''; position:absolute; left:32px; top:0; bottom:0; width:1px; background:#e5e7eb; pointer-events:none; }
+  .tl-row { display:grid; grid-template-columns:64px 1fr; align-items:center; position:relative; z-index:1; }
+  .tl-time { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; }
+  .tl-time-label { font-size:12px; font-weight:600; font-variant-numeric:tabular-nums; white-space:nowrap; line-height:1; }
+  .tl-time-dot { width:9px; height:9px; border-radius:50%; background:#d92b2b; box-shadow:0 0 0 3px rgba(217,43,43,0.15); }
+  article { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:14px 16px; }
   .meta { display:flex; gap:8px; align-items:center; font-size:12px; margin-bottom:6px; flex-wrap:wrap; }
-  .date { color:#d92b2b; font-weight:700; font-variant-numeric:tabular-nums; }
   .company { color:#111827; font-weight:600; }
   .type { color:#6b7280; background:#f4f6f8; padding:1px 8px; border-radius:10px; }
   article h3 { font-size:16px; margin-bottom:4px; }

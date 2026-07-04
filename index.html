@@ -189,16 +189,55 @@
     .daily-content-col::-webkit-scrollbar { width: 5px; }
     .daily-content-col::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 
-    /* ── AI 大事记时间线 ── */
-    .tl-wrap { max-width: 780px; }
-    .tl-year {
-      display: flex; align-items: baseline; gap: 10px;
-      font-size: 18px; font-weight: 800; color: var(--text);
-      margin: 26px 0 12px; padding-left: 10px;
-      border-left: 3px solid var(--accent);
+    /* ── AI 大事记时间线（轴线形态，与精选/日报视觉语言一致）── */
+    .tl-wrap { max-width: 820px; }
+    .tl-year-node {
+      display: grid; grid-template-columns: 80px 1fr;
+      align-items: center;
+      margin: 26px 0 10px;
     }
-    .tl-year:first-child { margin-top: 0; }
+    .tl-year-node:first-child { margin-top: 0; }
+    .tl-year-dot {
+      justify-self: center;
+      width: 13px; height: 13px; border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px rgba(208,25,34,0.15);
+    }
+    .tl-year-text {
+      display: flex; align-items: baseline; gap: 10px;
+      font-size: 20px; font-weight: 800; color: var(--text);
+    }
     .tl-year-count { font-size: 12px; font-weight: 500; color: var(--muted); }
+    .tl-list {
+      display: flex; flex-direction: column; gap: 10px;
+      position: relative;
+    }
+    .tl-list::after {
+      content: '';
+      position: absolute;
+      left: 40px; top: 0; bottom: 0;
+      width: 1px;
+      background: var(--border);
+      pointer-events: none;
+    }
+    .tl-row {
+      display: grid; grid-template-columns: 80px 1fr;
+      align-items: center;
+      position: relative; z-index: 1;
+    }
+    .tl-time {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 5px; padding: 4px 0;
+    }
+    .tl-time-label {
+      font-size: 12px; font-weight: 600; color: var(--text);
+      font-variant-numeric: tabular-nums; white-space: nowrap; line-height: 1;
+    }
+    .tl-time-dot {
+      width: 9px; height: 9px; border-radius: 50%;
+      background: var(--accent); flex-shrink: 0;
+      box-shadow: 0 0 0 3px rgba(208,25,34,0.15);
+    }
     .section-sub { font-size: 12px; color: var(--muted); }
     .tl-card {
       background: var(--card-bg); border: 1px solid var(--border);
@@ -914,6 +953,11 @@
       /* 日报时间轴列宽收窄 */
       .dnp-row { grid-template-columns: 60px 1fr; }
       .dnp-card-list::after { left: 30px; }
+      /* 大事记时间轴：移动端收窄左轴 */
+      .tl-row, .tl-year-node { grid-template-columns: 54px 1fr; }
+      .tl-list::after { left: 27px; }
+      .tl-time-label { font-size: 11px; }
+      .tl-year-text { font-size: 17px; }
 
       /* ── 移动端顶栏 ── */
       .mobile-header {
@@ -2148,20 +2192,30 @@ function renderModelTimeline(data) {
   entries.forEach(e => { const y = e.date.slice(0, 4); (byYear[y] = byYear[y] || []).push(e); });
 
   const yearsHtml = Object.entries(byYear).sort((a, b) => b[0].localeCompare(a[0])).map(([year, list]) => `
-    <div class="tl-year"><span>${year}</span><span class="tl-year-count">${list.length} 条</span></div>
+    <div class="tl-year-node">
+      <span class="tl-year-dot"></span>
+      <span class="tl-year-text">${year} 年<span class="tl-year-count">${list.length} 条</span></span>
+    </div>
+    <div class="tl-list">
     ${list.map(e => `
-      <div class="tl-card">
-        <div class="tl-meta">
-          <span class="tl-date">${e.date}</span>
-          <span class="tl-company">${esc(e.company)}</span>
-          <span class="tl-type">${esc(e.type)}</span>
+      <div class="tl-row">
+        <div class="tl-time" title="${e.date}">
+          <span class="tl-time-label">${e.date.slice(5)}</span>
+          <span class="tl-time-dot"></span>
         </div>
-        <div class="tl-model">${e.sourceUrl
-          ? `<a href="${esc(e.sourceUrl)}" target="_blank" rel="noopener">${esc(e.model)}</a>`
-          : esc(e.model)}</div>
-        <div class="tl-highlight">${esc(e.highlight || '')}</div>
-        ${e.specs?.length ? `<div class="tl-specs">${e.specs.map(s => `<span>${esc(s)}</span>`).join('')}</div>` : ''}
-      </div>`).join('')}`).join('');
+        <div class="tl-card">
+          <div class="tl-meta">
+            <span class="tl-company">${esc(e.company)}</span>
+            <span class="tl-type">${esc(e.type)}</span>
+          </div>
+          <div class="tl-model">${e.sourceUrl
+            ? `<a href="${esc(e.sourceUrl)}" target="_blank" rel="noopener">${esc(e.model)}</a>`
+            : esc(e.model)}</div>
+          <div class="tl-highlight">${esc(e.highlight || '')}</div>
+          ${e.specs?.length ? `<div class="tl-specs">${e.specs.map(s => `<span>${esc(s)}</span>`).join('')}</div>` : ''}
+        </div>
+      </div>`).join('')}
+    </div>`).join('');
 
   main.innerHTML = `
     <div class="section-header">
