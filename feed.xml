@@ -5,8 +5,16 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 04 Jul 2026 07:16:06 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2026 10:26:54 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>[送码] 聆听用户建议，1Capture 新增多项实用截图功能</title>
+      <link>https://sspai.com/post/111645</link>
+      <description>各位少数派的朋友好，距离上一次在少数派介绍1Capture已经过去一年。过去这段时间里，我们开发的这款Mac截图与录屏工具继续做了多轮更新，也根据用户反馈补齐了一些更适合团队协作和产品展示的功能。市场 ...查看全文</description>
+      <pubDate>Sat, 04 Jul 2026 15:55:48 +0800</pubDate>
+      <guid isPermaLink="true">https://sspai.com/post/111645</guid>
+      <source url="https://sspai.com/post/111645">少数派</source>
+    </item>
     <item>
       <title>对话傲鲨创始人徐振华：当科幻机甲成为户外装备，外骨骼如何重新定义人机关系？</title>
       <link>https://36kr.com/p/3880770270425089?f=rss</link>
@@ -205,14 +213,6 @@ https://www.youtube.com/watch?v=55F9dY2Y1zc
       <pubDate>Fri, 03 Jul 2026 10:28:43 +0000</pubDate>
       <guid isPermaLink="true">https://www.qbitai.com/2026/07/442517.html</guid>
       <source url="https://www.qbitai.com/2026/07/442517.html">量子位</source>
-    </item>
-    <item>
-      <title>比亚迪集中公布多起名誉维权胜诉案件 重拳打击“黑公关”</title>
-      <link>https://www.qbitai.com/2026/07/442503.html</link>
-      <description></description>
-      <pubDate>Fri, 03 Jul 2026 10:26:36 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/442503.html</guid>
-      <source url="https://www.qbitai.com/2026/07/442503.html">量子位</source>
     </item>
   </channel>
 </rss>
