@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 05 Jul 2026 14:55:14 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 16:21:43 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>背单词更要背释义，FenyiDic 让你记住「熟悉的陌生人」</title>
@@ -14,6 +14,14 @@
       <pubDate>Sun, 05 Jul 2026 17:08:05 +0800</pubDate>
       <guid isPermaLink="true">https://sspai.com/post/111632</guid>
       <source url="https://sspai.com/post/111632">少数派</source>
+    </item>
+    <item>
+      <title>Meta也来卖铲子了！小扎：模型可以慢，GPU必须赚</title>
+      <link>https://www.qbitai.com/2026/07/443339.html</link>
+      <description>正考虑推出Meta Compute</description>
+      <pubDate>Sun, 05 Jul 2026 14:30:31 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/443339.html</guid>
+      <source url="https://www.qbitai.com/2026/07/443339.html">量子位</source>
     </item>
     <item>
       <title>硬氪首发 | 港大教授成立的忆生科技获数亿天使轮融资，致力于为机器人造一套记忆系统</title>
@@ -211,14 +219,6 @@
       <pubDate>Fri, 03 Jul 2026 18:45:12 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3877919172047111?f=rss</guid>
       <source url="https://36kr.com/p/3877919172047111?f=rss">36Kr</source>
-    </item>
-    <item>
-      <title>住久了没意思（四）：作为最「复合」的空间，客厅要为真实生活让路</title>
-      <link>https://sspai.com/prime/story/how-to-design-a-rental-living-room</link>
-      <description>前文回顾：租房常见问题与我的改造原则从有光的地方开始动手打造能好好放松的卧室只要你的房子还有分区可言，那正常情况下就一定有一个可以称之为客厅的区域。在第一篇文章中我已经提到，对我们很多人来说，客厅可能 ...查看全文本文为会员文章，出自《单篇文章》，订阅后可阅读全文。</description>
-      <pubDate>Fri, 03 Jul 2026 17:44:33 +0800</pubDate>
-      <guid isPermaLink="true">https://sspai.com/prime/story/how-to-design-a-rental-living-room</guid>
-      <source url="https://sspai.com/prime/story/how-to-design-a-rental-living-room">少数派</source>
     </item>
   </channel>
 </rss>
