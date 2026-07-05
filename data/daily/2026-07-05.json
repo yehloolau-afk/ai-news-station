@@ -1,0 +1,41 @@
+{
+  "date": "2026-07-05",
+  "generatedAt": "2026-07-05T00:00:15.177Z",
+  "windowStart": "2026-07-04T00:00:00.000Z",
+  "windowEnd": "2026-07-05T00:00:00.000Z",
+  "lead": null,
+  "sections": [
+    {
+      "label": "论文研究",
+      "items": [
+        {
+          "title": "我国研制全球首款基于可控存内计算的忆阻器神经动力学芯片",
+          "summary": "北京大学集成电路学院联合中科院上海微系统所，发布全球首款基于可控存内计算的忆阻器神经动力学芯片，首次将单步运算时延压缩至2.12毫秒。芯片采用40纳米工艺，存内计算阵列与外围电路总面积0.28平方毫米，运行频率50 MHz，单步积分仅需9级流水。在脑皮层重建等任务中较当前GPU提速50至478倍，突破神经动力学实时计算瓶颈。相关成果7月3日发表于《科学》。",
+          "sourceUrl": "https://www.ithome.com/0/972/526.htm",
+          "sourceName": "IT之家（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmr5wizx2067eslc7xynzcf9y"
+        },
+        {
+          "title": "NVIDIA 联合多所大学提出 ASPIRE：自我改进机器人框架，零样本成功率最高提升 77 分",
+          "summary": "NVIDIA 联合密歇根大学、UIUC、UC Berkeley 等提出 ASPIRE，一个持续学习机器人框架。它通过协调器-执行器架构、闭环执行引擎、技能库和进化搜索，编写并优化机器人控制程序。编程智能体使用 Claude Code（Claude Opus 4.6，1M token 上下文窗口）。在 LIBERO-Pro 上最高比最强基线提升 77 分；Robosuite 双手交接成功率从 20% 提升至 92%；BEHAVIOR-1K 收音机拾取任务从 56% 提升至 88%。利用 LIBERO-90 积累的技能，ASPIRE 在零样本条件下对 LIBERO-Pro Long 任务达到约 31% 成功率，此前方法饱和在 4% 附近…",
+          "sourceUrl": "https://www.marktechpost.com/2026/07/03/nvidia-ai-introduces-aspire-a-self-improving-robotics-framework-reaching-31-zero-shot-on-libero-pro-long-tasks",
+          "sourceName": "MarkTechPost（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmr5zuihg0739slc7nv4mlc5r"
+        }
+      ]
+    },
+    {
+      "label": "技巧与观点",
+      "items": [
+        {
+          "title": "26000名学生研究显示AI隐藏学习成本需两年才显现",
+          "summary": "一项追踪26000名7-12年级中学生30个月的面板数据研究发现：使用AI后作业分数提升18%，完成时间从64分钟降至45分钟，但闭卷考试分数下降20%，升学考试成绩下降18%至24%，且完全影响约两年才显现。81%长期用户作业完成时间低于50分钟（外包迹象）。社会学科下降27%，STEM下降22%，英语下降17%，语文下降9%。每周使用AI一小时损失约5%，五小时损失30%。早期损失从约25%降至16%但未消失。",
+          "sourceUrl": "https://the-decoder.com/a-26000-student-study-shows-ais-hidden-learning-cost-takes-two-full-years-to-surface",
+          "sourceName": "The Decoder：AI News（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmr65ieko002tslf0xiomac0c"
+        }
+      ]
+    }
+  ],
+  "flashes": []
+}
