@@ -5,8 +5,16 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 05 Jul 2026 08:15:36 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 11:14:29 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>背单词更要背释义，FenyiDic 让你记住「熟悉的陌生人」</title>
+      <link>https://sspai.com/post/111632</link>
+      <description>每个单词都认识，为什么还是读不懂英文？查看全文</description>
+      <pubDate>Sun, 05 Jul 2026 17:08:05 +0800</pubDate>
+      <guid isPermaLink="true">https://sspai.com/post/111632</guid>
+      <source url="https://sspai.com/post/111632">少数派</source>
+    </item>
     <item>
       <title>硬氪首发 | 港大教授成立的忆生科技获数亿天使轮融资，致力于为机器人造一套记忆系统</title>
       <link>https://36kr.com/p/3882365879005186?f=rss</link>
@@ -220,14 +228,6 @@ https://www.youtube.com/watch?v=55F9dY2Y1zc
       <pubDate>Fri, 03 Jul 2026 17:19:59 +0000</pubDate>
       <guid isPermaLink="true">https://www.youtube.com/watch?v=uO5cvkzh3P0</guid>
       <source url="https://www.youtube.com/watch?v=uO5cvkzh3P0">Two Minute Papers</source>
-    </item>
-    <item>
-      <title>快捷指令｜让 iPhone 用上锤子的「大爆炸」</title>
-      <link>https://sspai.com/post/111405</link>
-      <description>敬「少许的牺牲是必要的」。查看全文</description>
-      <pubDate>Fri, 03 Jul 2026 15:00:00 +0800</pubDate>
-      <guid isPermaLink="true">https://sspai.com/post/111405</guid>
-      <source url="https://sspai.com/post/111405">少数派</source>
     </item>
   </channel>
 </rss>
