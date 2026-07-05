@@ -1641,7 +1641,7 @@ const TABS = [
   },
   {
     id: 'timeline',
-    name: 'AI 大事记',
+    name: '模型发布',
     icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
     layout: 'timeline',
     desc: 'AI 模型发布时间线：哪家、什么模型、哪天发布、关键规格',
@@ -1969,10 +1969,12 @@ function renderNav() {
       ${counts[t.id] != null ? `<span class="tab-count">${counts[t.id]}</span>` : ''}
     </button>`;
   const builderTabs = tabs.filter(t => t.id === 'builders');
-  const newsTabs    = tabs.filter(t => t.id !== 'builders');
+  const archiveTabs = tabs.filter(t => t.id === 'timeline'); // 大事记组：后续融资/政策等子栏目加在这里
+  const newsTabs    = tabs.filter(t => t.id !== 'builders' && t.id !== 'timeline');
   nav.innerHTML =
     `<div class="tab-group-label">创作者频道</div>` + builderTabs.map(makeBtn).join('') +
-    `<div class="tab-group-label" style="margin-top:12px">资讯频道</div>` + newsTabs.map(makeBtn).join('');
+    `<div class="tab-group-label" style="margin-top:12px">资讯频道</div>` + newsTabs.map(makeBtn).join('') +
+    `<div class="tab-group-label" style="margin-top:12px">大事记</div>` + archiveTabs.map(makeBtn).join('');
 
   // 移动端底部导航（固定5个）
   const mobileNav = document.getElementById('mobileNav');
