@@ -5,8 +5,63 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 05 Jul 2026 05:10:40 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 08:15:36 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>硬氪首发 | 港大教授成立的忆生科技获数亿天使轮融资，致力于为机器人造一套记忆系统</title>
+      <link>https://36kr.com/p/3882365879005186?f=rss</link>
+      <description>作者&amp;nbsp;|&amp;nbsp;邱晓芬
+  编辑&amp;nbsp;|&amp;nbsp;袁斯来
+  硬氪获悉，「忆生科技」（TranscEngram）完成数亿元天使轮融资，本轮投资方阵容横跨产业资本与国资平台，包括正大旗下中生制药、浦东创投、张江科投、张江高科、弘信电子、云晖资本、沃肯资本、金舵资本等。
+  「忆生科技」致力于从科学第一性原理出发，用"感知—预测—交互"闭环构建机器人"大脑+小脑"统一系统，探索下一代可解释自主智能（Autonomous Intelligence）。
+  本轮融资资金将主要用于可解释具身控制大模型与物理世界模型的研发、多模态全人形动作交互数据和算法训练管线的建设、顶尖人才团队的</description>
+      <pubDate>Sun, 05 Jul 2026 14:27:30 +0800</pubDate>
+      <guid isPermaLink="true">https://36kr.com/p/3882365879005186?f=rss</guid>
+      <source url="https://36kr.com/p/3882365879005186?f=rss">36Kr</source>
+    </item>
+    <item>
+      <title>硬氪首发 | 清华车辆学院师兄弟创业具身智能，已完成数亿元天使融资，将落地汽车产业</title>
+      <link>https://36kr.com/p/3882364132077577?f=rss</link>
+      <description>作者&amp;nbsp;|&amp;nbsp;邱晓芬
+  编辑&amp;nbsp;|&amp;nbsp;袁斯来
+  硬氪获悉，具身智能公司「光象科技」宣布完成累计数亿元天使轮融资。
+  最新一轮由珠海科技产业集团、兴证资本、松禾资本、顺禧基金、慕华科创、SeeFund、亿宸资本、上市公司行云科技等头部财投与产投深度参与，老股东零一创投、L2F光源创业者基金持续加注。
+  本轮资金将重点投入物理原生基座模型的研发迭代，并推进具身智能机器人在工业场景的商业化交付。
+  「光象科技」成立于2025年4月，是清华大学车辆与运载学院与人工智能学院联合孵化的具身智能公司。
+  在团队配置上，「光���科技」呈现出“产业+学术”的基因。公</description>
+      <pubDate>Sun, 05 Jul 2026 14:25:53 +0800</pubDate>
+      <guid isPermaLink="true">https://36kr.com/p/3882364132077577?f=rss</guid>
+      <source url="https://36kr.com/p/3882364132077577?f=rss">36Kr</source>
+    </item>
+    <item>
+      <title>硬氪首发 | 小米前高管唐沐创业咖啡机器人，完成数亿融资，林斌、黎万强投过</title>
+      <link>https://36kr.com/p/3882361033322755?f=rss</link>
+      <description>作者&amp;nbsp;|&amp;nbsp;邱晓芬
+  编辑&amp;nbsp;|&amp;nbsp;袁斯来
+  硬氪获悉，通用餐饮具身机器人公司「影智XBOT」连续完成数亿元两轮融资——其中，A轮的2亿元融资由香港简坤资本GPTX出资，B轮融资为3-5亿元人民币，由多支政府基金、美元基金和产业投资方共同参与出资。
+  这是目前餐饮垂直机器人领域规模最大的一笔融资之一。
+  在此之前，「影智XBOT」还完成了一轮天使融资，出资人阵容豪华——包括腾讯高级副总裁张小龙、小米联合创始人黎万强、黄江吉、林斌、洪锋、以及港科大首席副校长郭毅可等。
+  「影智XBOT」成立于2022年，其创始人唐沐称得上机器人圈的“异类”——是机器人</description>
+      <pubDate>Sun, 05 Jul 2026 14:23:00 +0800</pubDate>
+      <guid isPermaLink="true">https://36kr.com/p/3882361033322755?f=rss</guid>
+      <source url="https://36kr.com/p/3882361033322755?f=rss">36Kr</source>
+    </item>
+    <item>
+      <title>李飞飞署名具身新论文：Sim2Real烧不起，Real2Sim量大管饱</title>
+      <link>https://www.qbitai.com/2026/07/443066.html</link>
+      <description>一段视频，生成无限训练场景</description>
+      <pubDate>Sun, 05 Jul 2026 06:59:11 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/443066.html</guid>
+      <source url="https://www.qbitai.com/2026/07/443066.html">量子位</source>
+    </item>
+    <item>
+      <title>刚刚，LeCun团队让世界模型学会持续学习！</title>
+      <link>https://www.qbitai.com/2026/07/442964.html</link>
+      <description>迈向持续学习的世界模型</description>
+      <pubDate>Sun, 05 Jul 2026 06:52:17 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/442964.html</guid>
+      <source url="https://www.qbitai.com/2026/07/442964.html">量子位</source>
+    </item>
     <item>
       <title>[送码] 聆听用户建议，1Capture 新增多项实用截图功能</title>
       <link>https://sspai.com/post/111645</link>
@@ -45,7 +100,7 @@
       <source url="https://36kr.com/p/3880629882679301?f=rss">36Kr</source>
     </item>
     <item>
-      <title>36氪首发 | 剑桥副教授创业硅光芯片，已合作欧莱雅、华为，获一亿投资</title>
+      <title>36氪首发 | 剑桥副教授创业硅光芯片，已合作华为，获一亿投资</title>
       <link>https://36kr.com/p/3879991356157952?f=rss</link>
       <description>图源/企业
   作者丨欧雪
@@ -173,46 +228,6 @@ https://www.youtube.com/watch?v=55F9dY2Y1zc
       <pubDate>Fri, 03 Jul 2026 15:00:00 +0800</pubDate>
       <guid isPermaLink="true">https://sspai.com/post/111405</guid>
       <source url="https://sspai.com/post/111405">少数派</source>
-    </item>
-    <item>
-      <title>从LLM到JEPA，中国团队正在把“世界模型”搬进细胞内部</title>
-      <link>https://www.qbitai.com/2026/07/442746.html</link>
-      <description>四年前LeCun提出JEPA时，大概不会想到，这套架构有一天会被用来理解：一颗细胞。</description>
-      <pubDate>Fri, 03 Jul 2026 14:28:38 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/442746.html</guid>
-      <source url="https://www.qbitai.com/2026/07/442746.html">量子位</source>
-    </item>
-    <item>
-      <title>Fable 5回归24小时差评如潮！跑分大降，拒答问题，还偷偷骂用户</title>
-      <link>https://www.qbitai.com/2026/07/442567.html</link>
-      <description>单词数r也是风险问题？！</description>
-      <pubDate>Fri, 03 Jul 2026 12:17:37 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/442567.html</guid>
-      <source url="https://www.qbitai.com/2026/07/442567.html">量子位</source>
-    </item>
-    <item>
-      <title>这四个工作习惯，或许也能帮你找到掌控感</title>
-      <link>https://sspai.com/post/111708</link>
-      <description>无论你追求的是更高的职位、更自由的时间、还是某种更纯粹的成就感，有一件事大概是共通的：那就是尽量让自己的人生，少一点完全依赖运气的成分，多一点可被掌控、可被验证的路径。查看全文</description>
-      <pubDate>Fri, 03 Jul 2026 11:00:00 +0800</pubDate>
-      <guid isPermaLink="true">https://sspai.com/post/111708</guid>
-      <source url="https://sspai.com/post/111708">少数派</source>
-    </item>
-    <item>
-      <title>奕境携手华为乾崑全球实测！央视《超凡一步》见证中国汽车“三大跨越”</title>
-      <link>https://www.qbitai.com/2026/07/442531.html</link>
-      <description></description>
-      <pubDate>Fri, 03 Jul 2026 10:46:18 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/442531.html</guid>
-      <source url="https://www.qbitai.com/2026/07/442531.html">量子位</source>
-    </item>
-    <item>
-      <title>比亚迪6月销量超40万，年内销量记录再度刷新</title>
-      <link>https://www.qbitai.com/2026/07/442517.html</link>
-      <description></description>
-      <pubDate>Fri, 03 Jul 2026 10:28:43 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/442517.html</guid>
-      <source url="https://www.qbitai.com/2026/07/442517.html">量子位</source>
     </item>
   </channel>
 </rss>
