@@ -344,14 +344,13 @@
 
     /* ── 关键词条面板 ── */
     .kw-wrap {
-      flex-shrink: 0;
       display: flex;
-      gap: 0;
-      border-bottom: 1px solid var(--border);
-      background: var(--bg);
-      min-height: 0;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--card-bg);
+      margin-bottom: 18px;
+      overflow: hidden;
     }
-    .kw-wrap.kw-hidden { display: none; }
     .kw-left {
       width: 140px;
       flex-shrink: 0;
@@ -404,10 +403,11 @@
     .kw-right {
       flex: 1;
       overflow-y: auto;
-      padding: 12px 16px 12px;
+      max-height: 220px;
+      padding: 12px 14px 12px;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 7px;
       scrollbar-width: thin;
       scrollbar-color: var(--border) transparent;
       min-width: 0;
@@ -1354,7 +1354,6 @@
 </aside>
 
 <div class="content-col">
-  <div id="kwPanel"></div>
   <main class="main" id="main">
     <div class="loading-state"><div class="spinner"></div><span>正在加载资讯...</span></div>
   </main>
@@ -2092,19 +2091,14 @@ function kwItemHtml(item) {
   </a>`;
 }
 
-function kwRender() {
-  const panel = document.getElementById('kwPanel');
-  if (!panel) return;
-  if (!kwData.length) {
-    panel.innerHTML = '';
-    return;
-  }
+function kwHtml() {
+  if (!kwData.length) return '';
   const btns = kwData.map((d, i) => `
     <div class="kw-btn${i === kwActive ? ' active' : ''}" onclick="kwSelect(${i})">
       <span class="kw-dot"></span>${esc(d.kw)}<span class="kw-cnt">${d.items.length}</span>
     </div>`).join('');
   const rightItems = (kwData[kwActive]?.items || []).map(kwItemHtml).join('');
-  panel.innerHTML = `
+  return `
     <div class="kw-wrap">
       <div class="kw-left">
         <div class="kw-hd">近半月关键词</div>
@@ -2119,17 +2113,6 @@ function kwSelect(idx) {
   document.querySelectorAll('.kw-btn').forEach((b, i) => b.classList.toggle('active', i === idx));
   const right = document.getElementById('kwRight');
   if (right) right.innerHTML = (kwData[idx]?.items || []).map(kwItemHtml).join('');
-}
-
-function kwUpdate(tabId) {
-  const panel = document.getElementById('kwPanel');
-  if (!panel) return;
-  if (tabId !== 'featured') {
-    panel.innerHTML = '';
-    return;
-  }
-  kwBuild();
-  kwRender();
 }
 
 // ── Init ──────────────────────────────────────────────
@@ -2556,7 +2539,6 @@ async function switchTab(id) {
 
   // ── Builders tab: 直接拉取 Follow Builders 数据 ──
   if (tab.layout === 'builders') {
-    kwUpdate(id);
     const cached = cache['builders'];
     // 只使用有效缓存（xData 不为空才算命中）
     if (cached && cached.xData && Date.now() - cached.ts < REFRESH_INTERVAL) {
@@ -2580,7 +2562,6 @@ async function switchTab(id) {
 
   // ── AI 大事记：读取仓库内 models.json（同源，秒开）──
   if (tab.layout === 'timeline') {
-    kwUpdate(id);
     const cached = cache['timeline'];
     if (cached?.data && Date.now() - cached.ts < 6 * 3600e3) { renderModelTimeline(cached.data); return; }
     const data = await fetch('data/models.json?v=' + Math.floor(Date.now() / 3600e3))
@@ -2950,7 +2931,6 @@ function renderTab(tab, items, feedErrors = []) {
       <div class="daily-archive-col" id="archiveCol"></div>
       <div class="daily-content-col" id="dailyContentCol">${dailySourceLine}<div id="dailyBody">${newsHtml}</div></div>`;
     renderArchiveInCol();
-    kwUpdate(tab.id);
     return;
   }
   main.classList.remove('daily-mode');
@@ -2981,7 +2961,6 @@ function renderTab(tab, items, feedErrors = []) {
       if (meta) meta.textContent = `${items.length} 条 · ${nowStr()} 更新`;
     }
     document.getElementById('jobsContent').innerHTML = renderJobsContent(items, feedErrors);
-    kwUpdate(tab.id);
     return;
   }
 
@@ -3020,17 +2999,18 @@ function renderTab(tab, items, feedErrors = []) {
     ? `${displayItems.length} / ${items.length} 条`
     : `${items.length} 条`;
 
+  const kwInline = tab.id === 'featured' ? (kwBuild(), kwHtml()) : '';
+
   main.innerHTML = `
     <div class="section-header">
       <div class="section-title" style="display:flex;align-items:center;gap:8px"><span style="width:20px;height:20px;display:flex;align-items:center;justify-content:center;flex-shrink:0">${tab.icon}</span>${tab.name}</div>
       <div class="section-meta">${totalLabel} · ${nowStr()} 更新</div>
     </div>
     ${errorBanner}
+    ${kwInline}
     <div class="source-pills">${sourcePills}</div>
     ${catPillsHtml}
     ${content}`;
-
-  kwUpdate(tab.id);
 }
 
 // ── Render: featured timeline (精选专用，富卡片) ────────
