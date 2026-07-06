@@ -352,62 +352,51 @@
       overflow: hidden;
     }
     .kw-left {
-      width: 140px;
       flex-shrink: 0;
       border-right: 1px solid var(--border);
-      padding: 12px 0 12px;
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
+      padding: 14px 12px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      align-content: start;
     }
     .kw-hd {
+      grid-column: 1 / -1;
       font-size: 10px;
       font-weight: 600;
       color: var(--muted);
       letter-spacing: 0.06em;
-      text-transform: uppercase;
-      padding: 0 14px 8px;
+      padding-bottom: 4px;
     }
     .kw-btn {
       display: flex;
       align-items: center;
-      gap: 7px;
-      padding: 6px 14px;
+      justify-content: center;
+      padding: 5px 10px;
       cursor: pointer;
-      border-radius: 0;
-      font-size: 12px;
+      border-radius: 100px;
+      font-size: 11px;
       color: var(--text);
-      transition: background 0.1s;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      transition: border-color 0.1s, color 0.1s, background 0.1s;
       user-select: none;
+      white-space: nowrap;
+      text-align: center;
     }
-    .kw-btn:hover { background: rgba(139,148,158,0.1); }
+    .kw-btn:hover { border-color: var(--accent); color: var(--accent); }
     .kw-btn.active {
-      background: rgba(208,25,34,0.07);
+      background: rgba(208,25,34,0.08);
+      border-color: rgba(208,25,34,0.45);
       color: var(--accent);
       font-weight: 600;
-    }
-    .kw-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--muted);
-      flex-shrink: 0;
-      opacity: 0.5;
-    }
-    .kw-btn.active .kw-dot { background: var(--accent); opacity: 1; }
-    .kw-cnt {
-      font-size: 10px;
-      color: var(--muted);
-      margin-left: auto;
     }
     .kw-right {
       flex: 1;
       overflow-y: auto;
-      max-height: 220px;
-      padding: 12px 14px 12px;
+      padding: 14px 16px;
       display: flex;
       flex-direction: column;
-      gap: 7px;
       scrollbar-width: thin;
       scrollbar-color: var(--border) transparent;
       min-width: 0;
@@ -416,30 +405,35 @@
     .kw-right::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
     .kw-item {
       display: flex;
-      flex-direction: column;
-      gap: 2px;
-      padding: 8px 10px;
-      border: 1px solid var(--border);
-      border-radius: 7px;
-      background: var(--card-bg);
-      cursor: pointer;
+      align-items: baseline;
+      gap: 0;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--border);
       text-decoration: none;
-      transition: border-color 0.12s, background 0.12s;
+      transition: opacity 0.1s;
+      min-width: 0;
     }
-    .kw-item:hover { border-color: rgba(208,25,34,0.35); background: rgba(208,25,34,0.03); }
+    .kw-item:last-child { border-bottom: none; }
+    .kw-item:hover { opacity: 0.72; }
+    .kw-item-meta {
+      font-size: 11px;
+      color: var(--muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .kw-item-sep {
+      font-size: 11px;
+      color: var(--border);
+      flex-shrink: 0;
+      padding: 0 6px;
+    }
     .kw-item-title {
       font-size: 12px;
-      font-weight: 500;
       color: var(--text);
-      line-height: 1.45;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
       overflow: hidden;
-    }
-    .kw-item-meta {
-      font-size: 10px;
-      color: var(--muted);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      min-width: 0;
     }
     @media (max-width: 768px) {
       .kw-wrap { display: none !important; }
@@ -2084,19 +2078,17 @@ function kwItemHtml(item) {
     if (diff < 86400) return Math.floor(diff / 3600) + '小时前';
     return Math.floor(diff / 86400) + '天前';
   })();
-  const src = item._feedName || '';
   return `<a class="kw-item" href="${esc(item.link || '#')}" target="_blank" rel="noopener">
-    <div class="kw-item-title">${esc(item.title || '')}</div>
-    <div class="kw-item-meta">${src ? esc(src) + ' · ' : ''}${ago}</div>
+    <span class="kw-item-meta">${ago}</span>
+    <span class="kw-item-sep">｜</span>
+    <span class="kw-item-title">${esc(item.title || '')}</span>
   </a>`;
 }
 
 function kwHtml() {
   if (!kwData.length) return '';
   const btns = kwData.map((d, i) => `
-    <div class="kw-btn${i === kwActive ? ' active' : ''}" onclick="kwSelect(${i})">
-      <span class="kw-dot"></span>${esc(d.kw)}<span class="kw-cnt">${d.items.length}</span>
-    </div>`).join('');
+    <div class="kw-btn${i === kwActive ? ' active' : ''}" onclick="kwSelect(${i})">${esc(d.kw)}</div>`).join('');
   const rightItems = (kwData[kwActive]?.items || []).map(kwItemHtml).join('');
   return `
     <div class="kw-wrap">
