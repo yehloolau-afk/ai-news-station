@@ -343,32 +343,38 @@
     }
 
     /* ── 关键词条面板 ── */
+    .kw-row {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      align-items: start;
+      margin-bottom: 18px;
+    }
+    .kw-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.5;
+      padding-top: 12px;
+    }
     .kw-wrap {
       display: flex;
       border: 1px solid var(--border);
       border-radius: 10px;
       background: var(--card-bg);
-      margin-left: 80px;
-      margin-bottom: 18px;
       overflow: hidden;
     }
     .kw-left {
       flex-shrink: 0;
+      align-self: start;
       border-right: 1px solid var(--border);
-      padding: 14px 12px;
+      padding: 12px 10px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 6px;
       align-content: start;
     }
-    .kw-hd {
-      grid-column: 1 / -1;
-      font-size: 10px;
-      font-weight: 600;
-      color: var(--muted);
-      letter-spacing: 0.06em;
-      padding-bottom: 4px;
-    }
+    .kw-hd { display: none; }
     .kw-btn {
       display: flex;
       align-items: center;
@@ -2092,12 +2098,12 @@ function kwHtml() {
     <div class="kw-btn${i === kwActive ? ' active' : ''}" onclick="kwSelect(${i})">${esc(d.kw)}</div>`).join('');
   const rightItems = (kwData[kwActive]?.items || []).map(kwItemHtml).join('');
   return `
-    <div class="kw-wrap">
-      <div class="kw-left">
-        <div class="kw-hd">近半月关键词</div>
-        ${btns}
+    <div class="kw-row">
+      <div class="kw-label">近15天<br>关键词</div>
+      <div class="kw-wrap">
+        <div class="kw-left">${btns}</div>
+        <div class="kw-right" id="kwRight">${rightItems}</div>
       </div>
-      <div class="kw-right" id="kwRight">${rightItems}</div>
     </div>`;
 }
 
