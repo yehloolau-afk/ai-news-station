@@ -333,6 +333,118 @@
     .main::-webkit-scrollbar { width: 5px; }
     .main::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 
+    /* ── Content column (sidebar 右侧整体容器) ── */
+    .content-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      min-width: 0;
+    }
+
+    /* ── 关键词条面板 ── */
+    .kw-wrap {
+      flex-shrink: 0;
+      display: flex;
+      gap: 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+      min-height: 0;
+    }
+    .kw-wrap.kw-hidden { display: none; }
+    .kw-left {
+      width: 140px;
+      flex-shrink: 0;
+      border-right: 1px solid var(--border);
+      padding: 12px 0 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .kw-hd {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0 14px 8px;
+    }
+    .kw-btn {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 14px;
+      cursor: pointer;
+      border-radius: 0;
+      font-size: 12px;
+      color: var(--text);
+      transition: background 0.1s;
+      user-select: none;
+    }
+    .kw-btn:hover { background: rgba(139,148,158,0.1); }
+    .kw-btn.active {
+      background: rgba(208,25,34,0.07);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .kw-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--muted);
+      flex-shrink: 0;
+      opacity: 0.5;
+    }
+    .kw-btn.active .kw-dot { background: var(--accent); opacity: 1; }
+    .kw-cnt {
+      font-size: 10px;
+      color: var(--muted);
+      margin-left: auto;
+    }
+    .kw-right {
+      flex: 1;
+      overflow-y: auto;
+      padding: 12px 16px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      scrollbar-width: thin;
+      scrollbar-color: var(--border) transparent;
+      min-width: 0;
+    }
+    .kw-right::-webkit-scrollbar { width: 4px; }
+    .kw-right::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+    .kw-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      background: var(--card-bg);
+      cursor: pointer;
+      text-decoration: none;
+      transition: border-color 0.12s, background 0.12s;
+    }
+    .kw-item:hover { border-color: rgba(208,25,34,0.35); background: rgba(208,25,34,0.03); }
+    .kw-item-title {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.45;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .kw-item-meta {
+      font-size: 10px;
+      color: var(--muted);
+    }
+    @media (max-width: 768px) {
+      .kw-wrap { display: none !important; }
+    }
+
     /* ── Section header ── */
     .section-header {
       display: flex;
@@ -1241,9 +1353,12 @@
   </div>
 </aside>
 
-<main class="main" id="main">
-  <div class="loading-state"><div class="spinner"></div><span>正在加载资讯...</span></div>
-</main>
+<div class="content-col">
+  <div id="kwPanel"></div>
+  <main class="main" id="main">
+    <div class="loading-state"><div class="spinner"></div><span>正在加载资讯...</span></div>
+  </main>
+</div>
 
 <!-- 移动端底部 tab 导航（手机显示，PC隐藏） -->
 <nav class="mobile-nav" id="mobileNav"></nav>
@@ -1904,6 +2019,121 @@ function setArchivePanel(visible) {
   // 存档列表现在在主内容区，此处仅占位
 }
 
+// ── 关键词条面板 ──────────────────────────────────────
+const KW_DEF = [
+  { kw: 'GPT / OpenAI',  terms: ['openai','gpt-4','gpt-5','chatgpt','o3','o4'] },
+  { kw: 'Claude / Anthropic', terms: ['anthropic','claude','claude-4','claude-3'] },
+  { kw: 'Gemini / Google', terms: ['gemini','google deepmind','google ai','bard'] },
+  { kw: 'AI Agent',      terms: ['agent','manus','agentic','autonomous ai','multi-agent'] },
+  { kw: 'AI 图像/视频',  terms: ['sora','runway','midjourney','flux','kling','image generation','video generation','文生图','文生视频'] },
+  { kw: 'AI 编程',       terms: ['cursor','copilot','devin','codegen','code generation','ai coding'] },
+  { kw: '开源模型',      terms: ['llama','mistral','qwen','deepseek','open source model','开源'] },
+  { kw: 'AI 硬件/算力',  terms: ['nvidia','gpu','h100','tpu','inference chip','算力'] },
+  { kw: 'AI 安全/监管',  terms: ['ai safety','alignment','regulation','eu ai act','监管','安全'] },
+  { kw: 'Vibe Coding',   terms: ['vibe coding','no-code ai','low-code','bolt.new','lovable'] },
+  { kw: 'RAG / 知识库',  terms: ['rag','retrieval','knowledge base','知识库','向量数据库'] },
+  { kw: '多模态',        terms: ['multimodal','vision model','audio model','多模态'] },
+  { kw: 'AI 设计工具',   terms: ['figma ai','adobe firefly','galileo','uizard','设计工具'] },
+  { kw: '大模型融资',    terms: ['funding','valuation','investment','融资','估值'] },
+  { kw: 'AI 产品发布',   terms: ['launch','release','announced','发布','上线','推出'] },
+];
+
+let kwData = [];    // [{ kw, terms, items: [...] }]  ≤6 entries
+let kwActive = 0;
+let kwBuiltAt = 0;
+
+function kwGetItems() {
+  const seen = new Set();
+  const all = [];
+  const cutoff = Date.now() - 15 * 24 * 60 * 60 * 1000;
+  for (const entry of Object.values(cache)) {
+    if (!entry?.items) continue;
+    for (const item of entry.items) {
+      if (seen.has(item.link)) continue;
+      const ts = new Date(item.pubDate).getTime();
+      if (!isNaN(ts) && ts < cutoff) continue;
+      seen.add(item.link);
+      all.push(item);
+    }
+  }
+  return all;
+}
+
+function kwBuild() {
+  if (Date.now() - kwBuiltAt < 5 * 60 * 1000 && kwData.length) return;
+  const items = kwGetItems();
+  if (!items.length) return;
+  const results = [];
+  for (const def of KW_DEF) {
+    const matched = items.filter(item => {
+      const haystack = ((item.title || '') + ' ' + (item.description || '')).toLowerCase();
+      return def.terms.some(t => haystack.includes(t.toLowerCase()));
+    });
+    if (matched.length >= 2) results.push({ kw: def.kw, items: matched.slice(0, 4) });
+    if (results.length === 6) break;
+  }
+  kwData = results;
+  kwActive = 0;
+  kwBuiltAt = Date.now();
+}
+
+function kwItemHtml(item) {
+  const ts = new Date(item.pubDate);
+  const ago = isNaN(ts) ? '' : (() => {
+    const diff = Math.floor((Date.now() - ts) / 1000);
+    if (diff < 3600) return Math.floor(diff / 60) + '分钟前';
+    if (diff < 86400) return Math.floor(diff / 3600) + '小时前';
+    return Math.floor(diff / 86400) + '天前';
+  })();
+  const src = item._feedName || '';
+  return `<a class="kw-item" href="${esc(item.link || '#')}" target="_blank" rel="noopener">
+    <div class="kw-item-title">${esc(item.title || '')}</div>
+    <div class="kw-item-meta">${src ? esc(src) + ' · ' : ''}${ago}</div>
+  </a>`;
+}
+
+function kwRender() {
+  const panel = document.getElementById('kwPanel');
+  if (!panel) return;
+  if (!kwData.length) {
+    panel.innerHTML = '';
+    return;
+  }
+  const btns = kwData.map((d, i) => `
+    <div class="kw-btn${i === kwActive ? ' active' : ''}" onclick="kwSelect(${i})">
+      <span class="kw-dot"></span>${esc(d.kw)}<span class="kw-cnt">${d.items.length}</span>
+    </div>`).join('');
+  const rightItems = (kwData[kwActive]?.items || []).map(kwItemHtml).join('');
+  panel.innerHTML = `
+    <div class="kw-wrap">
+      <div class="kw-left">
+        <div class="kw-hd">近半月关键词</div>
+        ${btns}
+      </div>
+      <div class="kw-right" id="kwRight">${rightItems}</div>
+    </div>`;
+}
+
+function kwSelect(idx) {
+  kwActive = idx;
+  document.querySelectorAll('.kw-btn').forEach((b, i) => b.classList.toggle('active', i === idx));
+  const right = document.getElementById('kwRight');
+  if (right) right.innerHTML = (kwData[idx]?.items || []).map(kwItemHtml).join('');
+}
+
+function kwUpdate(tabId) {
+  const panel = document.getElementById('kwPanel');
+  if (!panel) return;
+  const hideFor = new Set(['daily', 'jobs', 'builders', 'timeline']);
+  const tab = TABS.find(t => t.id === tabId);
+  if (tab && hideFor.has(tab.layout)) {
+    panel.innerHTML = '';
+    return;
+  }
+  kwBuild();
+  kwRender();
+}
+
 // ── Init ──────────────────────────────────────────────
 // 精选首次渲染完成后才触发其他 tab 预取，避免争带宽
 let _featuredPaintResolve = null;
@@ -2328,6 +2558,7 @@ async function switchTab(id) {
 
   // ── Builders tab: 直接拉取 Follow Builders 数据 ──
   if (tab.layout === 'builders') {
+    kwUpdate(id);
     const cached = cache['builders'];
     // 只使用有效缓存（xData 不为空才算命中）
     if (cached && cached.xData && Date.now() - cached.ts < REFRESH_INTERVAL) {
@@ -2351,6 +2582,7 @@ async function switchTab(id) {
 
   // ── AI 大事记：读取仓库内 models.json（同源，秒开）──
   if (tab.layout === 'timeline') {
+    kwUpdate(id);
     const cached = cache['timeline'];
     if (cached?.data && Date.now() - cached.ts < 6 * 3600e3) { renderModelTimeline(cached.data); return; }
     const data = await fetch('data/models.json?v=' + Math.floor(Date.now() / 3600e3))
@@ -2720,6 +2952,7 @@ function renderTab(tab, items, feedErrors = []) {
       <div class="daily-archive-col" id="archiveCol"></div>
       <div class="daily-content-col" id="dailyContentCol">${dailySourceLine}<div id="dailyBody">${newsHtml}</div></div>`;
     renderArchiveInCol();
+    kwUpdate(tab.id);
     return;
   }
   main.classList.remove('daily-mode');
@@ -2750,6 +2983,7 @@ function renderTab(tab, items, feedErrors = []) {
       if (meta) meta.textContent = `${items.length} 条 · ${nowStr()} 更新`;
     }
     document.getElementById('jobsContent').innerHTML = renderJobsContent(items, feedErrors);
+    kwUpdate(tab.id);
     return;
   }
 
@@ -2797,6 +3031,8 @@ function renderTab(tab, items, feedErrors = []) {
     <div class="source-pills">${sourcePills}</div>
     ${catPillsHtml}
     ${content}`;
+
+  kwUpdate(tab.id);
 }
 
 // ── Render: featured timeline (精选专用，富卡片) ────────
