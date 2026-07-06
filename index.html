@@ -2124,9 +2124,7 @@ function kwSelect(idx) {
 function kwUpdate(tabId) {
   const panel = document.getElementById('kwPanel');
   if (!panel) return;
-  const hideFor = new Set(['daily', 'jobs', 'builders', 'timeline']);
-  const tab = TABS.find(t => t.id === tabId);
-  if (tab && hideFor.has(tab.layout)) {
+  if (tabId !== 'featured') {
     panel.innerHTML = '';
     return;
   }
