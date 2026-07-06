@@ -145,7 +145,7 @@
     }
 
     /* ── Daily 三列布局 ── */
-    .main.daily-mode { padding: 0; overflow: visible; display: flex; flex-direction: column; }
+    .main.daily-mode { padding: 0; overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
     .daily-archive-col {
       width: 100%; min-width: unset;
       border-right: none; border-bottom: 1px solid var(--border);
@@ -182,9 +182,11 @@
     .daily-content-col {
       flex: 1;
       overflow-y: auto;
+      overflow-x: hidden;
       padding: 28px 32px 48px;
       scrollbar-width: thin;
       scrollbar-color: var(--border) transparent;
+      min-width: 0;
     }
     .daily-content-col::-webkit-scrollbar { width: 5px; }
     .daily-content-col::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
