@@ -2059,17 +2059,19 @@ function kwGetItems() {
   return all;
 }
 
-function kwBuild() {
+function kwBuild(extraItems = []) {
   if (Date.now() - kwBuiltAt < 5 * 60 * 1000 && kwData.length) return;
-  const items = kwGetItems();
-  if (!items.length) return;
+  const cached = kwGetItems();
+  const seen = new Set(cached.map(i => i.link));
+  const all = [...cached, ...extraItems.filter(i => i.link && !seen.has(i.link))];
+  if (!all.length) return;
   const results = [];
   for (const def of KW_DEF) {
-    const matched = items.filter(item => {
+    const matched = all.filter(item => {
       const haystack = ((item.title || '') + ' ' + (item.description || '')).toLowerCase();
       return def.terms.some(t => haystack.includes(t.toLowerCase()));
     });
-    if (matched.length >= 2) results.push({ kw: def.kw, items: matched.slice(0, 4) });
+    if (matched.length >= 1) results.push({ kw: def.kw, items: matched.slice(0, 4) });
     if (results.length === 6) break;
   }
   kwData = results;
@@ -2998,7 +3000,8 @@ function renderTab(tab, items, feedErrors = []) {
     ? `${displayItems.length} / ${items.length} 条`
     : `${items.length} 条`;
 
-  const kwInline = tab.id === 'featured' ? (kwBuild(), kwHtml()) : '';
+  if (tab.id === 'featured') kwBuild(items);
+  const kwInline = tab.id === 'featured' ? kwHtml() : '';
 
   main.innerHTML = `
     <div class="section-header">
