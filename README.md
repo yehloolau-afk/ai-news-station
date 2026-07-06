@@ -2,13 +2,13 @@
 
 **Live →** [yehloolau-afk.github.io/ai-news-station/](https://yehloolau-afk.github.io/ai-news-station/)
 
-**📊 数据看板 →** [admin.html](https://yehloolau-afk.github.io/ai-news-station/admin.html)（站长专用，需口令）
+**📊 Dashboard →** [admin.html](https://yehloolau-afk.github.io/ai-news-station/admin.html) (owner-only, passcode protected)
 
-**📰 AI 日报存档 →** [daily/](https://yehloolau-afk.github.io/ai-news-station/daily/)（每日静态页，搜索引擎与 AI 引擎可抓取，Actions 每天三次自动更新）
+**📰 AI Daily archive →** [daily/](https://yehloolau-afk.github.io/ai-news-station/daily/) (static pages crawlable by search & AI engines, rebuilt 3×/day via Actions)
 
-**🕐 AI 模型发布时间线 →** [timeline/](https://yehloolau-afk.github.io/ai-news-station/timeline/)（哪家、什么模型、哪天发布、关键规格，2023 至今持续维护）
+**🕐 AI model release timeline →** [timeline/](https://yehloolau-afk.github.io/ai-news-station/timeline/) (who, which model, when, key specs — maintained from 2023 onward)
 
-**📡 RSS 订阅 →** [feed.xml](https://yehloolau-afk.github.io/ai-news-station/feed.xml)
+**📡 RSS →** [feed.xml](https://yehloolau-afk.github.io/ai-news-station/feed.xml)
 
 A 7-channel AI news aggregator built for design teams. Pulls from 20+ Chinese and English sources, auto-translates, and updates every hour via GitHub Actions.
 
@@ -25,6 +25,8 @@ A 7-channel AI news aggregator built for design teams. Pulls from 20+ Chinese an
 | Design | AI x design, tools for designers |
 | Video | Video generation, Sora, Kling, and more |
 | Daily | Today's digest |
+
+Plus a **Timeline** group (its own sidebar section) — the first entry is the AI model release timeline; more archives (funding, policy…) can slot in later.
 
 ---
 
@@ -46,25 +48,25 @@ A 7-channel AI news aggregator built for design teams. Pulls from 20+ Chinese an
 GitHub Actions (hourly) → fetch RSS/APIs → process + translate → write JSON → static site serves it
 ```
 
-### 数据管道（全部在本仓库 Actions 运行）
+### Data pipelines (all run as Actions in this repo)
 
-| 工作流 | 频率 | 产出 |
+| Workflow | Frequency | Output |
 |---|---|---|
-| 更新频道数据 | 每小时 | `data/{featured,all,official,products,design,videos}.json` + `feed.xml`（页面首屏的同源快速数据层） |
-| 生成日报静态页 | 每天 3 次 | `daily/*.html` 永久存档 + `sitemap.xml`（GEO/SEO 抓取层，站内日报频道同源复用）；同时从日报「模型发布」板块抽取时间线候选（`data/model-candidates.json`，人工审核后并入 `data/models.json`）并重建 `timeline/` 静态页 |
-| 更新访问统计 | 每天 2 次 | `data/stats.json`（数据看板） |
+| Update channel data | Hourly | `data/{featured,all,official,products,design,videos}.json` + `feed.xml` (same-origin fast data layer for first paint) |
+| Build daily static pages | 3×/day | Permanent `daily/*.html` archive + `sitemap.xml` (GEO/SEO crawl layer, reused by the in-app Daily channel). Also extracts model-release candidates from the daily "model releases" section into `data/model-candidates.json` (merged into `data/models.json` after human review) and rebuilds the `timeline/` static page |
+| Update analytics | 2×/day | `data/stats.json` (dashboard) |
 
-### 加载策略
+### Loading strategy
 
-- 首屏 `<link rel="preload">` 预载精选数据，同源 JSON 一次请求出内容，无 CORS 代理依赖
-- 静态数据过期时 stale-while-revalidate：先展示旧内容，后台走 RSS 代理路径刷新
-- 桌面端全量后台预取；移动端轻量预取（仅同源静态 JSON + 今日日报，不走代理，省流量）
-- 日报频道历史日期直接读仓库内永久存档，不受上游 API 仅保留 10 天的限制
+- First paint uses `<link rel="preload">` for the Featured data — one same-origin JSON request, no CORS proxy dependency
+- Stale-while-revalidate when static data is expired: show cached content first, refresh in the background via the RSS proxy path
+- Desktop prefetches all channels in the background; mobile does a light prefetch (same-origin static JSON + today's daily only, no proxy, saves bandwidth)
+- The Daily channel reads historical dates straight from the in-repo permanent archive, unaffected by the upstream API's 10-day retention limit
 
-### 移动端
+### Mobile
 
-- 底部 Tab 导航 + 「更多」浮层（频道分组 + 日报存档 / 订阅周报 / 站点数据入口）
-- 翻译延迟执行不阻塞首屏，Phase 2 数据量减半
+- Bottom tab navigation + a "More" sheet (channel group + entries for Daily archive / newsletter / dashboard)
+- Translation is deferred so it never blocks first paint; Phase 2 payload is halved
 
 ---
 
@@ -72,61 +74,60 @@ GitHub Actions (hourly) → fetch RSS/APIs → process + translate → write JSO
 
 - Single HTML file — no framework, no backend
 - GitHub Actions for scheduled data updates
-- Deployed on Netlify + GitHub Pages
+- Deployed on GitHub Pages
 
-`Claude Code` · `Vanilla HTML / CSS / JS` · `GitHub Actions` · `Netlify`
+`Claude Code` · `Vanilla HTML / CSS / JS` · `GitHub Actions` · `GitHub Pages`
 
 ---
 
-## 访问统计与数据看板
+## Analytics & dashboard
 
-站点接入了两套访问统计，并自建了一个聚合数据看板。
+The site wires in two analytics providers and ships a self-hosted aggregated dashboard.
 
-### 数据看板
+### Dashboard
 
-- 地址：[yehloolau-afk.github.io/ai-news-station/admin.html](https://yehloolau-afk.github.io/ai-news-station/admin.html)（站点侧边栏底部有「📊 站点数据」小入口，页面已设 noindex）
-- 需要输入访问口令（口令不写在公开仓库里；口令的 SHA-256 哈希存在 `admin.html` 的 `PASS_HASH`，仅用于挡路人）
-- 一屏展示：今日/近30天访客与浏览量、30 天趋势图、国内/海外占比、来源渠道、国内来源类型（百度统计，待接入）
+- URL: [yehloolau-afk.github.io/ai-news-station/admin.html](https://yehloolau-afk.github.io/ai-news-station/admin.html) (a small "📊 Site data" entry sits at the bottom of the sidebar; the page is set to `noindex`)
+- Requires a passcode. The passcode itself is **not** committed — only its SHA-256 hash lives in `PASS_HASH` inside `admin.html`, and it only keeps casual visitors out.
+- One screen: today / last-30-day visitors and pageviews, 30-day trend chart, domestic vs. overseas split, referrers, and domestic referrer types (Baidu Tongji, pending).
 
-**修改口令**：浏览器控制台运行
-`crypto.subtle.digest('SHA-256', new TextEncoder().encode('新口令')).then(b=>console.log([...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')))`
-把输出替换 `admin.html` 里的 `PASS_HASH` 即可。
+**Change the passcode** — run this in the browser console:
+`crypto.subtle.digest('SHA-256', new TextEncoder().encode('new-passcode')).then(b=>console.log([...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')))`
+Replace `PASS_HASH` in `admin.html` with the output.
 
-### 数据管道
+### Pipeline
 
 ```
-GitHub Actions（每天北京时间 09:30 / 21:30）
-  → scripts/fetch-stats.mjs 拉取 Umami / 百度统计
-  → 写入 data/stats.json 并提交
-  → admin.html 读取渲染
+GitHub Actions (daily, 09:30 / 21:30 Beijing time)
+  → scripts/fetch-stats.mjs pulls from Umami / Baidu Tongji
+  → writes data/stats.json and commits
+  → admin.html reads and renders
 ```
 
-- 手动更新数据：仓库 Actions 页 → 「更新访问统计」→ Run workflow
-- Umami 走分享链接的只读接口（免费版没有 API key），分享 ID 存在仓库 Secret `UMAMI_SHARE_ID`
-- ⚠️ 如果在 Umami 后台删除了该网站的 Share 链接，数据拉取会失败；重新创建 Share 后用
-  `gh secret set UMAMI_SHARE_ID` 更新即可（新分享 ID 是链接 `/share/` 后面那段）
+- Manual refresh: repo Actions tab → "Update analytics" → Run workflow
+- Umami uses the read-only share-link endpoint (the free plan has no API key); the share ID is stored in the repo secret `UMAMI_SHARE_ID`
+- ⚠️ If the site's Share link is deleted in the Umami dashboard, the pull will fail. Recreate the Share and update the secret with `gh secret set UMAMI_SHARE_ID` (the new share ID is the segment after `/share/` in the link).
 
-### 两个统计后台
+### The two analytics backends
 
-| 后台 | 用途 | 入口 |
+| Backend | Purpose | Entry |
 |---|---|---|
-| Umami | 国内外全部访客：趋势、国家分布、来源 | https://cloud.umami.is |
-| 百度统计 | 国内渠道细节：百度搜索、微信、知乎等占比 | https://tongji.baidu.com |
+| Umami | All visitors worldwide: trend, country distribution, referrers | https://cloud.umami.is |
+| Baidu Tongji | Domestic channel detail: Baidu Search, WeChat, Zhihu, etc. | https://tongji.baidu.com |
 
-统计脚本都挂在 `index.html` 的 `</head>` 前。
+Both tracking scripts sit just before `</head>` in `index.html`.
 
-### 以后接入百度统计 API（待办）
+### Wiring up the Baidu Tongji API (TODO)
 
-看板里「国内来源类型」目前显示未配置，原因是百度「数据导出服务」有开通门槛：**站点昨日 PV > 100**。等流量达标后：
+The dashboard's "domestic referrer types" panel shows "not configured" because Baidu's Data Export Service has a gate: **the site's previous-day PV must exceed 100**. Once traffic clears that bar:
 
-1. 百度统计后台 → 使用设置 → 其它设置 → **数据导出服务** → 开通，得到 API Key 和 Secret Key
-2. 浏览器打开授权链接获取 code：
+1. Baidu Tongji → Settings → Other Settings → **Data Export Service** → enable, and get an API Key + Secret Key
+2. Open the authorization URL in a browser to obtain a code:
    `http://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id={API_KEY}&redirect_uri=oob&scope=basic&display=popup`
-3. 用 code 换 refresh token：
+3. Exchange the code for a refresh token:
    `http://openapi.baidu.com/oauth/2.0/token?grant_type=authorization_code&code={CODE}&client_id={API_KEY}&client_secret={SECRET_KEY}&redirect_uri=oob`
-4. 配置三个仓库 Secrets：`BAIDU_API_KEY`、`BAIDU_SECRET_KEY`、`BAIDU_REFRESH_TOKEN`（refresh token 有效期十年）
+4. Set three repo secrets: `BAIDU_API_KEY`, `BAIDU_SECRET_KEY`, `BAIDU_REFRESH_TOKEN` (the refresh token is valid for ten years)
 
-`scripts/fetch-stats.mjs` 已内置百度数据的拉取逻辑，Secrets 配好后下一次运行自动生效，无需改代码。
+`scripts/fetch-stats.mjs` already contains the Baidu fetch logic — once the secrets are set it takes effect on the next run, no code change needed.
 
 ---
 
