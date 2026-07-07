@@ -1,22 +1,17 @@
 {
-  "generatedAt": "2026-07-07T05:35:26.648Z",
+  "generatedAt": "2026-07-07T16:00:59.850Z",
   "umami": {
     "error": null,
     "today": {
-      "visitors": 3,
-      "pageviews": 41
+      "visitors": 0,
+      "pageviews": 0
     },
     "last30d": {
-      "visitors": 11,
-      "pageviews": 212,
-      "visits": 40
+      "visitors": 12,
+      "pageviews": 213,
+      "visits": 41
     },
     "series": [
-      {
-        "date": "2026-06-08",
-        "pageviews": 0,
-        "visitors": 0
-      },
       {
         "date": "2026-06-09",
         "pageviews": 0,
@@ -154,11 +149,16 @@
       },
       {
         "date": "2026-07-06",
-        "pageviews": 41,
-        "visitors": 3
+        "pageviews": 42,
+        "visitors": 4
       },
       {
         "date": "2026-07-07",
+        "pageviews": 0,
+        "visitors": 0
+      },
+      {
+        "date": "2026-07-08",
         "pageviews": 0,
         "visitors": 0
       }
@@ -170,7 +170,7 @@
       },
       {
         "code": "CN",
-        "visitors": 3
+        "visitors": 4
       }
     ],
     "referrers": [
