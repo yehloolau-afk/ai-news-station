@@ -371,8 +371,9 @@
       padding: 12px 10px;
       display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, auto);
+      grid-auto-flow: column;
       gap: 6px;
-      align-content: start;
     }
     .kw-hd { display: none; }
     .kw-btn {
@@ -2071,10 +2072,10 @@ function kwBuild(extraItems = []) {
       const haystack = ((item.title || '') + ' ' + (item.description || '')).toLowerCase();
       return def.terms.some(t => haystack.includes(t.toLowerCase()));
     });
-    if (matched.length >= 1) results.push({ kw: def.kw, items: matched.slice(0, 4) });
-    if (results.length === 6) break;
+    if (matched.length >= 1) results.push({ kw: def.kw, count: matched.length, items: matched.slice(0, 4) });
   }
-  kwData = results;
+  results.sort((a, b) => b.count - a.count);
+  kwData = results.slice(0, 6);
   kwActive = 0;
   kwBuiltAt = Date.now();
 }
