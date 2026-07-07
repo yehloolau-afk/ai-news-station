@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 07 Jul 2026 17:33:56 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2026 20:14:24 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>瑞为技术暗盘破发，收盘跌17%｜敲钟时刻</title>
@@ -69,6 +69,18 @@
       <pubDate>Tue, 07 Jul 2026 18:07:53 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3885413484163074?f=rss</guid>
       <source url="https://36kr.com/p/3885413484163074?f=rss">36Kr</source>
+    </item>
+    <item>
+      <title>TPG 如何利用 ChatGPT 加速投资研究</title>
+      <link>https://www.youtube.com/shorts/mC8nKdQbbO4</link>
+      <description>For investment firms, getting smart faster is a competitive advantage.
+
+“My team uses ChatGPT on a daily basis… for market studies and desktop information scrapes… It enables us to get smart on industries really, really quickly.” -David Bessel, TPG
+
+See how TPG is putting ChatGPT to work across rese</description>
+      <pubDate>Tue, 07 Jul 2026 17:33:50 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/shorts/mC8nKdQbbO4</guid>
+      <source url="https://www.youtube.com/shorts/mC8nKdQbbO4">OpenAI</source>
     </item>
     <item>
       <title>家庭饮品 DIY 指南（二）：常用液体物料推荐</title>
@@ -218,14 +230,6 @@ Adam Bridges, Benji Rabhan, B Shang, Cameron N</description>
       <pubDate>Tue, 07 Jul 2026 09:05:00 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3883943959621634?f=rss</guid>
       <source url="https://36kr.com/p/3883943959621634?f=rss">36Kr</source>
-    </item>
-    <item>
-      <title>重塑 IA 之美体验</title>
-      <link>https://www.youtube.com/watch?v=sLYXRA5Ay9g</link>
-      <description>Découvrez comment Sephora réinvente l'expérience beauté grâce à l'intelligence artificielle. Lors de cette session enregistrée à l'occasion de l'événement OpenAI France en juin 2026, Géraldine Servouze, Global VP Data, AI &amp; Insights chez Sephora, présente la stratégie IA de l'entreprise et la manièr</description>
-      <pubDate>Tue, 07 Jul 2026 09:01:40 +0000</pubDate>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=sLYXRA5Ay9g</guid>
-      <source url="https://www.youtube.com/watch?v=sLYXRA5Ay9g">OpenAI</source>
     </item>
   </channel>
 </rss>
