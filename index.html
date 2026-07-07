@@ -359,6 +359,7 @@
     }
     .kw-wrap {
       display: flex;
+      align-items: flex-start;
       border: 1px solid var(--border);
       border-radius: 10px;
       background: var(--card-bg);
@@ -402,9 +403,10 @@
     .kw-right {
       flex: 1;
       overflow-y: auto;
-      padding: 14px 16px;
+      padding: 10px 16px;
       display: flex;
       flex-direction: column;
+      gap: 10px;
       scrollbar-width: thin;
       scrollbar-color: var(--border) transparent;
       min-width: 0;
@@ -416,12 +418,10 @@
       align-items: center;
       height: 36px;
       flex-shrink: 0;
-      border-bottom: 1px solid var(--border);
       text-decoration: none;
       transition: opacity 0.1s;
       min-width: 0;
     }
-    .kw-item:last-child { border-bottom: none; }
     .kw-item:hover { opacity: 0.72; }
     .kw-item-meta {
       font-size: 11px;
