@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 07 Jul 2026 15:18:56 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2026 17:33:56 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>瑞为技术暗盘破发，收盘跌17%｜敲钟时刻</title>
@@ -79,12 +79,38 @@
       <source url="https://sspai.com/prime/story/home-made-beverages-1">少数派</source>
     </item>
     <item>
+      <title>TPG 如何利用 ChatGPT 加速投资研究</title>
+      <link>https://www.youtube.com/watch?v=SRXJevuTnNI</link>
+      <description>For investment firms, getting smart faster is a competitive advantage.
+
+“My team uses ChatGPT on a daily basis… for market studies and desktop information scrapes… It enables us to get smart on industries really, really quickly.” -David Bessel, TPG
+
+See how TPG is putting ChatGPT to work across rese</description>
+      <pubDate>Tue, 07 Jul 2026 17:15:23 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=SRXJevuTnNI</guid>
+      <source url="https://www.youtube.com/watch?v=SRXJevuTnNI">OpenAI</source>
+    </item>
+    <item>
       <title>社区速递 148 | 派友的全屋智能实操、水月雨布丁耳机与MUJI可调节毛巾枕</title>
       <link>https://sspai.com/post/112017</link>
       <description>除了首页时间流和侧栏的精选展位，少数派Matrix社区还有很多优秀内容因条件所限无法得到有效曝光，因此我们决定重启Matrix周报，并在此基础上添加更多社区内容、作者投稿新玩意呈现给大家。上周社区速递 ...查看全文</description>
       <pubDate>Tue, 07 Jul 2026 17:00:00 +0800</pubDate>
       <guid isPermaLink="true">https://sspai.com/post/112017</guid>
       <source url="https://sspai.com/post/112017">少数派</source>
+    </item>
+    <item>
+      <title>DeepSeek 的新 AI 速度破解令人惊叹</title>
+      <link>https://www.youtube.com/watch?v=1yBU41auQhw</link>
+      <description>❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers
+
+📝 The DeepSeek paper is available here:
+https://arxiv.org/abs/2607.05147v1
+
+🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:
+Adam Bridges, Benji Rabhan, B Shang, Cameron N</description>
+      <pubDate>Tue, 07 Jul 2026 16:33:29 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=1yBU41auQhw</guid>
+      <source url="https://www.youtube.com/watch?v=1yBU41auQhw">Two Minute Papers</source>
     </item>
     <item>
       <title>上市前夜｜套现十几亿后，他把矿卡开向港股</title>
@@ -200,22 +226,6 @@
       <pubDate>Tue, 07 Jul 2026 09:01:40 +0000</pubDate>
       <guid isPermaLink="true">https://www.youtube.com/watch?v=sLYXRA5Ay9g</guid>
       <source url="https://www.youtube.com/watch?v=sLYXRA5Ay9g">OpenAI</source>
-    </item>
-    <item>
-      <title>Marshall BROMLEY 450 派对音响：有音效灯效和 40 小时续航，麦克风吉他都能一包带走</title>
-      <link>https://www.ifanr.com/1671062?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</link>
-      <description>街头艺人和露营党的新大件#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</description>
-      <pubDate>Tue, 07 Jul 2026 08:41:01 +0000</pubDate>
-      <guid isPermaLink="true">https://www.ifanr.com/1671062?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</guid>
-      <source url="https://www.ifanr.com/1671062?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
-    </item>
-    <item>
-      <title>从共识到非共识：科技有「联想」沙龙首场活动直击具身智能产业化“三大困惑”</title>
-      <link>https://www.qbitai.com/2026/07/445443.html</link>
-      <description>“共识与非共识”的深度思辨</description>
-      <pubDate>Tue, 07 Jul 2026 08:32:27 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/445443.html</guid>
-      <source url="https://www.qbitai.com/2026/07/445443.html">量子位</source>
     </item>
   </channel>
 </rss>
