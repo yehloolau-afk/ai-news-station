@@ -5,8 +5,16 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 08 Jul 2026 16:54:54 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 18:43:51 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>与 GPT-Live 的图像交互</title>
+      <link>https://www.youtube.com/watch?v=KS4X-BPjxN8</link>
+      <description>More about our next generation voice model here: https://openai.com/index/introducing-gpt-live/</description>
+      <pubDate>Wed, 08 Jul 2026 17:37:19 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=KS4X-BPjxN8</guid>
+      <source url="https://www.youtube.com/watch?v=KS4X-BPjxN8">OpenAI</source>
+    </item>
     <item>
       <title>eVTOL 走向商业化，难点不只在“飞起来”</title>
       <link>https://36kr.com/p/3886750049808389?f=rss</link>
@@ -20,6 +28,14 @@
       <source url="https://36kr.com/p/3886750049808389?f=rss">36Kr</source>
     </item>
     <item>
+      <title>使用 GPT-Live 的可发现性小部件</title>
+      <link>https://www.youtube.com/watch?v=QUOwyLwoykU</link>
+      <description>More about our next generation voice model here: https://openai.com/index/introducing-gpt-live/</description>
+      <pubDate>Wed, 08 Jul 2026 17:36:34 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=QUOwyLwoykU</guid>
+      <source url="https://www.youtube.com/watch?v=QUOwyLwoykU">OpenAI</source>
+    </item>
+    <item>
       <title>从跨境电商到AI大模型：一个旅欧10年90后女生的两次出海</title>
       <link>https://36kr.com/p/3886574096265481?f=rss</link>
       <description>20世纪50年代，“日本制造”对世界来说意味着低廉的价格和三流的产品。到70年代日本家电崛起，巅峰时期美国市场三成的彩电都是日本产品。80年代，丰田、本田、日产等日本汽车品牌接棒家电走向世界。再往后，日本动漫、游戏、音乐等文化娱乐产业开始向海外输出并成为支柱产业。
@@ -28,6 +44,22 @@
       <pubDate>Wed, 08 Jul 2026 17:33:33 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3886574096265481?f=rss</guid>
       <source url="https://36kr.com/p/3886574096265481?f=rss">36Kr</source>
+    </item>
+    <item>
+      <title>使用 GPT-Live 进行自然对话</title>
+      <link>https://www.youtube.com/watch?v=3bL6IpdgddQ</link>
+      <description>More about our next generation voice model here: https://openai.com/index/introducing-gpt-live/</description>
+      <pubDate>Wed, 08 Jul 2026 17:33:32 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=3bL6IpdgddQ</guid>
+      <source url="https://www.youtube.com/watch?v=3bL6IpdgddQ">OpenAI</source>
+    </item>
+    <item>
+      <title>GPT-Live 的时间感知</title>
+      <link>https://www.youtube.com/watch?v=8vvWTz6N7Qg</link>
+      <description>More about our next generation voice model here: https://openai.com/index/introducing-gpt-live/</description>
+      <pubDate>Wed, 08 Jul 2026 17:33:31 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=8vvWTz6N7Qg</guid>
+      <source url="https://www.youtube.com/watch?v=8vvWTz6N7Qg">OpenAI</source>
     </item>
     <item>
       <title>乌兰布统，草原观星</title>
@@ -67,38 +99,6 @@
       <pubDate>Wed, 08 Jul 2026 16:01:28 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3886678879727880?f=rss</guid>
       <source url="https://36kr.com/p/3886678879727880?f=rss">36Kr</source>
-    </item>
-    <item>
-      <title>OpenAI 学院：圣安东尼奥马刺队的家长教练</title>
-      <link>https://www.youtube.com/watch?v=94cXnSu6kUQ</link>
-      <description>The San Antonio Spurs Community Impact organization, OpenAI Academy and the Positive Coaching Alliance teamed up to bring together coaches, parents, and community leaders on Sunday to explore how AI can support learning, coaching, and youth engagement—on and off the court.</description>
-      <pubDate>Wed, 08 Jul 2026 15:25:08 +0000</pubDate>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=94cXnSu6kUQ</guid>
-      <source url="https://www.youtube.com/watch?v=94cXnSu6kUQ">OpenAI</source>
-    </item>
-    <item>
-      <title>OpenAI 学院 x Veterans Forge |使用 ChatGPT 进行构建：退伍军人的实用 AI 技能</title>
-      <link>https://www.youtube.com/watch?v=J2ZNjSplGd8</link>
-      <description>Veterans and active-duty service members gathered in Baltimore for a hands-on OpenAI Academy workshop focused on practical AI skills. Hosted in partnership with Veterans Forge and The AI Collective • Hampton Roads, the session combined guided instruction, real-world exercises, and peer learning to h</description>
-      <pubDate>Wed, 08 Jul 2026 15:25:04 +0000</pubDate>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=J2ZNjSplGd8</guid>
-      <source url="https://www.youtube.com/watch?v=J2ZNjSplGd8">OpenAI</source>
-    </item>
-    <item>
-      <title>OpenAI 学院：2025 年小型企业 Jam</title>
-      <link>https://www.youtube.com/watch?v=gjYqxEd0VPU</link>
-      <description>On November 20, OpenAI Academy partnered with DoorDash, SCORE, and local business-support organizations to bring small business owners together at five locations across the country — Detroit, Houston, Miami, New York City, and San Francisco — for a hands-on day of learning practical ways to build wi</description>
-      <pubDate>Wed, 08 Jul 2026 15:25:01 +0000</pubDate>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=gjYqxEd0VPU</guid>
-      <source url="https://www.youtube.com/watch?v=gjYqxEd0VPU">OpenAI</source>
-    </item>
-    <item>
-      <title>OpenAI Academy 阿比林：在第一个 Stargate 数据中心的所在地教授 AI 知识</title>
-      <link>https://www.youtube.com/watch?v=ihnqxynwtYk</link>
-      <description>OpenAI Academy traveled to Abilene, Texas, home of OpenAI’s first Stargate data center, to host hands-on AI training for local small business owners and educators. In partnership with the Development Corporation of Abilene and Texas State Technical College, participants learned practical ways to use</description>
-      <pubDate>Wed, 08 Jul 2026 15:24:58 +0000</pubDate>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=ihnqxynwtYk</guid>
-      <source url="https://www.youtube.com/watch?v=ihnqxynwtYk">OpenAI</source>
     </item>
     <item>
       <title>我的出行好伙伴，用 iPhone 一站式解决旅途痛点</title>
