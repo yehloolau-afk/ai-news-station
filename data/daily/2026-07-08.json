@@ -1,26 +1,26 @@
 {
-  "date": "2026-07-07",
+  "date": "2026-07-08",
   "attribution": {
     "source": "AI HOT",
-    "canonical": "https://aihot.virxact.com/daily/2026-07-07"
+    "canonical": "https://aihot.virxact.com/daily/2026-07-08"
   },
-  "generatedAt": "2026-07-07T00:00:00.841Z",
-  "windowStart": "2026-07-06T00:00:00.000Z",
-  "windowEnd": "2026-07-07T00:00:00.000Z",
+  "generatedAt": "2026-07-08T00:00:00.267Z",
+  "windowStart": "2026-07-07T00:00:00.000Z",
+  "windowEnd": "2026-07-08T00:00:00.000Z",
   "lead": null,
   "sections": [
     {
       "label": "模型发布/更新",
       "items": [
         {
-          "title": "Fun-ASR-Realtime 发布：单模型支持30种语言与16种方言，识别准确率领先",
-          "summary": "通义实验室发布Fun-ASR-Realtime实时语音识别模型。单模型覆盖30种语言及16种方言，针对东亚、东南亚地区重点优化。在工业级方言测评inhouse上取得87.8%的语义准确率，大幅领先，多地方言接近人工水平。引入上下文理解与动态热词注入，实现同音词、品牌名等语义消歧。流式识别首字延迟控制在百毫秒级，准确率接近离线水平，支持多语言无缝切换。API已上线阿里云百炼平台。",
-          "sourceUrl": "https://mp.weixin.qq.com/s/ntw0SliBi4f8LROnFY26kA",
-          "sourceName": "公众号：通义实验室（千问）",
-          "permalink": "https://aihot.virxact.com/items/cmr8tzbde00jjsllsayhpgjqg",
+          "title": "Meta Superintelligence Labs 推出 Muse Image 和 Muse Video",
+          "summary": "Meta Superintelligence Labs 发布首个媒体生成模型 Muse Image 和 Muse Video。Muse Image 是目前最先进的图像生成模型，能精确遵循指令、精准编辑、多参考构图，并利用 Instagram 社交上下文。它还具备智能体工具使用能力并集成 Muse Spark。用户可通过 Meta AI 应用、网页、Instagram Stories 和 WhatsApp 试用，初始限于部分国家。Muse Video 基于相同预训练基础，实现高视觉保真度并原生支持音频。",
+          "sourceUrl": "https://x.com/AIatMeta/status/2074577662840832382",
+          "sourceName": "X：AI at Meta (@AIatMeta)",
+          "permalink": "https://aihot.virxact.com/items/cmrb2mxmc0072ihl1mx0aw1bz",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr8tzbde00jjsllsayhpgjqg"
+            "canonical": "https://aihot.virxact.com/items/cmrb2mxmc0072ihl1mx0aw1bz"
           }
         }
       ]
@@ -29,69 +29,91 @@
       "label": "产品发布/更新",
       "items": [
         {
-          "title": "OfficeCLI：为AI智能体设计的开源Office套件",
-          "summary": "OfficeCLI是全球首个专为AI智能体设计的开源Office套件，以单二进制文件运行，无需安装Office或任何依赖。它内置HTML渲染引擎，可将.docx/.xlsx/.pptx转换为HTML或PNG，形成“渲染→查看→修复”的视觉闭环，使AI代理能自主创建、读取和修改Word、Excel、PowerPoint文档。支持公式、图表、条件格式、RTL布局、修订追踪、表格、数据透视表等复杂功能。提供CLI命令和基于自然语言的桌面应用AionUi，并可一键安装到Claude Code、Cursor、Windsurf、GitHub Copilot等AI编码工具中。",
-          "sourceUrl": "https://github.com/iOfficeAI/OfficeCLI",
-          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "permalink": "https://aihot.virxact.com/items/cmr9u2kma003gihdb8r5drdfd",
+          "title": "MIRA：可玩多人世界模型，20 FPS实时生成“火箭联盟的梦”",
+          "summary": "MIRA是一个可玩、多人的世界模型，被形容为“火箭联盟的梦”。它基于10k小时公开机器人收集的数据训练，学习四玩家游戏动态，根据按键实时生成画面，帧率达20 FPS。模型由General Intuition与Kyutai Labs联合构建，Epic Games提供协作。Ethan Mollick称从最早的扩散DOOM玩过来，多人20 FPS效果出色。演示、技术报告及开源代码已公开，在ICML Booth 111现场展示。",
+          "sourceUrl": "https://x.com/emollick/status/2074348274136346871",
+          "sourceName": "X：Ethan Mollick (@emollick)",
+          "permalink": "https://aihot.virxact.com/items/cmra67abw003vihup3mg75wsc",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr9u2kma003gihdb8r5drdfd"
+            "canonical": "https://aihot.virxact.com/items/cmra67abw003vihup3mg75wsc"
           }
         },
         {
-          "title": "Synthetic Sciences 发布 OpenScience：面向机器学习、生物学、物理学和化学研究的开源模型无关 AI 工作台",
-          "summary": "Synthetic Sciences 推出开源（Apache 2.0）AI 科研工作台 OpenScience，覆盖机器学习、生物学、物理学、化学。它运行从文献、假设、代码、实验到分析与撰写的完整科研循环，支持按请求切换任意模型（Claude、GPT、Gemini、GLM、Kimi、DeepSeek 及本地微调模型）。内置 250 余项可编辑技能和 UniProt、PDB、ChEMBL、arXiv 等约 30 个科学数据库作为智能体工具。用户可自带 API 密钥在自己的基础设施上免费运行，安装命令为 `npm install -g @synsci/openscience`，运行 `openscience` 启动浏览器工作台。另提供可…",
-          "sourceUrl": "https://www.marktechpost.com/2026/07/05/synthetic-sciences-releases-openscience-an-open-source-model-agnostic-ai-workbench-for-machine-learning-biology-physics-and-chemistry-research",
-          "sourceName": "MarkTechPost（RSS）",
-          "permalink": "https://aihot.virxact.com/items/cmr8reau2005fslvpmqjll6du",
+          "title": "Rowboat：开源、本地优先的桌面AI助手",
+          "summary": "Rowboat 是一个开源、本地优先的桌面 AI 助手，将邮件、会议、Slack 等数据索引为 Obsidian 风格的知识图谱，提供持久上下文记忆。内置邮件客户端、浏览器、会议记录器、代码模式（可调用 Claude Code 或 Codex 代理），并支持按事件或定时运行的背景代理。用户可通过 MCP 协议接入 Exa 搜索、GitHub 等外部工具。所有数据以纯 Markdown 格式本地存储，无供应商锁定，支持 Ollama/LM Studio 本地模型或使用 API 密钥的托管模型。",
+          "sourceUrl": "https://github.com/rowboatlabs/rowboat",
+          "sourceName": "Hacker News：AI 热帖",
+          "permalink": "https://aihot.virxact.com/items/cmrb7dzge01d6ihl1bthomtam",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr8reau2005fslvpmqjll6du"
+            "canonical": "https://aihot.virxact.com/items/cmrb7dzge01d6ihl1bthomtam"
           }
         },
         {
-          "title": "xAI 为 Grok Voice 新增 21 个旗舰语音",
-          "summary": "xAI 发布 21 个新旗舰语音，加入原有的 5 个语音。所有新语音均支持多语言，已在实时 Voice Agent API、Text to Speech API 及新推出的 Grok Voice Agent Builder 中可用。每个语音针对客服、角色、解说、广告、教育等场景定制，支持通过 `[pause]` 等语音标签控制表达。原始 5 个语音（Ara、Eve、Leo、Rex、Sal）经重训练后，节奏、措辞和重音的自然度提升。所有语音原生支持 Grok Voice 的 25 种以上语言。",
-          "sourceUrl": "https://x.ai/news/new-flagship-voices",
-          "sourceName": "xAI：News（网页）",
-          "permalink": "https://aihot.virxact.com/items/cmr9t47l20004iha5fuyk3h7z",
+          "title": "Grok Imagine 更新：支持 15 秒视频",
+          "summary": "Grok Imagine 更新。请更新你的 Grok 应用！15 秒 Imagine 视频现已可用，质量令人难以置信。",
+          "sourceUrl": "https://x.com/elonmusk/status/2074378653501128833",
+          "sourceName": "X：Elon Musk (@elonmusk, xAI)",
+          "permalink": "https://aihot.virxact.com/items/cmraai9ic00q4ihl3ozf3ki9s",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr9t47l20004iha5fuyk3h7z"
+            "canonical": "https://aihot.virxact.com/items/cmraai9ic00q4ihl3ozf3ki9s"
           }
         },
         {
-          "title": "Claude Code v2.1.202 发布",
-          "summary": "Claude Code v2.1.202 在 `/config` 中新增“Dynamic workflow size”设置，可控制动态工作流的 agent 数量规模（小/中/大），作为指导性建议而非硬性上限。工作流派生的 agent 现在会发射 `workflow.run_id` 和 `workflow.name` 的 OpenTelemetry 属性。修复了 mTLS 握手失败、远程控制发送命令失败、移动端发送无说明图片被静默丢弃、语音听写在麦克风故障时无限重试（改为暂停输入）、重载已有技能导致重复指令等问题。改进了工作流 agent 列表布局，MCP 错误消息更清晰。`/review <pr>` 恢复为快速单次审查，多 agen…",
-          "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.202",
+          "title": "Claude Cowork 向移动端和网页端开放",
+          "summary": "Claude Cowork 正在向移动端和网页端开放，让会话和文件跨设备同步。Beta 版将在未来几周内首先面向 Max 用户推出。Cowork 可让 Claude 跨文件、日历、邮件、即时通讯等工具完成复杂任务，其中超过 90% 的使用场景并非软件开发，而是日常知识工作（业务运营和内容创作）。工作可跨设备跟随用户：在桌面端开始任务，从手机查看进度；关闭笔记本后 Claude 可继续后台运行，支持定时任务（如周一 6 点自动准备客户简报）。当需要用户决策时，Claude 会将问题推送到手机。桌面端保留完整 Cowork 体验，支持无法安装桌面应用的用户。聊天和 Cowork 已在网页端和桌面端合并。为庆祝上线，双倍 Cowork 使…",
+          "sourceUrl": "https://claude.com/blog/cowork-web-mobile",
+          "sourceName": "Claude：Blog（网页）",
+          "permalink": "https://aihot.virxact.com/items/cmrav068k01b6ihogth8k26f6",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrav068k01b6ihogth8k26f6"
+          }
+        },
+        {
+          "title": "Gemini API Managed Agents 新增后台执行、远程 MCP 与自定义函数等能力",
+          "summary": "Google 为 Gemini API 的 Managed Agents 新增后台执行、远程 MCP 服务器集成、自定义函数调用与凭证刷新功能。后台执行通过传入 `background: true` 异步运行任务，立即返回 ID 供轮询状态或流式获取进度。Managed Agents 可直接连接远程 MCP 服务器，无需自定义代理中间件，并能与内置沙箱工具（如 Google 搜索、代码执行）混合使用。自定义函数调用支持本地执行业务逻辑，内置工具自动在服务端运行。凭证刷新通过传递现有环境 ID 和新网络配置完成，沙箱内文件系统、已安装包和仓库保持不变。这些更新旨在帮助开发者构建可靠的生产级 AI 智能体。",
+          "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api",
+          "sourceName": "Google Blog：AI（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmraw22r701jjihogh1k8hbu6",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmraw22r701jjihogh1k8hbu6"
+          }
+        },
+        {
+          "title": "NotebookLM短视频概览正式上线",
+          "summary": "短视频概览功能已正式在移动端和网页端面向所有英语用户全面上线！ 一如既往，您的意见对我们至关重要。请在下方分享您最喜欢的作品，并告诉我们接下来需要添加哪些功能！❤️",
+          "sourceUrl": "https://x.com/NotebookLM/status/2074551227594264799",
+          "sourceName": "X：NotebookLM (@NotebookLM)",
+          "permalink": "https://aihot.virxact.com/items/cmray36fg021nihogfo205417",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmray36fg021nihogfo205417"
+          }
+        },
+        {
+          "title": "Hugging Face Storage 成为 SkyPilot 一级后端：零出站费跨云存储",
+          "summary": "Hugging Face Storage 现为 SkyPilot 的一级后端。用户通过 `hf://` URL 和现有 HFTOKEN 即可将 Hugging Face Bucket（读写）或模型/数据集/Space 仓库（只读）挂载到 SkyPilot 任务中，支持 MOUNT（FUSE 懒加载）或 COPY 模式。SkyPilot 可将任务调度到 20+ 云、Kubernetes、Slurm 及本地集群的任意可用 GPU 上。Hugging Face 不收取出站及 CDN 费用，故跨云读取数据无额外成本。存储价格 $12–18/TB/月，低于 AWS S3 加出站费。Bucket 基于 Xet，增量检查点和模型变体仅存储和传输改…",
+          "sourceUrl": "https://huggingface.co/blog/skypilot-hf-storage",
+          "sourceName": "Hugging Face：Blog（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrb18k7802uuihogxse92jx2",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrb18k7802uuihogxse92jx2"
+          }
+        },
+        {
+          "title": "Claude Code v2.1.203 发布",
+          "summary": "本次更新新增登录过期警告和手动权限模式标记，并将附加工作目录加入 MCP roots/list。修复了 macOS 下因内存检测误报导致后台会话卡顿 15–20 秒（回归自 2.1.196）、后台会话因 token 过期永久不可用（现自动恢复）、交互式会话中上下文指示器每轮重分析整个对话导致 CPU 和内存回归等问题。同时改进了长响应流时的实时预览性能，并降低了子代理重新委托任务的倾向。二进制体积减少约 7 MB，启动内存减少约 7 MB。左侧箭头不再关闭后台任务/差异/工作流详情视图，改为 Esc。",
+          "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.203",
           "sourceName": "Claude Code：GitHub Releases（RSS）",
-          "permalink": "https://aihot.virxact.com/items/cmr9u1olo002sihdbunnazaoz",
+          "permalink": "https://aihot.virxact.com/items/cmrb58ru600tpihl166b491rz",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr9u1olo002sihdbunnazaoz"
-          }
-        },
-        {
-          "title": "OpenClaw 登陆 HuggingFace 本地应用",
-          "summary": "OpenClaw 登陆 @huggingface 本地应用 🦞🤝🤗 1. 在 hf 上挑任意 GGUF/MLX 模型 2. 复制 openclaw onboard 设置 3. Voila，你得到一个完全本地的工具调用智能体。无云端、无密钥、无人监控。 让你的 claw 本地化到极致。抵抗是徒劳的 🦞",
-          "sourceUrl": "https://x.com/openclaw/status/2074187998602871212",
-          "sourceName": "X：OpenClaw (@openclaw)",
-          "permalink": "https://aihot.virxact.com/items/cmr9jbw7a0085ihe85luucw73",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr9jbw7a0085ihe85luucw73"
-          }
-        },
-        {
-          "title": "SGLang 集成 DSpark 推测解码：置信度驱动的可变长度验证",
-          "summary": "SGLang 团队将 DSpark 推测解码算法集成到开源推理引擎中。该算法采用半自回归块起草器一次生成一组 token，并利用置信度头与顺序温度缩放（STS）为每个请求动态分配可变验证长度，从而在高负载下裁剪无效验证成本。SGLang 支持密集模型（如 Qwen3）和稀疏模型（如 DeepSeek-V4），通过全 CUDA 图处理不规则的每请求验证长度。提供三种验证模式：`static`（全长）、`compact`（生产路径）和 `cap-accept`（接受上限测量）。还引入了零开销调度、基于离线成本表的在线调度器、融合 Triton 核等优化。在 H200 上使用 DeepSeek-V4-Flash 的测试中，DSpark 在…",
-          "sourceUrl": "https://www.lmsys.org/blog/2026-07-06-dspark-sglang",
-          "sourceName": "LMSYS：Blog（Chatbot Arena 团队）",
-          "permalink": "https://aihot.virxact.com/items/cmr9h98co0470slsmqqc2ilv1",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr9h98co0470slsmqqc2ilv1"
+            "canonical": "https://aihot.virxact.com/items/cmrb58ru600tpihl166b491rz"
           }
         }
       ]
@@ -100,69 +122,47 @@
       "label": "行业动态",
       "items": [
         {
-          "title": "2026年科技公司AI裁员名单：Microsoft、Oracle、GitLab等十家公司裁减数千岗位",
-          "summary": "2026年以来，多家科技公司以AI为由大规模裁员。Microsoft裁减约4800岗位（2.1%），Oracle裁减21000人（13%），GitLab裁减350人（14%）以投资AI基础设施，Google Cloud持续裁减员工（外界估计1500-3000+工程师），Intuit裁减3000人（17%），Meta裁减8000人（10%）并转岗7000人至AI，Cisco裁减近4000人（5%），Cloudflare裁减1100人（20%），GM裁减500-600 IT岗位，Coinbase裁减700人（14%）。据Layoffs.fyi统计，2026年累计已裁约12万个技术岗位。",
-          "sourceUrl": "https://techcrunch.com/2026/07/06/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai",
+          "title": "中国拟限制外国访问最强AI模型",
+          "summary": "中国计划限制外国访问其最强AI模型，近期与阿里巴巴、字节跳动、Z.ai等企业会谈，拟将先进模型（含未发布）留在中国国内。商务部主导、国家发改委参与，表明此举属出口管制而非平台监管。目标涵盖闭源和开源模型，不仅限API访问，还包括可下载权重。同时讨论将模型泄漏视为国家安全犯罪，并限制外国资本投资中国AI初创。若实施，外国公司将失去低成本模型访问权。此前华盛顿已限制美国先进模型出口，此举可能进一步分裂全球AI市场。",
+          "sourceUrl": "https://x.com/rohanpaul_ai/status/2074512389526237609",
+          "sourceName": "X：Rohan Paul (@rohanpaul_ai)",
+          "permalink": "https://aihot.virxact.com/items/cmrasueu500qmihog3d8up11t",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrasueu500qmihog3d8up11t"
+          }
+        },
+        {
+          "title": "Ethan Mollick：开放权重模型供给难持续",
+          "summary": "这是一个关键原因，我不期望前沿开放权重模型的流动会无限期持续，甚至不会持续更长时间。",
+          "sourceUrl": "https://x.com/emollick/status/2074497401578996154",
+          "sourceName": "X：Ethan Mollick (@emollick)",
+          "permalink": "https://aihot.virxact.com/items/cmraqliu1003aihogho9twifr",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmraqliu1003aihogho9twifr"
+          }
+        },
+        {
+          "title": "微软为降成本在Copilot中用自研MAI模型替换OpenAI和Anthropic模型",
+          "summary": "微软正用自研MAI模型替换Copilot产品中的OpenAI和Anthropic模型以降低支出。MAI模型已在Excel和Outlook中每周处理数万次请求，但占比仍小。Build大会上发布推理模型MAI-Thinking 1，声称编码媲美Sonnet 4.6和Opus 4.6，但基准测试大幅落后，仅与DeepSeek V3.2相当。AI负责人承认目标是削减并消除对Anthropic的支出。CEO暗示未来可能按用量计费，MAI为默认，第三方模型付费附加。微软称MAI使用干净商业许可数据，实际基于Common Crawl。",
+          "sourceUrl": "https://the-decoder.com/copilot-goes-cheap-as-microsoft-phases-out-openai-and-anthropic-models-to-cut-costs",
+          "sourceName": "The Decoder：AI News（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrb0u6pv02qtihogovduu795",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrb0u6pv02qtihogovduu795"
+          }
+        },
+        {
+          "title": "美国首批自主地面车辆在乌克兰参战",
+          "summary": "美国自动驾驶车辆公司 Forterra 宣布，过去九个月已向乌克兰战场部署超过 100 辆基于 Polaris ATV 的 Lancer 自主地面车辆。这些汽油动力车辆可携带 750 公斤货物，加装 Starlink 天线实现远程操控，已执行 1100 多次任务，行驶 2500 英里，运送 777,440 磅物资，完成 52 次伤员撤离。目前车辆主要采用远程操作，因自主系统尚无法实时识别并应对敌方威胁。Forterra 已融资超 5 亿美元，正将经典机器人方法与生成式 AI 结合以提升自主能力。美军专家认为地面自主技术已具实战价值。",
+          "sourceUrl": "https://techcrunch.com/2026/07/07/the-first-american-autonomous-ground-vehicles-are-fighting-in-ukraine",
           "sourceName": "TechCrunch：AI（RSS）",
-          "permalink": "https://aihot.virxact.com/items/cmr9kq74q00mkihe8o68fnq9t",
+          "permalink": "https://aihot.virxact.com/items/cmrafv8m40090ihuamebn107w",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr9kq74q00mkihe8o68fnq9t"
-          }
-        },
-        {
-          "title": "Meta 被曝让外包人员伪装未成年人，诱导竞争对手 AI 聊敏感话题",
-          "summary": "据《连线》报道，Meta 通过外包公司 Covalen 开展代号“Cannes”的项目，让数百名外包人员伪装成未成年人，向 OpenAI ChatGPT、谷歌 Gemini 及 Character.AI 发送涉及自杀、自残、进食障碍等高风险提示词，以测试竞品聊天机器人的安全拦截机制。项目持续至 4 月 21 日，单轮测试发送超 4.5 万个提示词，外包人员创建 18 岁以下虚假账号并上传药片、刀具等图片。Meta 称这是常规安全测试，且不会用竞品测试数据训练自家模型。",
-          "sourceUrl": "https://www.ithome.com/0/973/207.htm",
-          "sourceName": "IT之家（RSS）",
-          "permalink": "https://aihot.virxact.com/items/cmr91yrn100noslmpusn7u7q0",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr91yrn100noslmpusn7u7q0"
-          }
-        },
-        {
-          "title": "SK 海力士将启动 280 亿美元美股上市，有望成史上第二大 IPO",
-          "summary": "SK 海力士于本周一启动规模约 280 亿美元的美股上市计划，将在纳斯达克通过存托凭证发行 1779 万股新股，每 10 份存托凭证对应 1 股普通股。发行价区间周一公布，最终发行价周四敲定，股票周五挂牌交易。受益于全球人工智能热潮，该股年内涨幅超 270%。本次募资规模预计为史上第二大新股发行，仅次于上月 SpaceX 的 857 亿美元 IPO。SK 海力士是高带宽内存芯片核心供应商，产品用于英伟达、谷歌等 AI 设备。",
-          "sourceUrl": "https://www.ithome.com/0/972/896.htm",
-          "sourceName": "IT之家（RSS）",
-          "permalink": "https://aihot.virxact.com/items/cmr8j82w402k0sl0ddfe6f7zv",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr8j82w402k0sl0ddfe6f7zv"
-          }
-        },
-        {
-          "title": "Runway 宣布设立巴黎办公室",
-          "summary": "原文正文仅包含网站 Cookie 设置说明，未提供关于巴黎办公室的部门、规模、职能或开业时间等具体信息。",
-          "sourceUrl": "https://runwayml.com/news/announcing-our-paris-office",
-          "sourceName": "Runway：News（网页）",
-          "permalink": "https://aihot.virxact.com/items/cmr8yq2xv01phsllsc7sv9v5u",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr8yq2xv01phsllsc7sv9v5u"
-          }
-        },
-        {
-          "title": "阿尔伯塔省用Claude进行政府系统安全审查",
-          "summary": "阿尔伯塔省技术与创新部自2025年起使用Claude Code扫描全部27个省级部门的系统。50个智能体在20小时内并行审查4.66亿行代码，发现传统自动化工具遗漏的漏洞并直接生成修复方案，传统方法估计需约6.5年。团队还构建了红队/蓝队审查代理。通过阿尔伯塔AI学院，已培训数千名政府员工和超1万名公众。省技术部计划继续用Claude Code将185个遗留生产应用整合为16个可复用应用。",
-          "sourceUrl": "https://www.anthropic.com/news/alberta-government-claude-cybersecurity",
-          "sourceName": "Anthropic：Newsroom（网页）",
-          "permalink": "https://aihot.virxact.com/items/cmr9lca6e00qlihe8bn5844jk",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr9lca6e00qlihe8bn5844jk"
-          }
-        },
-        {
-          "title": "Cursor 成立 CFO Council，聚焦 AI 支出新经济学",
-          "summary": "2025 年全球 AI 支出达 1.5 万亿美元，但麦肯锡研究显示仅 39% 组织能追踪至 EBIT 影响。Cursor 成立 CFO Council，旨在建立让 AI 支出可衡量、可预测且与价值挂钩的框架。BCG 分析发现，token 用量最高分位公司收入同比增长 16.5%，最低仅 5.1%。2025 年末模型改进后，开发者每周 agent 消息增加 44%，高复杂度工作增加 68%。p99 开发者 AI 辅助代码行数为中位数 46 倍，合并 PR 多 15 倍。不同模型族间请求成本相差近 9 倍，每行接受代码成本相差约 7 倍，84% 重度用户每周使用多个模型。首次会议定于 8 月举行。",
-          "sourceUrl": "https://cursor.com/blog/cfo-council",
-          "sourceName": "Cursor Blog",
-          "permalink": "https://aihot.virxact.com/items/cmr9chtjn02z3slsmvkzghulm",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr9chtjn02z3slsmvkzghulm"
+            "canonical": "https://aihot.virxact.com/items/cmrafv8m40090ihuamebn107w"
           }
         }
       ]
@@ -171,36 +171,36 @@
       "label": "论文研究",
       "items": [
         {
-          "title": "用可解释性理解标注者安全策略",
-          "summary": "标注分歧可源于操作失败、政策模糊或价值多元。Annotator Policy Models（APMs）是一种可解释模型，仅从标注行为学习标注者内在的安全策略，无需额外负担。验证表明模型准确率超过80%，能忠实预测反事实编辑并恢复已知差异。将APMs应用于LLM和人类标注者，可揭示不同标注者对安全指令解释的差异（政策模糊）以及不同人口群体在安全优先级上的系统性差异（价值多元），支持更具针对性、透明和包容的安全策略设计。",
-          "sourceUrl": "https://machinelearning.apple.com/research/annotator-safety-policy-interpretability",
+          "title": "苹果研究：单个神经元即可绕过大型语言模型的安全对齐",
+          "summary": "苹果研究人员发现，安全对齐由两类神经元调控：拒绝神经元控制有害知识是否表达，概念神经元编码有害知识本身。在七个模型（1.7B至70B参数）中，仅需抑制单个拒绝神经元即可绕过安全对齐，回答有害请求；或放大单个概念神经元，从无害提示诱导出有害内容。整个过程无需训练或提示工程。结果表明安全对齐由个别神经元因果控制。",
+          "sourceUrl": "https://machinelearning.apple.com/research/single-neuron-safety-alignment",
           "sourceName": "Apple Machine Learning Research（RSS）",
-          "permalink": "https://aihot.virxact.com/items/cmr9jb1wn007eihe8jhd6zhrj",
+          "permalink": "https://aihot.virxact.com/items/cmrasd6r300i2ihog8ifwrqs5",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr9jb1wn007eihe8jhd6zhrj"
+            "canonical": "https://aihot.virxact.com/items/cmrasd6r300i2ihog8ifwrqs5"
           }
         },
         {
-          "title": "Apple 提出专用小型 seq2seq 模型用于 ASR 纠错",
-          "summary": "Apple 机器学习研究团队采用紧凑的 seq2seq 模型进行 ASR 纠错，训练数据来自真实和合成音频的 ASR 错误。通过级联 TTS 和 ASR 构建合成语料，关键在于匹配真实错误分布的多样性。模型采用 correction-first 解码，生成候选后利用 ASR 声学分数重新排序。与 LLM 相比，该模型参数少 15 倍，在 LibriSpeech test-clean/other 上分别达到 1.5% 和 3.3% 的词错误率（WER），优于 LLM，并能泛化至 CTC、Seq2seq、Transducer 等多种 ASR 架构，在低错误率场景中提供精确纠错。",
-          "sourceUrl": "https://machinelearning.apple.com/research/asr-error-correction",
+          "title": "Weblica：面向视觉网页智能体的可扩展可复现训练环境",
+          "summary": "苹果研究团队提出Weblica框架，通过HTTP级缓存保存网页稳定视觉状态并保留交互行为，结合大语言模型基于真实网站与核心导航技能合成环境，构建可复现、可扩展的训练环境。该框架将强化学习训练扩展到数千个多样化的环境和任务。最佳模型Weblica-8B在多个网页导航基准上超越同等规模的开源模型，推理步骤更少，测试时计算扩展性良好，性能与API模型相当。",
+          "sourceUrl": "https://machinelearning.apple.com/research/weblica-visual-web-agents",
           "sourceName": "Apple Machine Learning Research（RSS）",
-          "permalink": "https://aihot.virxact.com/items/cmr9apdmp02hfslsmu7kdd5uy",
+          "permalink": "https://aihot.virxact.com/items/cmrasd6r300i0ihog8xxwezye",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr9apdmp02hfslsmu7kdd5uy"
+            "canonical": "https://aihot.virxact.com/items/cmrasd6r300i0ihog8xxwezye"
           }
         },
         {
-          "title": "TopoPrimer：预测模型中缺失的拓扑上下文",
-          "summary": "TopoPrimer 框架将序列群体的全局拓扑结构作为显式输入加入预测模型。通过持续同调与谱坐标预计算，可部署为全训练模型的 per-token 输入或预训练骨干的轻量适配器。在 Chronos 和 TimesFM 的四个基准上，TopoPrimer 在 ECL 上最高提升 7.3% MSE，零样本与微调效果相近。面对季节性需求峰值，传统模型误差退化达 50%，TopoPrimer 控制在 10% 以内；冷启动场景下 MAE 降低 27%。",
-          "sourceUrl": "https://machinelearning.apple.com/research/topoprimer-topological-context",
+          "title": "DynaMiCS：带性能约束的大语言模型动态混合微调",
+          "summary": "DynaMiCS是一种动态混合优化器，将多领域微调建模为带性能约束的优化问题。它通过短领域特定探测运行估计跨领域效应斜率矩阵，再基于概率单纯形优化计算混合权重，在提升目标领域性能的同时将约束领域损失维持在参考水平以下。实验表明，DynaMiCS相比固定混合基线取得更强的目标领域提升和约束满足，且计算成本更低，无需参考模型、逐样本评分或手动调节混合权重。",
+          "sourceUrl": "https://machinelearning.apple.com/research/dynamics-fine-tuning-llms",
           "sourceName": "Apple Machine Learning Research（RSS）",
-          "permalink": "https://aihot.virxact.com/items/cmr9jb1wn007dihe88r014iex",
+          "permalink": "https://aihot.virxact.com/items/cmrasd6r300hxihog9hxmteoz",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr9jb1wn007dihe88r014iex"
+            "canonical": "https://aihot.virxact.com/items/cmrasd6r300hxihog9hxmteoz"
           }
         }
       ]
@@ -209,91 +209,91 @@
       "label": "技巧与观点",
       "items": [
         {
-          "title": "AI颠覆初级程序员就业市场：斯坦福数据揭示年轻开发者就业锐减19%",
-          "summary": "斯坦福数字经济实验室基于ADP薪资数据发现，美国22-25岁软件开发人员就业较2022年峰值下降19%，而41-49岁增长14%。入门级岗位招聘减少28%，计算机科学毕业生失业率达6.1%，高于文科专业。核心推手是2024-2025年兴起的智能体编程（Agentic programming）。总程序员就业增长4.4%，但全部来自年长群体。GitHub一年新增3600万账号，80%新用户一周内使用Copilot。编程工作未消失，但“初级程序员”头衔正在消亡。",
-          "sourceUrl": "https://seldo.com/posts/ai-has-torched-the-market-for-junior-programmers",
+          "title": "Elvis Saravia 通过 HITL 和 DialAgent 提升 agentic loops 可靠性",
+          "summary": "Elvis Saravia 介绍使用 human-in-the-loop（HITL）来提升 agentic loops 的可靠性。他所有 Claude 和 Codex agent 会话都通过 @DialAgent MCP 服务器，该服务器为 agent 提供专属号码，支持语音、SMS、iMessage 作为原生工具。当循环/自动化处理 PR 或新功能时，agent 会通过简短电话将决策升级给人类，尤其适合在路上或离开电脑时。用户可粘贴指令让 agent 拨打电话测试。DialAgent 提供 $5 免费额度：http://getdial.ai",
+          "sourceUrl": "https://x.com/omarsar0/status/2074506169352180108",
+          "sourceName": "X：Elvis Saravia (@omarsar0, DAIR.AI)",
+          "permalink": "https://aihot.virxact.com/items/cmrasc88300h6ihog8mwnmob9",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrasc88300h6ihog8mwnmob9"
+          }
+        },
+        {
+          "title": "FDE爆发：AI公司12个月承诺97.5亿美元部署工程",
+          "summary": "AI公司在12个月内合计承诺97.5亿美元用于建设前部署工程（FDE）团队。三种结构模型浮现：资产负债模型（微软、亚马逊从现有编制调配，Salesforce承诺1000个FDE岗位）；独立实体模型（OpenAI Deployment Company融资40亿美元，投后估值140亿；Anthropic从黑石等融资15亿美元）；合作伙伴生态系统模型（Google Cloud承诺7.5亿美元合作伙伴基金）。瓶颈从模型能力转向部署——GPT-4、Claude、Gemini已足够强大，但多数企业无法自行安装配置。FDE投资构成护城河：嵌入式工程师教育客户、获取专有工作流与数据反馈模型调优，切换成本为制度性而非技术性。",
+          "sourceUrl": "https://www.tomtunguz.com/the-10b-fde-boom",
+          "sourceName": "Tomer Tunguz 博客（VC 分析）",
+          "permalink": "https://aihot.virxact.com/items/cmraxmzfq01y0ihog3h7t344t",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmraxmzfq01y0ihog3h7t344t"
+          }
+        },
+        {
+          "title": "YC CEO声称每日用AI部署3.7万行代码，开发者审查发现前端代码大量臃肿低效",
+          "summary": "Y Combinator CEO Garry Tan在X上宣称，他与AI编码代理每天在五个项目中部署37000行代码，并保持连续72天发布记录。波兰开发者Gregorein深入审查Tan网站前端代码，发现大量臃肿与低效问题：页面加载169次请求、总计6.42MB数据（对比Hacker News仅7次12KB）；包含28个测试文件、78个未使用的JavaScript控制器、八种格式Logo（含空文件）、未压缩的旧PNG等。Gregorein指出，AI虽能快速生成代码，但质量仍应优先于数量。",
+          "sourceUrl": "https://www.fastcompany.com/91520702/y-combinator-garry-tan-agentic-ai-social-media",
           "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "permalink": "https://aihot.virxact.com/items/cmr96dq8400pdslsmu56r8muy",
+          "permalink": "https://aihot.virxact.com/items/cmrayv5ja0293ihog3rixaqua",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr96dq8400pdslsmu56r8muy"
+            "canonical": "https://aihot.virxact.com/items/cmrayv5ja0293ihog3rixaqua"
           }
         },
         {
-          "title": "Google 更新隐私设置，默认用媒体数据训练 AI，用户可手动退出",
-          "summary": "Google 于 6 月通过客户邮件低调更新了搜索服务隐私设置，新增“搜索服务历史”和“个性化推荐”两项开关，默认将用户上传的图片、文件、音频和视频录制等媒体数据保存并用于训练 AI 模型。该更新适用于搜索、地图、购物、航班、酒店、翻译、新闻等服务。用户可通过取消勾选“保存媒体”框来退出，同时可设置数据自动删除周期（3/18/36 个月）。此前独立的网络与应用活动设置不再影响搜索服务数据保留。Meta 等其他公司也在大规模收集用户媒体数据用于 AI 训练。",
-          "sourceUrl": "https://techcrunch.com/2026/07/06/if-you-use-google-youre-training-its-ai-heres-how-to-opt-out",
-          "sourceName": "TechCrunch：AI（RSS）",
-          "permalink": "https://aihot.virxact.com/items/cmr9hhq6k04anslsmg761vie9",
+          "title": "Liquid AI 开源 Antidoom：基于最终 Token 偏好优化的推理模型死循环修复方法",
+          "summary": "Liquid AI 开源了 Antidoom，一种基于 Final Token Preference Optimization (FTPO) 的针对性修复方法，用于减少推理模型中的 doom loop（死循环）问题。该方法定位循环开始的第一个 token，训练模型选择连贯替代项，而不改变整体输出分布。在 LFM2.5-2.6B 上，硬数学和编程任务中的循环率从 10.2% 降至 1.4%；Qwen3.5-4B 上从 22.9% 降至 1%。整套流程可在数小时内完成，全部代码和数据集（LiquidAI/antidoom-mix-v1.0）已开源。",
+          "sourceUrl": "https://www.marktechpost.com/2026/07/07/liquid-ai-antidoom-doom-loops-ftpo",
+          "sourceName": "MarkTechPost（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmraw21y401jhihog3tcrfsp4",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr9hhq6k04anslsmg761vie9"
+            "canonical": "https://aihot.virxact.com/items/cmraw21y401jhihog3tcrfsp4"
           }
         },
         {
-          "title": "免费开源API中转站监测网站tokhub.me上线",
-          "summary": "作者与姚老师合作开发中转站评测网站tokhub.me，通过真实充值调用API进行模型监控，区别于单纯速度评测。代码完全开源，支持一键Docker部署，还可作为公司内部Token和网关管理系统，省去繁杂的API Key和Base URL管理。开源代码见Github评论区。",
-          "sourceUrl": "https://x.com/vista8/status/2074130700421456089",
-          "sourceName": "X：Vista (@vista8)",
-          "permalink": "https://aihot.virxact.com/items/cmr9apy0u02hxslsmxllfd51t",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr9apy0u02hxslsmxllfd51t"
-          }
-        },
-        {
-          "title": "AT&T 1956年专利法令：公共天才的私有化",
-          "summary": "1956年1月24日，全球最大私营公司AT&T签署专利法令，将其7,820项未过期专利免费授权给所有美国企业，并承诺未来专利按“合理费率”许可。作为交换，AT&T得以保留Western Electric，但被禁止进入电信以外的业务。贝尔实验室69%的非电信专利（涵盖化学、半导体、光学等）迅速公开，在短短几年内催生了约35亿美元衍生专利价值，并直接推动了肖克利半导体、仙童半导体及英特尔的诞生。戈登·摩尔称该法令是“商业半导体行业最重要的进展之一”，为美国硅谷的起飞奠定了基础。",
-          "sourceUrl": "https://www.wysr.xyz/p/the-private-capture-of-public-genius",
+          "title": "在网络不稳定的地区，小型AI模型正逐渐普及",
+          "summary": "2019年，Adebayo Alonge因服务器远在美国致RxScanner单次扫描超5分钟，工程师2小时内将AI模型缩小至可在Android手机本地运行，此后RxScanner能在无宽带、缺电地区验药。小AI模型参数通常至多几十亿，可在手机或Raspberry Pi上运行，功耗仅数瓦。类似案例包括印度腰果病害检测无人机、乌拉圭蚂蚁入侵识别、疟蚊检测及巴西基于Arduino的心电图设备。世界银行报告显示，全球最穷国家仅0.7%互联网用户用过ChatGPT，发达国家达四分之一；行长认为小AI是为缺乏算力与电力的地区提供生命救助服务的关键。",
+          "sourceUrl": "https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals",
           "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "permalink": "https://aihot.virxact.com/items/cmr8zxj6s006cslmpf6ki0ld7",
+          "permalink": "https://aihot.virxact.com/items/cmrab8cy800w3ihl38ohuxzih",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr8zxj6s006cslmpf6ki0ld7"
+            "canonical": "https://aihot.virxact.com/items/cmrab8cy800w3ihl38ohuxzih"
           }
         },
         {
-          "title": "分享8个Claude Fable 5下线前必跑的超实用Prompt",
-          "summary": "Claude Fable 5即将下线，作者整理了8个经实战验证的提示词：/goal提示语让模型自主跑25次实验（花费165美元，构建速度提高50%、token开销降60%）；工作模式提示语将用户习惯转化为可复用Skills；行动规范提示语约束subagent行为；subagent分配提示语智能分配任务；25个定时循环工作流（含Shadow prompt loop做A/B测试）；自治运行+自动暂停提示语；记忆系统提示语保留错题本；反向面试提示语确保95%把握再执行。这些提示词可迁移至API计费后继续使用，核心是让模型研究用户而非限制能力。",
-          "sourceUrl": "https://mp.weixin.qq.com/s/ZkMsdeTK6wmgkaER0iPT8w",
-          "sourceName": "公众号：卡尔的AI沃茨",
-          "permalink": "https://aihot.virxact.com/items/cmr8j9weh02kxsl0dy08683oe",
+          "title": "Krea 2 身份保留功能上线",
+          "summary": "Krea 2 的身份保留功能已发布，配套模型和 ComfyUI 节点也已上线。🔥",
+          "sourceUrl": "https://x.com/krea_ai/status/2074589965653303321",
+          "sourceName": "X：Krea AI (@krea_ai)",
+          "permalink": "https://aihot.virxact.com/items/cmrb4j2zx00n4ihl14u6xv7kz",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr8j9weh02kxsl0dy08683oe"
+            "canonical": "https://aihot.virxact.com/items/cmrb4j2zx00n4ihl14u6xv7kz"
           }
         },
         {
-          "title": "Claude Code 团队详解四种智能体循环类型",
-          "summary": "Claude Code 团队将“设计循环”定义为智能体重复工作直到满足停止条件，划分四种类型：1）回合循环——手动提示触发，Claude 自判完成，适合短任务，可通过 SKILL.md 提升验证；2）目标循环——`/goal` 手动触发，达成目标或达最大轮数停止，需确定性完成标准（如测试通过数）；3）时间循环——`/loop` 和 `/schedule` 按间隔触发，适合同步消息、检查 PR 等重复任务，可云端运行；4）主动循环——事件或计划触发，无人实时参与，每个子任务独立退出。建议从最简单方案开始，选择性使用复杂循环。",
-          "sourceUrl": "https://x.com/ClaudeDevs/status/2074208949205881033",
-          "sourceName": "X：Claude Devs (@ClaudeDevs)",
-          "permalink": "https://aihot.virxact.com/items/cmr9lm48z00u7ihe85tjkvn5t",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr9lm48z00u7ihe85tjkvn5t"
-          }
-        },
-        {
-          "title": "Claude Fable实地指南：发现你的未知",
-          "summary": "Claude Fable是第一款要求用户主动澄清未知才能获得高质量工作的模型。与Claude Fable协作是一个在实现前后迭代发现未知的过程。通过将问题分解为已知的已知、已知的未知、未知的已知和未知的未知四类，用户可以借助Claude Fable和Claude Code进行盲点检查、头脑风暴、原型设计、实现笔记记录以及答辩解释，从而高效挖掘并解决深藏于代码库和设计与实现中的潜在问题。",
-          "sourceUrl": "https://claude.com/blog/a-field-guide-to-claude-fable-finding-your-unknowns",
+          "title": "人们如何使用Claude Cowork",
+          "summary": "基于2026年5月11-31日120万次匿名会话样本，Claude Cowork最大用途为业务流程与运营（33.4%），如整理报告、核对表格；其次为内容创作与文案（16.4%），如起草稿件、制作幻灯片；软件开发仅占8.7%。用户多用它处理跨团队衔接性任务，例如律师处理文档格式、招聘经理汇总面试反馈。Claude Cowork面向所有Claude用户开放。",
+          "sourceUrl": "https://claude.com/blog/how-people-are-using-claude-cowork",
           "sourceName": "Claude：Blog（网页）",
-          "permalink": "https://aihot.virxact.com/items/cmr9jp8hl00fdihe850djojos",
+          "permalink": "https://aihot.virxact.com/items/cmrav068k01b7ihogl498wk0x",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr9jp8hl00fdihe850djojos"
+            "canonical": "https://aihot.virxact.com/items/cmrav068k01b7ihogl498wk0x"
           }
         },
         {
-          "title": "Google MaxText 弹性训练：训练中途终止 TPU，数秒内恢复",
-          "summary": "分布式 AI 训练常因单台机器故障导致整个多节点作业崩溃，需耗时重启。Google 的 JAX 生态通过 Pathways 实现弹性训练，将硬件故障转化为可捕获的 Python 异常，使运行进程存活。测试中，训练中途终止一个 TPU 后，系统自动替换损坏的节点、从 Cloud Storage 恢复最新检查点并原地恢复训练，总停机时间低于 2 分钟，主控制器进程全程无需重启。",
-          "sourceUrl": "https://developers.googleblog.com/we-terminated-a-tpu-mid-training-and-it-recovered-in-seconds-introduction-to-elastic-training-with-maxtext",
-          "sourceName": "Google Developers Blog（RSS）",
-          "permalink": "https://aihot.virxact.com/items/cmr9f5qtk03o5slsm4qnq1x4i",
+          "title": "在 Claude Code 中选择 Claude 模型与努力级别",
+          "summary": "Claude Code 提供模型（model）和努力级别（effort）两种设置。模型选择决定能力范围，更大模型（如 Claude Fable 5）在基准上优于 Claude Sonnet。努力级别不单是思考时间，还控制读取文件数、验证步骤及多步任务的推进深度。较高努力下 Claude 会自行读取文件、运行测试并复核；较低努力则更倾向请求用户提供上下文。若 Claude 已掌握上下文但仍出错，应换更强大模型；若因跳读文件或未运行测试而出错，则应提高努力级别。",
+          "sourceUrl": "https://claude.com/blog/claude-model-and-effort-level-in-claude-code",
+          "sourceName": "Claude：Blog（网页）",
+          "permalink": "https://aihot.virxact.com/items/cmraqmpst004cihogf6nqkgvh",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmr9f5qtk03o5slsm4qnq1x4i"
+            "canonical": "https://aihot.virxact.com/items/cmraqmpst004cihogf6nqkgvh"
           }
         }
       ]

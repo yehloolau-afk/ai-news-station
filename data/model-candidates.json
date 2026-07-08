@@ -5,5 +5,12 @@
     "summary": "通义实验室发布Fun-ASR-Realtime实时语音识别模型。单模型覆盖30种语言及16种方言，针对东亚、东南亚地区重点优化。在工业级方言测评inhouse上取得87.8%的语义准确率，大幅领先，多地方言接近人工水平。引入上下文理解与动态热词注入，实现同音词、品牌名等语义消歧。流式识别首字延迟控制在百毫秒级，准确率接近离线水平，支持多语言无缝切换。API已上线阿里云百炼平台。",
     "sourceUrl": "https://mp.weixin.qq.com/s/ntw0SliBi4f8LROnFY26kA",
     "sourceName": "公众号：通义实验室（千问）"
+  },
+  {
+    "date": "2026-07-08",
+    "title": "Meta Superintelligence Labs 推出 Muse Image 和 Muse Video",
+    "summary": "Meta Superintelligence Labs 发布首个媒体生成模型 Muse Image 和 Muse Video。Muse Image 是目前最先进的图像生成模型，能精确遵循指令、精准编辑、多参考构图，并利用 Instagram 社交上下文。它还具备智能体工具使用能力并集成 Muse Spark。用户可通过 Meta AI 应用、网页、Instagram Stories 和 Whats",
+    "sourceUrl": "https://x.com/AIatMeta/status/2074577662840832382",
+    "sourceName": "X：AI at Meta (@AIatMeta)"
   }
 ]
