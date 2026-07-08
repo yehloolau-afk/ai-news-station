@@ -36,16 +36,17 @@
   .meta { display:flex; gap:8px; align-items:center; font-size:12px; margin-bottom:6px; flex-wrap:wrap; }
   .company { color:#111827; font-weight:600; }
   .cat { padding:1px 9px; border-radius:999px; font-weight:600; }
-  .attr { color:#6b7280; background:transparent; border:1px solid #e5e7eb; padding:1px 9px; border-radius:999px; }
+  .attr { color:#5b6470; background:rgba(107,114,128,0.08); border:1px solid #d4d8dd; padding:1px 9px; border-radius:999px; }
   article h3 { font-size:16px; margin-bottom:4px; }
   article h3 a { color:#111827; text-decoration:none; }
   article h3 a:hover { color:#d92b2b; }
   article p { font-size:13.5px; color:#4b5563; }
   .specs { list-style:none; display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
-  .specs li { font-size:12px; color:#4b5563; background:#f4f6f8; border:1px solid #e5e7eb; padding:2px 8px; border-radius:6px; }
-  .impact { font-size:13px; line-height:1.55; margin-top:9px; padding-left:10px; border-left:2px solid; }
+  .specs li { font-size:11.5px; color:#4b5563; background:#f4f6f8; border:1px solid #e5e7eb; padding:2px 8px; border-radius:4px; font-variant-numeric:tabular-nums; }
+  .impact { font-size:13px; line-height:1.6; margin-top:10px; padding:7px 10px 7px 12px; border-left:3px solid; border-radius:0 4px 4px 0; background:rgba(0,0,0,0.02); }
   .impact b { font-weight:600; color:#6b7280; }
-  .mile-tag { font-size:11px; font-weight:700; padding:1px 8px; border-radius:999px; }
+  .mile-tag { font-size:11px; font-weight:700; padding:2px 10px; border-radius:999px; letter-spacing:0.01em; }
+  article.milestone { background:rgba(0,0,0,0.013); }
   .src { font-size:12px; color:#9ca3af; margin-top:8px; }
   .src a { color:#6b7280; }
   article.minor { padding:10px 16px; }
@@ -78,7 +79,7 @@
 </div>
 <div class="tl-row">
 <div class="tl-time" title="2026-07-02"><span class="tl-time-label">07-02</span><span class="tl-time-dot"></span></div>
-<div class="daycards"><article class="milestone" style="box-shadow:inset 3px 0 0 #185FA5" id="2026-07-02-longcat-2-0">
+<div class="daycards"><article class="milestone" style="box-shadow:inset 5px 0 0 #185FA5" id="2026-07-02-longcat-2-0">
 <div class="meta"><span class="company">美团</span><span class="cat" style="color:#185FA5;background:#E6F1FB;border:1px solid #9FC3EA">语言</span><span class="attr">开源</span><span class="mile-tag" style="color:#185FA5;background:#E6F1FB">★ 里程碑</span></div>
 <h3><a href="https://mp.weixin.qq.com/s/9XFcx3fmFcmbry5bHMJsow" rel="noopener" target="_blank">LongCat-2.0</a></h3>
 <p>国产算力集群完成全流程训练与推理的万亿参数开源大模型</p>
@@ -92,9 +93,9 @@
 <div class="daycards"><article id="2026-07-01-claude-sonnet-5">
 <div class="meta"><span class="company">Anthropic</span><span class="cat" style="color:#185FA5;background:#E6F1FB;border:1px solid #9FC3EA">语言</span></div>
 <h3><a href="https://www.anthropic.com/news/claude-sonnet-5" rel="noopener" target="_blank">Claude Sonnet 5</a></h3>
-<p>Anthropic 中端主力型号升级</p>
-<ul class="specs"><li>Sonnet 系列新一代主力模型</li></ul>
-
+<p>Sonnet 系列第五代，Anthropic 日活最高的主力型号迭代</p>
+<ul class="specs"><li>Sonnet 系列新一代</li><li>API 与 Claude.ai 同步上线</li></ul>
+<div class="impact" style="color:#185FA5;border-color:#9FC3EA"><b>意味着 </b>中端主力更新：在 API 价格不变的前提下性能提升，影响面最广——驱动绝大多数 Claude 日常使用场景的型号又往前推了一代。</div>
 <div class="src">信源：<a href="https://www.anthropic.com/news/claude-sonnet-5" rel="noopener" target="_blank">Anthropic Newsroom</a> · 2026-07-01</div>
 </article>
 <article id="2026-07-01-nano-banana-2-lite-gemini-omni-flash">
@@ -174,7 +175,7 @@
 </div>
 <div class="tl-row">
 <div class="tl-time" title="2025-11-18"><span class="tl-time-label">11-18</span><span class="tl-time-dot"></span></div>
-<div class="daycards"><article class="milestone" style="box-shadow:inset 3px 0 0 #185FA5" id="2025-11-18-gemini-3-pro">
+<div class="daycards"><article class="milestone" style="box-shadow:inset 5px 0 0 #185FA5" id="2025-11-18-gemini-3-pro">
 <div class="meta"><span class="company">Google</span><span class="cat" style="color:#185FA5;background:#E6F1FB;border:1px solid #9FC3EA">语言</span><span class="attr">多模态</span><span class="mile-tag" style="color:#185FA5;background:#E6F1FB">★ 里程碑</span></div>
 <h3><a href="https://blog.google/products/gemini/gemini-3" rel="noopener" target="_blank">Gemini 3 Pro</a></h3>
 <p>Gemini 第三代旗舰发布</p>
@@ -185,7 +186,7 @@
 </div>
 <div class="tl-row">
 <div class="tl-time" title="2025-09-30"><span class="tl-time-label">09-30</span><span class="tl-time-dot"></span></div>
-<div class="daycards"><article class="milestone" style="box-shadow:inset 3px 0 0 #B4610F" id="2025-09-30-sora-2">
+<div class="daycards"><article class="milestone" style="box-shadow:inset 5px 0 0 #B4610F" id="2025-09-30-sora-2">
 <div class="meta"><span class="company">OpenAI</span><span class="cat" style="color:#B4610F;background:#FAEEDA;border:1px solid #EAC07A">视频</span><span class="mile-tag" style="color:#B4610F;background:#FAEEDA">★ 里程碑</span></div>
 <h3><a href="https://openai.com/index/sora-2" rel="noopener" target="_blank">Sora 2</a></h3>
 <p>视频生成进入带声音时代，同步推出独立 App</p>
@@ -218,7 +219,7 @@
 </div>
 <div class="tl-row">
 <div class="tl-time" title="2025-08-07"><span class="tl-time-label">08-07</span><span class="tl-time-dot"></span></div>
-<div class="daycards"><article class="milestone" style="box-shadow:inset 3px 0 0 #185FA5" id="2025-08-07-gpt-5">
+<div class="daycards"><article class="milestone" style="box-shadow:inset 5px 0 0 #185FA5" id="2025-08-07-gpt-5">
 <div class="meta"><span class="company">OpenAI</span><span class="cat" style="color:#185FA5;background:#E6F1FB;border:1px solid #9FC3EA">语言</span><span class="mile-tag" style="color:#185FA5;background:#E6F1FB">★ 里程碑</span></div>
 <h3><a href="https://openai.com/index/introducing-gpt-5" rel="noopener" target="_blank">GPT-5</a></h3>
 <p>GPT 系列第五代正式发布</p>
@@ -361,12 +362,12 @@
 </div>
 <div class="tl-row">
 <div class="tl-time" title="2025-01-20"><span class="tl-time-label">01-20</span><span class="tl-time-dot"></span></div>
-<div class="daycards"><article id="2025-01-20-deepseek-r1">
-<div class="meta"><span class="company">DeepSeek</span><span class="cat" style="color:#185FA5;background:#E6F1FB;border:1px solid #9FC3EA">语言</span><span class="attr">推理</span><span class="attr">开源</span></div>
+<div class="daycards"><article class="milestone" style="box-shadow:inset 5px 0 0 #185FA5" id="2025-01-20-deepseek-r1">
+<div class="meta"><span class="company">DeepSeek</span><span class="cat" style="color:#185FA5;background:#E6F1FB;border:1px solid #9FC3EA">语言</span><span class="attr">推理</span><span class="attr">开源</span><span class="mile-tag" style="color:#185FA5;background:#E6F1FB">★ 里程碑</span></div>
 <h3><a href="https://api-docs.deepseek.com/news/news250120" rel="noopener" target="_blank">DeepSeek-R1</a></h3>
 <p>以极低成本对标 o1，引发全球 AI 行业震动</p>
 <ul class="specs"><li>纯强化学习习得推理</li><li>MIT 协议开源</li><li>API 价格约为 o1 的 1/30</li></ul>
-
+<div class="impact" style="color:#185FA5;border-color:#9FC3EA"><b>意味着 </b>「顶级推理模型必须昂贵」的共识被颠覆：同级性能、1/30 成本、全面开源，三重冲击迫使全球 AI 厂商重新审视技术路线与定价策略。</div>
 <div class="src">信源：<a href="https://api-docs.deepseek.com/news/news250120" rel="noopener" target="_blank">DeepSeek 官方</a> · 2025-01-20</div>
 </article></div>
 </div>
@@ -419,12 +420,12 @@
 </div>
 <div class="tl-row">
 <div class="tl-time" title="2024-09-12"><span class="tl-time-label">09-12</span><span class="tl-time-dot"></span></div>
-<div class="daycards"><article id="2024-09-12-o1-preview">
-<div class="meta"><span class="company">OpenAI</span><span class="cat" style="color:#185FA5;background:#E6F1FB;border:1px solid #9FC3EA">语言</span><span class="attr">推理</span></div>
+<div class="daycards"><article class="milestone" style="box-shadow:inset 5px 0 0 #185FA5" id="2024-09-12-o1-preview">
+<div class="meta"><span class="company">OpenAI</span><span class="cat" style="color:#185FA5;background:#E6F1FB;border:1px solid #9FC3EA">语言</span><span class="attr">推理</span><span class="mile-tag" style="color:#185FA5;background:#E6F1FB">★ 里程碑</span></div>
 <h3><a href="https://openai.com/index/introducing-openai-o1-preview/" rel="noopener" target="_blank">o1-preview</a></h3>
 <p>开创「推理模型」新范式</p>
 <ul class="specs"><li>思维链强化学习</li><li>推理时间换性能</li></ul>
-
+<div class="impact" style="color:#185FA5;border-color:#9FC3EA"><b>意味着 </b>「推理模型」成为独立类别：不靠更大规模，靠更长思考时间换性能，开辟了有别于传统预训练扩展的全新能力维度。</div>
 <div class="src">信源：<a href="https://openai.com/index/introducing-openai-o1-preview/" rel="noopener" target="_blank">OpenAI 官网</a> · 2024-09-12</div>
 </article></div>
 </div>
@@ -463,12 +464,12 @@
 </div>
 <div class="tl-row">
 <div class="tl-time" title="2024-05-13"><span class="tl-time-label">05-13</span><span class="tl-time-dot"></span></div>
-<div class="daycards"><article id="2024-05-13-gpt-4o">
-<div class="meta"><span class="company">OpenAI</span><span class="cat" style="color:#185FA5;background:#E6F1FB;border:1px solid #9FC3EA">语言</span><span class="attr">多模态</span></div>
+<div class="daycards"><article class="milestone" style="box-shadow:inset 5px 0 0 #185FA5" id="2024-05-13-gpt-4o">
+<div class="meta"><span class="company">OpenAI</span><span class="cat" style="color:#185FA5;background:#E6F1FB;border:1px solid #9FC3EA">语言</span><span class="attr">多模态</span><span class="mile-tag" style="color:#185FA5;background:#E6F1FB">★ 里程碑</span></div>
 <h3><a href="https://openai.com/index/hello-gpt-4o/" rel="noopener" target="_blank">GPT-4o</a></h3>
 <p>「Her」时刻：实时语音多模态</p>
 <ul class="specs"><li>原生端到端多模态</li><li>实时语音对话</li><li>免费开放</li></ul>
-
+<div class="impact" style="color:#185FA5;border-color:#9FC3EA"><b>意味着 </b>AI 交互从「文字问答」跨入「实时对话」：免费开放 + 多模态将 ChatGPT 用户覆盖面扩展到非技术人群，重新定义大众对「AI 能做什么」的预期。</div>
 <div class="src">信源：<a href="https://openai.com/index/hello-gpt-4o/" rel="noopener" target="_blank">OpenAI 官网</a> · 2024-05-13</div>
 </article></div>
 </div>
@@ -683,12 +684,12 @@
 </div>
 <div class="tl-row">
 <div class="tl-time" title="2023-03-14"><span class="tl-time-label">03-14</span><span class="tl-time-dot"></span><span class="tl-time-n">2 条</span></div>
-<div class="daycards"><article id="2023-03-14-gpt-4">
-<div class="meta"><span class="company">OpenAI</span><span class="cat" style="color:#185FA5;background:#E6F1FB;border:1px solid #9FC3EA">语言</span><span class="attr">多模态</span></div>
+<div class="daycards"><article class="milestone" style="box-shadow:inset 5px 0 0 #185FA5" id="2023-03-14-gpt-4">
+<div class="meta"><span class="company">OpenAI</span><span class="cat" style="color:#185FA5;background:#E6F1FB;border:1px solid #9FC3EA">语言</span><span class="attr">多模态</span><span class="mile-tag" style="color:#185FA5;background:#E6F1FB">★ 里程碑</span></div>
 <h3><a href="https://openai.com/index/gpt-4-research/" rel="noopener" target="_blank">GPT-4</a></h3>
 <p>大模型能力的分水岭</p>
 <ul class="specs"><li>图像输入</li><li>专业考试人类前 10% 水平</li></ul>
-
+<div class="impact" style="color:#185FA5;border-color:#9FC3EA"><b>意味着 </b>「AI 可以真正干专业工作」的认知门槛被确立：两年内的行业基准，也是各地监管机构和企业将 AI 纳入正式讨论的起点。</div>
 <div class="src">信源：<a href="https://openai.com/index/gpt-4-research/" rel="noopener" target="_blank">OpenAI 官网</a> · 2023-03-14</div>
 </article>
 <article id="2023-03-14-claude-1">
