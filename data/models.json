@@ -36,9 +36,11 @@
       "date": "2026-07-01",
       "company": "Anthropic",
       "model": "Claude Sonnet 5",
+      "tier": "milestone",
       "type": "语言",
       "specs": [
-        "Sonnet 系列新一代主力模型"
+        "Sonnet 系列新一代",
+        "API 与 Claude.ai 同步上线"
       ],
       "highlight": "Sonnet 系列第五代，Anthropic 日活最高的主力型号迭代",
       "sourceUrl": "https://www.anthropic.com/news/claude-sonnet-5",
