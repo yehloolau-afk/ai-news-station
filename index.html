@@ -346,7 +346,7 @@
     .kw-row {
       display: grid;
       grid-template-columns: 80px 1fr;
-      align-items: start;
+      align-items: center;
       margin-bottom: 18px;
     }
     .kw-label {
@@ -354,8 +354,7 @@
       font-weight: 600;
       color: var(--muted);
       text-align: center;
-      line-height: 1.5;
-      padding-top: 12px;
+      line-height: 1.6;
     }
     .kw-wrap {
       display: flex;
@@ -2102,7 +2101,7 @@ function kwHtml() {
   const rightItems = (kwData[kwActive]?.items || []).map(kwItemHtml).join('');
   return `
     <div class="kw-row">
-      <div class="kw-label">近15天<br>关键词</div>
+      <div class="kw-label">近15天<br>AI领域<br>关键热词</div>
       <div class="kw-wrap">
         <div class="kw-left">${btns}</div>
         <div class="kw-right" id="kwRight">${rightItems}</div>
