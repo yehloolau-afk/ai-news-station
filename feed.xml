@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 08 Jul 2026 11:58:54 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 14:40:21 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>eVTOL 走向商业化，难点不只在“飞起来”</title>
@@ -52,10 +52,10 @@
       <link>https://36kr.com/p/3886678879727880?f=rss</link>
       <description>大公司：
   雷军回应SkyNomad上市时间
-  36氪获悉，7月8日，小米创办人，董事长兼CEO @雷军 在个人账号官宣小米汽车新系列SkyNomad。其评论区下有网友询问车辆发布时间，雷军回复表示“快了”。
+  36氪��悉，7月8日，小米创办人，董事长兼CEO @雷军 在个人账号官宣小米汽车新系列SkyNomad。其评论区下有网友询问车辆发布时间，雷军回复表示“快了”。
   必和必拓在世界最大铁矿石出口港口的工人将罢工8小时
   7月8日，工会表示，必和必拓集团位于西澳州Port Hedland铁矿石出口码头的工人将于7月16日举行8小时罢工。此次行动将涉及全球最大铁矿石出口港口的运营人员和维护人员，他们由联合港口工会代表。工会表示，员工寻求一项认同他们专业技能、艰苦工作条件以及重大个人成本的协议。
-  本田在美国召回逾32万辆奥德赛，因倒车影像故障</description>
+  本田在美国召回逾32万辆奥德赛，因倒车影像故</description>
       <pubDate>Wed, 08 Jul 2026 16:01:28 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3886678879727880?f=rss</guid>
       <source url="https://36kr.com/p/3886678879727880?f=rss">36Kr</source>
@@ -67,6 +67,14 @@
       <pubDate>Wed, 08 Jul 2026 15:14:26 +0800</pubDate>
       <guid isPermaLink="true">https://sspai.com/post/112044</guid>
       <source url="https://sspai.com/post/112044">少数派</source>
+    </item>
+    <item>
+      <title>具身智能“高考”难疯了！人类100分，最强模型12.8</title>
+      <link>https://www.qbitai.com/2026/07/446363.html</link>
+      <description>具身测评界的珠峰来了：RoboDojo</description>
+      <pubDate>Wed, 08 Jul 2026 13:07:30 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/446363.html</guid>
+      <source url="https://www.qbitai.com/2026/07/446363.html">量子位</source>
     </item>
     <item>
       <title>AI 视频全面成熟：Seedance 2.0 领衔，6 款主流工具深度横评</title>
@@ -201,14 +209,6 @@
       <pubDate>Wed, 08 Jul 2026 07:51:26 +0000</pubDate>
       <guid isPermaLink="true">https://www.qbitai.com/2026/07/446069.html</guid>
       <source url="https://www.qbitai.com/2026/07/446069.html">量子位</source>
-    </item>
-    <item>
-      <title>派早报：Nothing Ear (3a) 发布、Meta 推出 Muse 图像生成模型等</title>
-      <link>https://sspai.com/post/112049</link>
-      <description>Google Voice 推出付费订阅方案并调整 Android 设备备份策略等。查看全文</description>
-      <pubDate>Wed, 08 Jul 2026 07:48:25 +0800</pubDate>
-      <guid isPermaLink="true">https://sspai.com/post/112049</guid>
-      <source url="https://sspai.com/post/112049">少数派</source>
     </item>
   </channel>
 </rss>
