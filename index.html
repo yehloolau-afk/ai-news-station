@@ -224,12 +224,12 @@
     }
     .tl-row {
       display: grid; grid-template-columns: 80px 1fr;
-      align-items: center;
+      align-items: start;
       position: relative; z-index: 1;
     }
     .tl-time {
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      gap: 5px; padding: 4px 0;
+      display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+      gap: 5px; padding: 13px 0 4px;
     }
     .tl-time-label {
       font-size: 12px; font-weight: 600; color: var(--text);
@@ -240,27 +240,62 @@
       background: var(--text); flex-shrink: 0;
       box-shadow: 0 0 0 3px rgba(17,24,39,0.12);
     }
+    .tl-time-n { font-size: 10px; color: var(--muted); white-space: nowrap; margin-top: 2px; }
+    .tl-daycards { display: flex; flex-direction: column; }
+    .tl-daycards .tl-card:last-child { margin-bottom: 0; }
     .section-sub { font-size: 12px; color: var(--muted); }
     .tl-card {
       background: var(--card-bg); border: 1px solid var(--border);
       border-radius: 10px; padding: 13px 16px; margin-bottom: 8px;
       transition: border-color 0.12s;
+      position: relative;
     }
     .tl-card:hover { border-color: var(--accent-border, rgba(208,25,34,0.35)); }
+    /* 模态色载体：每张卡挂 .m-xxx，供分类胶囊/强调色条/影响判断行取色 */
+    .m-lang    { --m:#185FA5; --mb:#E6F1FB; --mbd:#9FC3EA; }
+    .m-video   { --m:#B4610F; --mb:#FAEEDA; --mbd:#EAC07A; }
+    .m-image   { --m:#4B41A8; --mb:#EEEDFE; --mbd:#C3BEF0; }
+    .m-audio   { --m:#0F6E56; --mb:#E1F5EE; --mbd:#8ED9BF; }
+    .m-multi   { --m:#993556; --mb:#FBEAF0; --mbd:#EBAEC5; }
+    .m-special { --m:#5F5E5A; --mb:#F1EFE8; --mbd:#CFCCC0; }
     .tl-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 12px; margin-bottom: 5px; }
     .tl-date { color: var(--accent); font-weight: 700; font-variant-numeric: tabular-nums; }
     .tl-company { font-weight: 600; color: var(--text); }
-    .tl-type { color: var(--muted); background: var(--bg); padding: 1px 8px; border-radius: 10px; }
+    /* 分类 = 彩色胶囊（模态色） */
+    .tl-cat { color: var(--m); background: var(--mb); border: 1px solid var(--mbd); padding: 1px 9px; border-radius: 999px; font-weight: 600; }
+    /* 属性 = 中性描边胶囊（开源/推理/OCR/实时交互/多模态） */
+    .tl-attr { color: var(--muted); background: transparent; border: 1px solid var(--border); padding: 1px 9px; border-radius: 999px; }
     .tl-model { font-size: 15px; font-weight: 700; margin-bottom: 3px; }
     .tl-model a { color: var(--text); text-decoration: none; }
     .tl-model a:hover { color: var(--accent); }
     .tl-highlight { font-size: 13px; color: var(--muted); }
+    /* 影响判断行（里程碑级独有） */
+    .tl-impact { font-size: 12.5px; color: var(--m); line-height: 1.55; margin-top: 9px; padding-left: 10px; border-left: 2px solid var(--mbd); }
+    .tl-impact b { font-weight: 600; color: var(--muted); }
+    /* 规格 = 中性方角块（radius 6px，刻意区别于分类胶囊） */
     .tl-specs { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
     .tl-specs span {
       font-size: 11.5px; color: var(--muted);
       background: var(--bg); border: 1px solid var(--border);
-      padding: 2px 8px; border-radius: 10px;
+      padding: 2px 8px; border-radius: 6px;
     }
+    /* 信源露出 */
+    .tl-foot { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-top: 10px; }
+    .tl-source { display: inline-flex; align-items: center; gap: 4px; font-size: 11.5px; color: var(--muted); text-decoration: none; }
+    .tl-source:hover { color: var(--accent); }
+    .tl-source svg { width: 12px; height: 12px; flex-shrink: 0; }
+    /* 里程碑级：左侧强调色条 + 更重标题 + 里程碑标 */
+    .tl-card.milestone { box-shadow: inset 3px 0 0 var(--m); }
+    .tl-card.milestone .tl-model { font-size: 16.5px; }
+    .tl-mile-tag { display: inline-flex; align-items: center; gap: 3px; font-size: 10.5px; font-weight: 700; color: var(--m); background: var(--mb); padding: 1px 7px; border-radius: 999px; }
+    /* 次要级：压成一行 */
+    .tl-card.minor { padding: 9px 14px; }
+    .tl-minor-row { display: flex; align-items: center; gap: 8px; font-size: 12px; }
+    .tl-minor-row .tl-company { flex: 0 0 auto; }
+    .tl-minor-row .tl-model { font-size: 13px; font-weight: 700; margin: 0; flex: 0 0 auto; }
+    .tl-minor-desc { color: var(--muted); flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .tl-minor-src { flex: 0 0 auto; color: var(--muted); display: inline-flex; }
+    .tl-minor-src:hover { color: var(--accent); }
 
     /* ── Refresh footer ── */
     .sidebar-footer {
@@ -2408,6 +2443,53 @@ function fmtPodDate(iso) {
 }
 
 // ── Render: AI 大事记（模型发布时间线）──────────────────
+const TL_MOD_CLASS = { '语言':'m-lang', '视频':'m-video', '图像':'m-image', '语音':'m-audio', '多模态':'m-multi', '专用':'m-special' };
+const TL_LINK_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>';
+function tlTypeParts(type) {
+  const p = (type || '').split('·').map(s => s.trim()).filter(Boolean);
+  return { mod: p[0] || '', attrs: p.slice(1), cls: TL_MOD_CLASS[p[0]] || 'm-special' };
+}
+function tlModelLink(e) {
+  return e.sourceUrl
+    ? `<a href="${esc(e.sourceUrl)}" target="_blank" rel="noopener">${esc(e.model)}</a>`
+    : esc(e.model);
+}
+function tlSource(e, cls) {
+  if (!e.sourceUrl) return '';
+  return `<a class="${cls}" href="${esc(e.sourceUrl)}" target="_blank" rel="noopener">${TL_LINK_ICON}${cls === 'tl-source' ? esc(e.sourceName || '官方信源') : ''}</a>`;
+}
+function tlCard(e) {
+  const { mod, attrs, cls } = tlTypeParts(e.type);
+  const catPill = mod ? `<span class="tl-cat">${esc(mod)}</span>` : '';
+  const attrPills = attrs.map(a => `<span class="tl-attr">${esc(a)}</span>`).join('');
+
+  if (e.tier === 'minor') {
+    return `<div class="tl-card minor ${cls}">
+      <div class="tl-minor-row">
+        <span class="tl-company">${esc(e.company)}</span>
+        ${catPill}
+        <span class="tl-model">${tlModelLink(e)}</span>
+        <span class="tl-minor-desc">${esc(e.highlight || '')}</span>
+        ${tlSource(e, 'tl-minor-src')}
+      </div>
+    </div>`;
+  }
+
+  const isMile = e.tier === 'milestone';
+  const mileTag = isMile ? `<span class="tl-mile-tag">★ 里程碑</span>` : '';
+  const impact = (isMile && e.impact) ? `<div class="tl-impact"><b>意味着 </b>${esc(e.impact)}</div>` : '';
+  return `<div class="tl-card ${isMile ? 'milestone' : ''} ${cls}">
+    <div class="tl-meta">
+      <span class="tl-company">${esc(e.company)}</span>
+      ${catPill}${attrPills}${mileTag}
+    </div>
+    <div class="tl-model">${tlModelLink(e)}</div>
+    <div class="tl-highlight">${esc(e.highlight || '')}</div>
+    ${e.specs?.length ? `<div class="tl-specs">${e.specs.map(s => `<span>${esc(s)}</span>`).join('')}</div>` : ''}
+    ${impact}
+    <div class="tl-foot">${tlSource(e, 'tl-source')}</div>
+  </div>`;
+}
 function renderModelTimeline(data) {
   const main = document.getElementById('main');
   const entries = [...data.entries].sort((a, b) => b.date.localeCompare(a.date));
@@ -2415,31 +2497,25 @@ function renderModelTimeline(data) {
   const byYear = {};
   entries.forEach(e => { const y = e.date.slice(0, 4); (byYear[y] = byYear[y] || []).push(e); });
 
-  const yearsHtml = Object.entries(byYear).sort((a, b) => b[0].localeCompare(a[0])).map(([year, list]) => `
-    <div class="tl-year-node">
-      <span class="tl-year-dot"></span>
-      <span class="tl-year-text">${year} 年<span class="tl-year-count">${list.length} 条</span></span>
-    </div>
-    <div class="tl-list">
-    ${list.map(e => `
+  const yearsHtml = Object.entries(byYear).sort((a, b) => b[0].localeCompare(a[0])).map(([year, list]) => {
+    const byDate = {};
+    list.forEach(e => { (byDate[e.date] = byDate[e.date] || []).push(e); });
+    const dateRows = Object.entries(byDate).sort((a, b) => b[0].localeCompare(a[0])).map(([date, items]) => `
       <div class="tl-row">
-        <div class="tl-time" title="${e.date}">
-          <span class="tl-time-label">${e.date.slice(5)}</span>
+        <div class="tl-time" title="${date}">
+          <span class="tl-time-label">${date.slice(5)}</span>
           <span class="tl-time-dot"></span>
+          ${items.length > 1 ? `<span class="tl-time-n">${items.length} 条</span>` : ''}
         </div>
-        <div class="tl-card">
-          <div class="tl-meta">
-            <span class="tl-company">${esc(e.company)}</span>
-            <span class="tl-type">${esc(e.type)}</span>
-          </div>
-          <div class="tl-model">${e.sourceUrl
-            ? `<a href="${esc(e.sourceUrl)}" target="_blank" rel="noopener">${esc(e.model)}</a>`
-            : esc(e.model)}</div>
-          <div class="tl-highlight">${esc(e.highlight || '')}</div>
-          ${e.specs?.length ? `<div class="tl-specs">${e.specs.map(s => `<span>${esc(s)}</span>`).join('')}</div>` : ''}
-        </div>
-      </div>`).join('')}
-    </div>`).join('');
+        <div class="tl-daycards">${items.map(tlCard).join('')}</div>
+      </div>`).join('');
+    return `
+      <div class="tl-year-node">
+        <span class="tl-year-dot"></span>
+        <span class="tl-year-text">${year} 年<span class="tl-year-count">${list.length} 条</span></span>
+      </div>
+      <div class="tl-list">${dateRows}</div>`;
+  }).join('');
 
   main.innerHTML = `
     <div class="section-header">
