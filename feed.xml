@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 09 Jul 2026 18:11:40 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 20:06:05 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>万勋科技发布“柔韧充”自动充电通用服务引擎，以“0.000s无极容差应变”首创混沌服务、全类通解！</title>
@@ -18,6 +18,36 @@
       <pubDate>Thu, 09 Jul 2026 23:36:08 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3888567864851204?f=rss</guid>
       <source url="https://36kr.com/p/3888567864851204?f=rss">36Kr</source>
+    </item>
+    <item>
+      <title>认识一位数学家，用 GPT-5.6 解决以前无法解决的数学问题</title>
+      <link>https://www.youtube.com/watch?v=5X5CALvYvp0</link>
+      <description>Meet Bartosz. 
+
+A mathematician solving previously unsolvable math problems with GPT-5.6</description>
+      <pubDate>Thu, 09 Jul 2026 20:00:35 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=5X5CALvYvp0</guid>
+      <source url="https://www.youtube.com/watch?v=5X5CALvYvp0">OpenAI</source>
+    </item>
+    <item>
+      <title>来认识一下使用 GPT-5.6 经营农场的西兰花农民。</title>
+      <link>https://www.youtube.com/watch?v=hWhfrR9WJ_c</link>
+      <description>Meet Hiroki. 
+
+A broccoli farmer running his farm with GPT-5.6.</description>
+      <pubDate>Thu, 09 Jul 2026 20:00:24 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=hWhfrR9WJ_c</guid>
+      <source url="https://www.youtube.com/watch?v=hWhfrR9WJ_c">OpenAI</source>
+    </item>
+    <item>
+      <title>认识一个使用 GPT-5.6 在餐厅经营谷物生意的家庭。</title>
+      <link>https://www.youtube.com/watch?v=A5VgJ0KZgKs</link>
+      <description>Meet the Wishingrads. 
+
+A family running a cereal business from their dining room with GPT-5.6.</description>
+      <pubDate>Thu, 09 Jul 2026 20:00:18 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=A5VgJ0KZgKs</guid>
+      <source url="https://www.youtube.com/watch?v=A5VgJ0KZgKs">OpenAI</source>
     </item>
     <item>
       <title>2026年度「中国股权投资行业投资机构」系列名册正式发布</title>
@@ -45,14 +75,16 @@
       <source url="https://36kr.com/p/3888279614274048?f=rss">36Kr</source>
     </item>
     <item>
-      <title>认识 GPT-5.6</title>
-      <link>https://www.youtube.com/watch?v=-MPGU2a67Ls</link>
-      <description>Watch GPT-5.6 build a playable, celestial-themed card game in Codex from a short, open-ended prompt.
+      <title>ChatGPT 为营销团队工作</title>
+      <link>https://www.youtube.com/watch?v=8sUXGKDUEzI</link>
+      <description>Marketing work usually starts with a lot of moving pieces: customer insights, campaign ideas, feedback, channel plans, and a deadline that is already getting closer.
 
-In this demo, GPT-5.6 designs the core mechanics, generates custom artwork, adds levels and a soundtrack, tests the gameplay, and keeps improving the build. Along the way, see how programmatic tool </description>
-      <pubDate>Thu, 09 Jul 2026 17:55:26 +0000</pubDate>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=-MPGU2a67Ls</guid>
-      <source url="https://www.youtube.com/watch?v=-MPGU2a67Ls">OpenAI</source>
+See how ChatGPT Work can help teams move from insight to brief to campaign-ready work
+
+https://openai.com/business/solutions/marketin</description>
+      <pubDate>Thu, 09 Jul 2026 18:30:29 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=8sUXGKDUEzI</guid>
+      <source url="https://www.youtube.com/watch?v=8sUXGKDUEzI">OpenAI</source>
     </item>
     <item>
       <title>氪星晚报｜大众汽车管理层考虑2031年起关闭德国部分工厂；消息称三星晶圆代工部分制程涨价；国家超算互联网核心节点正式上线</title>
@@ -67,21 +99,11 @@ In this demo, GPT-5.6 designs the core mechanics, generates custom artwork, adds
       <source url="https://36kr.com/p/3888230589152008?f=rss">36Kr</source>
     </item>
     <item>
-      <title>Sol、Terra 和 Luna，我们的 GPT-5.6 系列型号就在这里。</title>
-      <link>https://www.youtube.com/watch?v=ELh8R7bGlxE</link>
-      <description>Sol, Terra, and Luna, our GPT‑5.6 family of models are available starting today across ChatGPT, Codex, and the OpenAI API. The rollout is starting globally now and will continue gradually toward full availability over the next 24 hours.
-
-In ChatGPT, Plus, Pro, Business, and Enterprise users access G</description>
-      <pubDate>Thu, 09 Jul 2026 17:51:13 +0000</pubDate>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=ELh8R7bGlxE</guid>
-      <source url="https://www.youtube.com/watch?v=ELh8R7bGlxE">OpenAI</source>
-    </item>
-    <item>
       <title>创始人回归，一家高增长公司进入新阶段</title>
       <link>https://36kr.com/p/3886969297893892?f=rss</link>
-      <description>六月末的苏黎世，利马特河从 On Labs 楼后流过。昂跑（On）三位创始人之一 Olivier Bernhard 站在一群跑步与商业记者面前，先说了一���略带歉意的开场白：“这里不是那种光鲜亮丽的展示空间。”
+      <description>六月末的苏黎世，利马特河从 On Labs 楼后流过。昂跑（On）三位创始人之一 Olivier Bernhard 站在一群跑步与商业记者面前，先说了一句略带歉意的开场白：“这里不是那种光鲜亮丽的展示空间。”
   他提醒来客，接下来会看到戴着护目镜的工程师、指尖沾着蓝色染料的设计师，以及在跑步机上大汗淋漓、把自己逼到极限的运动员。这是昂跑第一次向外部媒体掀开其创新引擎的帷幕——On Labs 平日紧闭的那道门。
-  选择此刻开门，并非偶然。这家 2010 年诞生于瑞士、由前铁人三项运动员 Olivier Bernhard 与 David Allemann、Caspar Coppetti 共</description>
+  选择此刻开门，并非偶然。这家 2010 年诞生于瑞士、由前铁人三项运动员 Olivier Bernhard 与 David Allemann、Caspar Coppetti 共同创</description>
       <pubDate>Thu, 09 Jul 2026 17:50:06 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3886969297893892?f=rss</guid>
       <source url="https://36kr.com/p/3886969297893892?f=rss">36Kr</source>
@@ -93,16 +115,6 @@ In ChatGPT, Plus, Pro, Business, and Enterprise users access G</description>
       <pubDate>Thu, 09 Jul 2026 17:45:34 +0000</pubDate>
       <guid isPermaLink="true">https://www.ifanr.com/1671502?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</guid>
       <source url="https://www.ifanr.com/1671502?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
-    </item>
-    <item>
-      <title>认识 ChatGPT 工作</title>
-      <link>https://www.youtube.com/watch?v=yRc5HcGJ-Cs</link>
-      <description>Introducing ChatGPT Work, a new agent in ChatGPT that can take action across your apps and workflows to turn a goal into finished work.
-
-Powered by Codex and GPT-5.6, ChatGPT Work is a whole new way to use ChatGPT, moving beyond just answering questions to getting real work done across web, mobile, </description>
-      <pubDate>Thu, 09 Jul 2026 17:35:12 +0000</pubDate>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=yRc5HcGJ-Cs</guid>
-      <source url="https://www.youtube.com/watch?v=yRc5HcGJ-Cs">OpenAI</source>
     </item>
     <item>
       <title>TDS REVIEW | 小米耳夹式耳机体验</title>
@@ -201,14 +213,6 @@ Powered by Codex and GPT-5.6, ChatGPT Work is a whole new way to use ChatGPT, mo
       <pubDate>Thu, 09 Jul 2026 09:20:08 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3887726503688968?f=rss</guid>
       <source url="https://36kr.com/p/3887726503688968?f=rss">36Kr</source>
-    </item>
-    <item>
-      <title>派早报：GPT-5.6 即将开放使用、Nothing 发布 Phone (4b) 等</title>
-      <link>https://sspai.com/post/112091</link>
-      <description>Notion 推出全新应用 Agents、Jolla Phone (2026) 手机正式发售等。查看全文</description>
-      <pubDate>Thu, 09 Jul 2026 08:40:02 +0800</pubDate>
-      <guid isPermaLink="true">https://sspai.com/post/112091</guid>
-      <source url="https://sspai.com/post/112091">少数派</source>
     </item>
   </channel>
 </rss>
