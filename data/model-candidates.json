@@ -12,5 +12,26 @@
     "summary": "Meta Superintelligence Labs 发布首个媒体生成模型 Muse Image 和 Muse Video。Muse Image 是目前最先进的图像生成模型，能精确遵循指令、精准编辑、多参考构图，并利用 Instagram 社交上下文。它还具备智能体工具使用能力并集成 Muse Spark。用户可通过 Meta AI 应用、网页、Instagram Stories 和 Whats",
     "sourceUrl": "https://x.com/AIatMeta/status/2074577662840832382",
     "sourceName": "X：AI at Meta (@AIatMeta)"
+  },
+  {
+    "date": "2026-07-09",
+    "title": "OpenAI 发布 GPT‑Live 新一代全双工语音模型",
+    "summary": "OpenAI 今日推出 GPT‑Live，基于全双工架构实现同时听与说，支持自然打断与实时回馈。该模型每秒多次判断是否说话、倾听、打断或调用工具，并将搜索、推理等复杂任务委托给后台 GPT‑5.5，保持对话流畅。即日起向全球 ChatGPT 用户提供 GPT‑Live‑1 和 GPT‑Live‑1 mini 两个版本。人类评估显示，在 5‑10 分钟对话中，GPT‑Live‑1 系列在自然度、轮流",
+    "sourceUrl": "https://openai.com/index/introducing-gpt-live",
+    "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+    "date": "2026-07-09",
+    "title": "Pulpie：用于清理网络的Pareto最优模型",
+    "summary": "Pulpie是一族Pareto最优模型，用于从HTML页面提取主要内容。其最小模型pulpie-orange-small（210M参数）在WebMainBench上取得0.862的ROUGE-5 F1分数，接近600M参数的Dripper（0.864），但成本仅1/20。在NVIDIA L4 GPU上，Pulpie处理速度13.7页/秒，Dripper仅0.68页/秒。清理10亿页HTML，Pul",
+    "sourceUrl": "https://usefeyn.com/blog/pulpie-pareto-optimal-models-for-cleaning-the-web",
+    "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
+    "date": "2026-07-09",
+    "title": "蚂蚁集团旗下Robbyant开源LingBot-Vision：1B参数边界中心视觉基础模型，用于密集空间感知",
+    "summary": "蚂蚁集团旗下具身智能公司Robbyant开源LingBot-Vision，一套自监督视觉Transformer家族，专为密集空间感知设计。旗舰ViT-g/16参数约1.1B，采用掩膜边界建模训练，将边界作为原生预训练信号。在密集空间任务中，该1B模型匹配或超越参数规模高达7倍的大模型（如7B DINOv3）。模型以Apache-2.0许可证在Hugging Face开源，提供ViT-g、ViT-L",
+    "sourceUrl": "https://www.marktechpost.com/2026/07/07/ant-groups-robbyant-open-sources-lingbot-vision-a-1b-boundary-centric-vision-foundation-model-for-dense-spatial-perception",
+    "sourceName": "MarkTechPost（RSS）"
   }
 ]
