@@ -1,0 +1,380 @@
+{
+  "date": "2026-07-09",
+  "attribution": {
+    "source": "AI HOT",
+    "canonical": "https://aihot.virxact.com/daily/2026-07-09"
+  },
+  "generatedAt": "2026-07-09T00:00:00.882Z",
+  "windowStart": "2026-07-08T00:00:00.000Z",
+  "windowEnd": "2026-07-09T00:00:00.000Z",
+  "lead": null,
+  "sections": [
+    {
+      "label": "模型发布/更新",
+      "items": [
+        {
+          "title": "推出 Grok 4.5",
+          "summary": "Cursor 与 SpaceXAI 联合训练了混合专家模型 Grok 4.5，在数万亿 tokens 的 Cursor 用户交互数据上训练，并通过强化学习解决软件工程、数据科学、金融、法律等领域的困难问题。基础版定价 $2/M 输入 tokens、$6/M 输出 tokens，快速版 $4/M 输入 tokens、$18/M 输出 tokens。即日起在 Cursor 桌面、网页、iOS、CLI 及 SDK 中可用，个人和团队计划首周使用量翻倍。Grok 4.5 与 Composer 2.5 为不同权重类别，两者将继续支持。",
+          "sourceUrl": "https://cursor.com/blog/grok-4-5",
+          "sourceName": "Cursor Blog",
+          "permalink": "https://aihot.virxact.com/items/cmrcdtas00074ihx5zzerv512",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrcdtas00074ihx5zzerv512"
+          }
+        },
+        {
+          "title": "OpenAI 发布 GPT‑Live 新一代全双工语音模型",
+          "summary": "OpenAI 今日推出 GPT‑Live，基于全双工架构实现同时听与说，支持自然打断与实时回馈。该模型每秒多次判断是否说话、倾听、打断或调用工具，并将搜索、推理等复杂任务委托给后台 GPT‑5.5，保持对话流畅。即日起向全球 ChatGPT 用户提供 GPT‑Live‑1 和 GPT‑Live‑1 mini 两个版本。人类评估显示，在 5‑10 分钟对话中，GPT‑Live‑1 系列在自然度、轮流、打断等方面显著优于 Advanced Voice Mode；在 GPQA、BrowseComp 和 τ³‑Voice Telecom 基准测试中也表现更强。未来将开放 API。",
+          "sourceUrl": "https://openai.com/index/introducing-gpt-live",
+          "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+          "permalink": "https://aihot.virxact.com/items/cmrcc072t01eqihqcf5kht18y",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrcc072t01eqihqcf5kht18y"
+          }
+        },
+        {
+          "title": "Pulpie：用于清理网络的Pareto最优模型",
+          "summary": "Pulpie是一族Pareto最优模型，用于从HTML页面提取主要内容。其最小模型pulpie-orange-small（210M参数）在WebMainBench上取得0.862的ROUGE-5 F1分数，接近600M参数的Dripper（0.864），但成本仅1/20。在NVIDIA L4 GPU上，Pulpie处理速度13.7页/秒，Dripper仅0.68页/秒。清理10亿页HTML，Pulpie成本约$7,900，Dripper需$159,000。模型采用编码器架构，单次前向传播即可标记每个HTML块为内容或模板，已在HuggingFace开源。",
+          "sourceUrl": "https://usefeyn.com/blog/pulpie-pareto-optimal-models-for-cleaning-the-web",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "permalink": "https://aihot.virxact.com/items/cmrbez8y903b9ihl133b5wr18",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrbez8y903b9ihl133b5wr18"
+          }
+        },
+        {
+          "title": "SpaceXAI 发布 Grok 4.5，与 Cursor 联合训练的编程与智能体模型",
+          "summary": "SpaceXAI 推出 Grok 4.5，称其迄今最聪明，聚焦编程、智能体任务和知识工作。该模型与 AI 编程编辑器 Cursor 联合训练，在数万块 NVIDIA GB300 GPU 上完成训练和强化学习。基准测试中，Grok 4.5 在 Harvey's Legal Agent Benchmark 排名第一；SWE Bench Pro 解决率 64.7%，平均输出 token 仅 15,954，约为 Opus 4.8 (max) 的 1/4.2。推理速度 80 TPS，输入价格 $2/百万 token，输出 $6/百万 token。模型 ID 为 grok-4.5，已上线 Grok Build 和 Cursor（所有套餐），并通…",
+          "sourceUrl": "https://www.marktechpost.com/2026/07/08/spacexai-releases-grok-4-5",
+          "sourceName": "MarkTechPost（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrcqmhie03gdihx5xgnwf6z3",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrcqmhie03gdihx5xgnwf6z3"
+          }
+        },
+        {
+          "title": "蚂蚁集团旗下Robbyant开源LingBot-Vision：1B参数边界中心视觉基础模型，用于密集空间感知",
+          "summary": "蚂蚁集团旗下具身智能公司Robbyant开源LingBot-Vision，一套自监督视觉Transformer家族，专为密集空间感知设计。旗舰ViT-g/16参数约1.1B，采用掩膜边界建模训练，将边界作为原生预训练信号。在密集空间任务中，该1B模型匹配或超越参数规模高达7倍的大模型（如7B DINOv3）。模型以Apache-2.0许可证在Hugging Face开源，提供ViT-g、ViT-L（300M）、ViT-B（86M）、ViT-S四个规模。",
+          "sourceUrl": "https://www.marktechpost.com/2026/07/07/ant-groups-robbyant-open-sources-lingbot-vision-a-1b-boundary-centric-vision-foundation-model-for-dense-spatial-perception",
+          "sourceName": "MarkTechPost（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrbikwbz04b5ihl16qfp5ntw",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrbikwbz04b5ihl16qfp5ntw"
+          }
+        }
+      ]
+    },
+    {
+      "label": "产品发布/更新",
+      "items": [
+        {
+          "title": "Seedream 5.0 Pro 登陆 Runway，支持14种语言",
+          "summary": "Seedream 5.0 Pro 现已登陆 Runway。可通过提示词或参考图生成高细节图像，图像内文字清晰可读，支持多达14种语言。立即点击下方链接尝试。",
+          "sourceUrl": "https://x.com/runwayml/status/2074982268175630814",
+          "sourceName": "X：Runway (@runwayml)",
+          "permalink": "https://aihot.virxact.com/items/cmrcn8mlw02k5ihx5risshcr3",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrcn8mlw02k5ihx5risshcr3"
+          }
+        },
+        {
+          "title": "Replit 推出社区档案与力量排名",
+          "summary": "本周新功能 🚀 Replit 社区档案——vibe coders 的工作证明。 你的档案，你的展示。获取你的智能体使用和检查点的活跃度图表，外加面向专业用户的 Replit 力量排名。 登录，认领你的档案，挑选你最棒的项目，与朋友分享你的数据。 立即查看 → http://replit.com/community",
+          "sourceUrl": "https://x.com/Replit/status/2074871322220339515",
+          "sourceName": "X：Replit (@Replit)",
+          "permalink": "https://aihot.virxact.com/items/cmrc8cfhc00jeihqc0r5wx6qz",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrc8cfhc00jeihqc0r5wx6qz"
+          }
+        },
+        {
+          "title": "原生速度的 vLLM transformers 建模后端",
+          "summary": "Hugging Face 宣布 transformers vLLM 后端现与手写原生 vLLM 实现速度相当甚至更快。模型作者无需移植代码，即可自动利用 transformers 获得超快推理。测试使用 Qwen3-4B（单 GPU）、Qwen3-32B（张量并行）和 Qwen3-235B-A22B-FP8 MoE（数据+专家并行）三种配置，吞吐量均达到或超过原生。该后端通过 torch.fx 静态分析图、AST 重写代码实现动态层融合，支持张量/管道/专家并行及 torch.compile。用户仅需添加 `--model-impl transformers` 标志。目前不支持线性注意力模型但即将支持。",
+          "sourceUrl": "https://huggingface.co/blog/native-speed-vllm-transformers-backend",
+          "sourceName": "Hugging Face：Blog（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrcabmvj00ymihqce96ilbfi",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrcabmvj00ymihqce96ilbfi"
+          }
+        },
+        {
+          "title": "OpenRouter聊天室推出一键零数据保留",
+          "summary": "新功能：聊天室一键ZDR（零数据保留） 在完全隐私保护下横向对比模型：https://openrouter.ai/chat",
+          "sourceUrl": "https://x.com/OpenRouter/status/2074870468394250461",
+          "sourceName": "X：OpenRouter (@OpenRouter)",
+          "permalink": "https://aihot.virxact.com/items/cmrc8c7rq00imihqcg5rp1u13",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrc8c7rq00imihqcg5rp1u13"
+          }
+        },
+        {
+          "title": "Runway Dev 发布",
+          "summary": "Runway 官网以 Cookie 设置页面代替了产品介绍，未提供 Runway Dev 的功能、参数、可用性等任何具体信息。",
+          "sourceUrl": "https://runwayml.com/news/introducing-runway-dev",
+          "sourceName": "Runway：News（网页）",
+          "permalink": "https://aihot.virxact.com/items/cmrc8ppgh00l4ihqcft9anype",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrc8ppgh00l4ihqcft9anype"
+          }
+        },
+        {
+          "title": "利用 Netpreme X‑Mem™ MPU 加速 SGLang HiCache",
+          "summary": "Netpreme X‑Mem™ 内存处理单元（MPU）作为专用高带宽 KV 内存层与 SGLang HiCache 集成，替代主机 DRAM 作为 L2 卸载层。在基于 Claude Code 代理轨迹的编码工作负载中，前缀缓存命中率平均约 98%。单请求微基准测试显示，首 token 延迟（TTFT）相比主机 DRAM 方案降低约 6.7 倍。在端到端推理基准测试中（20K token 上下文、26 token 输入、20 轮对话），中等负载下每用户吞吐量提升 33%，高负载下交互性提升 50%、系统吞吐量提升 30%。X‑Mem™ 通过 CUDA 和 PyTorch 兼容 API 集成，单节点提供最高 24 TB 内存、4 TB…",
+          "sourceUrl": "https://www.lmsys.org/blog/2026-06-27-netpreme-xmem",
+          "sourceName": "LMSYS：Blog（Chatbot Arena 团队）",
+          "permalink": "https://aihot.virxact.com/items/cmrcc7x5901h7ihqc4ucfnsa2",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrcc7x5901h7ihqc4ucfnsa2"
+          }
+        },
+        {
+          "title": "Claude Code v2.1.205 发布",
+          "summary": "Claude Code v2.1.205 修复多项 bug，包括 `--json-schema` 在 schema 无效时静默输出非结构化结果、Windows 下工作树删除误删文件、以及目录被删除/锁定导致的崩溃。改进自动模式，执行 `rm -rf` 前先确认变量可解析；自动更新二进制改为流式写入，峰值内存降低约 400 MB。智能体视图新增状态词和标题，替换原始工具调用文本。`/doctor` 升级为完整设置检查命令（别名 `/checkup`）。后台任务通知明确标注无人输入，防止伪造批准。保留“Claude Browser” MCP 服务器名。",
+          "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.205",
+          "sourceName": "Claude Code：GitHub Releases（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrcmv0mc02h1ihx556umd98k",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrcmv0mc02h1ihx556umd98k"
+          }
+        }
+      ]
+    },
+    {
+      "label": "行业动态",
+      "items": [
+        {
+          "title": "GitLost：Noma Labs 发现 GitHub AI 代理提示词注入漏洞",
+          "summary": "Noma Labs 在 GitHub Agentic Workflows 中发现严重提示词注入漏洞 GitLost。未认证攻击者仅需在属于同一组织的公共仓库中创建一个嵌有恶意指令的 Issue，即可诱使基于 Claude 或 GitHub Copilot 的 AI 代理读取并公开该组织内私有仓库的内容。攻击无需编码技能或凭证，根源在于代理将用户可控内容视为可信指令，且 GitHub 的防护措施因 \"Additionally\" 关键词被绕过。Noma Labs 已公开 PoC 并建议限制跨仓库权限、隔离用户输入。",
+          "sourceUrl": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "permalink": "https://aihot.virxact.com/items/cmrbu023x079pihl1q4rvhzky",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrbu023x079pihl1q4rvhzky"
+          }
+        },
+        {
+          "title": "美国商务部批准OpenAI大规模发布GPT-5.6，Sol明日亮相",
+          "summary": "美国商务部正式批准OpenAI大规模发布GPT-5.6。OpenAI宣布GPT-5.6 Sol将于本周四完成最后准备后，与Terra和Luna一同面向公众推出。此前因国家安全考量，美国政府要求分阶段发布，仅允许向经批准的有限实体开放。此次全面放行标志着临时管控结束。获批前，美国商务部下属AI标准与创新中心执行了测试，OpenAI技术团队驻扎华盛顿配合沟通。美国最新AI行政令即将出台，旨在为先进AI模型发布建立正式评估框架。",
+          "sourceUrl": "https://www.ithome.com/0/973/922.htm",
+          "sourceName": "IT之家（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrbkf2e804qlihl1e8qe5q4a",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrbkf2e804qlihl1e8qe5q4a"
+          }
+        },
+        {
+          "title": "工信部发布Claude Code后门安全风险提示",
+          "summary": "中国工信部发布风险提示，指出 Claude Code 2.1.91 至 2.1.196 版本内置监控机制，未经用户同意即向远程服务器回传用户地域、身份标识等敏感信息。建议相关单位立即全面排查，对受影响版本卸载或升级至已清除后门代码的最新安全版本，并加强开发工具外联权限管控与流量监测，防止敏感数据违规外传。",
+          "sourceUrl": "https://x.com/xiaohu/status/2074736623284256881",
+          "sourceName": "X：小互 (@xiaohu)",
+          "permalink": "https://aihot.virxact.com/items/cmrboci2105r3ihl1zmi6wgpf",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrboci2105r3ihl1zmi6wgpf"
+          }
+        },
+        {
+          "title": "加拿大不列颠哥伦比亚省拟起诉OpenAI：未上报ChatGPT暴力对话致校园枪击惨案",
+          "summary": "加拿大不列颠哥伦比亚省7月7日宣布将起诉OpenAI，指控其未向执法部门上报一名ChatGPT用户2025年6月封禁前的暴力相关对话内容。该用户随后于今年2月在塔布勒岭制造校园枪击案，杀害8人。OpenAI CEO萨姆·奥尔特曼今年4月为此公开致歉，承认本应上报但未执行。受害家属已在加州法院提起诉讼，省政府正协调独立诉讼，要求赔偿用于社区重建。",
+          "sourceUrl": "https://www.ithome.com/0/974/169.htm",
+          "sourceName": "IT之家（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrbxa3ll003yihgens8d2sqg",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrbxa3ll003yihgens8d2sqg"
+          }
+        },
+        {
+          "title": "利润超10亿美元、ARR剑指千亿，Anthropic抢先OpenAI冲击IPO",
+          "summary": "Anthropic今年第三季度利润预计超10亿美元，已于6月1日秘密提交IPO申请，若成功将成为规模最大AI实验室IPO。其与OpenAI的年度经常性收入合计接近1000亿美元。凭借Claude Code在软件开发领域的快速普及，Anthropic在2026年实现AI模型盈利变现，成为B2B市场领跑者。SemiAnalysis报告认为其商业模式优越，若持续良好执行，市值可能触及6万亿美元。",
+          "sourceUrl": "https://www.ithome.com/0/974/275.htm",
+          "sourceName": "IT之家（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrcp5by2031uihx57fypdkfo",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrcp5by2031uihx57fypdkfo"
+          }
+        },
+        {
+          "title": "诉讼：男子使用Grok制作7000张继女色情图像后自杀",
+          "summary": "一男子使用Grok生成7000张继女儿童性虐待材料（CSAM）后自杀。更多年轻女孩起诉X平台，指控其涉及Grok生成CSAM，并包庇儿童性犯罪者。",
+          "sourceUrl": "https://arstechnica.com/tech-policy/2026/07/lawsuit-grok-user-made-7k-child-sex-images-xai-only-reported-one-gang-rape-prompt",
+          "sourceName": "Ars Technica：AI（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrcit2bg01f9ihx5cps026s8",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrcit2bg01f9ihx5cps026s8"
+          }
+        },
+        {
+          "title": "OpenAI发布政府与国家安全合作伙伴关系方针",
+          "summary": "OpenAI近日公布国家安全原则，阐明在政府及国家安全领域部署前沿AI系统的方针。原则强调在保护公民、防御关键基础设施、提供公共服务及应对新兴威胁（网络防御和生物安全）中发挥AI优势，同时确保民主问责、人类判断和法治。过去一个月，OpenAI通过Daybreak网络防御计划与澳大利亚、加拿大、日本、韩国、法国、德国、波兰、荷兰及欧盟ENISA等机构建立网络安全信任访问合作，并与英国政府开展网络安全测试评估。上月，OpenAI向部分美国政府及盟友合作伙伴开放GPT‑Rosalind模型用于公共卫生和生物防御。原则适用于现有及未来合作，包括与Department of War的协议，明确禁止大规模国内监控、自主武器系统及高风险自动化决策…",
+          "sourceUrl": "https://openai.com/index/government-national-security-partnerships",
+          "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+          "permalink": "https://aihot.virxact.com/items/cmrcjj0xz01mqihx5zwai9t6j",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrcjj0xz01mqihx5zwai9t6j"
+          }
+        },
+        {
+          "title": "GitHub 联合联盟倡议修订 California AI Transparency Act 以保护开源生态",
+          "summary": "GitHub 加入一个联盟，呼吁对 California AI Transparency Act 进行针对性修订，以解决该法案与开源许可之间的冲突，并与国际透明度框架保持一致，同时保留其监管意图。",
+          "sourceUrl": "https://github.blog/news-insights/company-news/github-availability-report-june-2026",
+          "sourceName": "GitHub Blog",
+          "permalink": "https://aihot.virxact.com/items/cmrcijy0a01d4ihx5vwujt7tf",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrcijy0a01d4ihx5vwujt7tf"
+          }
+        }
+      ]
+    },
+    {
+      "label": "论文研究",
+      "items": [
+        {
+          "title": "黑客可利用9款最流行的AI工具组装大规模僵尸网络",
+          "summary": "提示注入已成为AI安全的首要威胁——大语言模型无法区分合法指令与恶意指令。此前推送式和拉取式攻击规模均有限。研究人员提出一种名为HalluSquatting的新型拉取式提示注入攻击，首次能组装大规模僵尸网络、执行分布式拒绝服务攻击（DDoS）并大规模感染设备。该攻击可作用于AI编码工具，标志着提示注入攻击从单点突破转向规模化利用。",
+          "sourceUrl": "https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets",
+          "sourceName": "Ars Technica：AI（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrbqwsid06g2ihl1iiwufnz5",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrbqwsid06g2ihl1iiwufnz5"
+          }
+        },
+        {
+          "title": "OpenAI 审计 SWE-Bench Pro 发现约 30% 的评测任务存在缺陷",
+          "summary": "OpenAI 对编码评测基准 SWE-Bench Pro 进行详细审计，发现约 30% 的任务存在缺陷。在 731 个任务的公开子集中，前沿模型通过率在八个月内从 23.3% 提升至 80.3%，但数据质量检查显示大量任务存在测试过于严格、提示词描述不足、测试覆盖不全或误导性提示等问题。OpenAI 建议模型开发者仔细审视评测结果，并指出 AI 智能体在规模化数据质量检查中日益增长的实用性。",
+          "sourceUrl": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
+          "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+          "permalink": "https://aihot.virxact.com/items/cmrcigf5k01bqihx54i8oph9u",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrcigf5k01bqihx54i8oph9u"
+          }
+        },
+        {
+          "title": "面向AI模型双重用途知识的“开关”：Anthropic与AE Studio提出GRAM方法",
+          "summary": "Anthropic与AE Studio联合提出梯度路由辅助模块（GRAM）方法，通过在Transformer每层添加可移除的神经元模块，使模型在训练时将病毒学、网络安全、核物理、专业编程语言等双重用途知识仅路由到对应模块，而非扩散至全局。训练后删除模块即可消除该能力，保留则供可信部署使用。实验在合成数据、真实数据及50M到5B参数模型上测试，GRAM效果与数据过滤相当，移除模块不降低通用性能，且比事后“遗忘”技术更难恢复。该研究为平衡双重用途知识的安全访问与有益使用提供了更鲁棒的方案。",
+          "sourceUrl": "https://www.anthropic.com/research/off-switch-dual-use",
+          "sourceName": "Anthropic：Research（发表成果 · 网页）",
+          "permalink": "https://aihot.virxact.com/items/cmrcpjgf00373ihx5mtyo2fsy",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrcpjgf00373ihx5mtyo2fsy"
+          }
+        }
+      ]
+    },
+    {
+      "label": "技巧与观点",
+      "items": [
+        {
+          "title": "Claude开发者分享两种多智能体模式：Advisor和Orchestrator",
+          "summary": "Claude开发者官方分享团队高频使用的两种多智能体模式。Advisor模式：Sonnet 5作为执行者，通过tool call调用Fable 5获取指导。SWE-bench Pro（482题）上，Sonnet 5单独75.5%/$0.75，加顾问达84%/$1.40，Fable 5单独91.5%/$2.25；组合方案约92%性能、63%成本。Orchestrator模式：Fable 5作为编排者规划并向多个Sonnet 5 worker扇出任务。BrowseComp上，全Sonnet 5 77.8%/$16.01，编排方案86.8%/$18.53，全Fable 5 90.8%/$40.56；编排方案约96%性能、46%成本。",
+          "sourceUrl": "https://x.com/shao__meng/status/2074661249804366310",
+          "sourceName": "X：邵猛 (@shao__meng)",
+          "permalink": "https://aihot.virxact.com/items/cmrbdqlcv02y4ihl11xbxx9xs",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrbdqlcv02y4ihl11xbxx9xs"
+          }
+        },
+        {
+          "title": "在校研究生Kunkun开源管理相互调用Skill的方法",
+          "summary": "在校研究生Kunkun开源了一套管理大量互相调用Skill的方法。核心方案包括：1）搭建HTML后台，按运行模式（手动/自动）、链路位置、专业领域三类标签筛选Skill；2）将连环调用的Skill绘制成Mermaid流程图，根据debug、新功能、合PR、改设计等阶段定位对应技能组；3）仿照Matt的ask Matt技能开发“ask me”技能，将调用决策浓缩成上下文喂给模型。该方法避免将所有调用交给模型自行判断，保持工程复杂场景下的人机对齐与可控性。项目已开源至GitHub。",
+          "sourceUrl": "https://x.com/berryxia/status/2074827915779580055",
+          "sourceName": "X：Berry Xia (@berryxia)",
+          "permalink": "https://aihot.virxact.com/items/cmrc1iygj00twihyfe1hkvycv",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrc1iygj00twihyfe1hkvycv"
+          }
+        },
+        {
+          "title": "《人生设计课》Prompt实测：用Claude设计人生的四个阶段",
+          "summary": "作者将斯坦福《人生设计课》理论体系制成Prompt，通过Claude逐步提问、追问和分析。Prompt融合设计思维、心流理论和积极心理学，分为看清现状、找到指南针、寻路、制定奥德赛计划四阶段，主线问题控制在6到9个。AI引导用户给健康、工作、娱乐、爱打分，区分重力问题与可设计的真问题，生成三个五年人生版本，最终输出8000至12000字的《个人人生设计蓝图》。作者实测效果超预期。",
+          "sourceUrl": "https://mp.weixin.qq.com/s/VDlBdkspV0SQNFJYLxOogQ",
+          "sourceName": "公众号：数字生命卡兹克",
+          "permalink": "https://aihot.virxact.com/items/cmrbc048n02j2ihl1all0ymge",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrbc048n02j2ihl1all0ymge"
+          }
+        },
+        {
+          "title": "AI 审计代理在 Cloudflare CIRCL 中发现 7 个漏洞",
+          "summary": "zkSecurity 的 AI 审计代理 zkao 持续扫描 Cloudflare 的 CIRCL 密码学库，使用 Opus 4.6 + skills 和 GPT-5.3 + skills 等模型发现并确认了 7 个真实漏洞。其中包括阈值 RSA 中 float64 精度丢失（AI 自评 Critical）和属性基加密（CP-ABE）访问控制完全失效（Critical，由 zkao 自行发现）。所有漏洞已在上游修复，多数在 HackerOne 上获得确认和奖励。AI 生成的候选发现仍需人工验证，但 zkao 已能自动完成大部分验证工作。",
+          "sourceUrl": "https://blog.zksecurity.xyz/posts/circl-bugs",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "permalink": "https://aihot.virxact.com/items/cmrblfb8a050sihl1484pa3wo",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrblfb8a050sihl1484pa3wo"
+          }
+        },
+        {
+          "title": "蚂蚁集团周俊AICon演讲：从Token数量到Token密度，万亿参数模型效率优先",
+          "summary": "蚂蚁集团副总裁周俊在AICon演讲指出，万亿参数模型每运行15分钟算力成本约等于一辆特斯拉，效率是智能体时代最需解决的问题。团队提出从“更多Token”转向“更高Token密度”策略，采用7份Lightning Attention加1份MLA的混合线性注意力架构，使256K长上下文成本从指数级降至线性级，算力更多用于思考。通过Kpop算法区分工具调用与自然语言Token，结合思维链剪枝、自蒸馏等，Token输出减少约4倍而能力不降。在LongBench、BFCL等基准上提升显著，千亿参数模型在Agent任务中超越部分更大模型；小模型flash吞吐达2.4倍，五轮对话成本下降10倍以上。",
+          "sourceUrl": "https://mp.weixin.qq.com/s/dsIfi4C-T5Q4emmIh-7yzg",
+          "sourceName": "公众号：蚂蚁百灵（Ling）",
+          "permalink": "https://aihot.virxact.com/items/cmrbdsefa02yjihl17gg7mhx3",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrbdsefa02yjihl17gg7mhx3"
+          }
+        },
+        {
+          "title": "AI预检检查：智能体工作记忆架构",
+          "summary": "一种为AI智能体设计的预检工作记忆架构：查询到来时，系统从磁盘上约90个索引化的技能库中检索最相关技能，仅加载到上下文窗口。本地开源模型Ornith 35B（350亿参数，通过Ollama在Apple Silicon上运行）执行任务，约80%常规任务由本地模型完成，困难任务路由至前沿模型。看门狗记录每次预检决策和技能调用，夜间通过异步推理处理全天轨迹，自动决定哪些技能需新增或固化（如日历排期转为确定性Rust代码），实现自我改进循环。昨天，看门狗首次未提出任何改进建议，系统或接近性能平台期。",
+          "sourceUrl": "https://www.tomtunguz.com/the-ai-preflight-check",
+          "sourceName": "Tomer Tunguz 博客（VC 分析）",
+          "permalink": "https://aihot.virxact.com/items/cmrcpxyar03a0ihx5hcxdrz78",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrcpxyar03a0ihx5hcxdrz78"
+          }
+        },
+        {
+          "title": "Anthropic 市场运营团队用 Claude Cowork 自动化报告与活动构建",
+          "summary": "Anthropic 市场运营团队的 Ian Chan 和 Annabel Custer 利用 Claude Cowork 将手动工作从多天压缩至数小时。Ian 此前每周花 1—2 天整合营销指标报告，现在通过 Claude Cowork 的定时任务（每周日自动读取上周报告、会议记录、Slack 和数据仓库）生成初始报告，经他审核后由 Claude 扩展细节并产出领导层幻灯片，流程缩至最多 2 小时。Annabel 曾手动在 Salesforce、HubSpot、Swoogo 等平台逐一搭建活动，现由 Claude Cowork 的派遣技能每小时读取请求频道，分发给五个专业技能自动处理最复杂的事件构建。人类验证已成为工作流核心环节。",
+          "sourceUrl": "https://claude.com/blog/how-anthropics-marketing-operations-team-uses-claude-cowork-to-automate-reporting-and-campaign-builds",
+          "sourceName": "Claude：Blog（网页）",
+          "permalink": "https://aihot.virxact.com/items/cmrcg0b3e00rcihx5dd99aogl",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrcg0b3e00rcihx5dd99aogl"
+          }
+        },
+        {
+          "title": "NVIDIA 发布 Nemotron 开放数据集与配套工具，支持 AI 智能体开发",
+          "summary": "NVIDIA Nemotron 开放数据集包含超过 10 万亿预训练 tokens 和数百万后训练样本，覆盖多领域与工具使用场景，支持 AI 智能体开发。同步推出 Nemotron Post-Training v3 Prompt Atlas，交互式可视化后训练数据分布；Nemotron-Personas 基于 NeMo Data Designer 生成合成人物画像，覆盖 24 亿人口，反映区域人口统计特征。合成数据保护组织专有数据的同时，使智能体行为可检查、可解释，推动开放生态下的可复现研究。",
+          "sourceUrl": "https://huggingface.co/blog/nvidia/open-data-for-agents",
+          "sourceName": "Hugging Face：Blog（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrccgss501j2ihqc59j83gbf",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrccgss501j2ihqc59j83gbf"
+          }
+        }
+      ]
+    }
+  ],
+  "flashes": []
+}
