@@ -5,8 +5,16 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 10 Jul 2026 18:45:46 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 20:47:09 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ChatGPT 计算机使用：现在通过实时画中画更快</title>
+      <link>https://www.youtube.com/watch?v=IYYTI73J7Rg</link>
+      <description>Computer Use is getting an upgrade as part of ChatGPT Work. It's faster and more accurate with GPT-5.6, and Live Picture-in-Picture lets you keep an eye on its progress. You can also send the live PiP to your Pet while you multitask -- or simply sit back and watch.</description>
+      <pubDate>Fri, 10 Jul 2026 19:45:02 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=IYYTI73J7Rg</guid>
+      <source url="https://www.youtube.com/watch?v=IYYTI73J7Rg">OpenAI</source>
+    </item>
     <item>
       <title>氪星晚报｜德国大众拟大裁员，最高或裁减12万个岗位；高盛称套利交易当前处境为2000年以来最佳；百亿私募数量达142家，再次刷新历史纪录</title>
       <link>https://36kr.com/p/3889551814916614?f=rss</link>
@@ -26,6 +34,14 @@
       <pubDate>Fri, 10 Jul 2026 17:44:19 +0800</pubDate>
       <guid isPermaLink="true">https://sspai.com/post/112169</guid>
       <source url="https://sspai.com/post/112169">少数派</source>
+    </item>
+    <item>
+      <title>只剩7天！第三届蚂蚁InTech奖申报即将截止，图灵奖得主坐镇评审</title>
+      <link>https://www.qbitai.com/2026/07/447846.html</link>
+      <description>四大方向，奖金直给</description>
+      <pubDate>Fri, 10 Jul 2026 17:18:11 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/447846.html</guid>
+      <source url="https://www.qbitai.com/2026/07/447846.html">量子位</source>
     </item>
     <item>
       <title>RingCentral 通过 ChatGPT Work 扩展客户计划</title>
@@ -181,34 +197,6 @@ Hear how Deutsche Telekom is working tow</description>
       <pubDate>Fri, 10 Jul 2026 08:56:18 +0800</pubDate>
       <guid isPermaLink="true">https://sspai.com/post/112143</guid>
       <source url="https://sspai.com/post/112143">少数派</source>
-    </item>
-    <item>
-      <title>全球首个「具身原生」预训练模型发布，从物理世界出发为机器人造大脑！</title>
-      <link>https://www.qbitai.com/2026/07/447627.html</link>
-      <description>开源第四弹：LingBot-VA 2.0</description>
-      <pubDate>Fri, 10 Jul 2026 08:01:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/447627.html</guid>
-      <source url="https://www.qbitai.com/2026/07/447627.html">量子位</source>
-    </item>
-    <item>
-      <title>8点1氪丨老乡鸡五年五次冲击上市失败；两款燃油车重回销量榜前十；长鑫科技披露招股意向书，预计7月16日发行</title>
-      <link>https://36kr.com/p/3889047503354625?f=rss</link>
-      <description>今日热点导览
-  
-   花呗就还款页面无法正常打开致歉
-   中芯国际市值超越贵州茅台
-   iPhone 18 Pro Max成本大涨，起步价或维持在9999元
-   英伟达将与Hugging Face合作开发机器人开源模型
-   美国多州可能于下周起诉阻止派拉蒙与华纳兄弟交易
-  
-  TOP 3大新闻
-  老乡鸡五年五次冲击上市失败
-  LXJ International Holdings Limited（简称“老乡鸡”）于2026年1月8日递交港交所的招股书于7月8日失效。这家被称为“中式快餐第一”的企业，五年间已第五次冲击资本市场失败。（界面新闻）
-  两款燃油车重回销量榜前十
- </description>
-      <pubDate>Fri, 10 Jul 2026 07:43:55 +0800</pubDate>
-      <guid isPermaLink="true">https://36kr.com/p/3889047503354625?f=rss</guid>
-      <source url="https://36kr.com/p/3889047503354625?f=rss">36Kr</source>
     </item>
   </channel>
 </rss>
