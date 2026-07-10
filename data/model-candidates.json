@@ -33,5 +33,47 @@
     "summary": "蚂蚁集团旗下具身智能公司Robbyant开源LingBot-Vision，一套自监督视觉Transformer家族，专为密集空间感知设计。旗舰ViT-g/16参数约1.1B，采用掩膜边界建模训练，将边界作为原生预训练信号。在密集空间任务中，该1B模型匹配或超越参数规模高达7倍的大模型（如7B DINOv3）。模型以Apache-2.0许可证在Hugging Face开源，提供ViT-g、ViT-L",
     "sourceUrl": "https://www.marktechpost.com/2026/07/07/ant-groups-robbyant-open-sources-lingbot-vision-a-1b-boundary-centric-vision-foundation-model-for-dense-spatial-perception",
     "sourceName": "MarkTechPost（RSS）"
+  },
+  {
+    "date": "2026-07-10",
+    "title": "OpenAI 推出 ChatGPT Work：可跨应用自主工作的 AI 智能体",
+    "summary": "OpenAI 发布 ChatGPT Work，一个能跨应用和文件收集信息、将复杂项目分解为小步骤独立完成并持续工作数小时的 AI 智能体。它内置 Codex 技术，目前每周超 500 万用户使用 Codex，其中超 100 万用于非软件开发场景。ChatGPT Work 由今天同步推出的最新前沿模型 GPT‑5.6 驱动，具备多步骤推理和按模板生成材料的能力。该功能今天起面向 Pro、Enterp",
+    "sourceUrl": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
+    "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+    "date": "2026-07-10",
+    "title": "蚂蚁灵波开源实时交互世界模型 LingBot-World 2.0",
+    "summary": "蚂蚁灵波开源新一代实时交互世界模型 LingBot-World 2.0（14B 参数），支持施法、攻击、跳跃等丰富角色动作及文本驱动事件（如切换场景、召唤风暴），内置 Pilot Agent 与 Director Agent 实现世界持续演化，并支持多人同时交互。模型采用因果预训练范式和混合双向自回归注意力掩码（MoBA），可稳定输出 720p/60fps 实时画面，长达一小时测试画质不衰减。通过",
+    "sourceUrl": "https://www.ithome.com/0/974/508.htm",
+    "sourceName": "IT之家（RSS）"
+  },
+  {
+    "date": "2026-07-10",
+    "title": "OpenAI 发布最强模型与最佳博文",
+    "summary": "显然是我们有史以来最好的模型，也是我们写得最好的博文之一： https://openai.com/index/gpt-5-6/",
+    "sourceUrl": "https://x.com/sama/status/2075266471316615436",
+    "sourceName": "X：Sam Altman (@sama)"
+  },
+  {
+    "date": "2026-07-10",
+    "title": "蚂蚁灵波开源全球首个面向具身智能的MoE视频基模LingBot-Video",
+    "summary": "蚂蚁灵波科技正式开源LingBot-Video，这是全球首个基于MoE架构、面向具身智能的视频生成基础模型。总参数30B，推理时仅激活约3B，效率较同规模Dense架构提升约3倍。模型引入7万小时VLA、VLN、Ego等机器人数据，并通过多维强化学习奖励系统对齐物理合理性与任务完成度。在RBench上总分0.620，超越Wan2.6等模型；在Physics-IQ Verified评测中排名第一。可",
+    "sourceUrl": "https://www.ithome.com/0/974/517.htm",
+    "sourceName": "IT之家（RSS）"
+  },
+  {
+    "date": "2026-07-10",
+    "title": "Robbyant 发布 LingBot-VLA 2.0：开源 6B 跨实体机器人视觉-语言-动作模型",
+    "summary": "Robbyant 推出 LingBot-VLA 2.0，一个 6B 参数的开源视觉-语言-动作（VLA）基础模型。它以 Qwen3-VL-4B-Instruct 为骨干，采用 MoE 动作专家架构，通过 55 维规范向量统一表示不同机器人的状态和动作。训练数据涵盖约 60,000 小时高质量数据（50,000 小时机器人轨迹 + 10,000 小时第一人称人类视频），覆盖 20 种机器人配置。在 ",
+    "sourceUrl": "https://www.marktechpost.com/2026/07/08/lingbot-vla-2-0",
+    "sourceName": "MarkTechPost（RSS）"
+  },
+  {
+    "date": "2026-07-10",
+    "title": "Meta 发布 Muse Spark 1.1 模型",
+    "summary": "来自 @finkd 的消息 — Muse Spark 1.1 已上线。",
+    "sourceUrl": "https://x.com/AIatMeta/status/2075218647359111460",
+    "sourceName": "X：AI at Meta (@AIatMeta)"
   }
 ]
