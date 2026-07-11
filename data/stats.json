@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-07-11T04:40:11.001Z",
+  "generatedAt": "2026-07-11T14:35:03.712Z",
   "umami": {
     "error": null,
     "today": {
-      "visitors": 0,
-      "pageviews": 0
+      "visitors": 1,
+      "pageviews": 1
     },
     "last30d": {
-      "visitors": 18,
-      "pageviews": 319,
-      "visits": 59
+      "visitors": 19,
+      "pageviews": 320,
+      "visits": 60
     },
     "series": [
       {
@@ -154,8 +154,8 @@
       },
       {
         "date": "2026-07-10",
-        "pageviews": 0,
-        "visitors": 0
+        "pageviews": 1,
+        "visitors": 1
       },
       {
         "date": "2026-07-11",
@@ -166,7 +166,7 @@
     "countries": [
       {
         "code": "US",
-        "visitors": 11
+        "visitors": 12
       },
       {
         "code": "CN",
@@ -177,6 +177,10 @@
       {
         "domain": "weixin110.qq.com",
         "visitors": 2
+      },
+      {
+        "domain": "github.com",
+        "visitors": 1
       }
     ]
   },
