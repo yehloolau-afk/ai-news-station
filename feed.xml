@@ -5,8 +5,16 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 11 Jul 2026 06:28:06 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 09:01:07 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>暴雨和洪涝的季节，这些技巧助你从容自保</title>
+      <link>https://sspai.com/post/68024</link>
+      <description>面对暴雨、内涝等自然灾害，你应该做什么准备？有人溺水时，该如何正确救援？这篇文章帮你掌握一些必要的知识，面对危情不再慌乱。查看全文</description>
+      <pubDate>Sat, 11 Jul 2026 15:05:21 +0800</pubDate>
+      <guid isPermaLink="true">https://sspai.com/post/68024</guid>
+      <source url="https://sspai.com/post/68024">少数派</source>
+    </item>
     <item>
       <title>9点1氪丨“国产存储第一股”长鑫科技公布承销团阵容；SK海力士登陆美股，上市首日大涨近13%；OpenAI推出ChatGPT智能体</title>
       <link>https://36kr.com/p/3890553690192384?f=rss</link>
@@ -37,6 +45,14 @@
       <pubDate>Sat, 11 Jul 2026 09:00:00 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3889516712065799?f=rss</guid>
       <source url="https://36kr.com/p/3889516712065799?f=rss">36Kr</source>
+    </item>
+    <item>
+      <title>中国首个十万卡集群落成！全国产算力支撑“十万卡时代”</title>
+      <link>https://www.qbitai.com/2026/07/447891.html</link>
+      <description>从FP64到INT8，全精度覆盖。</description>
+      <pubDate>Sat, 11 Jul 2026 06:26:46 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/447891.html</guid>
+      <source url="https://www.qbitai.com/2026/07/447891.html">量子位</source>
     </item>
     <item>
       <title>GPT-5.6一小时解开50年数学猜想，700词Prompt驾驭64个子Agent</title>
@@ -191,22 +207,6 @@ Melad Zahedi, Director of Product Marketing at Stampli, uses ChatGPT Work to pul
       <pubDate>Fri, 10 Jul 2026 15:49:14 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3889524008303363?f=rss</guid>
       <source url="https://36kr.com/p/3889524008303363?f=rss">36Kr</source>
-    </item>
-    <item>
-      <title>安达卢西亚的日与夜：格拉纳达漫游指南</title>
-      <link>https://sspai.com/post/112097</link>
-      <description>有些旅程就是这样，它最终并没有留在成百上千张照片里，而是长久地停留在某种气味与感官的记忆中。查看全文</description>
-      <pubDate>Fri, 10 Jul 2026 15:00:00 +0800</pubDate>
-      <guid isPermaLink="true">https://sspai.com/post/112097</guid>
-      <source url="https://sspai.com/post/112097">少数派</source>
-    </item>
-    <item>
-      <title>AI生物研发进入“操作系统时代”，许锦波团队MoleculeOS正式开放</title>
-      <link>https://www.qbitai.com/2026/07/447832.html</link>
-      <description>AI变为研发流程的“组织者”</description>
-      <pubDate>Fri, 10 Jul 2026 14:13:37 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/447832.html</guid>
-      <source url="https://www.qbitai.com/2026/07/447832.html">量子位</source>
     </item>
   </channel>
 </rss>
