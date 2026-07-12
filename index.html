@@ -1921,13 +1921,20 @@ const TABS = [
 ];
 
 // 移动端产品组：这三个 tab 在移动端合并为第5个 tab
-const MOB_GROUP_IDS = ['timeline', 'products', 'design', 'videos'];
-// 移动端固定5个 tab 的顺序（Builder | 精选 | 日报 | 官方动态 | 更多）
-const MOB_NAV_ORDER = ['builders', 'featured', 'daily', 'official'];
+const MOB_GROUP_IDS = ['official', 'products', 'design', 'videos'];
+// 移动端固定5个 tab 的顺序（日报 | 大事记 | 精选 | 全部 | 更多）
+const MOB_NAV_ORDER = ['daily', 'timeline', 'featured', 'all'];
+// PC 侧边栏分组（数组顺序 = 展示顺序；后续大事记子栏目加到 '大事记' 组的 ids 里）
+const NAV_GROUPS = [
+  { label: '每日速览', ids: ['daily', 'featured'] },
+  { label: '大事记',   ids: ['timeline'] },
+  { label: '资讯流',   ids: ['all', 'official', 'products', 'design', 'videos', 'builders'] },
+];
+const DEFAULT_TAB = 'daily'; // 默认落地页 = 日报（回访锚点）
 
 // State
-let activeTab = 'featured';
-let mobGroupActiveId = 'products'; // 产品组当前选中的 sub-tab
+let activeTab = DEFAULT_TAB;
+let mobGroupActiveId = 'official'; // 「更多」组当前选中的 sub-tab
 let jobsRegion = 'global';   // 'global' | 'domestic'
 let allCatFilter = 'all';    // 'all' | 'ai-models' | 'ai-products' | 'industry' | 'paper'
 const cache = {};          // { tabId: { items, feedErrors, ts } }
@@ -2171,7 +2178,7 @@ function init() {
   if (sl && ml) ml.src = sl.src;
 
   renderNav();
-  switchTab('featured');
+  const firstLanded = switchTab(DEFAULT_TAB);
   scheduleAutoRefresh();
 
   // builders 数据始终后台预取（数据小，同域直连，不影响带宽）
@@ -2188,18 +2195,18 @@ function init() {
     }
   });
 
-  // PC端：精选加载完后全量预取其他频道
+  // PC端：首屏落地页绘制完后全量预取其他频道（门控解耦，不再依赖 featured 是否为落地页）
   if (!IS_MOBILE) {
-    featuredPainted.then(() => {
-      const others = TABS.filter(t => !t.hidden && t.id !== 'featured');
+    firstLanded.finally(() => {
+      const others = TABS.filter(t => !t.hidden && t.id !== DEFAULT_TAB);
       others.forEach((t, i) => setTimeout(() => prefetchTab(t.id), 500 + i * 2000));
       prefetchDailyDates();
     });
   } else {
     // 移动端：轻量预取——只拉同源静态 JSON（prefetchTab 内有移动端守卫，静态未命中不走代理）
     // + 今日日报一次请求，切频道即秒开，流量成本每频道一个小 JSON
-    featuredPainted.then(() => {
-      [...STATIC_TABS].filter(id => id !== 'featured')
+    firstLanded.finally(() => {
+      [...STATIC_TABS].filter(id => id !== DEFAULT_TAB)
         .forEach((id, i) => setTimeout(() => prefetchTab(id), 1500 + i * 800));
       setTimeout(async () => {
         const todayKey = new Date().toISOString().slice(0, 10);
@@ -2227,21 +2234,21 @@ function renderNav() {
       <span>${t.name}</span>
       ${counts[t.id] != null ? `<span class="tab-count">${counts[t.id]}</span>` : ''}
     </button>`;
-  const builderTabs = tabs.filter(t => t.id === 'builders');
-  const archiveTabs = tabs.filter(t => t.id === 'timeline'); // 大事记组：后续融资/政策等子栏目加在这里
-  const newsTabs    = tabs.filter(t => t.id !== 'builders' && t.id !== 'timeline');
-  nav.innerHTML =
-    `<div class="tab-group-label">创作者频道</div>` + builderTabs.map(makeBtn).join('') +
-    `<div class="tab-group-label" style="margin-top:12px">资讯频道</div>` + newsTabs.map(makeBtn).join('') +
-    `<div class="tab-group-label" style="margin-top:12px">大事记</div>` + archiveTabs.map(makeBtn).join('');
+  const byId = Object.fromEntries(tabs.map(t => [t.id, t]));
+  nav.innerHTML = NAV_GROUPS.map((g, gi) => {
+    const btns = g.ids.map(id => byId[id]).filter(Boolean).map(makeBtn).join('');
+    if (!btns) return '';
+    const mt = gi === 0 ? '' : ' style="margin-top:12px"';
+    return `<div class="tab-group-label"${mt}>${g.label}</div>` + btns;
+  }).join('');
 
   // 移动端底部导航（固定5个）
   const mobileNav = document.getElementById('mobileNav');
   if (mobileNav) {
     const isGroupActive = MOB_GROUP_IDS.includes(activeTab);
     if (isGroupActive) mobGroupActiveId = activeTab;
-    const groupTab = TABS.find(t => t.id === mobGroupActiveId) || TABS.find(t => t.id === 'products');
-    const groupLabel = isGroupActive ? groupTab.name.replace(/^AI\s/, '') : '更多';
+    // 「更多」按钮固定名称与图标，避免随上次选中的子频道漂移
+    const MORE_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg>';
 
     mobileNav.innerHTML = MOB_NAV_ORDER.map(id => {
       const t = TABS.find(t => t.id === id);
@@ -2254,8 +2261,8 @@ function renderNav() {
     }).join('') + `
     <button class="mob-tab-btn ${isGroupActive ? 'active' : ''}" id="mob-more-btn"
             onclick="toggleMobMore()">
-      <span class="mob-tab-icon">${groupTab.icon}</span>
-      <span class="mob-tab-label">${groupLabel}</span>
+      <span class="mob-tab-icon">${MORE_ICON}</span>
+      <span class="mob-tab-label">更多</span>
     </button>`;
   }
 }
