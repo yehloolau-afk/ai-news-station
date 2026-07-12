@@ -1917,7 +1917,7 @@ const TABS = [
 ];
 
 // 移动端产品组：这三个 tab 在移动端合并为第5个 tab
-const MOB_GROUP_IDS = ['official', 'products', 'design', 'videos'];
+const MOB_GROUP_IDS = ['builders']; // 官方/产品/设计/视频已折进「AI 动态」筛选；更多面板收纳 AI Builder
 // 移动端固定5个 tab 的顺序（日报 | 大事记 | 精选 | 全部 | 更多）
 const MOB_NAV_ORDER = ['daily', 'timeline', 'featured', 'all'];
 // PC 侧边栏分组（数组顺序 = 展示顺序；后续大事记子栏目加到 '大事记' 组的 ids 里）
@@ -1930,7 +1930,7 @@ const DEFAULT_TAB = 'daily'; // 默认落地页 = 日报（回访锚点）
 
 // State
 let activeTab = DEFAULT_TAB;
-let mobGroupActiveId = 'official'; // 「更多」组当前选中的 sub-tab
+let mobGroupActiveId = 'builders'; // 「更多」组当前选中的 sub-tab
 let jobsRegion = 'global';   // 'global' | 'domestic'
 let allCatFilter = 'all';    // 右排（类）：'all' | 'ai-products' | 'design' | 'video'
 let allSrcFilter = 'all';    // 左排（源）：'all' | 'official'
