@@ -492,6 +492,8 @@
     }
     .section-title { font-size: 19px; font-weight: 700; }
     .section-meta { font-size: 11px; color: var(--muted); }
+    .section-tagline { font-size: 12px; color: var(--muted); margin-top: 4px; font-weight: 400; }
+    .dnp-tagline { font-size: 12.5px; color: var(--muted); margin-top: 12px; }
 
     /* ── Source line ── */
     .source-pills {
@@ -1755,7 +1757,7 @@ const TABS = [
     name: '精选',
     icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
     layout: 'featured',
-    desc: '优质 AI 内容精选',
+    desc: '人工挑选的优质内容',
     translate: true,
     aiHotPath: '/items?mode=selected&take=30',
     feeds: SHARED_FEEDS
@@ -1766,7 +1768,7 @@ const TABS = [
     translate: true,
     icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
     layout: 'list',
-    desc: '全网 AI 最新动态',
+    desc: '全网全量 · 可按来源与分类筛选',
     aiHotPath: '/items?mode=all&take=80',
     feeds: ALL_FEEDS
   },
@@ -2987,7 +2989,10 @@ function renderTab(tab, items, feedErrors = []) {
 
   main.innerHTML = `
     <div class="section-header">
-      <div class="section-title" style="display:flex;align-items:center;gap:8px"><span style="width:20px;height:20px;display:flex;align-items:center;justify-content:center;flex-shrink:0">${tab.icon}</span>${tab.name}</div>
+      <div>
+        <div class="section-title" style="display:flex;align-items:center;gap:8px"><span style="width:20px;height:20px;display:flex;align-items:center;justify-content:center;flex-shrink:0">${tab.icon}</span>${tab.name}</div>
+        ${(tab.id === 'all' || tab.id === 'featured') && tab.desc ? `<div class="section-tagline">${esc(tab.desc)}</div>` : ''}
+      </div>
       <div class="section-meta">${totalLabel} · ${nowStr()} 更新</div>
     </div>
     ${errorBanner}
@@ -3214,6 +3219,7 @@ function renderAiHotDaily(data) {
         <span class="dnp-tag">AI HOT</span>
         ${STATIC_DAILY_DATES.has(date) ? `<a class="dnp-tag" href="daily/${date}.html" target="_blank" rel="noopener" style="text-decoration:none;cursor:pointer;" title="本期固定网址，秒开、可转发分享">🔗 分享网页版</a>` : ''}
       </div>
+      <div class="dnp-tagline">每日速览 · ${total} 条 · 2 分钟读懂今天的 AI</div>
     </div>
     ${sectionsHtml||'<div class="empty-state"><div class="empty-icon">📭</div><p>暂无内容</p></div>'}`;
 }
@@ -3298,6 +3304,7 @@ function renderDailyNewspaper(items) {
         <span class="dnp-tag">DAILY</span>
         <span class="dnp-tag">AI · TECH</span>
       </div>
+      <div class="dnp-tagline">每日速览 · ${items.length} 条 · 2 分钟读懂今天的 AI</div>
     </div>
     ${sectionsHtml}`;
 }
