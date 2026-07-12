@@ -753,23 +753,21 @@
     }
     .jobs-section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
-    /* ── Category filter pills (全部AI动态) ── */
-    .cat-filter-bar { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; }
-    .filter-group { display: inline-flex; gap: 6px; flex-wrap: wrap; }
-    .filter-sep { width: 1px; align-self: stretch; background: var(--border); margin: 2px 6px; }
-    .cat-pill {
-      padding: 4px 14px;
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      background: transparent;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.12s;
+    /* ── 全部动态：双维度分段滑块 ── */
+    .cat-filter-bar { display: flex; gap: 18px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; }
+    .seg-field { display: inline-flex; align-items: center; gap: 8px; }
+    .seg-label { font-size: 12px; color: var(--muted); flex-shrink: 0; }
+    .seg { position: relative; display: flex; background: var(--bg); border: 1px solid var(--border); border-radius: 9px; }
+    .seg-thumb { position: absolute; top: 0; bottom: 0; left: 0; border-radius: 8px; background: var(--accent); transition: transform 0.22s cubic-bezier(0.4,0,0.2,1); pointer-events: none; z-index: 0; }
+    .seg-opt {
+      position: relative; z-index: 1; flex: 1 0 auto;
+      border: none; background: transparent; cursor: pointer;
+      font-size: 12.5px; color: var(--text); font-weight: 500;
+      padding: 6px 16px; border-radius: 8px; white-space: nowrap; text-align: center;
+      transition: color 0.18s;
     }
-    .cat-pill.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
-    .cat-pill:hover:not(.active) { border-color: var(--accent); color: var(--accent); }
+    .seg-opt.on { color: #fff; font-weight: 600; }
+    .seg-opt:hover:not(.on) { color: var(--accent); }
 
     /* ── Job cards ── */
     .job-card {
@@ -2939,37 +2937,15 @@ function renderTab(tab, items, feedErrors = []) {
   }
 
   // 全部动态：双排交叉筛选 —— 左排（源）× 右排（类）
-  const SRC_PILLS = [
-    { label: '全部', val: 'all' },
-    { label: '官方', val: 'official' },
-  ];
-  const CAT_PILLS = [
-    { label: '全部', val: 'all' },
-    { label: '产品', val: 'ai-products' },
-    { label: '设计', val: 'design' },
-    { label: '视频', val: 'video' },
-  ];
+  // 全部动态：双维度分段滑块 —— 来源(全部/官方) × 分类(全部/产品/设计/视频)
   const catPillsHtml = tab.id === 'all' ? `
     <div class="cat-filter-bar">
-      <span class="filter-group">${SRC_PILLS.map(p => `<button class="cat-pill${allSrcFilter===p.val?' active':''}" onclick="switchAllSrc('${p.val}')">${p.label}</button>`).join('')}</span>
-      <span class="filter-sep"></span>
-      <span class="filter-group">${CAT_PILLS.map(p => `<button class="cat-pill${allCatFilter===p.val?' active':''}" onclick="switchAllCat('${p.val}')">${p.label}</button>`).join('')}</span>
+      <div class="seg-field"><span class="seg-label">来源</span>${segHtml('segSrc', SRC_PILLS, allSrcFilter, 'switchAllSrc')}</div>
+      <div class="seg-field"><span class="seg-label">分类</span>${segHtml('segCat', CAT_PILLS, allCatFilter, 'switchAllCat')}</div>
     </div>` : '';
 
-  // 交叉筛选：源（全部/官方）× 类（全部/产品/设计/视频）；兼容静态数据(原始字段)与实时RSS(_feed)
-  let displayItems = items;
-  if (tab.id === 'all') {
-    const isOfficial = i => i.official === true || i._feed?.official === true;
-    const isVideo = i => i.category === 'video' || i._aiCat === 'video'
-      || /youtube\.com/.test(i._feed?.url || '') || /youtube\.com/.test(i.link || '');
-    displayItems = items.filter(i => {
-      const srcOk = allSrcFilter === 'all' || (allSrcFilter === 'official' && isOfficial(i));
-      let catOk = true;
-      if (allCatFilter === 'video') catOk = isVideo(i);
-      else if (allCatFilter !== 'all') catOk = i._aiCat === allCatFilter;
-      return srcOk && catOk;
-    });
-  }
+  // 交叉筛选（兼容静态数据原始字段与实时 RSS 的 _feed）
+  let displayItems = tab.id === 'all' ? filterAllItems(items) : items;
 
   let content = '';
   if (!displayItems.length) {
@@ -2999,7 +2975,7 @@ function renderTab(tab, items, feedErrors = []) {
     <div class="source-pills">${sourcePills}</div>
     ${kwInline}
     ${catPillsHtml}
-    ${content}`;
+    ${tab.id === 'all' ? `<div id="allListWrap">${content}</div>` : content}`;
 }
 
 // ── Render: featured timeline (精选专用，富卡片) ────────
@@ -3405,29 +3381,71 @@ async function switchJobsRegion(region) {
   if (meta) meta.textContent = `${items.length} 条 · ${nowStr()} 更新`;
 }
 
+// 全部动态双维度筛选：来源(全部/官方) × 分类(全部/产品/设计/视频)
+const SRC_PILLS = [{ label: '全部', val: 'all' }, { label: '官方', val: 'official' }];
+const CAT_PILLS = [{ label: '全部', val: 'all' }, { label: '产品', val: 'ai-products' }, { label: '设计', val: 'design' }, { label: '视频', val: 'video' }];
+
+// 分段滑块 HTML：等宽选项 + 一个可滑动的 thumb（初始 transform 内联，切换时原地移动即产生滑动动画）
+function segHtml(id, pills, active, fn) {
+  const idx = Math.max(0, pills.findIndex(p => p.val === active));
+  return `<div class="seg" id="${id}">
+    <span class="seg-thumb" style="width:${100 / pills.length}%;transform:translateX(${idx * 100}%)"></span>
+    ${pills.map(p => `<button class="seg-opt${p.val === active ? ' on' : ''}" data-val="${p.val}" onclick="${fn}('${p.val}')">${p.label}</button>`).join('')}
+  </div>`;
+}
+
+function filterAllItems(items) {
+  const isOfficial = i => i.official === true || i._feed?.official === true;
+  const isVideo = i => i.category === 'video' || i._aiCat === 'video'
+    || /youtube\.com/.test(i._feed?.url || '') || /youtube\.com/.test(i.link || '');
+  return items.filter(i => {
+    const srcOk = allSrcFilter === 'all' || (allSrcFilter === 'official' && isOfficial(i));
+    let catOk = true;
+    if (allCatFilter === 'video') catOk = isVideo(i);
+    else if (allCatFilter !== 'all') catOk = i._aiCat === allCatFilter;
+    return srcOk && catOk;
+  });
+}
+
+// 移动分段滑块 + 切换高亮（原地，不重建）
+function moveSeg(segId, pills, val) {
+  const seg = document.getElementById(segId);
+  if (!seg) return;
+  const idx = Math.max(0, pills.findIndex(p => p.val === val));
+  const thumb = seg.querySelector('.seg-thumb');
+  if (thumb) thumb.style.transform = `translateX(${idx * 100}%)`;
+  seg.querySelectorAll('.seg-opt').forEach(b => b.classList.toggle('on', b.dataset.val === val));
+}
+
+// 原地重筛：只更新列表与计数，保留分段滑块以产生滑动动画
+function refilterAll() {
+  const cached = cache['all'];
+  const wrap = document.getElementById('allListWrap');
+  const tab = TABS.find(t => t.id === 'all');
+  if (!cached || !wrap || !tab) { if (tab && cached) renderTab(tab, cached.items, cached.feedErrors || [], cached.aiHotData); return; }
+  cached.items.forEach(autoCat);
+  const displayItems = filterAllItems(cached.items);
+  wrap.innerHTML = displayItems.length ? renderTimeline(displayItems)
+    : '<div class="empty-state"><div class="empty-icon">📭</div><p>暂无内容，请稍后刷新</p></div>';
+  const meta = document.querySelector('.section-meta');
+  if (meta) {
+    const label = (allCatFilter !== 'all' || allSrcFilter !== 'all') ? `${displayItems.length} / ${cached.items.length} 条` : `${cached.items.length} 条`;
+    meta.textContent = `${label} · ${nowStr()} 更新`;
+  }
+}
+
 function switchAllCat(cat) {
   if (allCatFilter === cat) return;
   allCatFilter = cat;
-  const tab = TABS.find(t => t.id === 'all');
-  if (!tab) return;
-  const cached = cache['all'];
-  if (cached) {
-    // 每次切换 pill 重跑 autoCat，确保新分类（tip/opensource 等）条目被识别
-    cached.items.forEach(autoCat);
-    renderTab(tab, cached.items, cached.feedErrors || [], cached.aiHotData);
-  } else switchTab('all');
+  moveSeg('segCat', CAT_PILLS, cat);
+  refilterAll();
 }
 
 function switchAllSrc(src) {
   if (allSrcFilter === src) return;
   allSrcFilter = src;
-  const tab = TABS.find(t => t.id === 'all');
-  if (!tab) return;
-  const cached = cache['all'];
-  if (cached) {
-    cached.items.forEach(autoCat);
-    renderTab(tab, cached.items, cached.feedErrors || [], cached.aiHotData);
-  } else switchTab('all');
+  moveSeg('segSrc', SRC_PILLS, src);
+  refilterAll();
 }
 
 function renderJobs(items) {
