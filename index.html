@@ -1414,7 +1414,7 @@ const AIHOT = 'https://aihot.virxact.com/api/public';
 // 失败则降级到 CORS 代理
 const STATIC_BASE = 'data';
 const STATIC_TTL  = 2 * 60 * 60 * 1000; // 2 小时内视为新鲜，与更新频率匹配
-const STATIC_TABS = new Set(['featured', 'all', 'official', 'products', 'design', 'videos']);
+const STATIC_TABS = new Set(['featured', 'all']);
 
 async function fetchStaticData(tabId) {
   if (!STATIC_TABS.has(tabId)) return null;
@@ -1780,24 +1780,6 @@ const TABS = [
     feeds: SHARED_FEEDS
   },
   {
-    id: 'official',
-    name: 'AI 官方动态',
-    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="7" x2="12" y2="16"/></svg>',
-    layout: 'list',
-    translate: true,
-    desc: '头部 AI 厂商官方博客（自动翻译）',
-    aiHotPath: null,
-    feeds: [
-      { url: 'https://openai.com/blog/rss.xml',             name: 'OpenAI',      color: '#10a37f' },
-      { url: 'https://www.anthropic.com/rss',               name: 'Anthropic',   color: '#d97706' },
-      { url: 'https://deepmind.google/blog/rss/',           name: 'DeepMind',    color: '#4285f4' },
-      { url: 'https://huggingface.co/blog/feed.xml',        name: 'HuggingFace', color: '#ff9d00' },
-      { url: 'https://ai.meta.com/blog/rss/',               name: 'Meta AI',     color: '#1877f2' },
-      { url: 'https://blogs.microsoft.com/ai/feed/',        name: 'Microsoft AI',color: '#00a1f1' },
-      { url: 'https://blog.google/technology/ai/rss/',       name: 'Google AI',   color: '#ea4335' },
-    ]
-  },
-  {
     id: 'timeline',
     name: '模型发布',
     icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
@@ -1806,114 +1788,6 @@ const TABS = [
     aiHotPath: null,
     feeds: []
   },
-  {
-    id: 'products',
-    name: 'AI 产品',
-    filterCat: 'ai-products',
-    translate: true,
-    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>',
-    layout: 'list',
-    desc: 'AI 产品与工具动态',
-    aiHotPath: '/items?category=ai-products&take=40',
-    feeds: [
-      { url: 'https://www.theverge.com/ai-artificial-intelligence/rss', name: 'The Verge AI', color: '#e40045' },
-      { url: 'https://www.qbitai.com/feed',            name: '量子位',   color: '#bc8cff' },
-      { url: 'https://www.ifanr.com/feed',             name: '爱范儿',   color: '#3fb950' },
-      { url: 'https://www.jiqizhixin.com/rss',         name: '机器之心', color: '#58a6ff' },
-      { url: 'https://www.geekpark.net/rss',           name: '极客公园', color: '#ffa657' },
-      { url: 'https://sspai.com/feed',                 name: '少数派',   color: '#8b949e' },
-      { url: 'https://36kr.com/feed',                  name: '36Kr',    color: '#1677ff' },
-      { url: 'https://www.huxiu.com/rss/0.xml',        name: '虎嗅',    color: '#e67e22' },
-      { url: 'https://xinzhiyuan.com/feed',             name: '新智元',  color: '#8b5cf6' },
-    ]
-  },
-  {
-    id: 'design',
-    name: 'AI 设计',
-    filterCat: 'design',
-    translate: true,
-    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><circle cx="11" cy="11" r="2"/></svg>',
-    layout: 'list',
-    desc: 'AI 设计工具与创意趋势',
-    aiHotPath: '/items?mode=all&take=80',
-    feeds: [
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UChpleBmo18P08aKCIgti38g', name: 'Matt Wolfe',       color: '#f59e0b' },
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UC_HhOkzorAO4_rRsTiiHZ_w', name: 'AI Explained',   color: '#8b5cf6' },
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCUBqu_z5uP0AZhYtuyFZB3g', name: 'Runway',         color: '#06b6d4' },
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg', name: 'Two Minute Papers', color: '#ef4444' },
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCJ0-OtVpF0wOKEqT2Z1HEtA', name: 'The Futur',      color: '#1a1a1a' },
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UC-b3c7kxa5vU-bnmaROgvog', name: 'Sam Santala',    color: '#7c3aed' },
-      { url: 'https://www.theverge.com/ai-artificial-intelligence/rss', name: 'The Verge AI', color: '#e40045' },
-      { url: 'https://uxdesign.cc/feed',               name: 'UX Collective', color: '#0ea5e9' },
-      { url: 'https://www.smashingmagazine.com/feed/', name: 'Smashing Mag',  color: '#e8552f' },
-      { url: 'https://www.creativebloq.com/feeds/all.xml', name: 'Creative Bloq', color: '#ff6b6b' },
-      { url: 'https://www.uisdc.com/feed',             name: '优设网',   color: '#3fb950' },
-      { url: 'https://www.woshipm.com/feed',           name: '人人都是PM', color: '#ffa657' },
-      { url: 'https://www.qbitai.com/feed',            name: '量子位',   color: '#bc8cff' },
-      { url: 'https://www.ifanr.com/feed',             name: '爱范儿',   color: '#06b6d4' },
-      { url: 'https://www.jiqizhixin.com/rss',         name: '机器之心', color: '#58a6ff' },
-      { url: 'https://www.geekpark.net/rss',           name: '极客公园', color: '#f59e0b' },
-      { url: 'https://sspai.com/feed',                 name: '少数派',   color: '#8b949e' },
-      { url: 'https://www.huxiu.com/rss/0.xml',        name: '虎嗅',    color: '#e67e22' },
-      { url: 'https://xinzhiyuan.com/feed',             name: '新智元',  color: '#8b5cf6' },
-    ]
-  },
-  {
-    id: 'videos',
-    name: 'AI 视频',
-    translate: true,
-    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>',
-    layout: 'list',
-    desc: 'OpenAI、DeepMind、Anthropic 官方视频',
-    aiHotPath: null,
-    feeds: [
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCXZCJLdBC09xxGZ6gcdrc6A', name: 'OpenAI',    color: '#10a37f' },
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCP7jMXSY2xbc3KCAE0MHQ-A', name: 'DeepMind',  color: '#4285f4' },
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCrDwWp7EBBv4NwvScIpBDOA', name: 'Anthropic', color: '#c75b39' },
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg', name: 'Two Minute Papers', color: '#ef4444' },
-    ]
-  },
-  {
-    id: 'models',
-    hidden: true,
-    name: 'AI 模型',
-    icon: '',
-    layout: 'list',
-    desc: '大模型发布与更新动态',
-    aiHotPath: '/items?category=ai-models&take=40',
-    feeds: []
-  },
-  {
-    id: 'paper',
-    hidden: true,
-    name: 'AI 论文',
-    translate: true,
-    icon: '',
-    layout: 'list',
-    desc: 'AI 研究前沿与学术动态',
-    aiHotPath: '/items?category=paper&take=40',
-    feeds: []
-  },
-  {
-    id: 'jobs',
-    hidden: true,
-    name: 'AI 岗位',
-    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>',
-    layout: 'jobs',
-    desc: 'AI 产品/设计相关招聘',
-    aiHotPath: null,
-    feeds: [],
-    feedsGlobal: [
-      { url: 'https://weworkremotely.com/categories/remote-design-jobs.rss',              name: 'WWR · 设计',  color: '#bc8cff' },
-      { url: 'https://weworkremotely.com/categories/remote-product-management-jobs.rss',  name: 'WWR · 产品',  color: '#3fb950' },
-      { url: 'https://weworkremotely.com/categories/remote-full-stack-programming-jobs.rss', name: 'WWR · 工程', color: '#ffa657' },
-    ],
-    feedsDomestic: [
-      { url: 'https://rsshub.app/lagou/jobs/AI%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86', name: '拉勾·AI产品经理', color: '#bc8cff' },
-      { url: 'https://rsshub.app/lagou/jobs/AI%E8%AE%BE%E8%AE%A1%E5%B8%88',          name: '拉勾·AI设计师',   color: '#3fb950' },
-      { url: 'https://rsshub.app/lagou/jobs/AI%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1', name: '拉勾·AI产品设计', color: '#ffa657' },
-    ]
-  }
 ];
 
 // 移动端产品组：这三个 tab 在移动端合并为第5个 tab
