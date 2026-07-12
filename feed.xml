@@ -5,8 +5,26 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 12 Jul 2026 03:54:18 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 06:48:33 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>全网骂Claude变笨，Anthropic下场揭秘：坑你的不是模型</title>
+      <link>https://36kr.com/p/3892222176574211?f=rss</link>
+      <description>换更大的模型就等于更聪明？
+  【导读】换更大的模型就等于更聪明？这可能是Claude Code用户最深的误会。很多人为此一路换到最贵的Fable，近日，Anthropic，亲手澄清了这个误区。
+  你有没有过这种时刻：Claude Code写代码写砸了，第一反应，就是赶紧换个更强的模型。
+  但这一招，很多时候并不管用，甚至是在白花钱。
+  近日，Anthropic官方发了一篇长文专门来讲这件事。
+  
+  Anthropic官方长文
+  起因是太多人把Claude Code里的两个选项搞混了：
+  一个是模型选择（Model），一个是努力度（Effort）。
+  
+  Anthropic官</description>
+      <pubDate>Sun, 12 Jul 2026 13:47:23 +0800</pubDate>
+      <guid isPermaLink="true">https://36kr.com/p/3892222176574211?f=rss</guid>
+      <source url="https://36kr.com/p/3892222176574211?f=rss">36Kr</source>
+    </item>
     <item>
       <title>这个周末，科技投资人都得飞一趟成都</title>
       <link>https://36kr.com/p/3892096788396806?f=rss</link>
@@ -145,51 +163,6 @@
       <source url="https://www.ifanr.com/1671681?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
     </item>
     <item>
-      <title>揭示舆论：使用 LSTM 和传统模型进行情感分析的研究</title>
-      <link>https://arxiv.org/abs/2607.07772</link>
-      <description>arXiv:2607.07772v1 Announce Type: new 
-Abstract: In this age of social media, sites like Twitter have become meeting places for people to share their views and feelings on a wide range of issues and current events as they unfold in real time. Sentiment analysis, a critical application of NLP, has be</description>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 -0400</pubDate>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.07772</guid>
-      <source url="https://arxiv.org/abs/2607.07772">ArXiv NLP</source>
-    </item>
-    <item>
-      <title>从求解器到研究：研究前沿的大型语言模型驱动的形式数学</title>
-      <link>https://arxiv.org/abs/2607.07779</link>
-      <description>arXiv:2607.07779v1 Announce Type: new 
-Abstract: Recent developments in AI for Mathematics (AI4Math), especially Large Language Model (LLM)-driven theorem provers, has achieved remarkable success in formal proof generation for well-defined mathematical problems through Interactive Theorem Proving (I</description>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 -0400</pubDate>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.07779</guid>
-      <source url="https://arxiv.org/abs/2607.07779">ArXiv NLP</source>
-    </item>
-    <item>
-      <title>DeepSearch-World：可验证环境中深度搜索代理的自蒸馏</title>
-      <link>https://arxiv.org/abs/2607.07820</link>
-      <description>arXiv:2607.07820v1 Announce Type: new 
-Abstract: Training tool-use agents to improve from their own experience remains challenging, as supervised fine-tuning relies on fixed teacher-distilled trajectories, while sparse-reward reinforcement learning provides weak supervision for long-horizon interact</description>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 -0400</pubDate>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.07820</guid>
-      <source url="https://arxiv.org/abs/2607.07820">ArXiv NLP</source>
-    </item>
-    <item>
-      <title>我怎么知道接下来该说什么？巴伦霍尔茨的自生理论丰富了哈里斯一体化主义</title>
-      <link>https://arxiv.org/abs/2607.07891</link>
-      <description>arXiv:2607.07891v1 Announce Type: new 
-Abstract: Roy Harris's Integrationist linguistics offers a compelling critique of the referentialist tradition embedded deep at the heart of computational approaches to language, arguing that language is not a code that maps onto a pre-given world but a situate</description>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 -0400</pubDate>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.07891</guid>
-      <source url="https://arxiv.org/abs/2607.07891">ArXiv NLP</source>
-    </item>
-    <item>
-      <title>通过人类与法学硕士合作构建可扩展且文化特定的刻板印象数据集</title>
-      <link>https://arxiv.org/abs/2607.07895</link>
-      <description>arXiv:2607.07895v1 Announce Type: new 
-Abstract: Research on stereotypes in large language models (LLMs) has largely focused on English-speaking contexts, due to the lack of datasets in other languages and the high cost of manual annotation in underrepresented cultures. To address this gap, we intro</description>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 -0400</pubDate>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.07895</guid>
-      <source url="https://arxiv.org/abs/2607.07895">ArXiv NLP</source>
-    </item>
-    <item>
       <title>RingCentral 通过 ChatGPT Work 扩展客户计划</title>
       <link>https://www.youtube.com/shorts/MdTqoR-7oHg</link>
       <description>“ChatGPT Work helped me scale from six customers that I was tracking in the pilot phase to about 80.”
@@ -208,6 +181,44 @@ Melad Zahedi, Director of Product Marketing at Stampli, uses ChatGPT Work to pul
       <pubDate>Fri, 10 Jul 2026 21:17:12 +0000</pubDate>
       <guid isPermaLink="true">https://www.youtube.com/shorts/eD5lc1mZDZk</guid>
       <source url="https://www.youtube.com/shorts/eD5lc1mZDZk">OpenAI</source>
+    </item>
+    <item>
+      <title>Stampli 通过 ChatGPT Work 扩大产品营销规模</title>
+      <link>https://www.youtube.com/watch?v=yATno77Uo6A</link>
+      <description>“It’s allowed basically a one-person team to do the work of a team of four or five.”
+
+Melad Zahedi, Director of Product Marketing at Stampli, uses ChatGPT Work to pull product context from Jira, GitHub, and meeting notes, then automatically update downstream content across help centers, presentation</description>
+      <pubDate>Fri, 10 Jul 2026 21:11:41 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=yATno77Uo6A</guid>
+      <source url="https://www.youtube.com/watch?v=yATno77Uo6A">OpenAI</source>
+    </item>
+    <item>
+      <title>ChatGPT 计算机使用：现在通过实时画中画更快</title>
+      <link>https://www.youtube.com/watch?v=IYYTI73J7Rg</link>
+      <description>Computer Use is getting an upgrade as part of ChatGPT Work. It's faster and more accurate with GPT-5.6, and Live Picture-in-Picture lets you keep an eye on its progress. You can also send the live PiP to your Pet while you multitask -- or simply sit back and watch.</description>
+      <pubDate>Fri, 10 Jul 2026 19:45:02 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=IYYTI73J7Rg</guid>
+      <source url="https://www.youtube.com/watch?v=IYYTI73J7Rg">OpenAI</source>
+    </item>
+    <item>
+      <title>氪星晚报｜德国大众拟大裁员，最高或裁减12万个岗位；高盛称套利交易当前处境为2000年以来最佳；百亿私募数量达142家，再次刷新历史纪录</title>
+      <link>https://36kr.com/p/3889551814916614?f=rss</link>
+      <description>大公司：
+  SK海力士赴美上市，华尔街投行合计佣金有望达1.4亿美元
+  参与SK海力士上市项目的投行团队将斩获上亿美元丰厚佣金。这家市值突破万亿美元的韩国芯片巨头即将登陆美股，本次发行有望跻身史上规模最大IPO行列。两名熟悉该交易的人士透露，高盛、花旗等承销本次纳斯达克股票发行的投行，总佣金池规模或将突破1.4亿美元；佣金由两部分构成，一是募资总额0.5%的基础承销费，二是SK海力士另行支付的浮动激励奖金。
+  谷歌要求AI广告必须标注：涵盖搜索和YouTube等
+  当地时间7月9日，谷歌宣布全面扩大生成式AI广告的披露范围。新规要求在谷歌搜索、YouTube和Discover信息流中，</description>
+      <pubDate>Fri, 10 Jul 2026 18:23:02 +0800</pubDate>
+      <guid isPermaLink="true">https://36kr.com/p/3889551814916614?f=rss</guid>
+      <source url="https://36kr.com/p/3889551814916614?f=rss">36Kr</source>
+    </item>
+    <item>
+      <title>本周看什么 | 最近值得一看的 8 部作品</title>
+      <link>https://sspai.com/post/112169</link>
+      <description>📅本周新预告《恐怖游轮》内地定档7月17日7月8日，电影《恐怖游轮》发布了中国内地定档预告，将于7月17日上映。克里斯托弗·史密斯执导、编剧，梅利莎·乔治主演，单亲母亲杰西和一帮朋友乘游艇出海游玩，但 ...查看全文</description>
+      <pubDate>Fri, 10 Jul 2026 17:44:19 +0800</pubDate>
+      <guid isPermaLink="true">https://sspai.com/post/112169</guid>
+      <source url="https://sspai.com/post/112169">少数派</source>
     </item>
   </channel>
 </rss>
