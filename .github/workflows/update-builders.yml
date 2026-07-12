@@ -17,19 +17,26 @@ jobs:
       - name: Fetch builders data
         run: |
           mkdir -p data
-          curl -sf --max-time 15 \
-            "https://cdn.jsdelivr.net/gh/zarazhangrui/follow-builders@main/feed-x.json" \
-            -o data/builders-x.json || \
-          curl -sf --max-time 15 \
-            "https://ghfast.top/https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json" \
-            -o data/builders-x.json
-
-          curl -sf --max-time 15 \
-            "https://cdn.jsdelivr.net/gh/zarazhangrui/follow-builders@main/feed-podcasts.json" \
-            -o data/builders-podcasts.json || \
-          curl -sf --max-time 15 \
-            "https://ghfast.top/https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-podcasts.json" \
-            -o data/builders-podcasts.json
+          # 拉上游 feed；仅当内容非空时才覆盖本地，避免上游 402/空数据把上一版好数据冲掉
+          fetch_guarded() {
+            src="$1"; dest="$2"; nonempty_test="$3"
+            tmp="$(mktemp)"
+            if curl -sf --max-time 15 "https://cdn.jsdelivr.net/gh/zarazhangrui/follow-builders@main/$src" -o "$tmp" \
+               || curl -sf --max-time 15 "https://ghfast.top/https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/$src" -o "$tmp"; then
+              if jq -e "$nonempty_test" "$tmp" >/dev/null 2>&1; then
+                mv "$tmp" "$dest"
+                echo "updated $dest"
+              else
+                echo "upstream $src empty/invalid — keeping existing $dest"
+                rm -f "$tmp"
+              fi
+            else
+              echo "fetch failed for $src — keeping existing $dest"
+              rm -f "$tmp"
+            fi
+          }
+          fetch_guarded feed-x.json        data/builders-x.json        '(.x // []) | length > 0'
+          fetch_guarded feed-podcasts.json data/builders-podcasts.json '(.podcasts // []) | length > 0'
 
       - name: Commit if changed
         run: |

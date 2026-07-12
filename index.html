@@ -2589,8 +2589,9 @@ function renderBuilders(xData, podData) {
       </div>`;
   }).join('');
 
+  const xDown = builders.length === 0; // X 数据源为空（上游 402/维护中）
   const empty = (!builders.length && !podcasts.length)
-    ? `<div class="empty-state"><div class="empty-icon">📭</div><p>今日暂无更新，稍后再来</p></div>` : '';
+    ? `<div class="empty-state"><div class="empty-icon">📭</div><p>建造者数据源维护中，暂无更新</p></div>` : '';
 
   main.innerHTML = `
     <div class="section-header">
@@ -2599,16 +2600,19 @@ function renderBuilders(xData, podData) {
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </span>AI Builder
       </div>
-      <div class="section-meta">${builders.length} 位有更新 · ${nowStr()} 更新</div>
+      <div class="section-meta">${xDown ? '播客更新' : builders.length + ' 位有更新'} · ${nowStr()} 更新</div>
     </div>
     <div class="builders-banner">
-      <div class="builders-banner-left">追踪 <b>26 位</b> AI 顶尖建造者 · 研究员、创始人、工程师的最新动态</div>
+      <div class="builders-banner-left">${xDown
+        ? 'X · 建造者动态数据源维护中 · 播客精华照常更新'
+        : '追踪 <b>26 位</b> AI 顶尖建造者 · 研究员、创始人、工程师的最新动态'}</div>
       <div class="builders-banner-pill">Follow Builders</div>
     </div>
     <div class="builders-wrap">
       ${builders.length > 0 ? `
         <div class="builders-section-label builders-section-label-row">X · 建造者动态</div>
-        ${builderHtml}` : ''}
+        ${builderHtml}` : (podcasts.length > 0 ? `
+        <div class="builders-section-label builders-section-label-row" style="grid-column:1/-1;opacity:.7">X · 建造者动态（数据源维护中，暂无更新）</div>` : '')}
       ${podcasts.length > 0 ? `
         <div class="builders-section-label builders-section-label-row" style="grid-column:1/-1">播客精华</div>
         ${podcastHtml}` : ''}
