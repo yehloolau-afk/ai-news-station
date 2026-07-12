@@ -284,7 +284,13 @@ def gen_all(chinese_base, aihot_items):
     yt = []
     for name, url, color in VIDEO_SOURCES:
         yt.extend(fetch_rss(name, url, color, 5))
-    items = sort_items(dedupe(aihot_items + arxiv + yt + chinese_base))[:60]
+    official = []
+    for name, url, color in OFFICIAL_SOURCES:
+        offi = fetch_rss(name, url, color, 5)
+        for it in offi:
+            it['official'] = True
+        official.extend(offi)
+    items = sort_items(dedupe(aihot_items + arxiv + yt + official + chinese_base))[:80]
     save_json('all.json', items)
     return items
 

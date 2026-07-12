@@ -752,7 +752,9 @@
     .jobs-section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
     /* ── Category filter pills (全部AI动态) ── */
-    .cat-filter-bar { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; }
+    .cat-filter-bar { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; }
+    .filter-group { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+    .filter-sep { width: 1px; align-self: stretch; background: var(--border); margin: 2px 6px; }
     .cat-pill {
       padding: 4px 14px;
       border-radius: 14px;
@@ -1725,6 +1727,19 @@ const SHARED_FEEDS = [
   { url: 'https://xinzhiyuan.com/feed',             name: '新智元',   color: '#8b5cf6' },
 ];
 
+// 官方厂商博客（「全部动态」里的「官方动态」筛选用；带 official 标记）
+const OFFICIAL_FEEDS = [
+  { url: 'https://openai.com/blog/rss.xml',        name: 'OpenAI',      color: '#10a37f', official: true },
+  { url: 'https://www.anthropic.com/rss',          name: 'Anthropic',   color: '#d97706', official: true },
+  { url: 'https://deepmind.google/blog/rss/',      name: 'DeepMind',    color: '#4285f4', official: true },
+  { url: 'https://huggingface.co/blog/feed.xml',   name: 'HuggingFace', color: '#ff9d00', official: true },
+  { url: 'https://ai.meta.com/blog/rss/',          name: 'Meta AI',     color: '#1877f2', official: true },
+  { url: 'https://blogs.microsoft.com/ai/feed/',   name: 'Microsoft AI',color: '#00a1f1', official: true },
+  { url: 'https://blog.google/technology/ai/rss/', name: 'Google AI',   color: '#ea4335', official: true },
+];
+// 全部动态 = 共享源 + 官方博客（产品/设计走 _aiCat 分类，视频靠 YouTube URL 识别）
+const ALL_FEEDS = [...SHARED_FEEDS, ...OFFICIAL_FEEDS];
+
 const TABS = [
   {
     id: 'builders',
@@ -1753,24 +1768,7 @@ const TABS = [
     layout: 'list',
     desc: '全网 AI 最新动态',
     aiHotPath: '/items?mode=all&take=80',
-    feeds: [
-      { url: 'https://export.arxiv.org/rss/cs.AI',     name: 'ArXiv AI',  color: '#e67e22' },
-      { url: 'https://export.arxiv.org/rss/cs.LG',     name: 'ArXiv ML',  color: '#e74c3c' },
-      { url: 'https://export.arxiv.org/rss/cs.CL',     name: 'ArXiv NLP', color: '#1abc9c' },
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCXZCJLdBC09xxGZ6gcdrc6A', name: 'OpenAI YT',    color: '#10a37f' },
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCP7jMXSY2xbc3KCAE0MHQ-A', name: 'DeepMind YT',  color: '#4285f4' },
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCrDwWp7EBBv4NwvScIpBDOA', name: 'Anthropic YT', color: '#c75b39' },
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg', name: 'Two Minute Papers', color: '#ef4444' },
-      { url: 'https://www.theverge.com/ai-artificial-intelligence/rss', name: 'The Verge AI', color: '#e40045' },
-      { url: 'https://www.qbitai.com/feed',            name: '量子位',    color: '#bc8cff' },
-      { url: 'https://www.ifanr.com/feed',             name: '爱范儿',    color: '#3fb950' },
-      { url: 'https://www.jiqizhixin.com/rss',         name: '机器之心',  color: '#58a6ff' },
-      { url: 'https://www.geekpark.net/rss',           name: '极客公园',  color: '#ffa657' },
-      { url: 'https://sspai.com/feed',                 name: '少数派',    color: '#8b949e' },
-      { url: 'https://36kr.com/feed',                  name: '36Kr',     color: '#1677ff' },
-      { url: 'https://www.huxiu.com/rss/0.xml',        name: '虎嗅',     color: '#e67e22' },
-      { url: 'https://xinzhiyuan.com/feed',             name: '新智元',   color: '#8b5cf6' },
-    ]
+    feeds: ALL_FEEDS
   },
   {
     id: 'daily',
@@ -1926,7 +1924,7 @@ const MOB_NAV_ORDER = ['daily', 'timeline', 'featured', 'all'];
 const NAV_GROUPS = [
   { label: '每日速览', ids: ['daily', 'featured'] },
   { label: '大事记',   ids: ['timeline'] },
-  { label: '资讯流',   ids: ['all', 'official', 'products', 'design', 'videos', 'builders'] },
+  { label: '资讯流',   ids: ['all', 'builders'] },
 ];
 const DEFAULT_TAB = 'daily'; // 默认落地页 = 日报（回访锚点）
 
@@ -1934,7 +1932,8 @@ const DEFAULT_TAB = 'daily'; // 默认落地页 = 日报（回访锚点）
 let activeTab = DEFAULT_TAB;
 let mobGroupActiveId = 'official'; // 「更多」组当前选中的 sub-tab
 let jobsRegion = 'global';   // 'global' | 'domestic'
-let allCatFilter = 'all';    // 'all' | 'ai-models' | 'ai-products' | 'industry' | 'paper'
+let allCatFilter = 'all';    // 右排（类）：'all' | 'ai-products' | 'design' | 'video'
+let allSrcFilter = 'all';    // 左排（源）：'all' | 'official'
 const cache = {};          // { tabId: { items, feedErrors, ts } }
 const counts = {};         // { tabId: count }
 let refreshTimer = null;
@@ -3063,26 +3062,37 @@ function renderTab(tab, items, feedErrors = []) {
     return;
   }
 
-  // Category filter pills for 全部AI动态
+  // 全部动态：双排交叉筛选 —— 左排（源）× 右排（类）
+  const SRC_PILLS = [
+    { label: '全部动态', val: 'all' },
+    { label: '官方动态', val: 'official' },
+  ];
   const CAT_PILLS = [
     { label: '全部', val: 'all' },
     { label: '产品', val: 'ai-products' },
-    { label: '模型', val: 'ai-models' },
     { label: '设计', val: 'design' },
-    { label: '行业', val: 'industry' },
-    { label: '技巧', val: 'tip' },
-    { label: '开源', val: 'opensource' },
-    { label: '论文', val: 'paper' },
+    { label: '视频', val: 'video' },
   ];
   const catPillsHtml = tab.id === 'all' ? `
     <div class="cat-filter-bar">
-      ${CAT_PILLS.map(p => `<button class="cat-pill${allCatFilter===p.val?' active':''}" onclick="switchAllCat('${p.val}')">${p.label}</button>`).join('')}
+      <span class="filter-group">${SRC_PILLS.map(p => `<button class="cat-pill${allSrcFilter===p.val?' active':''}" onclick="switchAllSrc('${p.val}')">${p.label}</button>`).join('')}</span>
+      <span class="filter-sep"></span>
+      <span class="filter-group">${CAT_PILLS.map(p => `<button class="cat-pill${allCatFilter===p.val?' active':''}" onclick="switchAllCat('${p.val}')">${p.label}</button>`).join('')}</span>
     </div>` : '';
 
-  // Apply category filter for 全部AI动态
+  // 交叉筛选：源（全部/官方）× 类（全部/产品/设计/视频）；兼容静态数据(原始字段)与实时RSS(_feed)
   let displayItems = items;
-  if (tab.id === 'all' && allCatFilter !== 'all') {
-    displayItems = items.filter(i => i._aiCat === allCatFilter);
+  if (tab.id === 'all') {
+    const isOfficial = i => i.official === true || i._feed?.official === true;
+    const isVideo = i => i.category === 'video' || i._aiCat === 'video'
+      || /youtube\.com/.test(i._feed?.url || '') || /youtube\.com/.test(i.link || '');
+    displayItems = items.filter(i => {
+      const srcOk = allSrcFilter === 'all' || (allSrcFilter === 'official' && isOfficial(i));
+      let catOk = true;
+      if (allCatFilter === 'video') catOk = isVideo(i);
+      else if (allCatFilter !== 'all') catOk = i._aiCat === allCatFilter;
+      return srcOk && catOk;
+    });
   }
 
   let content = '';
@@ -3094,7 +3104,7 @@ function renderTab(tab, items, feedErrors = []) {
     content = renderTimeline(displayItems);
   }
 
-  const totalLabel = tab.id === 'all' && allCatFilter !== 'all'
+  const totalLabel = tab.id === 'all' && (allCatFilter !== 'all' || allSrcFilter !== 'all')
     ? `${displayItems.length} / ${items.length} 条`
     : `${items.length} 条`;
 
@@ -3522,6 +3532,18 @@ function switchAllCat(cat) {
   const cached = cache['all'];
   if (cached) {
     // 每次切换 pill 重跑 autoCat，确保新分类（tip/opensource 等）条目被识别
+    cached.items.forEach(autoCat);
+    renderTab(tab, cached.items, cached.feedErrors || [], cached.aiHotData);
+  } else switchTab('all');
+}
+
+function switchAllSrc(src) {
+  if (allSrcFilter === src) return;
+  allSrcFilter = src;
+  const tab = TABS.find(t => t.id === 'all');
+  if (!tab) return;
+  const cached = cache['all'];
+  if (cached) {
     cached.items.forEach(autoCat);
     renderTab(tab, cached.items, cached.feedErrors || [], cached.aiHotData);
   } else switchTab('all');
