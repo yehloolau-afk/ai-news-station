@@ -1705,6 +1705,26 @@ function genRecReason(item) {
   return '精选内容，覆盖 AI 行业核心进展，值得深度阅读。';
 }
 
+// 日报 / 精选 共享同一份数据源（并集）；顶部「来源」展示因此一致
+const SHARED_FEEDS = [
+  { url: 'https://export.arxiv.org/rss/cs.AI',     name: 'ArXiv AI',  color: '#e67e22' },
+  { url: 'https://export.arxiv.org/rss/cs.LG',     name: 'ArXiv ML',  color: '#e74c3c' },
+  { url: 'https://export.arxiv.org/rss/cs.CL',     name: 'ArXiv NLP', color: '#1abc9c' },
+  { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCXZCJLdBC09xxGZ6gcdrc6A', name: 'OpenAI YT',    color: '#10a37f' },
+  { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCP7jMXSY2xbc3KCAE0MHQ-A', name: 'DeepMind YT',  color: '#4285f4' },
+  { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCrDwWp7EBBv4NwvScIpBDOA', name: 'Anthropic YT', color: '#c75b39' },
+  { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg', name: 'Two Minute Papers', color: '#ef4444' },
+  { url: 'https://www.theverge.com/ai-artificial-intelligence/rss', name: 'The Verge AI', color: '#e40045' },
+  { url: 'https://www.qbitai.com/feed',            name: '量子位',    color: '#bc8cff' },
+  { url: 'https://www.ifanr.com/feed',             name: '爱范儿',    color: '#3fb950' },
+  { url: 'https://www.jiqizhixin.com/rss',         name: '机器之心',  color: '#58a6ff' },
+  { url: 'https://www.geekpark.net/rss',           name: '极客公园',  color: '#ffa657' },
+  { url: 'https://sspai.com/feed',                 name: '少数派',    color: '#8b949e' },
+  { url: 'https://36kr.com/feed',                  name: '36Kr',     color: '#1677ff' },
+  { url: 'https://www.huxiu.com/rss/0.xml',        name: '虎嗅',     color: '#e67e22' },
+  { url: 'https://xinzhiyuan.com/feed',             name: '新智元',   color: '#8b5cf6' },
+];
+
 const TABS = [
   {
     id: 'builders',
@@ -1723,24 +1743,7 @@ const TABS = [
     desc: '优质 AI 内容精选',
     translate: true,
     aiHotPath: '/items?mode=selected&take=30',
-    feeds: [
-      { url: 'https://export.arxiv.org/rss/cs.AI',     name: 'ArXiv AI',  color: '#e67e22' },
-      { url: 'https://export.arxiv.org/rss/cs.LG',     name: 'ArXiv ML',  color: '#e74c3c' },
-      { url: 'https://export.arxiv.org/rss/cs.CL',     name: 'ArXiv NLP', color: '#1abc9c' },
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCXZCJLdBC09xxGZ6gcdrc6A', name: 'OpenAI YT',    color: '#10a37f' },
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCP7jMXSY2xbc3KCAE0MHQ-A', name: 'DeepMind YT',  color: '#4285f4' },
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCrDwWp7EBBv4NwvScIpBDOA', name: 'Anthropic YT', color: '#c75b39' },
-      { url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg', name: 'Two Minute Papers', color: '#ef4444' },
-      { url: 'https://www.theverge.com/ai-artificial-intelligence/rss', name: 'The Verge AI', color: '#e40045' },
-      { url: 'https://www.qbitai.com/feed',            name: '量子位',    color: '#bc8cff' },
-      { url: 'https://www.ifanr.com/feed',             name: '爱范儿',    color: '#3fb950' },
-      { url: 'https://www.jiqizhixin.com/rss',         name: '机器之心',  color: '#58a6ff' },
-      { url: 'https://www.geekpark.net/rss',           name: '极客公园',  color: '#ffa657' },
-      { url: 'https://sspai.com/feed',                 name: '少数派',    color: '#8b949e' },
-      { url: 'https://36kr.com/feed',                  name: '36Kr',     color: '#1677ff' },
-      { url: 'https://www.huxiu.com/rss/0.xml',        name: '虎嗅',     color: '#e67e22' },
-      { url: 'https://xinzhiyuan.com/feed',             name: '新智元',   color: '#8b5cf6' },
-    ]
+    feeds: SHARED_FEEDS
   },
   {
     id: 'all',
@@ -1776,12 +1779,7 @@ const TABS = [
     layout: 'daily',
     desc: '每日 AI 资讯速览',
     aiHotPath: '/daily',
-    feeds: [
-      { url: 'https://www.qbitai.com/feed', name: '量子位', color: '#bc8cff' },
-      { url: 'https://www.ifanr.com/feed', name: '爱范儿', color: '#ffa657' },
-      { url: 'https://www.geekpark.net/rss', name: '极客公园', color: '#3fb950' },
-      { url: 'https://sspai.com/feed', name: '少数派', color: '#58a6ff' },
-    ]
+    feeds: SHARED_FEEDS
   },
   {
     id: 'official',
