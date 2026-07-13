@@ -1,22 +1,17 @@
 {
-  "generatedAt": "2026-07-12T14:40:53.254Z",
+  "generatedAt": "2026-07-13T04:58:31.677Z",
   "umami": {
     "error": null,
     "today": {
       "visitors": 3,
-      "pageviews": 77
+      "pageviews": 26
     },
     "last30d": {
-      "visitors": 22,
-      "pageviews": 399,
-      "visits": 71
+      "visitors": 23,
+      "pageviews": 425,
+      "visits": 80
     },
     "series": [
-      {
-        "date": "2026-06-13",
-        "pageviews": 0,
-        "visitors": 0
-      },
       {
         "date": "2026-06-14",
         "pageviews": 0,
@@ -159,6 +154,11 @@
       },
       {
         "date": "2026-07-12",
+        "pageviews": 26,
+        "visitors": 3
+      },
+      {
+        "date": "2026-07-13",
         "pageviews": 0,
         "visitors": 0
       }
@@ -170,17 +170,17 @@
       },
       {
         "code": "CN",
-        "visitors": 8
+        "visitors": 9
       }
     ],
     "referrers": [
       {
-        "domain": "github.com",
+        "domain": "weixin110.qq.com",
         "visitors": 3
       },
       {
-        "domain": "weixin110.qq.com",
-        "visitors": 2
+        "domain": "github.com",
+        "visitors": 3
       },
       {
         "domain": "localhost",
