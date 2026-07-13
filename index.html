@@ -3181,17 +3181,10 @@ function renderAiHotDaily(data) {
   }).join('');
 
   return `
-    <div class="dnp-eyebrow">
-      <span>${vol}</span><span class="dnp-eyebrow-sep">·</span>
-      <span>${total} STORIES</span><span class="dnp-eyebrow-sep">·</span>
-      <span>AI HOT DAILY</span>
-    </div>
     <div class="dnp-hero">
       <div class="dnp-title">AI <span>日报</span></div>
       <div class="dnp-dateline">
         <span>${zhDate} ${WEEKS[now.getDay()]}</span>
-        <span class="dnp-tag">DAILY</span>
-        <span class="dnp-tag">AI HOT</span>
         ${STATIC_DAILY_DATES.has(date) ? `<a class="dnp-tag" href="daily/${date}.html" target="_blank" rel="noopener" style="text-decoration:none;cursor:pointer;" title="本期固定网址，秒开、可转发分享">🔗 分享网页版</a>` : ''}
       </div>
       <div class="dnp-tagline">每日速览 · ${total} 条 · 2 分钟读懂今天的 AI</div>
@@ -3265,19 +3258,10 @@ function renderDailyNewspaper(items) {
   }).join('');
 
   return `
-    <div class="dnp-eyebrow">
-      <span>${vol}</span>
-      <span class="dnp-eyebrow-sep">·</span>
-      <span>${items.length} STORIES</span>
-      <span class="dnp-eyebrow-sep">·</span>
-      <span>AI DAILY</span>
-    </div>
     <div class="dnp-hero">
       <div class="dnp-title">AI <span>日报</span></div>
       <div class="dnp-dateline">
         <span>${zhDate} ${WEEKS[now.getDay()]}</span>
-        <span class="dnp-tag">DAILY</span>
-        <span class="dnp-tag">AI · TECH</span>
       </div>
       <div class="dnp-tagline">每日速览 · ${items.length} 条 · 2 分钟读懂今天的 AI</div>
     </div>
