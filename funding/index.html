@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 资本动态 / 融资时间线 — 谁、什么轮次、多少钱、什么估值 | 飞翔的AI资讯站</title>
+<meta name="description" content="AI 资本动态 / 融资时间线：10 条主流 AI 融资档案（2024-02 至 2025-03），含公司、轮次、金额、估值与信源，持续更新。">
+<link rel="canonical" href="https://yehloolau-afk.github.io/ai-news-station/funding/">
+<meta property="og:title" content="AI 资本动态 / 融资时间线 | 飞翔的AI资讯站">
+<meta property="og:description" content="AI 资本动态 / 融资时间线：10 条主流 AI 融资档案（2024-02 至 2025-03），含公司、轮次、金额、估值与信源，持续更新。">
+<meta property="og:type" content="article">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"AI 资本动态 / 融资时间线","description":"AI 资本动态 / 融资时间线：10 条主流 AI 融资档案（2024-02 至 2025-03），含公司、轮次、金额、估值与信源，持续更新。","inLanguage":"zh-CN","url":"https://yehloolau-afk.github.io/ai-news-station/funding/","numberOfItems":10,"itemListElement":[{"@type":"ListItem","position":1,"name":"OpenAI $400 亿 战略轮（2025-03-31）","url":"https://yehloolau-afk.github.io/ai-news-station/funding/#2025-03-31-openai"},{"@type":"ListItem","position":2,"name":"Anthropic $35 亿 E 轮（2025-03-03）","url":"https://yehloolau-afk.github.io/ai-news-station/funding/#2025-03-03-anthropic"},{"@type":"ListItem","position":3,"name":"xAI $60 亿 C 轮（2024-12-24）","url":"https://yehloolau-afk.github.io/ai-news-station/funding/#2024-12-24-xai"},{"@type":"ListItem","position":4,"name":"Perplexity $5 亿 D 轮（2024-12-18）","url":"https://yehloolau-afk.github.io/ai-news-station/funding/#2024-12-18-perplexity"},{"@type":"ListItem","position":5,"name":"Databricks $100 亿 J 轮（2024-12-17）","url":"https://yehloolau-afk.github.io/ai-news-station/funding/#2024-12-17-databricks"},{"@type":"ListItem","position":6,"name":"OpenAI $66 亿 融资（2024-10-02）","url":"https://yehloolau-afk.github.io/ai-news-station/funding/#2024-10-02-openai"},{"@type":"ListItem","position":7,"name":"Safe Superintelligence $10 亿 种子轮（2024-09-04）","url":"https://yehloolau-afk.github.io/ai-news-station/funding/#2024-09-04-safe-superintelligence"},{"@type":"ListItem","position":8,"name":"Mistral AI €6 亿 B 轮（2024-06-11）","url":"https://yehloolau-afk.github.io/ai-news-station/funding/#2024-06-11-mistral-ai"},{"@type":"ListItem","position":9,"name":"Scale AI $10 亿 F 轮（2024-05-21）","url":"https://yehloolau-afk.github.io/ai-news-station/funding/#2024-05-21-scale-ai"},{"@type":"ListItem","position":10,"name":"Figure AI $6.75 亿 B 轮（2024-02-29）","url":"https://yehloolau-afk.github.io/ai-news-station/funding/#2024-02-29-figure-ai"}]}</script>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;
+    background:#f4f6f8; color:#111827; line-height:1.7; }
+  .wrap { max-width:760px; margin:0 auto; padding:28px 18px 60px; }
+  .top { font-size:13px; margin-bottom:18px; }
+  .top a { color:#6b7280; text-decoration:none; }
+  .top a:hover { color:#d92b2b; }
+  h1 { font-size:24px; margin-bottom:6px; }
+  .sub { font-size:13px; color:#6b7280; margin-bottom:24px; }
+  .year-node { display:grid; grid-template-columns:64px 1fr; align-items:center; margin:28px 0 10px; }
+  .year-dot { justify-self:center; width:13px; height:13px; border-radius:50%; background:#d92b2b; box-shadow:0 0 0 4px rgba(217,43,43,0.15); }
+  .year-node h2 { font-size:19px; display:flex; align-items:baseline; gap:10px; }
+  .year-count { font-size:12px; font-weight:500; color:#6b7280; }
+  .tl-list { display:flex; flex-direction:column; gap:10px; position:relative; }
+  .tl-list::after { content:''; position:absolute; left:32px; top:0; bottom:0; width:1px; background:#e5e7eb; pointer-events:none; }
+  .tl-row { display:grid; grid-template-columns:64px 1fr; align-items:start; position:relative; z-index:1; }
+  .tl-time { display:flex; flex-direction:column; align-items:center; justify-content:flex-start; gap:5px; padding-top:14px; }
+  .tl-time-label { font-size:12px; font-weight:600; font-variant-numeric:tabular-nums; white-space:nowrap; line-height:1; }
+  .tl-time-dot { width:9px; height:9px; border-radius:50%; background:#d92b2b; box-shadow:0 0 0 3px rgba(217,43,43,0.15); }
+  .tl-time-n { font-size:10px; color:#9ca3af; margin-top:2px; white-space:nowrap; }
+  .daycards { display:flex; flex-direction:column; gap:10px; }
+  article { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:14px 16px; }
+  .meta { display:flex; gap:8px; align-items:center; font-size:12px; margin-bottom:6px; flex-wrap:wrap; }
+  .company { color:#111827; font-weight:600; }
+  .cat { padding:1px 9px; border-radius:999px; font-weight:600; }
+  .attr { color:#6b7280; background:transparent; border:1px solid #e5e7eb; padding:1px 9px; border-radius:999px; }
+  article h3 { font-size:17px; margin-bottom:4px; color:#d92b2b; }
+  article h3 .val { color:#6b7280; font-size:13px; font-weight:400; }
+  article p { font-size:13.5px; color:#4b5563; }
+  .specs { list-style:none; display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+  .specs li { font-size:12px; color:#4b5563; background:#f4f6f8; border:1px solid #e5e7eb; padding:2px 8px; border-radius:6px; }
+  .impact { font-size:13px; line-height:1.55; margin-top:9px; padding-left:10px; border-left:2px solid; }
+  .impact b { font-weight:600; color:#6b7280; }
+  .mile-tag { font-size:11px; font-weight:700; padding:1px 8px; border-radius:999px; }
+  .src { font-size:12px; color:#9ca3af; margin-top:8px; }
+  .src a { color:#6b7280; }
+  article.minor { padding:10px 16px; }
+  .minor-row { display:flex; align-items:center; gap:8px; font-size:13px; flex-wrap:wrap; }
+  .minor-row .mtitle { font-weight:700; color:#d92b2b; }
+  .minor-desc { color:#6b7280; }
+  footer { margin-top:40px; font-size:12px; color:#9ca3af; text-align:center; }
+  footer a { color:#6b7280; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="top"><a href="https://yehloolau-afk.github.io/ai-news-station/">← 飞翔的AI资讯站</a> · <a href="https://yehloolau-afk.github.io/ai-news-station/timeline/">模型发布时间线</a> · <a href="https://yehloolau-afk.github.io/ai-news-station/daily/">日报存档</a></div>
+<h1>AI 资本动态 · 融资时间线</h1>
+<div class="sub">谁 · 什么轮次 · 多少钱 · 什么估值 —— 持续维护的结构化档案，共 10 条 · 更新于 2026-07-13</div>
+<div class="year-node" id="y2025"><span class="year-dot"></span><h2>2025 年<span class="year-count">2 条</span></h2></div>
+<div class="tl-list">
+<div class="tl-row">
+<div class="tl-time" title="2025-03-31"><span class="tl-time-label">03-31</span><span class="tl-time-dot"></span></div>
+<div class="daycards"><article class="milestone" style="box-shadow:inset 3px 0 0 #185FA5" id="2025-03-31-openai">
+<div class="meta"><span class="company">OpenAI</span><span class="cat" style="color:#185FA5;background:#E6F1FB;border:1px solid #9FC3EA">大模型</span><span class="attr">战略轮</span><span class="mile-tag" style="color:#185FA5;background:#E6F1FB">★ 里程碑</span></div>
+<h3><span class="amt">$400 亿</span><span class="val"> · 估值 $3000 亿</span></h3>
+<p>软银领投，史上单笔最大私募融资，分批到账。</p>
+<ul class="specs"><li>领投：软银</li><li>用途：算力/研究</li></ul>
+<div class="impact" style="color:#185FA5;border-color:#9FC3EA"><b>意味着 </b>AI 基础设施军备竞赛进入千亿美元量级，头部效应进一步固化。</div>
+<div class="src">信源：<a href="https://openai.com/news/" rel="noopener" target="_blank">OpenAI 官网</a> · 2025-03-31</div>
+</article></div>
+</div>
+<div class="tl-row">
+<div class="tl-time" title="2025-03-03"><span class="tl-time-label">03-03</span><span class="tl-time-dot"></span></div>
+<div class="daycards"><article class="milestone" style="box-shadow:inset 3px 0 0 #185FA5" id="2025-03-03-anthropic">
+<div class="meta"><span class="company">Anthropic</span><span class="cat" style="color:#185FA5;background:#E6F1FB;border:1px solid #9FC3EA">大模型</span><span class="attr">E 轮</span><span class="mile-tag" style="color:#185FA5;background:#E6F1FB">★ 里程碑</span></div>
+<h3><span class="amt">$35 亿</span><span class="val"> · 估值 $615 亿</span></h3>
+<p>估值一年内翻数倍。</p>
+<ul class="specs"><li>领投：Lightspeed</li></ul>
+<div class="impact" style="color:#185FA5;border-color:#9FC3EA"><b>意味着 </b>第二梯队前沿实验室与 OpenAI 的估值差在快速缩小。</div>
+<div class="src">信源：<a href="https://www.anthropic.com/news" rel="noopener" target="_blank">Anthropic Newsroom</a> · 2025-03-03</div>
+</article></div>
+</div>
+</div>
+<div class="year-node" id="y2024"><span class="year-dot"></span><h2>2024 年<span class="year-count">8 条</span></h2></div>
+<div class="tl-list">
+<div class="tl-row">
+<div class="tl-time" title="2024-12-24"><span class="tl-time-label">12-24</span><span class="tl-time-dot"></span></div>
+<div class="daycards"><article id="2024-12-24-xai">
+<div class="meta"><span class="company">xAI</span><span class="cat" style="color:#185FA5;background:#E6F1FB;border:1px solid #9FC3EA">大模型</span><span class="attr">C 轮</span></div>
+<h3><span class="amt">$60 亿</span><span class="val"> · 估值 $400 亿</span></h3>
+<p>用于自建超算集群扩容。</p>
+<ul class="specs"><li>用途：Colossus 超算扩容</li></ul>
+
+<div class="src">信源：<a href="https://x.ai/news" rel="noopener" target="_blank">xAI News</a> · 2024-12-24</div>
+</article></div>
+</div>
+<div class="tl-row">
+<div class="tl-time" title="2024-12-18"><span class="tl-time-label">12-18</span><span class="tl-time-dot"></span></div>
+<div class="daycards"><article class="minor" id="2024-12-18-perplexity">
+<div class="minor-row"><span class="company">Perplexity</span><span class="cat" style="color:#4B41A8;background:#EEEDFE;border:1px solid #C3BEF0">应用</span><span class="mtitle"><span class="amt">$5 亿</span><span class="val"> · 估值 $90 亿</span></span><span class="minor-desc">AI 搜索应用估值快速攀升。</span></div>
+</article></div>
+</div>
+<div class="tl-row">
+<div class="tl-time" title="2024-12-17"><span class="tl-time-label">12-17</span><span class="tl-time-dot"></span></div>
+<div class="daycards"><article class="milestone" style="box-shadow:inset 3px 0 0 #993556" id="2024-12-17-databricks">
+<div class="meta"><span class="company">Databricks</span><span class="cat" style="color:#993556;background:#FBEAF0;border:1px solid #EBAEC5">数据基础设施</span><span class="attr">J 轮</span><span class="mile-tag" style="color:#993556;background:#FBEAF0">★ 里程碑</span></div>
+<h3><span class="amt">$100 亿</span><span class="val"> · 估值 $620 亿</span></h3>
+<p>数据+AI 平台，为员工股权流动性融资。</p>
+<ul class="specs"><li>领投：Thrive Capital</li></ul>
+<div class="impact" style="color:#993556;border-color:#EBAEC5"><b>意味着 </b>AI 数据基础设施赛道诞生超级独角兽。</div>
+<div class="src">信源：<a href="https://www.databricks.com/company/newsroom" rel="noopener" target="_blank">Databricks 官网</a> · 2024-12-17</div>
+</article></div>
+</div>
+<div class="tl-row">
+<div class="tl-time" title="2024-10-02"><span class="tl-time-label">10-02</span><span class="tl-time-dot"></span></div>
+<div class="daycards"><article class="milestone" style="box-shadow:inset 3px 0 0 #185FA5" id="2024-10-02-openai">
+<div class="meta"><span class="company">OpenAI</span><span class="cat" style="color:#185FA5;background:#E6F1FB;border:1px solid #9FC3EA">大模型</span><span class="attr">融资</span><span class="mile-tag" style="color:#185FA5;background:#E6F1FB">★ 里程碑</span></div>
+<h3><span class="amt">$66 亿</span><span class="val"> · 估值 $1570 亿</span></h3>
+<p>Thrive 领投，微软/英伟达跟投。</p>
+<ul class="specs"><li>领投：Thrive Capital</li></ul>
+<div class="impact" style="color:#185FA5;border-color:#9FC3EA"><b>意味着 </b>确立 OpenAI 在资本市场的绝对头部地位。</div>
+<div class="src">信源：<a href="https://openai.com/news/" rel="noopener" target="_blank">OpenAI 官网</a> · 2024-10-02</div>
+</article></div>
+</div>
+<div class="tl-row">
+<div class="tl-time" title="2024-09-04"><span class="tl-time-label">09-04</span><span class="tl-time-dot"></span></div>
+<div class="daycards"><article class="milestone" style="box-shadow:inset 3px 0 0 #185FA5" id="2024-09-04-safe-superintelligence">
+<div class="meta"><span class="company">Safe Superintelligence</span><span class="cat" style="color:#185FA5;background:#E6F1FB;border:1px solid #9FC3EA">大模型</span><span class="attr">种子轮</span><span class="mile-tag" style="color:#185FA5;background:#E6F1FB">★ 里程碑</span></div>
+<h3><span class="amt">$10 亿</span><span class="val"> · 估值 $50 亿</span></h3>
+<p>Ilya Sutskever 创立，尚无产品即获十亿美元。</p>
+<ul class="specs"><li>无产品即融资</li></ul>
+<div class="impact" style="color:#185FA5;border-color:#9FC3EA"><b>意味着 </b>顶级研究者号召力本身即成资产，重塑早期估值逻辑。</div>
+<div class="src">信源：<a href="https://ssi.inc/" rel="noopener" target="_blank">路透</a> · 2024-09-04</div>
+</article></div>
+</div>
+<div class="tl-row">
+<div class="tl-time" title="2024-06-11"><span class="tl-time-label">06-11</span><span class="tl-time-dot"></span></div>
+<div class="daycards"><article id="2024-06-11-mistral-ai">
+<div class="meta"><span class="company">Mistral AI</span><span class="cat" style="color:#185FA5;background:#E6F1FB;border:1px solid #9FC3EA">大模型</span><span class="attr">B 轮</span></div>
+<h3><span class="amt">€6 亿</span><span class="val"> · 估值 $60 亿</span></h3>
+<p>欧洲开源大模型代表，General Catalyst 领投。</p>
+<ul class="specs"><li>欧洲开源标杆</li></ul>
+
+<div class="src">信源：<a href="https://mistral.ai/news/" rel="noopener" target="_blank">Mistral AI News</a> · 2024-06-11</div>
+</article></div>
+</div>
+<div class="tl-row">
+<div class="tl-time" title="2024-05-21"><span class="tl-time-label">05-21</span><span class="tl-time-dot"></span></div>
+<div class="daycards"><article id="2024-05-21-scale-ai">
+<div class="meta"><span class="company">Scale AI</span><span class="cat" style="color:#993556;background:#FBEAF0;border:1px solid #EBAEC5">数据基础设施</span><span class="attr">F 轮</span></div>
+<h3><span class="amt">$10 亿</span><span class="val"> · 估值 $138 亿</span></h3>
+<p>AI 训练数据龙头。</p>
+<ul class="specs"><li>数据标注/评测</li></ul>
+
+<div class="src">信源：<a href="https://scale.com/blog" rel="noopener" target="_blank">Scale AI Blog</a> · 2024-05-21</div>
+</article></div>
+</div>
+<div class="tl-row">
+<div class="tl-time" title="2024-02-29"><span class="tl-time-label">02-29</span><span class="tl-time-dot"></span></div>
+<div class="daycards"><article id="2024-02-29-figure-ai">
+<div class="meta"><span class="company">Figure AI</span><span class="cat" style="color:#0F6E56;background:#E1F5EE;border:1px solid #8ED9BF">具身智能</span><span class="attr">B 轮</span></div>
+<h3><span class="amt">$6.75 亿</span><span class="val"> · 估值 $26 亿</span></h3>
+<p>人形机器人，OpenAI/英伟达/贝索斯联合投资。</p>
+<ul class="specs"><li>投资方：OpenAI、英伟达、贝索斯</li></ul>
+
+<div class="src">信源：<a href="https://www.figure.ai/" rel="noopener" target="_blank">Figure</a> · 2024-02-29</div>
+</article></div>
+</div>
+</div>
+<footer>由 <a href="https://yehloolau-afk.github.io/ai-news-station/">飞翔的AI资讯站</a> 维护 · 金额/估值为公开报道口径，条目附信源 · 发现错漏欢迎指正</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+[
+  {
+    "date": "2026-07-11",
+    "title": "Theory Ventures 三周年：AI 如何重塑软件栈与风投定义",
+    "summary": "Theory Ventures 合伙人 Tomer Tunguz 发文总结 AI 带来的市场巨变。新模型每 41 天发布一次，公司达 1 亿美元收入速度创纪录。AI 压缩时间导致风投阶段定义失效，种子轮规模从 100 万到 5 亿美元不等。推理正取代模型成为 AI 主导市场，基础设施按视频、批处理、本地、智能体等负载类型专业化细分。推理的高成本催生了 AI 广告补贴模式，Koah 的 AI 对话原",
+    "sourceUrl": "https://www.tomtunguz.com/three-years-in",
+    "sourceName": "Tomer Tunguz 博客（VC 分析）"
+  },
+  {
+    "date": "2026-07-12",
+    "title": "11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun",
+    "summary": "开发者Jarred Sumner借助Claude Fable 5模型，11天内将Bun从Zig重写为Rust，64个实例并行编写超100万行代码，API费用约16.5万美元。重构主因是Zig频繁内存错误，Rust可在编译时捕获。Bun v1.4.0以Canary版本发布，修复128个错误，速度提高约2%到5%。Bun团队已于2025年12月被Anthropic收购。",
+    "sourceUrl": "https://www.ithome.com/0/975/469.htm",
+    "sourceName": "IT之家（RSS）"
+  }
+]

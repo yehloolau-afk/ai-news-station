@@ -204,6 +204,7 @@ const urls = [
   { loc: `${SITE}/`, freq: 'hourly', pri: '1.0' },
   { loc: `${SITE}/daily/`, freq: 'daily', pri: '0.9' },
   { loc: `${SITE}/timeline/`, freq: 'weekly', pri: '0.9' },
+  { loc: `${SITE}/funding/`, freq: 'weekly', pri: '0.9' },
   ...dates.map((d) => ({ loc: `${SITE}/daily/${d}.html`, freq: d === today ? 'daily' : 'monthly', pri: '0.7', date: d })),
 ];
 writeFileSync('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
