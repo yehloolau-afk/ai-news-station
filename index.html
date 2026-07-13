@@ -1916,6 +1916,29 @@ function getDailyBody() {
   })();
 }
 
+// 日报「先显示后翻译」：ArXiv 等英文源条目后台翻成中文，翻完若仍在看这天则重渲染（不阻塞加载）
+let _dailyShownKey = '';
+async function translateDailyData(data) {
+  const items = [];
+  (data.sections || []).forEach(s => (s.items || []).forEach(it => items.push(it)));
+  const need = items.some(i => (isEnglish(i.title) && !i._translated) || (i.summary && !i._descTranslated && isEnglish(String(i.summary))));
+  if (!need) return false;
+  // translateItems 翻摘要读的是 description 字段，日报用 summary → 临时映射
+  items.forEach(it => { if (it.summary != null && it.description == null) it.description = it.summary; });
+  await translateItems(items);
+  items.forEach(it => { if (it._descTranslated && it.description) it.summary = it.description; });
+  return true;
+}
+function afterDailyPaint(data, key) {
+  _dailyShownKey = key;
+  translateDailyData(data).then(changed => {
+    if (changed && _dailyShownKey === key && activeTab === 'daily') {
+      const b = document.getElementById('dailyBody');
+      if (b) b.innerHTML = renderAiHotDaily(data);
+    }
+  }).catch(() => {});
+}
+
 async function loadDailyDate(date) {
   archiveActiveDate = date;
   renderArchivePanel();
@@ -1923,6 +1946,7 @@ async function loadDailyDate(date) {
   const cacheKey = date || new Date().toISOString().slice(0, 10);
   if (dailyCache[cacheKey]) {
     if (body) body.innerHTML = renderAiHotDaily(dailyCache[cacheKey]);
+    afterDailyPaint(dailyCache[cacheKey], cacheKey);
     return;
   }
   if (body) body.innerHTML = `<div class="loading-state"><div class="spinner"></div><span>加载中...</span></div>`;
@@ -1937,6 +1961,7 @@ async function loadDailyDate(date) {
   if (aiHotData?.sections) {
     dailyCache[cacheKey] = aiHotData;
     if (body) body.innerHTML = renderAiHotDaily(aiHotData);
+    afterDailyPaint(aiHotData, cacheKey);
   } else if (body) {
     body.innerHTML = `<div class="empty-state"><div class="empty-icon">📭</div><p>这一天暂无日报数据</p></div>`;
   }
@@ -2984,6 +3009,7 @@ function renderTab(tab, items, feedErrors = []) {
       <div class="daily-archive-col" id="archiveCol"></div>
       <div class="daily-content-col" id="dailyContentCol">${dailySourceLine}<div id="dailyBody">${newsHtml}</div></div>`;
     renderArchiveInCol();
+    if (arguments[3]?.sections) afterDailyPaint(arguments[3], arguments[3].date || new Date().toISOString().slice(0, 10));
     return;
   }
   main.classList.remove('daily-mode');
