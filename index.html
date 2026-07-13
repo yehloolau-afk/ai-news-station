@@ -380,7 +380,7 @@
     /* ── 关键词条面板 ── */
     .kw-row {
       display: grid;
-      grid-template-columns: 80px 1fr;
+      grid-template-columns: 1fr;
       align-items: center;
       margin-bottom: 18px;
     }
@@ -754,7 +754,7 @@
     .jobs-section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
     /* ── 全部动态：双维度分段滑块 ── */
-    .cat-filter-bar { display: flex; gap: 18px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; }
+    .cat-filter-bar { display: flex; gap: 18px 24px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; justify-content: space-between; }
     .seg-field { display: inline-flex; align-items: center; gap: 8px; }
     .seg-label { font-size: 12px; color: var(--muted); flex-shrink: 0; }
     .seg { position: relative; display: flex; background: var(--bg); border: 1px solid var(--border); border-radius: 9px; }
@@ -2016,7 +2016,6 @@ function kwHtml() {
   const rightItems = (kwData[kwActive]?.items || []).map(kwItemHtml).join('');
   return `
     <div class="kw-row">
-      <div class="kw-label">AI领域<br>关键热词</div>
       <div class="kw-wrap">
         <div class="kw-left">${btns}</div>
         <div class="kw-right" id="kwRight">${rightItems}</div>
