@@ -909,9 +909,11 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      flex-wrap: wrap;
       font-size: 13px;
       color: var(--muted);
     }
+    .dnp-dateline-sep { opacity: 0.4; }
     .dnp-tag {
       font-size: 9px;
       font-weight: 700;
@@ -3308,9 +3310,10 @@ function renderAiHotDaily(data) {
       <div class="dnp-title">AI <span>日报</span></div>
       <div class="dnp-dateline">
         <span>${zhDate} ${WEEKS[now.getDay()]}</span>
+        <span class="dnp-dateline-sep">｜</span>
+        <span>每日速览 · ${total} 条 · 2 分钟读懂今天的 AI</span>
         ${STATIC_DAILY_DATES.has(date) ? `<a class="dnp-tag" href="daily/${date}.html" target="_blank" rel="noopener" style="text-decoration:none;cursor:pointer;" title="本期固定网址，秒开、可转发分享">🔗 分享网页版</a>` : ''}
       </div>
-      <div class="dnp-tagline">每日速览 · ${total} 条 · 2 分钟读懂今天的 AI</div>
     </div>
     ${sectionsHtml||'<div class="empty-state"><div class="empty-icon">📭</div><p>暂无内容</p></div>'}`;
 }
@@ -3385,8 +3388,9 @@ function renderDailyNewspaper(items) {
       <div class="dnp-title">AI <span>日报</span></div>
       <div class="dnp-dateline">
         <span>${zhDate} ${WEEKS[now.getDay()]}</span>
+        <span class="dnp-dateline-sep">｜</span>
+        <span>每日速览 · ${items.length} 条 · 2 分钟读懂今天的 AI</span>
       </div>
-      <div class="dnp-tagline">每日速览 · ${items.length} 条 · 2 分钟读懂今天的 AI</div>
     </div>
     ${sectionsHtml}`;
 }
