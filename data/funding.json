@@ -1,0 +1,16 @@
+{
+  "updatedAt": "2026-07-13",
+  "reviewNote": "种子数据：金额/估值为公开报道口径，信源暂指向官方新闻页，待站长逐条核实并替换为原始报道链接；后续从日报「商业动态」段半自动抽取候选并入。分级字段 tier 可设 milestone（配 impact）或 minor，缺省为普通。",
+  "entries": [
+    {"date": "2025-03-31", "company": "OpenAI", "sector": "大模型", "round": "战略轮", "amount": "$400 亿", "valuation": "估值 $3000 亿", "specs": ["领投：软银", "用途：算力/研究"], "highlight": "软银领投，史上单笔最大私募融资，分批到账。", "impact": "AI 基础设施军备竞赛进入千亿美元量级，头部效应进一步固化。", "tier": "milestone", "sourceName": "OpenAI 官网", "sourceUrl": "https://openai.com/news/"},
+    {"date": "2024-10-02", "company": "OpenAI", "sector": "大模型", "round": "融资", "amount": "$66 亿", "valuation": "估值 $1570 亿", "specs": ["领投：Thrive Capital"], "highlight": "Thrive 领投，微软/英伟达跟投。", "impact": "确立 OpenAI 在资本市场的绝对头部地位。", "tier": "milestone", "sourceName": "OpenAI 官网", "sourceUrl": "https://openai.com/news/"},
+    {"date": "2025-03-03", "company": "Anthropic", "sector": "大模型", "round": "E 轮", "amount": "$35 亿", "valuation": "估值 $615 亿", "specs": ["领投：Lightspeed"], "highlight": "估值一年内翻数倍。", "impact": "第二梯队前沿实验室与 OpenAI 的估值差在快速缩小。", "tier": "milestone", "sourceName": "Anthropic Newsroom", "sourceUrl": "https://www.anthropic.com/news"},
+    {"date": "2024-12-24", "company": "xAI", "sector": "大模型", "round": "C 轮", "amount": "$60 亿", "valuation": "估值 $400 亿", "specs": ["用途：Colossus 超算扩容"], "highlight": "用于自建超算集群扩容。", "tier": "", "sourceName": "xAI News", "sourceUrl": "https://x.ai/news"},
+    {"date": "2024-09-04", "company": "Safe Superintelligence", "sector": "大模型", "round": "种子轮", "amount": "$10 亿", "valuation": "估值 $50 亿", "specs": ["无产品即融资"], "highlight": "Ilya Sutskever 创立，尚无产品即获十亿美元。", "impact": "顶级研究者号召力本身即成资产，重塑早期估值逻辑。", "tier": "milestone", "sourceName": "路透", "sourceUrl": "https://ssi.inc/"},
+    {"date": "2024-12-17", "company": "Databricks", "sector": "数据基础设施", "round": "J 轮", "amount": "$100 亿", "valuation": "估值 $620 亿", "specs": ["领投：Thrive Capital"], "highlight": "数据+AI 平台，为员工股权流动性融资。", "impact": "AI 数据基础设施赛道诞生超级独角兽。", "tier": "milestone", "sourceName": "Databricks 官网", "sourceUrl": "https://www.databricks.com/company/newsroom"},
+    {"date": "2024-05-21", "company": "Scale AI", "sector": "数据基础设施", "round": "F 轮", "amount": "$10 亿", "valuation": "估值 $138 亿", "specs": ["数据标注/评测"], "highlight": "AI 训练数据龙头。", "tier": "", "sourceName": "Scale AI Blog", "sourceUrl": "https://scale.com/blog"},
+    {"date": "2024-06-11", "company": "Mistral AI", "sector": "大模型", "round": "B 轮", "amount": "€6 亿", "valuation": "估值 $60 亿", "specs": ["欧洲开源标杆"], "highlight": "欧洲开源大模型代表，General Catalyst 领投。", "tier": "", "sourceName": "Mistral AI News", "sourceUrl": "https://mistral.ai/news/"},
+    {"date": "2024-02-29", "company": "Figure AI", "sector": "具身智能", "round": "B 轮", "amount": "$6.75 亿", "valuation": "估值 $26 亿", "specs": ["投资方：OpenAI、英伟达、贝索斯"], "highlight": "人形机器人，OpenAI/英伟达/贝索斯联合投资。", "tier": "", "sourceName": "Figure", "sourceUrl": "https://www.figure.ai/"},
+    {"date": "2024-12-18", "company": "Perplexity", "sector": "应用", "round": "D 轮", "amount": "$5 亿", "valuation": "估值 $90 亿", "specs": ["AI 搜索"], "highlight": "AI 搜索应用估值快速攀升。", "tier": "minor", "sourceName": "Perplexity Blog", "sourceUrl": "https://www.perplexity.ai/hub/blog"}
+  ]
+}

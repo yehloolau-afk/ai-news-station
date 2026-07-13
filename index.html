@@ -268,6 +268,8 @@
     .tl-model { font-size: 15px; font-weight: 700; margin-bottom: 3px; }
     .tl-model a { color: var(--text); text-decoration: none; }
     .tl-model a:hover { color: var(--accent); }
+    .fund-amt { color: var(--accent); }
+    .fund-val { color: var(--muted); font-size: 13px; font-weight: 400; }
     .tl-highlight { font-size: 13px; color: var(--muted); }
     /* 影响判断行（里程碑级独有） */
     .tl-impact { font-size: 12.5px; color: var(--m); line-height: 1.6; margin-top: 10px; padding: 7px 10px 7px 12px; border-left: 3px solid var(--mbd); border-radius: 0 4px 4px 0; background: rgba(0,0,0,0.02); }
@@ -1789,6 +1791,15 @@ const TABS = [
     aiHotPath: null,
     feeds: []
   },
+  {
+    id: 'funding',
+    name: '资本动态',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>',
+    layout: 'funding',
+    desc: 'AI 融资时间线：谁、什么轮次、多少钱、什么估值',
+    aiHotPath: null,
+    feeds: []
+  },
 ];
 
 // 移动端产品组：这三个 tab 在移动端合并为第5个 tab
@@ -1798,7 +1809,7 @@ const MOB_NAV_ORDER = ['daily', 'timeline', 'featured', 'all'];
 // PC 侧边栏分组（数组顺序 = 展示顺序；后续大事记子栏目加到 '大事记' 组的 ids 里）
 const NAV_GROUPS = [
   { label: '每日速览', ids: ['daily', 'featured'] },
-  { label: '大事记',   ids: ['timeline'] },
+  { label: '大事记',   ids: ['timeline', 'funding'] },
   { label: '资讯流',   ids: ['all', 'builders'] },
 ];
 const DEFAULT_TAB = 'daily'; // 默认落地页 = 日报（回访锚点）
@@ -2247,10 +2258,11 @@ function prefetchTab(id) {
   if (id === activeTab) return;
   const tab = TABS.find(t => t.id === id);
   if (!tab) return;
-  if (tab.layout === 'timeline') { // 大事记：预取同源 models.json，走自己的缓存结构
-    if (!cache['timeline']?.data) fetch('data/models.json?v=' + Math.floor(Date.now() / 3600e3))
+  if (tab.layout === 'timeline' || tab.layout === 'funding') { // 大事记：预取同源 JSON，走自己的缓存结构
+    const file = tab.layout === 'funding' ? 'funding' : 'models';
+    if (!cache[id]?.data) fetch(`data/${file}.json?v=` + Math.floor(Date.now() / 3600e3))
       .then(r => r.ok ? r.json() : null)
-      .then(d => { if (d?.entries) cache['timeline'] = { data: d, ts: Date.now() }; }).catch(() => {});
+      .then(d => { if (d?.entries) cache[id] = { data: d, ts: Date.now() }; }).catch(() => {});
     return;
   }
   const cacheKey = tab.layout === 'jobs' ? `jobs_${jobsRegion}` : id;
@@ -2411,6 +2423,73 @@ function renderModelTimeline(data) {
     <div class="tl-wrap">${yearsHtml}</div>`;
 }
 
+// ── Render: AI 大事记（资本动态 / 融资时间线）——复用模型发布的时间轴视觉语言 ──
+const FUND_SECTOR_CLASS = { '大模型':'m-lang', '芯片算力':'m-video', '应用':'m-image', '具身智能':'m-audio', '数据基础设施':'m-multi', '其他':'m-special' };
+function fundAmount(e) {
+  return `<span class="fund-amt">${esc(e.amount || '')}</span>${e.valuation ? `<span class="fund-val"> · ${esc(e.valuation)}</span>` : ''}`;
+}
+function fundCard(e) {
+  const cls = FUND_SECTOR_CLASS[e.sector] || 'm-special';
+  const catPill = e.sector ? `<span class="tl-cat">${esc(e.sector)}</span>` : '';
+  const roundPill = e.round ? `<span class="tl-attr">${esc(e.round)}</span>` : '';
+  if (e.tier === 'minor') {
+    return `<div class="tl-card minor ${cls}">
+      <div class="tl-minor-row">
+        <span class="tl-company">${esc(e.company)}</span>
+        ${catPill}
+        <span class="tl-model">${fundAmount(e)}</span>
+        <span class="tl-minor-desc">${esc(e.highlight || '')}</span>
+      </div>
+    </div>`;
+  }
+  const isMile = e.tier === 'milestone';
+  const mileTag = isMile ? `<span class="tl-mile-tag">★ 里程碑</span>` : '';
+  const impact = (isMile && e.impact) ? `<div class="tl-impact"><b>意味着 </b>${esc(e.impact)}</div>` : '';
+  return `<div class="tl-card ${isMile ? 'milestone' : ''} ${cls}">
+    <div class="tl-meta">
+      <span class="tl-company">${esc(e.company)}</span>
+      ${catPill}${roundPill}${mileTag}
+    </div>
+    <div class="tl-model">${fundAmount(e)}</div>
+    <div class="tl-highlight">${esc(e.highlight || '')}</div>
+    ${e.specs?.length ? `<div class="tl-specs">${e.specs.map(s => `<span>${esc(s)}</span>`).join('')}</div>` : ''}
+    ${impact}
+    <div class="tl-foot">${tlSource(e, 'tl-source')}</div>
+  </div>`;
+}
+function renderFundingTimeline(data) {
+  const main = document.getElementById('main');
+  const entries = [...data.entries].sort((a, b) => b.date.localeCompare(a.date));
+  const byYear = {};
+  entries.forEach(e => { const y = e.date.slice(0, 4); (byYear[y] = byYear[y] || []).push(e); });
+  const yearsHtml = Object.entries(byYear).sort((a, b) => b[0].localeCompare(a[0])).map(([year, list]) => {
+    const byDate = {};
+    list.forEach(e => { (byDate[e.date] = byDate[e.date] || []).push(e); });
+    const dateRows = Object.entries(byDate).sort((a, b) => b[0].localeCompare(a[0])).map(([date, items]) => `
+      <div class="tl-row">
+        <div class="tl-time" title="${date}">
+          <span class="tl-time-label">${date.slice(5)}</span>
+          <span class="tl-time-dot"></span>
+          ${items.length > 1 ? `<span class="tl-time-n">${items.length} 条</span>` : ''}
+        </div>
+        <div class="tl-daycards">${items.map(fundCard).join('')}</div>
+      </div>`).join('');
+    return `
+      <div class="tl-year-node">
+        <span class="tl-year-dot"></span>
+        <span class="tl-year-text">${year} 年<span class="tl-year-count">${list.length} 条</span></span>
+      </div>
+      <div class="tl-list">${dateRows}</div>`;
+  }).join('');
+  main.innerHTML = `
+    <div class="section-header">
+      <div class="section-title">💰 AI 大事记 · 资本动态</div>
+      <div class="section-sub">${entries.length} 条 · 更新于 ${data.updatedAt}</div>
+    </div>
+    <div class="source-pills">谁 · 什么轮次 · 多少钱 · 什么估值 —— 条目均附信源</div>
+    <div class="tl-wrap">${yearsHtml}</div>`;
+}
+
 function renderBuilders(xData, podData) {
   const builders = ((xData && xData.x) || []).filter(b => b.tweets && b.tweets.length);
   const podcasts = (podData && podData.podcasts) || [];
@@ -2532,18 +2611,20 @@ async function switchTab(id) {
     return;
   }
 
-  // ── AI 大事记：读取仓库内 models.json（同源，秒开）──
-  if (tab.layout === 'timeline') {
-    const cached = cache['timeline'];
-    if (cached?.data && Date.now() - cached.ts < 6 * 3600e3) { renderModelTimeline(cached.data); return; }
-    const data = await fetch('data/models.json?v=' + Math.floor(Date.now() / 3600e3))
+  // ── AI 大事记：读取仓库内 JSON（同源，秒开）——模型发布 / 资本动态 共用 ──
+  if (tab.layout === 'timeline' || tab.layout === 'funding') {
+    const file = tab.layout === 'funding' ? 'funding' : 'models';
+    const render = tab.layout === 'funding' ? renderFundingTimeline : renderModelTimeline;
+    const cached = cache[id];
+    if (cached?.data && Date.now() - cached.ts < 6 * 3600e3) { render(cached.data); return; }
+    const data = await fetch(`data/${file}.json?v=` + Math.floor(Date.now() / 3600e3))
       .then(r => r.ok ? r.json() : null).catch(() => null);
     if (data?.entries) {
-      cache['timeline'] = { data, ts: Date.now() };
-      counts['timeline'] = data.entries.length;
+      cache[id] = { data, ts: Date.now() };
+      counts[id] = data.entries.length;
       renderNav();
-      if (activeTab === 'timeline') renderModelTimeline(data);
-    } else if (activeTab === 'timeline') {
+      if (activeTab === id) render(data);
+    } else if (activeTab === id) {
       document.getElementById('main').innerHTML = '<div class="empty-state"><div class="empty-icon">📭</div><p>时间线数据加载失败，请刷新重试</p></div>';
     }
     return;
