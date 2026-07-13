@@ -2520,7 +2520,7 @@ function renderFundingTimeline(data) {
   }).join('');
   main.innerHTML = `
     <div class="section-header">
-      <div class="section-title">💰 AI 大事记 · 资本动态</div>
+      <div class="section-title">💰 AI 大事记 · 资本动态时间线</div>
       <div class="section-sub">${entries.length} 条 · 更新于 ${data.updatedAt}</div>
     </div>
     <div class="source-pills">谁 · 什么轮次 · 多少钱 · 什么估值 —— 条目均附信源</div>
@@ -2618,6 +2618,7 @@ async function switchTab(id) {
   activeTab = id;
   renderNav();
   setArchivePanel(id === 'daily');
+  document.getElementById('main')?.classList.remove('daily-mode'); // 统一清除，避免从日报切走后残留污染布局（日报块会自己重加）
   showLoading();
   // 移动端切 tab 自动回到顶部
   if (window.innerWidth <= 768) window.scrollTo({ top: 0, behavior: 'instant' });
