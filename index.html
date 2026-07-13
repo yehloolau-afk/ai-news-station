@@ -1938,6 +1938,18 @@ function afterDailyPaint(data, key) {
     }
   }).catch(() => {});
 }
+// 报纸兜底路径（AI HOT 无 sections 时走 RSS items）：同样先显示后翻译
+function afterNewspaperPaint(items, key) {
+  _dailyShownKey = key;
+  const need = (items || []).some(i => (isEnglish(i.title) && !i._translated) || (i.description && !i._descTranslated && isEnglish(String(i.description).replace(/<[^>]*>/g, ' ').slice(0, 80))));
+  if (!need) return;
+  translateItems(items).then(() => {
+    if (_dailyShownKey === key && activeTab === 'daily') {
+      const b = document.getElementById('dailyBody');
+      if (b) b.innerHTML = renderDailyNewspaper(items);
+    }
+  }).catch(() => {});
+}
 
 async function loadDailyDate(date) {
   archiveActiveDate = date;
@@ -3009,7 +3021,9 @@ function renderTab(tab, items, feedErrors = []) {
       <div class="daily-archive-col" id="archiveCol"></div>
       <div class="daily-content-col" id="dailyContentCol">${dailySourceLine}<div id="dailyBody">${newsHtml}</div></div>`;
     renderArchiveInCol();
-    if (arguments[3]?.sections) afterDailyPaint(arguments[3], arguments[3].date || new Date().toISOString().slice(0, 10));
+    const _dkey = arguments[3]?.date || new Date().toISOString().slice(0, 10);
+    if (arguments[3]?.sections) afterDailyPaint(arguments[3], _dkey);
+    else afterNewspaperPaint(items, _dkey);
     return;
   }
   main.classList.remove('daily-mode');
