@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 14 Jul 2026 17:28:12 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 19:45:15 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>氪星晚报 ｜智谱：完成配售新H股募资约314亿港元；荣耀与阿里将开展AI智能体终端合作；小米机器人首次实现汽车工厂柔性工件的长时作业</title>
@@ -21,6 +21,20 @@
       <source url="https://36kr.com/p/3895322613185543?f=rss">36Kr</source>
     </item>
     <item>
+      <title>直接在 ChatGPT 中构建和发布 Web 应用程序</title>
+      <link>https://www.youtube.com/watch?v=8zH_O74hZBw</link>
+      <description>See how to build a working web app directly in ChatGPT. Describe what you want, try the first version, ask for changes in plain language, and publish it when it’s ready—with hosting and storage built in.
+
+Learn more: https://learn.chatgpt.com/
+
+Chapters
+00:00 Introducing Sites
+00:21 Building a launc</description>
+      <pubDate>Tue, 14 Jul 2026 19:19:36 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=8zH_O74hZBw</guid>
+      <source url="https://www.youtube.com/watch?v=8zH_O74hZBw">OpenAI</source>
+    </item>
+    <item>
       <title>估值110亿美元，这家超级独角兽要帮初创公司从Day0走向全球</title>
       <link>https://36kr.com/p/3895355856403456?f=rss</link>
       <description>凌晨三点，一家刚成立不久的AI创业公司，可能已经在同时服务旧金山的客户、采购首尔的技术服务，并与拉各斯的合作伙伴签下合同。这家公司甚至还没有招到第一名全职财务人员，业务却已经跨越多个市场、币种和监管辖区。&amp;nbsp;
@@ -29,6 +43,14 @@
       <pubDate>Tue, 14 Jul 2026 18:48:32 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3895355856403456?f=rss</guid>
       <source url="https://36kr.com/p/3895355856403456?f=rss">36Kr</source>
+    </item>
+    <item>
+      <title>阶跃入局，重构智能体时代操作系统</title>
+      <link>https://www.qbitai.com/2026/07/449979.html</link>
+      <description>董事长印奇称“未来的OS一定是跨端的”</description>
+      <pubDate>Tue, 14 Jul 2026 18:43:55 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/449979.html</guid>
+      <source url="https://www.qbitai.com/2026/07/449979.html">量子位</source>
     </item>
     <item>
       <title>社区速递 149｜派友热议睡眠数据化、观穹 6×24 望远镜与 RG Rotate 旋转屏掌机</title>
@@ -192,22 +214,6 @@
       <pubDate>Tue, 14 Jul 2026 05:33:28 +0000</pubDate>
       <guid isPermaLink="true">https://www.qbitai.com/2026/07/436498.html</guid>
       <source url="https://www.qbitai.com/2026/07/436498.html">量子位</source>
-    </item>
-    <item>
-      <title>GPT-5.6-sol入榜DRACO：OpenSquilla集成方案仍在Brave组质量、成本双领先</title>
-      <link>https://www.qbitai.com/2026/07/449842.html</link>
-      <description></description>
-      <pubDate>Tue, 14 Jul 2026 05:13:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/449842.html</guid>
-      <source url="https://www.qbitai.com/2026/07/449842.html">量子位</source>
-    </item>
-    <item>
-      <title>产业与全球资本共同加注，爱诗科技完成29.8亿元C轮融资</title>
-      <link>https://www.qbitai.com/2026/07/449836.html</link>
-      <description></description>
-      <pubDate>Tue, 14 Jul 2026 04:06:40 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/449836.html</guid>
-      <source url="https://www.qbitai.com/2026/07/449836.html">量子位</source>
     </item>
   </channel>
 </rss>
