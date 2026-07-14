@@ -5,8 +5,16 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 14 Jul 2026 21:15:27 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 23:11:03 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>GPT-Live 的后台稳健性</title>
+      <link>https://www.youtube.com/watch?v=matzTxfrhJU</link>
+      <description>More about our next generation voice model here: https://openai.com/index/introducing-gpt-live/</description>
+      <pubDate>Tue, 14 Jul 2026 22:35:03 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=matzTxfrhJU</guid>
+      <source url="https://www.youtube.com/watch?v=matzTxfrhJU">OpenAI</source>
+    </item>
     <item>
       <title>通过 GPT-Live 提高情报水平</title>
       <link>https://www.youtube.com/watch?v=avpZWh6sm9M</link>
@@ -164,8 +172,8 @@ Chapters
   作者丨欧雪
   编辑丨袁斯来
   硬氪获悉，空间智能公司「大衍科技」近期完成数千万元天使轮融资，由松禾清湛领投，浙江省省金控与广州番禺创新基金等国资背景机构参与。资金将主要用于触觉大模型研发、机器人数据产线建设及团队扩张。
-  「大衍科技」2025年5月成立于浙江桐乡，是一家专注于4D世界重建、世界模型及可控扩散模型技术的空间智���公司。
-  创始人兼CEO杨林是新加坡国立大学计算机博士，曾在速腾、酷睿程、比亚迪、苏州博世等企业深耕自动驾驶算法7-8年。此外，公司核心技术源自首席科学家、联合国科学院院士、加拿大工</description>
+  「大衍科技」2025年5月成立于浙江桐乡，是一家专注于4D世界重建、世界模型及可控扩散模型技术的空间智能公司。
+  创始人兼CEO杨林是新加坡国立大学计算机博士，曾在速腾、酷睿程、比亚迪、苏州博世等企业深耕自动驾驶算法7-8年。此外，公司核心技术源自首席科学家、联合国科学院院士、加拿大工程院</description>
       <pubDate>Tue, 14 Jul 2026 09:38:13 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3894821059918855?f=rss</guid>
       <source url="https://36kr.com/p/3894821059918855?f=rss">36Kr</source>
@@ -206,14 +214,6 @@ Chapters
       <pubDate>Tue, 14 Jul 2026 08:04:11 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3894729787767810?f=rss</guid>
       <source url="https://36kr.com/p/3894729787767810?f=rss">36Kr</source>
-    </item>
-    <item>
-      <title>比亚迪王朝大改车型命名规则：L 系列消失，MAX 和 Ultra 将代表旗舰</title>
-      <link>https://www.ifanr.com/1671991?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</link>
-      <description>起名也是一种艺术。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</description>
-      <pubDate>Tue, 14 Jul 2026 07:42:37 +0000</pubDate>
-      <guid isPermaLink="true">https://www.ifanr.com/1671991?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</guid>
-      <source url="https://www.ifanr.com/1671991?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
     </item>
   </channel>
 </rss>
