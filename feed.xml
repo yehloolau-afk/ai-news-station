@@ -5,8 +5,16 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 14 Jul 2026 06:25:55 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 09:19:23 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>具透 | iOS 27 首个公开测试版来了，这些是值得你关注的新功能</title>
+      <link>https://sspai.com/post/112287</link>
+      <description>少数派在体验了新版系统之后，帮你整理了 iOS 27 中值得关注的新功能和新特性，希望帮你能了解新版系统的方方面面。查看全文</description>
+      <pubDate>Tue, 14 Jul 2026 15:00:00 +0800</pubDate>
+      <guid isPermaLink="true">https://sspai.com/post/112287</guid>
+      <source url="https://sspai.com/post/112287">少数派</source>
+    </item>
     <item>
       <title>🎁36氪放福利啦！体验10秒，即可免费抽AirPods 4、Redmi手环、超人帆布包！</title>
       <link>https://36kr.com/p/3894914381970438?f=rss</link>
@@ -97,6 +105,14 @@
       <pubDate>Tue, 14 Jul 2026 08:04:11 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3894729787767810?f=rss</guid>
       <source url="https://36kr.com/p/3894729787767810?f=rss">36Kr</source>
+    </item>
+    <item>
+      <title>比亚迪王朝大改车型命名规则：L 系列消失，MAX 和 Ultra 将代表旗舰</title>
+      <link>https://www.ifanr.com/1671991?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</link>
+      <description>起名也是一种艺术。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</description>
+      <pubDate>Tue, 14 Jul 2026 07:42:37 +0000</pubDate>
+      <guid isPermaLink="true">https://www.ifanr.com/1671991?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</guid>
+      <source url="https://www.ifanr.com/1671991?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
     </item>
     <item>
       <title>2026年世界人工智能大会，7月17-7月20上海举办</title>
@@ -190,24 +206,6 @@ Abstract: When LLM agents hand off information to one another, does the message 
       <pubDate>Tue, 14 Jul 2026 00:00:00 -0400</pubDate>
       <guid isPermaLink="true">https://arxiv.org/abs/2607.09678</guid>
       <source url="https://arxiv.org/abs/2607.09678">ArXiv AI</source>
-    </item>
-    <item>
-      <title>Boltzmann MapReduce：可分叉沙箱的分区函数缩减</title>
-      <link>https://arxiv.org/abs/2607.09689</link>
-      <description>arXiv:2607.09689v1 Announce Type: new 
-Abstract: To leading order under local asymptotic normality (LAN), the confidence density a worker emits over a chunk of size $n$ is a Gibbs--Boltzmann measure $\exp\{-\beta E(\theta)\}$ whose inverse temperature is the sample size, $\beta=n$. Three consequence</description>
-      <pubDate>Tue, 14 Jul 2026 00:00:00 -0400</pubDate>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.09689</guid>
-      <source url="https://arxiv.org/abs/2607.09689">ArXiv AI</source>
-    </item>
-    <item>
-      <title>将潜在 CoT 推理解释为动态系统</title>
-      <link>https://arxiv.org/abs/2607.09698</link>
-      <description>arXiv:2607.09698v1 Announce Type: new 
-Abstract: Recent latent reasoning methods, such as CODI and COCONUT, face a fundamental interpretability problem: they maintain multiple superimposed candidate traces in the hidden space at each step, unlike explicit- CoT, which follows a single transparent rea</description>
-      <pubDate>Tue, 14 Jul 2026 00:00:00 -0400</pubDate>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.09698</guid>
-      <source url="https://arxiv.org/abs/2607.09698">ArXiv AI</source>
     </item>
   </channel>
 </rss>
