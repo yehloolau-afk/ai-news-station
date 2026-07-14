@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 14 Jul 2026 11:44:04 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 14:12:40 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>氪星晚报 ｜智谱：完成配售新H股募资约314亿港元；荣耀与阿里将开展AI智能体终端合作；小米机器人首次实现汽车工厂柔性工件的长时作业</title>
@@ -47,6 +47,22 @@
       <source url="https://sspai.com/post/112287">少数派</source>
     </item>
     <item>
+      <title>重建贝利失去的进球</title>
+      <link>https://www.youtube.com/watch?v=R-Yqes8AotY</link>
+      <description>On August 2, 1959, Pelé scored the most beautiful goal of his career: three consecutive “sombreros” without the ball touching the ground. Yet, the legendary ‘Gol da Rua Javari’ was never caught on film. We worked alongside historians, sports journalists, football legends, and Pelé’s family to recons</description>
+      <pubDate>Tue, 14 Jul 2026 13:04:39 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=R-Yqes8AotY</guid>
+      <source url="https://www.youtube.com/watch?v=R-Yqes8AotY">DeepMind</source>
+    </item>
+    <item>
+      <title>刚刚，一个免费AI Coding选手杀入全球第一梯队</title>
+      <link>https://www.qbitai.com/2026/07/448475.html</link>
+      <description>一手实测这就奉上</description>
+      <pubDate>Tue, 14 Jul 2026 12:36:48 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/448475.html</guid>
+      <source url="https://www.qbitai.com/2026/07/448475.html">量子位</source>
+    </item>
+    <item>
       <title>🎁36氪放福利啦！体验10秒，即可免费抽AirPods 4、Redmi手环、超人帆布包！</title>
       <link>https://36kr.com/p/3894914381970438?f=rss</link>
       <description>无门槛参与，所有微信用户都可以免费抽奖！
@@ -73,6 +89,14 @@
       <source url="https://sspai.com/post/112288">少数派</source>
     </item>
     <item>
+      <title>马斯克“机器人还进不了厂”刚说完，小米机器人”上岗“汽车产线了</title>
+      <link>https://www.qbitai.com/2026/07/449906.html</link>
+      <description>全面硬刚Figure</description>
+      <pubDate>Tue, 14 Jul 2026 12:04:42 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/449906.html</guid>
+      <source url="https://www.qbitai.com/2026/07/449906.html">量子位</source>
+    </item>
+    <item>
       <title>36氪首发 | 浙大系桌面CNC团队获商汤国香、首形科技等近亿元天使轮，要用AI技术降低制造门槛</title>
       <link>https://36kr.com/p/3894935854677249?f=rss</link>
       <description>作者&amp;nbsp;|&amp;nbsp;张子怡
@@ -83,6 +107,22 @@
       <pubDate>Tue, 14 Jul 2026 11:34:12 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3894935854677249?f=rss</guid>
       <source url="https://36kr.com/p/3894935854677249?f=rss">36Kr</source>
+    </item>
+    <item>
+      <title>B站AI创造公开赛正式上线投币榜，单月参赛人数突破五千</title>
+      <link>https://www.qbitai.com/2026/07/449863.html</link>
+      <description></description>
+      <pubDate>Tue, 14 Jul 2026 11:05:51 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/449863.html</guid>
+      <source url="https://www.qbitai.com/2026/07/449863.html">量子位</source>
+    </item>
+    <item>
+      <title>百年德国「战车」征服欧陆，驾驶位上是中国AI司机</title>
+      <link>https://www.qbitai.com/2026/07/449850.html</link>
+      <description>一套模型，三个世界</description>
+      <pubDate>Tue, 14 Jul 2026 11:04:17 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/449850.html</guid>
+      <source url="https://www.qbitai.com/2026/07/449850.html">量子位</source>
     </item>
     <item>
       <title>36氪首发 | 前博世自动驾驶算法工程师创业，用合成数据做触觉大模型</title>
@@ -168,48 +208,6 @@
       <pubDate>Tue, 14 Jul 2026 04:06:40 +0000</pubDate>
       <guid isPermaLink="true">https://www.qbitai.com/2026/07/449836.html</guid>
       <source url="https://www.qbitai.com/2026/07/449836.html">量子位</source>
-    </item>
-    <item>
-      <title>高德发布通用世界模型工坊ABot-World Studio：5090单卡可生成小时级实时交互式视频与3D场景</title>
-      <link>https://www.qbitai.com/2026/07/449568.html</link>
-      <description></description>
-      <pubDate>Tue, 14 Jul 2026 03:46:35 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/449568.html</guid>
-      <source url="https://www.qbitai.com/2026/07/449568.html">量子位</source>
-    </item>
-    <item>
-      <title>100+Skill导演级专家随叫随到！这回视频Agent终于有了可用级产品</title>
-      <link>https://www.qbitai.com/2026/07/449566.html</link>
-      <description>Agent携上百个Skills助我当大导演</description>
-      <pubDate>Tue, 14 Jul 2026 03:34:50 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/449566.html</guid>
-      <source url="https://www.qbitai.com/2026/07/449566.html">量子位</source>
-    </item>
-    <item>
-      <title>逐际动力再融2亿美元提速港股IPO，张巍：营收对赌不符合具身商业逻辑</title>
-      <link>https://www.qbitai.com/2026/07/449474.html</link>
-      <description>机器人应该掌握什么技能，并不只取决于模型够不够强，而取决于构建这个技能产生的商业价值是否大于它所要数据的成本。</description>
-      <pubDate>Tue, 14 Jul 2026 02:02:50 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/449474.html</guid>
-      <source url="https://www.qbitai.com/2026/07/449474.html">量子位</source>
-    </item>
-    <item>
-      <title>菲尔兹奖提前泄露！王虹邓煜双双在列</title>
-      <link>https://www.qbitai.com/2026/07/449407.html</link>
-      <description>都是北大07级校友</description>
-      <pubDate>Tue, 14 Jul 2026 00:42:57 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/449407.html</guid>
-      <source url="https://www.qbitai.com/2026/07/449407.html">量子位</source>
-    </item>
-    <item>
-      <title>早报｜苹果iPhone 20或迎来大幅设计调整/海南规划2030年禁售燃油车/字节回应探索自动驾驶传闻</title>
-      <link>https://www.ifanr.com/1671983?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</link>
-      <description>· 腾讯混元 Hy3 登顶 OpenRouter 周榜，单周处理 Token 超 6 万亿
-· 台积电上半年营收同比增长 35.6%，6 月营收创单月新高
-· 长鑫科技拟募资 295 亿元，员工每人可分超百万#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</description>
-      <pubDate>Tue, 14 Jul 2026 00:16:36 +0000</pubDate>
-      <guid isPermaLink="true">https://www.ifanr.com/1671983?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</guid>
-      <source url="https://www.ifanr.com/1671983?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
     </item>
   </channel>
 </rss>
