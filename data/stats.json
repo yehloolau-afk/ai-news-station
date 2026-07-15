@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-07-15T04:25:27.499Z",
+  "generatedAt": "2026-07-15T15:07:18.124Z",
   "umami": {
     "error": null,
     "today": {
-      "visitors": 1,
-      "pageviews": 1
+      "visitors": 2,
+      "pageviews": 2
     },
     "last30d": {
       "visitors": 30,
-      "pageviews": 505,
-      "visits": 101
+      "pageviews": 506,
+      "visits": 102
     },
     "series": [
       {
@@ -154,8 +154,8 @@
       },
       {
         "date": "2026-07-14",
-        "pageviews": 1,
-        "visitors": 1
+        "pageviews": 2,
+        "visitors": 2
       },
       {
         "date": "2026-07-15",
@@ -175,11 +175,11 @@
     ],
     "referrers": [
       {
-        "domain": "weixin110.qq.com",
+        "domain": "github.com",
         "visitors": 5
       },
       {
-        "domain": "github.com",
+        "domain": "weixin110.qq.com",
         "visitors": 5
       },
       {
