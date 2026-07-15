@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 15 Jul 2026 14:09:04 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 15:47:34 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>独家｜面壁智能端侧大模型将搭载三星手机上市</title>
@@ -99,6 +99,19 @@
       <pubDate>Wed, 15 Jul 2026 14:49:46 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3896544104793993?f=rss</guid>
       <source url="https://36kr.com/p/3896544104793993?f=rss">36Kr</source>
+    </item>
+    <item>
+      <title>人工智能内部的隐藏世界</title>
+      <link>https://www.youtube.com/watch?v=0CqLVnx-2UM</link>
+      <description>❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers
+
+📝 The paper is available here:
+https://transformer-circuits.pub/2025/linebreaks/index.html
+
+Paper for reindeer vision change - https://royalsocietypublishing.org/rspb/article/280/1773/20132451/50765/Shifting-mirrors-</description>
+      <pubDate>Wed, 15 Jul 2026 13:58:27 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=0CqLVnx-2UM</guid>
+      <source url="https://www.youtube.com/watch?v=0CqLVnx-2UM">Two Minute Papers</source>
     </item>
     <item>
       <title>优衣库再失一枚棋子</title>
@@ -202,14 +215,6 @@
       <pubDate>Wed, 15 Jul 2026 08:19:12 +0800</pubDate>
       <guid isPermaLink="true">https://sspai.com/post/112334</guid>
       <source url="https://sspai.com/post/112334">少数派</source>
-    </item>
-    <item>
-      <title>我和「二次元老公」约上会了！全球首个可以玩的实时交互模型，Xmax X2.0发布</title>
-      <link>https://www.qbitai.com/2026/07/450130.html</link>
-      <description>世界就是你的画布</description>
-      <pubDate>Wed, 15 Jul 2026 08:09:57 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/450130.html</guid>
-      <source url="https://www.qbitai.com/2026/07/450130.html">量子位</source>
     </item>
   </channel>
 </rss>
