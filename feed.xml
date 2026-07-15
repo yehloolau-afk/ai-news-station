@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 15 Jul 2026 15:47:34 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 17:39:00 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>独家｜面壁智能端侧大模型将搭载三星手机上市</title>
@@ -61,6 +61,17 @@
       <source url="https://36kr.com/p/3896720584738435?f=rss">36Kr</source>
     </item>
     <item>
+      <title>用 Codex 给自己一张红牌</title>
+      <link>https://www.youtube.com/shorts/XLzWrfx36uE</link>
+      <description>You: holds up red card.
+Codex: exits you out of meeting, blocks your cal, sets your out of office, and logs you out of computer.
+
+Match on, build guide: https://github.com/openai/redcard</description>
+      <pubDate>Wed, 15 Jul 2026 17:10:14 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/shorts/XLzWrfx36uE</guid>
+      <source url="https://www.youtube.com/shorts/XLzWrfx36uE">OpenAI</source>
+    </item>
+    <item>
       <title>Leitra 诞生记：一次未完成的实践</title>
       <link>https://sspai.com/post/112077</link>
       <description>Leitra 的名字来自我最欣赏的摄影师索尔·雷特（Saul Leiter）。它是一款为数码照片生成接触样张（Contact Sheet）和图像序列的策展工具，受到马格南摄影师创作方式的启发，关注图像之间的停顿与联系，也探索面向未来、与现实互动的创作方式。查看全文</description>
@@ -101,7 +112,7 @@
       <source url="https://36kr.com/p/3896544104793993?f=rss">36Kr</source>
     </item>
     <item>
-      <title>人工智能内部的隐藏世界</title>
+      <title>克劳德的大脑有一个秘密......科学家发现了它</title>
       <link>https://www.youtube.com/watch?v=0CqLVnx-2UM</link>
       <description>❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers
 
@@ -207,14 +218,6 @@ Paper for reindeer vision change - https://royalsocietypublishing.org/rspb/artic
       <pubDate>Wed, 15 Jul 2026 09:03:58 +0000</pubDate>
       <guid isPermaLink="true">https://www.qbitai.com/2026/07/450709.html</guid>
       <source url="https://www.qbitai.com/2026/07/450709.html">量子位</source>
-    </item>
-    <item>
-      <title>派早报：Meta 被诉借助 AI 违规裁员、Google 被诉使用版权内容训练 Gemini 模型等</title>
-      <link>https://sspai.com/post/112334</link>
-      <description>Google 推出新版图片搜索功能，Spotify 开启语音交互功能内测等。查看全文</description>
-      <pubDate>Wed, 15 Jul 2026 08:19:12 +0800</pubDate>
-      <guid isPermaLink="true">https://sspai.com/post/112334</guid>
-      <source url="https://sspai.com/post/112334">少数派</source>
     </item>
   </channel>
 </rss>
