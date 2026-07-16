@@ -1,0 +1,292 @@
+{
+  "date": "2026-07-16",
+  "attribution": {
+    "source": "AI HOT",
+    "canonical": "https://aihot.virxact.com/daily/2026-07-16"
+  },
+  "generatedAt": "2026-07-16T00:00:06.372Z",
+  "windowStart": "2026-07-15T00:00:00.000Z",
+  "windowEnd": "2026-07-16T00:00:00.000Z",
+  "lead": null,
+  "sections": [
+    {
+      "label": "模型发布/更新",
+      "items": [
+        {
+          "title": "阿里发布 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 语音推理子项中综合排名第一",
+          "summary": "阿里通义实验室发布实时语音交互模型 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 的 Speech Reasoning 子项中综合排名第一，超越 OpenAI GPT-Realtime-2。",
+          "sourceUrl": "https://mp.weixin.qq.com/s/hFp5rtV8-6KVRrgZoCj03A",
+          "sourceName": "公众号：通义实验室（千问）",
+          "permalink": "https://aihot.virxact.com/items/cmrlh3k0009h8bi2bwjpgkauw",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrlh3k0009h8bi2bwjpgkauw"
+          }
+        },
+        {
+          "title": "Thinking Machines 发布多模态模型 Inkling",
+          "summary": "今天，我们推出 Inkling。 Inkling 能高效地对文本、图像和音频模态进行推理。我们将提供完整权重。 https://thinkingmachines.ai/news/introducing-inkling/ 即日起可在 Tinker 上进行微调。在 Inkling Playground 中试用。🧵",
+          "sourceUrl": "https://x.com/thinkymachines/status/2077454609551921208",
+          "sourceName": "X：Thinking Machines (@thinkymachines)",
+          "permalink": "https://aihot.virxact.com/items/cmrmeaixl05bdbivcipzbkgk8",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrmeaixl05bdbivcipzbkgk8"
+          }
+        },
+        {
+          "title": "OpenAI 发布 GPT-Red：通过自动化红队测试提升模型鲁棒性",
+          "summary": "OpenAI 训练了自动化红队模型 GPT-Red，用于在部署前发现漏洞并在训练中生成攻击以提升模型鲁棒性。GPT-Red 能攻破此前几乎所有模型，其攻击被用于对抗训练 GPT-5.6 Sol，使该模型在直接提示注入基准测试中的失败率降至四个月前最佳生产模型的 1/6。GPT-Red 通过自对弈强化学习训练，投入了 OpenAI 后训练中前所未有的计算规模。",
+          "sourceUrl": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+          "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+          "permalink": "https://aihot.virxact.com/items/cmrmc527c0088bivcfrd3s2uz",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrmc527c0088bivcfrd3s2uz"
+          }
+        }
+      ]
+    },
+    {
+      "label": "产品发布/更新",
+      "items": [
+        {
+          "title": "xAI 开源 Grok Build 编程智能体与终端界面",
+          "summary": "xAI 已将 Grok Build 的源代码在 GitHub 上开源。Grok Build 是 SpaceXAI 的编程智能体与终端用户界面（TUI），开源后用户可自行编译并完全本地运行，指向本地推理引擎并通过 `config.toml` 配置。",
+          "sourceUrl": "https://x.ai/news/grok-build-open-source",
+          "sourceName": "xAI：News（网页）",
+          "permalink": "https://aihot.virxact.com/items/cmrmkn6j703yfbiul4fa0bai9",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrmkn6j703yfbiul4fa0bai9"
+          }
+        },
+        {
+          "title": "Telegram 无服务器架构",
+          "summary": "Telegram Serverless 允许开发者直接在 Telegram 基础设施上运行 Bot 和 Mini App 的后端代码，无需配置服务器或容器。开发者编写普通 JavaScript 模块，通过 `npx tgcloud push` 单命令部署，代码在靠近 Bot API 和内建数据库的轻量级 V8 隔离沙箱中执行。",
+          "sourceUrl": "https://core.telegram.org/bots/serverless",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "permalink": "https://aihot.virxact.com/items/cmrm9ne9101gqbiijkgrj6t9h",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrm9ne9101gqbiijkgrj6t9h"
+          }
+        },
+        {
+          "title": "开源编程智能体内存方案发布，通过 SSH 同步",
+          "summary": "一个面向编程 AI 智能体的开源内存项目在 GitHub 发布，支持通过 SSH 同步记忆数据。该项目允许智能体跨会话保留上下文，无需依赖特定云服务，用户可自托管。代码已开源，便于开发者集成与定制。",
+          "sourceUrl": "https://github.com/vshulcz/deja-vu",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "permalink": "https://aihot.virxact.com/items/cmrmotlpp07iubiuloujszkts",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrmotlpp07iubiuloujszkts"
+          }
+        },
+        {
+          "title": "Grok Build 现已开源",
+          "summary": "Grok Build 现已开源",
+          "sourceUrl": "https://x.com/elonmusk/status/2077495635687723408",
+          "sourceName": "X：Elon Musk (@elonmusk, xAI)",
+          "permalink": "https://aihot.virxact.com/items/cmrmkvwzx045hbiulv638kppc",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrmkvwzx045hbiulv638kppc"
+          }
+        },
+        {
+          "title": "金山办公推出 WPS Comate AI 办公客户端",
+          "summary": "金山办公在2026 AI生产力大会上推出面向员工的AI办公客户端WPS Comate，可连接组织数据与流程。该产品提供AI岗位专家、Skill技能生态、自动化任务等六大模块，并支持云端与本地双任务模式，个人用户可直接下载体验。",
+          "sourceUrl": "https://www.ithome.com/0/977/105.htm",
+          "sourceName": "IT之家（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrltzprt0014bi5k7mp2uwpy",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrltzprt0014bi5k7mp2uwpy"
+          }
+        },
+        {
+          "title": "Claude Code 新增 MCP 连接器调用功能",
+          "summary": "Claude Code 的 artifacts 现在可以调用 MCP 连接器，让你构建能够按需为每位查看者获取信息并执行操作的仪表盘和应用。 适用于 Pro、Max、Team 和 Enterprise 计划。不适用于公开共享的 artifacts。",
+          "sourceUrl": "https://x.com/ClaudeDevs/status/2077489907350856038",
+          "sourceName": "X：Claude Devs (@ClaudeDevs)",
+          "permalink": "https://aihot.virxact.com/items/cmrmk6l3k03rtbiull7o39kq0",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrmk6l3k03rtbiull7o39kq0"
+          }
+        },
+        {
+          "title": "SGLang 与 Miles 为前沿多模态模型 Inkling 提供 Day-0 支持，推理吞吐达 71.7k tok/s",
+          "summary": "SGLang 与 Miles 为 Thinking Machines Lab 的 975B 参数多模态模型 Inkling 提供 Day-0 支持，其上下文窗口达 1M token。",
+          "sourceUrl": "https://www.lmsys.org/blog/2026-07-15-inkling-day0-support",
+          "sourceName": "LMSYS：Blog（Chatbot Arena 团队）",
+          "permalink": "https://aihot.virxact.com/items/cmrmh5i1j00l7biulyvx840yj",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrmh5i1j00l7biulyvx840yj"
+          }
+        }
+      ]
+    },
+    {
+      "label": "行业动态",
+      "items": [
+        {
+          "title": "国行 Apple 智能完成备案，阿里千问将集成至苹果 AI 能力",
+          "summary": "苹果技术开发（上海）有限公司的“Apple 智能”大模型已于 2026 年 7 月 8 日完成备案，适用场景为苹果手机。阿里千问将作为 AI 能力集成至 Apple 智能，为 iOS、iPadOS、macOS 和 visionOS 的中国用户提供文本与图像理解、内容生成等功能，用户无需在应用间切换即可直接体验。",
+          "sourceUrl": "https://www.ithome.com/0/977/109.htm",
+          "sourceName": "IT之家（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrltzprt0013bi5ku0th9q9q",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrltzprt0013bi5ku0th9q9q"
+          }
+        },
+        {
+          "title": "阿里Qwen将集成至Apple Intelligence服务中国用户",
+          "summary": "阿里巴巴的Qwen模型将被集成到Apple Intelligence中，为中国的iOS、iPadOS、macOS和visionOS用户提供文本与图像理解、内容生成等AI功能。中国网信办已公布包括Apple Intelligence、华为小艺大模型、OPPO AndesGPT在内的七项移动端生成式AI服务备案信息。阿里巴巴董事会主席蔡崇信表示，苹果在选定阿里前曾与多家中国公司洽谈。",
+          "sourceUrl": "https://x.com/thexpin/status/2077346752219521469",
+          "sourceName": "X：X.PIN (@thexpin)",
+          "permalink": "https://aihot.virxact.com/items/cmrlz5b6r01kabi5ksc1pj878",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrlz5b6r01kabi5ksc1pj878"
+          }
+        }
+      ]
+    },
+    {
+      "label": "论文研究",
+      "items": [
+        {
+          "title": "Anthropic 研究：AI 智能体模拟中行为偏差",
+          "summary": "Anthropic 新研究：2026 年夏季的智能体行为偏差。 在我们的敲诈实验一年后，我们又发现了四种当今自主 AI 智能体在模拟中行为不当的方式。 了解更多：https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/",
+          "sourceUrl": "https://x.com/AnthropicAI/status/2077452646303006927",
+          "sourceName": "X：Anthropic (@AnthropicAI)",
+          "permalink": "https://aihot.virxact.com/items/cmrmee60505d9bivcmy92uddy",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrmee60505d9bivcmy92uddy"
+          }
+        },
+        {
+          "title": "OpenAI 用 AI 攻击自家 AI：GPT-Red 自动发现安全漏洞，成功率 84% 远超人类",
+          "summary": "OpenAI 训练了内部 AI 模型 GPT-Red，通过自我对弈强化学习自动模拟提示词注入等攻击，在测试场景中成功率达 84%，而人类红队仅为 13%。GPT-Red 的发现直接用于训练，使 GPT-5.6 Sol 在直接提示词注入上的故障次数比四个月前的最佳模型减少六倍，且未影响通用性能。约 3.8% 的“更强”提示词注入仍能成功，GPT-Red 暂不对外开放。",
+          "sourceUrl": "https://the-decoder.com/openai-is-now-using-ai-to-attack-its-own-ai-and-its-working-better-than-humans-ever-did",
+          "sourceName": "The Decoder：AI News（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrmi4f4x01ilbiul55xb25fm",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrmi4f4x01ilbiul55xb25fm"
+          }
+        },
+        {
+          "title": "Apple 提出 LLM 函数调用不确定性量化方法",
+          "summary": "Apple 机器学习研究团队提出一种针对大语言模型函数调用的不确定性量化方法，旨在提升 LLM 在自主任务执行中的可靠性。该方法通过量化模型对函数调用参数和决策的置信度，帮助识别潜在错误调用。该研究目前处于学术探索阶段，未公布具体模型版本或开源计划。",
+          "sourceUrl": "https://machinelearning.apple.com/research/uncertainty-quantification-function-calling",
+          "sourceName": "Apple Machine Learning Research（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrmll0tt04z1biulyhcdujjt",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrmll0tt04z1biulyhcdujjt"
+          }
+        },
+        {
+          "title": "Meta 探索分层兴趣表示以优化广告深度漏斗",
+          "summary": "Meta 提出分层兴趣表示，一种基于 Transformer 图学习与自监督跨视图蒸馏的上游表示层，为广告实体学习统一嵌入。该系统在数十亿真实交互数据上端到端训练，输出通用嵌入和 Bag-of-Meaning 兴趣 token，旨在连接稀疏的深度漏斗信号与广告主供给。该技术可集成至 Meta 的生成式广告模型（GEM）、Andromeda 及自适应排序模型。",
+          "sourceUrl": "https://engineering.fb.com/2026/07/15/ai-research/exploring-hierarchical-interest-representation-for-meta-ads-deep-funnel-optimization",
+          "sourceName": "Meta Engineering Blog（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrmctfys042wbivcjf3z4dad",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrmctfys042wbivcjf3z4dad"
+          }
+        },
+        {
+          "title": "Apple 提出 CLaRa：用连续潜在推理桥接检索与生成",
+          "summary": "Apple 机器学习研究团队提出 CLaRa，一种通过连续潜在推理桥接检索与生成的新方法。该方法在检索增强生成（RAG）中引入连续潜在空间，使模型在生成答案前先进行隐式推理，从而缓解长上下文带来的性能下降。CLaRa 在多个知识密集型基准上提升了 LLM 的准确率与效率。",
+          "sourceUrl": "https://machinelearning.apple.com/research/clara-latent-reasoning",
+          "sourceName": "Apple Machine Learning Research（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrmjf91q034ibiuliv4avu1p",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrmjf91q034ibiuliv4avu1p"
+          }
+        }
+      ]
+    },
+    {
+      "label": "技巧与观点",
+      "items": [
+        {
+          "title": "Airtap iMessage 新功能：发条短信让 AI 替你操作手机",
+          "summary": "Airtap 推出 iMessage 新功能，用户只需给美国号码发一条 iMessage，其云手机上的 AI Agent 就能通过视觉模拟点击，替用户完成 TikTok 刷视频、星巴克点单等操作，无需安装对应 App。其架构分为三层：大脑（理解指令）、AutoPilot（视觉操控屏幕）、云手机（24小时在线）。但支付等敏感操作仍需用户手动完成，信任与授权仍是所有 Agent 厂商的难题。",
+          "sourceUrl": "https://x.com/AYi_AInotes/status/2077217295504490992",
+          "sourceName": "X：阿易 AI Notes (@AYi_AInotes)",
+          "permalink": "https://aihot.virxact.com/items/cmrlh600d09kzbi2bnol6i2xu",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrlh600d09kzbi2bnol6i2xu"
+          }
+        },
+        {
+          "title": "前谷歌DeepMind研究员因公司签署无限制军事AI协议而离职",
+          "summary": "前谷歌DeepMind研究员Alex Turner因谷歌向国土安全部出售云服务并最终签署无限制军事AI协议而离职。他曾起草25页提案要求加入禁止杀手机器人和大规模监控的合同条款，但提案被CEO转交后无人跟进。Turner指出，包括Jeff Dean和Stuart Russell在内的多位AI伦理领袖在关键时刻未能兑现承诺。",
+          "sourceUrl": "https://turntrout.com/why-i-left-google-deepmind",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "permalink": "https://aihot.virxact.com/items/cmrmibbm801m8biulhl6uejzo",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrmibbm801m8biulhl6uejzo"
+          }
+        },
+        {
+          "title": "开源 LLM TODO Skill“阿福”：用 Claude Code 和 Codex 实现知识管理到排期自动化",
+          "summary": "作者基于 API 版 Fable5 和 Codex 开发了开源 TODO Skill“阿福”，用于将收件箱中的待办资料自动转为 Markdown 任务卡，识别信息不完整项（如视频链接需通过 yt-dlp 和本地 Whisper 提取字幕），并支持批量排期、AI 分组合并、拖拽调整周视图及同步到 Mac 日历或飞书日历。项目已开源在 GitHub，安装仅需一条命令。",
+          "sourceUrl": "https://mp.weixin.qq.com/s/QcGHxKohg0gW9e84Nd_9jA",
+          "sourceName": "公众号：卡尔的AI沃茨",
+          "permalink": "https://aihot.virxact.com/items/cmrlg0ucc080qbi2bb8hn7nj3",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrlg0ucc080qbi2bb8hn7nj3"
+          }
+        },
+        {
+          "title": "每天Vibe Coding 16小时，作者分享Fable 5与GPT-5.6 Sol的AI开发流程",
+          "summary": "作者每天Vibe Coding约16小时，认为Claude Fable 5在大型方案初版设计上“当世独一档”，GPT-5.6 Sol能有效纠错并优化方案。核心流程为：Fable 5出方案初版 → GPT-5.6 Sol审查纠错 → 在Codex中开启“目标模式”全自动化执行，最长曾连续运行17小时。",
+          "sourceUrl": "https://mp.weixin.qq.com/s/wm_LM83gyLM-auidBxprZw",
+          "sourceName": "公众号：数字生命卡兹克",
+          "permalink": "https://aihot.virxact.com/items/cmrlbqrmp02hubi2bvj72j1hx",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrlbqrmp02hubi2bvj72j1hx"
+          }
+        },
+        {
+          "title": "OpenAI 呼吁通过“反向联邦主义”推动美国 AI 安全标准统一",
+          "summary": "OpenAI 首席全球事务官 Chris Lehane 发文，主张通过“反向联邦主义”——即各州先通过相似立法形成事实上的国家标准——来推动美国 AI 前沿安全治理。加州、纽约州和伊利诺伊州已通过相关立法，核心要素包括风险披露、安全事故报告和独立审计。联邦层面，特朗普政府正与专家合作制定针对最强大 AI 模型的网络测试框架，预计 8 月初完成。",
+          "sourceUrl": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
+          "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+          "permalink": "https://aihot.virxact.com/items/cmrmagwcl098vbif7ukltrpaw",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrmagwcl098vbif7ukltrpaw"
+          }
+        },
+        {
+          "title": "Base44 为何信任 Claude Fable 5 处理最具挑战性的工程任务",
+          "summary": "无代码开发平台 Base44 将此前仅限资深工程师处理的系统提示词重构任务交给了 Claude Fable 5。该模型在四小时内独立完成 90%-95% 的重构，并主动发现团队评估中遗漏的缓存命中测试盲点。Base44 产品负责人表示，Claude Fable 5 是首个能像资深工程师一样推理软件构建方式的模型。",
+          "sourceUrl": "https://claude.com/blog/working-at-the-frontier-why-base44-trusts-claude-fable-5-with-their-most-challenging-engineering-work",
+          "sourceName": "Claude：Blog（网页）",
+          "permalink": "https://aihot.virxact.com/items/cmrmetra500flbih9gdyo03bp",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrmetra500flbih9gdyo03bp"
+          }
+        }
+      ]
+    }
+  ],
+  "flashes": []
+}
