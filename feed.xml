@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 16 Jul 2026 16:42:48 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 18:20:27 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>氪星晚报｜IDC：百度智能云蝉联中国金融大模型市场份额第一；腾讯云与RoboScience机器科学达成战略合作；商务部回应推动解决安世半导体问题进展</title>
@@ -33,12 +33,32 @@
       <source url="https://36kr.com/p/3898151587890824?f=rss">36Kr</source>
     </item>
     <item>
+      <title>您的 GPT 现在可以在您的计算机上完成任务</title>
+      <link>https://www.youtube.com/watch?v=dB6pOolO7io</link>
+      <description>With GPT-5.6, ChatGPT can use the apps on your computer and your browser to complete tasks for you. See how it works across macOS and Windows, how you can collaborate with it in real time, and how it keeps multi-step work moving in the tools you already use.
+
+Learn more: https://learn.chatgpt.com/
+
+</description>
+      <pubDate>Thu, 16 Jul 2026 18:00:16 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=dB6pOolO7io</guid>
+      <source url="https://www.youtube.com/watch?v=dB6pOolO7io">OpenAI</source>
+    </item>
+    <item>
       <title>新玩意 246｜少数派的编辑们最近买了啥？</title>
       <link>https://sspai.com/post/112400</link>
       <description>编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。内容声明：《新玩意》栏目如含有 ...查看全文</description>
       <pubDate>Thu, 16 Jul 2026 17:39:52 +0800</pubDate>
       <guid isPermaLink="true">https://sspai.com/post/112400</guid>
       <source url="https://sspai.com/post/112400">少数派</source>
+    </item>
+    <item>
+      <title>赛车揭示了如何与 AI 合作 — OpenAI 播客 Ep。 22</title>
+      <link>https://www.youtube.com/watch?v=KNPjRpNtQ7s</link>
+      <description>Racing is a sport of tiny margins and mountains of data. OpenAI researcher Joyce Ruffell and RaceTek Systems co-founder Chase Holden are each using AI to help teams make better use of information from the track, the garage, and the people behind the wheel. They discuss OpenAI’s research collaboratio</description>
+      <pubDate>Thu, 16 Jul 2026 17:00:16 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=KNPjRpNtQ7s</guid>
+      <source url="https://www.youtube.com/watch?v=KNPjRpNtQ7s">OpenAI</source>
     </item>
     <item>
       <title>Apple 高校优惠活动开始了，今年有些不一样</title>
@@ -77,22 +97,6 @@ Adam Bridges, Benji Rabhan,</description>
       <pubDate>Thu, 16 Jul 2026 15:37:30 +0000</pubDate>
       <guid isPermaLink="true">https://www.youtube.com/watch?v=Fu3WWi-pAv4</guid>
       <source url="https://www.youtube.com/watch?v=Fu3WWi-pAv4">OpenAI</source>
-    </item>
-    <item>
-      <title>停止提示。开始设定人工智能目标。 |卡蒂亚·吉尔·古兹曼 | 卡蒂亚·吉尔·古兹曼法国 OpenAI</title>
-      <link>https://www.youtube.com/watch?v=1fL_lwsdMd4</link>
-      <description>The way we work with AI is changing. Katia Gil Guzman, Developer Experience at OpenAI, explains why we're moving from prompts to goals, how AI is enabling anyone to become a builder, and what excites her most about the rapidly evolving builder community in France. Filmed at OpenAI France.</description>
-      <pubDate>Thu, 16 Jul 2026 15:37:20 +0000</pubDate>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=1fL_lwsdMd4</guid>
-      <source url="https://www.youtube.com/watch?v=1fL_lwsdMd4">OpenAI</source>
-    </item>
-    <item>
-      <title>从人工智能试点到生产 | François Weider 谈企业采用 |法国 OpenAI</title>
-      <link>https://www.youtube.com/watch?v=W0mU8zgop60</link>
-      <description>AI is moving beyond experimentation. In this OpenAI France voxpop video, François Weider, Go-to-Market Leader for France &amp; Southern Europe at OpenAI, explains why organisations are shifting from pilots to production, how to prioritise AI use cases that deliver measurable business value, and why exec</description>
-      <pubDate>Thu, 16 Jul 2026 15:37:16 +0000</pubDate>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=W0mU8zgop60</guid>
-      <source url="https://www.youtube.com/watch?v=W0mU8zgop60">OpenAI</source>
     </item>
     <item>
       <title>理想L6换代24.98万开卖！L9同款自研芯片中控屏下放，一个版本配置拉满不涨价</title>
