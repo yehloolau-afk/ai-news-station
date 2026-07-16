@@ -131,5 +131,26 @@
     "summary": "在 Google I/O Connect India 上，Google 展示了由定制 Tensor SoC 和 TPU 驱动的 Pixel 10 系列所支持的 100% 私有端侧 AI 未来。活动首次推出轻量级 Gemma 4 E2B 模型，该模型原生运行于设备端，可实现完全离线的多模态功能，包括 AI 聊天、实时图像识别和个人智能体任务。开发者即日起可通过新发布的 Tensor SDK beta",
     "sourceUrl": "https://developers.googleblog.com/unlocking-the-next-era-of-on-device-ai-with-google-tensor-and-pixel",
     "sourceName": "Google Developers Blog（RSS）"
+  },
+  {
+    "date": "2026-07-16",
+    "title": "阿里发布 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 语音推理子项中综合排名第一",
+    "summary": "阿里通义实验室发布实时语音交互模型 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 的 Speech Reasoning 子项中综合排名第一，超越 OpenAI GPT-Realtime-2。",
+    "sourceUrl": "https://mp.weixin.qq.com/s/hFp5rtV8-6KVRrgZoCj03A",
+    "sourceName": "公众号：通义实验室（千问）"
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Thinking Machines 发布多模态模型 Inkling",
+    "summary": "今天，我们推出 Inkling。 Inkling 能高效地对文本、图像和音频模态进行推理。我们将提供完整权重。 https://thinkingmachines.ai/news/introducing-inkling/ 即日起可在 Tinker 上进行微调。在 Inkling Playground 中试用。🧵",
+    "sourceUrl": "https://x.com/thinkymachines/status/2077454609551921208",
+    "sourceName": "X：Thinking Machines (@thinkymachines)"
+  },
+  {
+    "date": "2026-07-16",
+    "title": "OpenAI 发布 GPT-Red：通过自动化红队测试提升模型鲁棒性",
+    "summary": "OpenAI 训练了自动化红队模型 GPT-Red，用于在部署前发现漏洞并在训练中生成攻击以提升模型鲁棒性。GPT-Red 能攻破此前几乎所有模型，其攻击被用于对抗训练 GPT-5.6 Sol，使该模型在直接提示注入基准测试中的失败率降至四个月前最佳生产模型的 1/6。GPT-Red 通过自对弈强化学习训练，投入了 OpenAI 后训练中前所未有的计算规模。",
+    "sourceUrl": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+    "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
   }
 ]
