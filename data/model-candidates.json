@@ -152,5 +152,12 @@
     "summary": "OpenAI 训练了自动化红队模型 GPT-Red，用于在部署前发现漏洞并在训练中生成攻击以提升模型鲁棒性。GPT-Red 能攻破此前几乎所有模型，其攻击被用于对抗训练 GPT-5.6 Sol，使该模型在直接提示注入基准测试中的失败率降至四个月前最佳生产模型的 1/6。GPT-Red 通过自对弈强化学习训练，投入了 OpenAI 后训练中前所未有的计算规模。",
     "sourceUrl": "https://openai.com/index/unlocking-self-improvement-gpt-red",
     "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+    "date": "2026-07-17",
+    "title": "Kimi K3 发布：2.8T 参数开源模型，具备原生视觉与百万 token 上下文窗口",
+    "summary": "月之暗面发布 Kimi K3，一个 2.8T 参数的开源模型，采用 Kimi Delta Attention 和 Attention Residuals 架构，支持原生视觉能力与 100 万 token 上下文窗口。",
+    "sourceUrl": "https://www.kimi.com/blog/kimi-k3",
+    "sourceName": "Moonshot AI：Kimi Blog"
   }
 ]
