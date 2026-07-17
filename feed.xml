@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 17 Jul 2026 14:03:24 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 15:28:17 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>氪星晚报｜阿里1688将推出AI时代B2B交易互联互通开放标准；英特尔与Google Cloud宣布深化战略合作；铁路部门试点提前60天预约购票服务</title>
@@ -103,30 +103,6 @@
       <source url="https://36kr.com/p/3898476192941697?f=rss">36Kr</source>
     </item>
     <item>
-      <title>维珍航空通过 ChatGPT Work 将几周的工作变成几个小时</title>
-      <link>https://www.youtube.com/shorts/5gBQzz_5_jU</link>
-      <description>“It’s weeks to hours.”
-
-Nathan Bolt, Head of Digital Product at Virgin Atlantic, uses ChatGPT Work to synthesize strategy documents, analyze competitors, and turn weeks of work into hours.
-
-Together with Miles King, the team built custom dashboards that connect data from across the business—helping </description>
-      <pubDate>Fri, 17 Jul 2026 13:14:34 +0000</pubDate>
-      <guid isPermaLink="true">https://www.youtube.com/shorts/5gBQzz_5_jU</guid>
-      <source url="https://www.youtube.com/shorts/5gBQzz_5_jU">OpenAI</source>
-    </item>
-    <item>
-      <title>维珍航空通过 ChatGPT Work 将几周的工作变成几个小时</title>
-      <link>https://www.youtube.com/watch?v=tyAO2zR_qZI</link>
-      <description>“It’s weeks to hours.”
-
-Nathan Bolt, Head of Digital Product at Virgin Atlantic, uses ChatGPT Work to synthesize strategy documents, analyze competitors, and turn weeks of work into hours.
-
-Together with Miles King, the team built custom dashboards that connect data from across the business—helping </description>
-      <pubDate>Fri, 17 Jul 2026 12:55:22 +0000</pubDate>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=tyAO2zR_qZI</guid>
-      <source url="https://www.youtube.com/watch?v=tyAO2zR_qZI">OpenAI</source>
-    </item>
-    <item>
       <title>达卯科技WAIC首发算电协同2.0：构筑AI算力与绿色能源融合新范式</title>
       <link>https://www.qbitai.com/2026/07/453237.html</link>
       <description>打造AIDC绿电直连能源运营操作系统</description>
@@ -201,6 +177,26 @@ Together with Miles King, the team built custom dashboards that connect data fro
       <pubDate>Fri, 17 Jul 2026 10:17:23 +0000</pubDate>
       <guid isPermaLink="true">https://www.qbitai.com/2026/07/453084.html</guid>
       <source url="https://www.qbitai.com/2026/07/453084.html">量子位</source>
+    </item>
+    <item>
+      <title>文远发布物理AI大模型WITT：让每一公里都变成模型能力</title>
+      <link>https://www.qbitai.com/2026/07/452961.html</link>
+      <description>单卡日处理1万分钟视频</description>
+      <pubDate>Fri, 17 Jul 2026 10:11:49 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/452961.html</guid>
+      <source url="https://www.qbitai.com/2026/07/452961.html">量子位</source>
+    </item>
+    <item>
+      <title>36氪首发 | 前蔚来、华为智驾核心成员联手创业具身世界模型，三个月内完成数亿元融资</title>
+      <link>https://36kr.com/p/3899081603483525?f=rss</link>
+      <description>作者&amp;nbsp;|&amp;nbsp;乔钰杰
+  编辑&amp;nbsp;|&amp;nbsp;袁斯来
+  硬氪获悉，具身智能世界模型公司日冕开物（北京日冕机器人有限公司）近期完成连续两轮种子轮融资，融资合计金额达数亿元人民币，由鼎峰科创、远图未来、百度风投、沃衍资本、武岳峰科创、万林国际共同参与投资。同时，新一轮融资也在同步交割中。
+  此前融资资金主要用于自研世界模型 LaMPA 的研发迭代、强化学习体系建设，以及数据闭环和产品交付能力的持续完善。
+  日冕开物成立于2026年3月，聚焦物理世界基础模型研发，希望打造能够理解物理世界、预测环境变化并驱动机器人执行任务的基础模型，帮助机器人从单一场景能力，逐步迈向跨</description>
+      <pubDate>Fri, 17 Jul 2026 09:52:16 +0800</pubDate>
+      <guid isPermaLink="true">https://36kr.com/p/3899081603483525?f=rss</guid>
+      <source url="https://36kr.com/p/3899081603483525?f=rss">36Kr</source>
     </item>
   </channel>
 </rss>
