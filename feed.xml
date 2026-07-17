@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 17 Jul 2026 17:25:33 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 19:28:25 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>氪星晚报｜阿里1688将推出AI时代B2B交易互联互通开放标准；英特尔与Google Cloud宣布深化战略合作；铁路部门试点提前60天预约购票服务</title>
@@ -47,6 +47,30 @@
       <pubDate>Fri, 17 Jul 2026 17:57:46 +0800</pubDate>
       <guid isPermaLink="true">https://sspai.com/post/112444</guid>
       <source url="https://sspai.com/post/112444">少数派</source>
+    </item>
+    <item>
+      <title>逛完WAIC 2026我悟了：国产AI芯片的真对手，根本不是英伟达的GPU</title>
+      <link>https://www.qbitai.com/2026/07/453352.html</link>
+      <description>发布芯片只是拿到了入场券</description>
+      <pubDate>Fri, 17 Jul 2026 17:09:14 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453352.html</guid>
+      <source url="https://www.qbitai.com/2026/07/453352.html">量子位</source>
+    </item>
+    <item>
+      <title>给AI发工号、定岗位、做绩效，数字员工终于能落地了</title>
+      <link>https://www.qbitai.com/2026/07/453245.html</link>
+      <description>面壁智能开源StaffDeck</description>
+      <pubDate>Fri, 17 Jul 2026 16:40:47 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453245.html</guid>
+      <source url="https://www.qbitai.com/2026/07/453245.html">量子位</source>
+    </item>
+    <item>
+      <title>WAIC直击 | 十大开源社区「挤」进了一家GPU展台，沐曦凭什么？</title>
+      <link>https://www.qbitai.com/2026/07/453246.html</link>
+      <description>每个Token背后，都是一次开源协作</description>
+      <pubDate>Fri, 17 Jul 2026 16:24:49 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453246.html</guid>
+      <source url="https://www.qbitai.com/2026/07/453246.html">量子位</source>
     </item>
     <item>
       <title>最前线｜中科天塔星载激光通信终端智能产线投产，一期年产能规划600套</title>
@@ -169,30 +193,6 @@
       <pubDate>Fri, 17 Jul 2026 10:37:12 +0800</pubDate>
       <guid isPermaLink="true">https://sspai.com/post/111128</guid>
       <source url="https://sspai.com/post/111128">少数派</source>
-    </item>
-    <item>
-      <title>我在 WAIC 暴走两万步，看到了中国 AI 的三件套</title>
-      <link>https://www.ifanr.com/1672335?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</link>
-      <description>今年开始，可以看一整条链了。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</description>
-      <pubDate>Fri, 17 Jul 2026 10:30:07 +0000</pubDate>
-      <guid isPermaLink="true">https://www.ifanr.com/1672335?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</guid>
-      <source url="https://www.ifanr.com/1672335?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
-    </item>
-    <item>
-      <title>上海制造，AI入魂：央国企率先“重用”大模型，自动化设备被换下</title>
-      <link>https://www.qbitai.com/2026/07/453084.html</link>
-      <description></description>
-      <pubDate>Fri, 17 Jul 2026 10:17:23 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453084.html</guid>
-      <source url="https://www.qbitai.com/2026/07/453084.html">量子位</source>
-    </item>
-    <item>
-      <title>文远发布物理AI大模型WITT：让每一公里都变成模型能力</title>
-      <link>https://www.qbitai.com/2026/07/452961.html</link>
-      <description>单卡日处理1万分钟视频</description>
-      <pubDate>Fri, 17 Jul 2026 10:11:49 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/452961.html</guid>
-      <source url="https://www.qbitai.com/2026/07/452961.html">量子位</source>
     </item>
   </channel>
 </rss>
