@@ -5,8 +5,19 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 17 Jul 2026 03:38:49 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 06:30:03 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>震业新材完成超亿元A轮融资，招商致远、玉柴股份、海富产业基金领投｜36氪首发</title>
+      <link>https://36kr.com/p/3898476192941697?f=rss</link>
+      <description>36氪获悉，ADI金属材料企业震业新材近期完成超亿元A轮融资。
+  本轮融资由招商致远资本、玉柴股份、海富产业基金领投，中金资本、江苏省沿海集团、黄海金控跟投，所融资金将主要用于ADI材料产线扩建、核心工艺迭代研发，以及乘用车、商用车、工程机械等下游场景的商业化落地。
+  震业新材告诉36氪：“在ADI行业，1200MPa抗拉强度、4%延伸率是行业通用性能标准。延伸率达到5%~6%以上，才算真正意义的高韧性结构材料，这也是行业关键技术分水岭，高强韧性可满足齿轮、底盘、重载传动等核心安全件的抗冲击、抗疲劳、不断裂要求。”
+  而行业主流厂商的技术水平，普遍停留在QTD 900-8（900MPa抗</description>
+      <pubDate>Fri, 17 Jul 2026 13:41:21 +0800</pubDate>
+      <guid isPermaLink="true">https://36kr.com/p/3898476192941697?f=rss</guid>
+      <source url="https://36kr.com/p/3898476192941697?f=rss">36Kr</source>
+    </item>
     <item>
       <title>36氪首发 | 港科大博士创业做机器人全身触觉系统，红杉、瓴智、智元共同押注</title>
       <link>https://36kr.com/p/3899128277452681?f=rss</link>
@@ -18,6 +29,14 @@
       <pubDate>Fri, 17 Jul 2026 10:39:17 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3899128277452681?f=rss</guid>
       <source url="https://36kr.com/p/3899128277452681?f=rss">36Kr</source>
+    </item>
+    <item>
+      <title>UniGetUI：可能是 Windows 下最好用的应用商店</title>
+      <link>https://sspai.com/post/111128</link>
+      <description>UniGetUI 是一个不错的包管理器，它提供的统一的更新 UI，让你的软件最大程度集中在一起管理，还可以用于需要批量配置的场景。查看全文</description>
+      <pubDate>Fri, 17 Jul 2026 10:37:12 +0800</pubDate>
+      <guid isPermaLink="true">https://sspai.com/post/111128</guid>
+      <source url="https://sspai.com/post/111128">少数派</source>
     </item>
     <item>
       <title>36氪首发 | 前蔚来、华为智驾核心成员联手创业具身世界模型，三个月内完成数亿元融资</title>
@@ -107,6 +126,22 @@
       <source url="https://36kr.com/p/3898370289846153?f=rss">36Kr</source>
     </item>
     <item>
+      <title>OpenAI官方教你8招玩透ChatGPT！</title>
+      <link>https://www.qbitai.com/2026/07/452611.html</link>
+      <description></description>
+      <pubDate>Fri, 17 Jul 2026 05:11:53 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/452611.html</guid>
+      <source url="https://www.qbitai.com/2026/07/452611.html">量子位</source>
+    </item>
+    <item>
+      <title>百度搭子获评WAIC 2026“镇馆之宝”，智能体全家桶将集中亮相</title>
+      <link>https://www.qbitai.com/2026/07/451691.html</link>
+      <description></description>
+      <pubDate>Fri, 17 Jul 2026 02:41:03 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/451691.html</guid>
+      <source url="https://www.qbitai.com/2026/07/451691.html">量子位</source>
+    </item>
+    <item>
       <title>连夜实测 Kimi K3，建议改名 Kable</title>
       <link>https://www.ifanr.com/1672232?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</link>
       <description>开源模型的 K3 时刻#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</description>
@@ -125,111 +160,58 @@
       <source url="https://www.ifanr.com/1672229?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
     </item>
     <item>
-      <title>Shopify 如何使用 ChatGPT 加快 AI 代理的构建速度</title>
-      <link>https://www.youtube.com/shorts/fnPMkEe6Nik</link>
-      <description>“It allows me to go faster with fewer dependencies and then do things that I couldn’t do before.”
-
-Chris Jones, Senior Lead, Ops AI Lab at Shopify, is helping teams use ChatGPT Work to redesign workflows with agents, remove bottlenecks, and build tools without waiting on engineering resources.
-
-“Wha</description>
-      <pubDate>Thu, 16 Jul 2026 22:19:27 +0000</pubDate>
-      <guid isPermaLink="true">https://www.youtube.com/shorts/fnPMkEe6Nik</guid>
-      <source url="https://www.youtube.com/shorts/fnPMkEe6Nik">OpenAI</source>
+      <title>用于搜索和救援的自主无人机群的智能三级学习架构</title>
+      <link>https://arxiv.org/abs/2607.14093</link>
+      <description>arXiv:2607.14093v1 Announce Type: new 
+Abstract: This paper presents a novel three level hierarchical learning architecture for autonomous UAV swarms performing search and rescue operations. Unlike conventional approaches that apply a single learning paradigm across all hierarchy levels, the propose</description>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 -0400</pubDate>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.14093</guid>
+      <source url="https://arxiv.org/abs/2607.14093">ArXiv AI</source>
     </item>
     <item>
-      <title>Shopify 如何使用 ChatGPT 加快 AI 代理的构建速度</title>
-      <link>https://www.youtube.com/watch?v=OHVu3Y4B3RI</link>
-      <description>“It allows me to go faster with fewer dependencies and then do things that I couldn’t do before.”
-
-Chris Jones, Senior Lead, Ops AI Lab at Shopify, is helping teams use ChatGPT Work to redesign workflows with agents, remove bottlenecks, and build tools without waiting on engineering resources.
-
-“Wha</description>
-      <pubDate>Thu, 16 Jul 2026 22:15:11 +0000</pubDate>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=OHVu3Y4B3RI</guid>
-      <source url="https://www.youtube.com/watch?v=OHVu3Y4B3RI">OpenAI</source>
+      <title>HG-RAG：结构化知识图的层次结构引导检索增强生成</title>
+      <link>https://arxiv.org/abs/2607.14095</link>
+      <description>arXiv:2607.14095v1 Announce Type: new 
+Abstract: Retrieval Augmented Generation (RAG) has proven to be a widely successful process at improving the quality of outputs from a Large Language Model (LLM) for wider context. However, RAG systems typically retrieve context from flat document stores, which</description>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 -0400</pubDate>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.14095</guid>
+      <source url="https://arxiv.org/abs/2607.14095">ArXiv AI</source>
     </item>
     <item>
-      <title>氪星晚报｜IDC：百度智能云蝉联中国金融大模型市场份额第一；腾讯云与RoboScience机器科学达成战略合作；商务部回应推动解决安世半导体问题进展</title>
-      <link>https://36kr.com/p/3896564308379525?f=rss</link>
-      <description>大公司：
-  OPPO：realme新品将聚焦海外市场，中国市场暂停产品更新
-  36氪从OPPO方面获悉，为了进一步整合集团资源，实现全球产品战略的协同，未来 realme 新品将聚焦海外市场，在中国市场暂停产品更新；一加在中国市场的产品更新保持不变。realme和一加将持续在游戏和性能领域为用户提供优质的体验。
-  IDC：百度智能云蝉联中国金融大模型市场份额第一
-  36氪获悉，根据国际数据公司（IDC）最新发布的《中国金融行业生成式AI平台及应用解决方案市场份额，2025》报告，2025年中国金融行业生成式AI市场迎来爆发式增长，整体规模达到17.40亿元人民币，同比增速高达90.4%</description>
-      <pubDate>Thu, 16 Jul 2026 18:58:17 +0800</pubDate>
-      <guid isPermaLink="true">https://36kr.com/p/3896564308379525?f=rss</guid>
-      <source url="https://36kr.com/p/3896564308379525?f=rss">36Kr</source>
+      <title>IMEX 基于交互的模型解释</title>
+      <link>https://arxiv.org/abs/2607.14096</link>
+      <description>arXiv:2607.14096v1 Announce Type: new 
+Abstract: In predictive modeling, the ability to explain why a model produces a given target prediction has become increasingly important [5, 10]. Black-box models do not provide a transparent description of the internal mechanisms that generate the prediction,</description>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 -0400</pubDate>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.14096</guid>
+      <source url="https://arxiv.org/abs/2607.14096">ArXiv AI</source>
     </item>
     <item>
-      <title>中专生拍出破亿爆款，影视圈边缘人靠AI改命丨深氪lite</title>
-      <link>https://36kr.com/p/3898151587890824?f=rss</link>
-      <description>“AI改了我的命”
-  AI时代的精英叙事里，出现了草根翻身的故事。
-  5月，来自云南玉溪地产行业的中专生刘梓瑜，创作出了全网播放破亿的《丧尸清道夫》，被称为“国产爱死机”。他因此收到了好莱坞制作人的跨洋Offer。这部短片配有英文字幕，但一位接触过刘梓瑜的从业者表示，他的英语并不好，甚至“不会翻墙”。
-  一个月后，97年出生的刘梓瑜在抖音电影奇遇夜上被评为“抖音新锐未来导演”，在他的账号下，一位名为“AAA云还路**建材批发发哥”的网友评论道，“牛逼，也是登上AIGC这艘诺亚方舟了，什么时候我们这些打工仔也能翻身。”后面跟了一个大哭的表情。
-  
-  《丧尸清道夫》海报，图片源自刘梓瑜小</description>
-      <pubDate>Thu, 16 Jul 2026 18:07:26 +0800</pubDate>
-      <guid isPermaLink="true">https://36kr.com/p/3898151587890824?f=rss</guid>
-      <source url="https://36kr.com/p/3898151587890824?f=rss">36Kr</source>
+      <title>RegNetAgents：癌症基因组学中跨网络监管驱动因素识别的多代理框架</title>
+      <link>https://arxiv.org/abs/2607.14097</link>
+      <description>arXiv:2607.14097v1 Announce Type: new 
+Abstract: We introduce RegNetAgents, an AI-oriented multi-agent framework for structured, query-driven regulatory candidate identification across heterogeneous gene regulatory networks. The system enables unified analysis of bulk tumor and single-cell-derived A</description>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 -0400</pubDate>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.14097</guid>
+      <source url="https://arxiv.org/abs/2607.14097">ArXiv AI</source>
     </item>
     <item>
-      <title>ChatGPT 现在可以在您的计算机上完成任务</title>
-      <link>https://www.youtube.com/watch?v=dB6pOolO7io</link>
-      <description>With GPT-5.6, ChatGPT can use the apps on your computer and your browser to complete tasks for you. See how it works across macOS and Windows, how you can collaborate with it in real time, and how it keeps multi-step work moving in the tools you already use.
-
-Learn more: https://learn.chatgpt.com/
-
-</description>
-      <pubDate>Thu, 16 Jul 2026 18:00:16 +0000</pubDate>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=dB6pOolO7io</guid>
-      <source url="https://www.youtube.com/watch?v=dB6pOolO7io">OpenAI</source>
+      <title>DialogueVPR：迈向对话式视觉地点识别</title>
+      <link>https://arxiv.org/abs/2607.14115</link>
+      <description>arXiv:2607.14115v1 Announce Type: new 
+Abstract: Inspired by how humans communicate spatial information, language-guided geo-localization has gained significant traction for its intuitive and practical value. Despite this progress, most methods still rely on a static, one-shot retrieval paradigm, wh</description>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 -0400</pubDate>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.14115</guid>
+      <source url="https://arxiv.org/abs/2607.14115">ArXiv AI</source>
     </item>
     <item>
-      <title>新玩意 246｜少数派的编辑们最近买了啥？</title>
-      <link>https://sspai.com/post/112400</link>
-      <description>编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。内容声明：《新玩意》栏目如含有 ...查看全文</description>
-      <pubDate>Thu, 16 Jul 2026 17:39:52 +0800</pubDate>
-      <guid isPermaLink="true">https://sspai.com/post/112400</guid>
-      <source url="https://sspai.com/post/112400">少数派</source>
-    </item>
-    <item>
-      <title>赛车揭示了如何与 AI 合作 — OpenAI 播客 Ep。 22</title>
-      <link>https://www.youtube.com/watch?v=KNPjRpNtQ7s</link>
-      <description>Racing is a sport of tiny margins and mountains of data. OpenAI researcher Joyce Ruffell and RaceTek Systems co-founder Chase Holden are each using AI to help teams make better use of information from the track, the garage, and the people behind the wheel. They discuss OpenAI’s research collaboratio</description>
-      <pubDate>Thu, 16 Jul 2026 17:00:16 +0000</pubDate>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=KNPjRpNtQ7s</guid>
-      <source url="https://www.youtube.com/watch?v=KNPjRpNtQ7s">OpenAI</source>
-    </item>
-    <item>
-      <title>Apple 高校优惠活动开始了，今年有些不一样</title>
-      <link>https://sspai.com/post/112386</link>
-      <description>又到了一年一度的Apple高校优惠活动季，高校师生们可以在活动期间，购买指定型号iPad或Mac设备，获得指定配件产品，享受到限时的教育优惠+买赠活动。与往年不同的是，今年的Apple高校优惠活动不论 ...查看全文</description>
-      <pubDate>Thu, 16 Jul 2026 16:03:38 +0800</pubDate>
-      <guid isPermaLink="true">https://sspai.com/post/112386</guid>
-      <source url="https://sspai.com/post/112386">少数派</source>
-    </item>
-    <item>
-      <title>克劳德刚刚揭示了人工智能最大的问题</title>
-      <link>https://www.youtube.com/watch?v=axOcn--n_lM</link>
-      <description>❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers
-
-📝 The paper is available here:
-https://www.anthropic.com/research/AI-assistance-coding-skills
-
-🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:
-Adam Bridges, Benji Rabhan,</description>
-      <pubDate>Thu, 16 Jul 2026 15:39:17 +0000</pubDate>
-      <guid isPermaLink="true">https://www.youtube.com/watch?v=axOcn--n_lM</guid>
-      <source url="https://www.youtube.com/watch?v=axOcn--n_lM">Two Minute Papers</source>
-    </item>
-    <item>
-      <title>理想L6换代24.98万开卖！L9同款自研芯片中控屏下放，一个版本配置拉满不涨价</title>
-      <link>https://www.qbitai.com/2026/07/451576.html</link>
-      <description>最快下周一提车</description>
-      <pubDate>Thu, 16 Jul 2026 15:12:41 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/451576.html</guid>
-      <source url="https://www.qbitai.com/2026/07/451576.html">量子位</source>
+      <title>立场：可解释性研究必须优先考虑基础而非临时方法</title>
+      <link>https://arxiv.org/abs/2607.14123</link>
+      <description>arXiv:2607.14123v1 Announce Type: new 
+Abstract: Despite the proliferation of Explainable AI (XAI) techniques -- from feature attributions to sparse autoencoders -- explanations rarely influence real-world workflows. In practice, they are often generated and discarded without guiding meaningful acti</description>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 -0400</pubDate>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.14123</guid>
+      <source url="https://arxiv.org/abs/2607.14123">ArXiv ML</source>
     </item>
   </channel>
 </rss>
