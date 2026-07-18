@@ -5,8 +5,16 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 17 Jul 2026 23:05:17 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 00:10:37 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>PPIO发布智能模型网关，打造面向Agent时代的智能Token工厂</title>
+      <link>https://www.qbitai.com/2026/07/453467.html</link>
+      <description>万亿Token调用量验证</description>
+      <pubDate>Fri, 17 Jul 2026 22:32:47 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453467.html</guid>
+      <source url="https://www.qbitai.com/2026/07/453467.html">量子位</source>
+    </item>
     <item>
       <title>氪星晚报｜阿里1688将推出AI时代B2B交易互联互通开放标准；英特尔与Google Cloud宣布深化战略合作；铁路部门试点提前60天预约购票服务</title>
       <link>https://36kr.com/p/3896564485572489?f=rss</link>
@@ -185,14 +193,6 @@
       <pubDate>Fri, 17 Jul 2026 10:39:17 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3899128277452681?f=rss</guid>
       <source url="https://36kr.com/p/3899128277452681?f=rss">36Kr</source>
-    </item>
-    <item>
-      <title>UniGetUI：可能是 Windows 下最好用的应用商店</title>
-      <link>https://sspai.com/post/111128</link>
-      <description>UniGetUI 是一个不错的包管理器，它提供的统一的更新 UI，让你的软件最大程度集中在一起管理，还可以用于需要批量配置的场景。查看全文</description>
-      <pubDate>Fri, 17 Jul 2026 10:37:12 +0800</pubDate>
-      <guid isPermaLink="true">https://sspai.com/post/111128</guid>
-      <source url="https://sspai.com/post/111128">少数派</source>
     </item>
   </channel>
 </rss>
