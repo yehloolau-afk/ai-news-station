@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 18 Jul 2026 06:19:30 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 08:59:45 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>小米 NAS 拆解与初步上手：它会是你的第一台 NAS 吗？</title>
@@ -40,6 +40,38 @@
       <pubDate>Sat, 18 Jul 2026 08:53:35 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3900439867147909?f=rss</guid>
       <source url="https://36kr.com/p/3900439867147909?f=rss">36Kr</source>
+    </item>
+    <item>
+      <title>妙啊！无人机直连卫星传Token</title>
+      <link>https://www.qbitai.com/2026/07/453789.html</link>
+      <description>世界人工智能大会最高奖</description>
+      <pubDate>Sat, 18 Jul 2026 08:17:18 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453789.html</guid>
+      <source url="https://www.qbitai.com/2026/07/453789.html">量子位</source>
+    </item>
+    <item>
+      <title>后摩智能携 M50 Inside 终端亮相 WAIC 2026，支撑端侧 AI 算力与终端创新</title>
+      <link>https://www.qbitai.com/2026/07/453705.html</link>
+      <description>本地大模型规模化商用破局</description>
+      <pubDate>Sat, 18 Jul 2026 07:20:19 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453705.html</guid>
+      <source url="https://www.qbitai.com/2026/07/453705.html">量子位</source>
+    </item>
+    <item>
+      <title>商汤大装置联合近20家生态伙伴发起“银河计划”，将共建5个万卡级国产智算集群</title>
+      <link>https://www.qbitai.com/2026/07/453697.html</link>
+      <description>加速国产算力从落地可用到规模化盈利</description>
+      <pubDate>Sat, 18 Jul 2026 06:56:10 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453697.html</guid>
+      <source url="https://www.qbitai.com/2026/07/453697.html">量子位</source>
+    </item>
+    <item>
+      <title>iOS 27 公测版上手：国行 AI 准备好了，但系统流畅更值得升级</title>
+      <link>https://www.ifanr.com/1672364?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</link>
+      <description>有可能成为新一代「钉子户」系统。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</description>
+      <pubDate>Sat, 18 Jul 2026 06:47:24 +0000</pubDate>
+      <guid isPermaLink="true">https://www.ifanr.com/1672364?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</guid>
+      <source url="https://www.ifanr.com/1672364?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
     </item>
     <item>
       <title>6 台机器人拼长城、首款智能体手机首秀：阶跃把 AI 塞进了现实世界｜WAIC 2026</title>
@@ -152,42 +184,6 @@ Abstract: Despite the proliferation of Explainable AI (XAI) techniques -- from f
       <pubDate>Sat, 18 Jul 2026 00:00:00 -0400</pubDate>
       <guid isPermaLink="true">https://arxiv.org/abs/2607.14123</guid>
       <source url="https://arxiv.org/abs/2607.14123">ArXiv ML</source>
-    </item>
-    <item>
-      <title>CARPRT：黑盒视觉语言模型的类感知零样本提示重新加权</title>
-      <link>https://arxiv.org/abs/2607.14125</link>
-      <description>arXiv:2607.14125v1 Announce Type: new 
-Abstract: Pre-trained vision-language models (VLMs) enable zero-shot image classification by computing the similarity score between an image and textual descriptions, typically formed by inserting a class label (e.g., "cat") into a prompt (e.g., "a photo of a")</description>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 -0400</pubDate>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.14125</guid>
-      <source url="https://arxiv.org/abs/2607.14125">ArXiv ML</source>
-    </item>
-    <item>
-      <title>使用激光雷达衍生的地形智能进行卫星地面站选址的可解释地理空间人工智能</title>
-      <link>https://arxiv.org/abs/2607.14127</link>
-      <description>arXiv:2607.14127v1 Announce Type: new 
-Abstract: Representative clutter height (RCH) is a key parameter in radio propagation and interference analysis because it captures the dominant height of local obstructions that drive terminal clutter loss. Current practice often relies on fixed clutter height</description>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 -0400</pubDate>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.14127</guid>
-      <source url="https://arxiv.org/abs/2607.14127">ArXiv ML</source>
-    </item>
-    <item>
-      <title>多域检索的域一致性认证：具有保形风险保证的无标签每域污染控制</title>
-      <link>https://arxiv.org/abs/2607.14157</link>
-      <description>arXiv:2607.14157v1 Announce Type: new 
-Abstract: Retrieval over corpora that mix several domains often returns relevant but wrong-domain evidence that ranking metrics miss and that conformal risk control bounds only marginally, under-covering the worst domains. This work introduces C3R, a drop-in co</description>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 -0400</pubDate>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.14157</guid>
-      <source url="https://arxiv.org/abs/2607.14157">ArXiv ML</source>
-    </item>
-    <item>
-      <title>QFireNet：用于从 Sentinel-2 图像中进行野火分割的量子增强型 U-Net</title>
-      <link>https://arxiv.org/abs/2607.14160</link>
-      <description>arXiv:2607.14160v1 Announce Type: new 
-Abstract: Wildfire detection from satellite imagery is a semantic image segmentation problem that has proven to be difficult due to challenges such as class imbalance, feature complexity, and atmospheric interference. In this paper, we build on the foundational</description>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 -0400</pubDate>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.14160</guid>
-      <source url="https://arxiv.org/abs/2607.14160">ArXiv ML</source>
     </item>
   </channel>
 </rss>
