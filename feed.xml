@@ -5,8 +5,16 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 18 Jul 2026 03:27:56 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 06:19:30 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>小米 NAS 拆解与初步上手：它会是你的第一台 NAS 吗？</title>
+      <link>https://sspai.com/post/112398</link>
+      <description>小米智能存储最适合两类用户：家里已经有较多米家设备的人，以及小米手机用户。查看全文</description>
+      <pubDate>Sat, 18 Jul 2026 11:10:35 +0800</pubDate>
+      <guid isPermaLink="true">https://sspai.com/post/112398</guid>
+      <source url="https://sspai.com/post/112398">少数派</source>
+    </item>
     <item>
       <title>9点1氪丨ofo停更5年突然发文，运营主体仍处存续状态；苹果市值重返全球第一；乐事回应“蓝色薯片”来源</title>
       <link>https://36kr.com/p/3900449325287305?f=rss</link>
@@ -34,6 +42,46 @@
       <source url="https://36kr.com/p/3900439867147909?f=rss">36Kr</source>
     </item>
     <item>
+      <title>6 台机器人拼长城、首款智能体手机首秀：阶跃把 AI 塞进了现实世界｜WAIC 2026</title>
+      <link>https://www.ifanr.com/1672344?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</link>
+      <description>大模型的下一站，是走出屏幕，自己动手#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</description>
+      <pubDate>Sat, 18 Jul 2026 04:01:07 +0000</pubDate>
+      <guid isPermaLink="true">https://www.ifanr.com/1672344?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</guid>
+      <source url="https://www.ifanr.com/1672344?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
+    </item>
+    <item>
+      <title>DeepSeek估值，被一家安徽箱包公司给全部暴露了</title>
+      <link>https://www.qbitai.com/2026/07/453641.html</link>
+      <description>3500亿估值曝光</description>
+      <pubDate>Sat, 18 Jul 2026 03:41:17 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453641.html</guid>
+      <source url="https://www.qbitai.com/2026/07/453641.html">量子位</source>
+    </item>
+    <item>
+      <title>WAIC信息爆炸！大佬们都在说什么，笔记看这里</title>
+      <link>https://www.qbitai.com/2026/07/453631.html</link>
+      <description>图灵奖得主、两院院士……精彩、太精彩</description>
+      <pubDate>Sat, 18 Jul 2026 03:39:51 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453631.html</guid>
+      <source url="https://www.qbitai.com/2026/07/453631.html">量子位</source>
+    </item>
+    <item>
+      <title>清华系团队发布国产Token优化工厂：兼容10余种国产芯片，日吞吐千亿Token</title>
+      <link>https://www.qbitai.com/2026/07/453617.html</link>
+      <description>让每一份算力都变成有效Token</description>
+      <pubDate>Sat, 18 Jul 2026 03:31:48 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453617.html</guid>
+      <source url="https://www.qbitai.com/2026/07/453617.html">量子位</source>
+    </item>
+    <item>
+      <title>B站成WAIC官方AI科技视频平台，月均超1.9亿用户消费AI内容</title>
+      <link>https://www.qbitai.com/2026/07/453530.html</link>
+      <description></description>
+      <pubDate>Sat, 18 Jul 2026 03:01:18 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453530.html</guid>
+      <source url="https://www.qbitai.com/2026/07/453530.html">量子位</source>
+    </item>
+    <item>
       <title>全球首款720°连续后空翻机器狗来了！宇泛智能携“灵猫”双馆联袂首秀WAIC</title>
       <link>https://www.qbitai.com/2026/07/453506.html</link>
       <description></description>
@@ -52,155 +100,94 @@
       <source url="https://www.ifanr.com/1672338?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
     </item>
     <item>
-      <title>PPIO发布智能模型网关，打造面向Agent时代的智能Token工厂</title>
-      <link>https://www.qbitai.com/2026/07/453467.html</link>
-      <description>万亿Token调用量验证</description>
-      <pubDate>Fri, 17 Jul 2026 22:32:47 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453467.html</guid>
-      <source url="https://www.qbitai.com/2026/07/453467.html">量子位</source>
+      <title>用于搜索和救援的自主无人机群的智能三级学习架构</title>
+      <link>https://arxiv.org/abs/2607.14093</link>
+      <description>arXiv:2607.14093v1 Announce Type: new 
+Abstract: This paper presents a novel three level hierarchical learning architecture for autonomous UAV swarms performing search and rescue operations. Unlike conventional approaches that apply a single learning paradigm across all hierarchy levels, the propose</description>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 -0400</pubDate>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.14093</guid>
+      <source url="https://arxiv.org/abs/2607.14093">ArXiv AI</source>
     </item>
     <item>
-      <title>氪星晚报｜阿里1688将推出AI时代B2B交易互联互通开放标准；英特尔与Google Cloud宣布深化战略合作；铁路部门试点提前60天预约购票服务</title>
-      <link>https://36kr.com/p/3896564485572489?f=rss</link>
-      <description>大公司：
-  成大生物：流感病毒裂解疫苗（高剂量）进入I期临床试验
-  36氪获悉，成大生物公告，公司全资子公司成大生物(本溪)研发的流感病毒裂解疫苗（高剂量）已获国家药监局临床试验批准，并完成I期临床试验筹备工作，正式进入I期临床试验阶段。该疫苗抗原含量为常规剂量四倍，适用于60岁以上老年人群及高风险人群，国内尚无同类产品获批上市，有望填补市场空白。
-  苏宁易购携手人工智能合作伙伴，布局家用服务机器人
-  36氪获悉，近日，苏宁易购旗下碧英科技入围工信部人工智能揭榜挂帅项目，将联合产业生态合作伙伴研发智能家庭陪护机器人。该项目面向老龄化背景下的居家照护需求，结合具身智能技术，探索家用机器人</description>
-      <pubDate>Fri, 17 Jul 2026 21:01:42 +0800</pubDate>
-      <guid isPermaLink="true">https://36kr.com/p/3896564485572489?f=rss</guid>
-      <source url="https://36kr.com/p/3896564485572489?f=rss">36Kr</source>
+      <title>HG-RAG：结构化知识图的层次结构引导检索增强生成</title>
+      <link>https://arxiv.org/abs/2607.14095</link>
+      <description>arXiv:2607.14095v1 Announce Type: new 
+Abstract: Retrieval Augmented Generation (RAG) has proven to be a widely successful process at improving the quality of outputs from a Large Language Model (LLM) for wider context. However, RAG systems typically retrieve context from flat document stores, which</description>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 -0400</pubDate>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.14095</guid>
+      <source url="https://arxiv.org/abs/2607.14095">ArXiv AI</source>
     </item>
     <item>
-      <title>对话森博科技董事长于林义：AI应用拼的不只是技术，更是实证有效的业务闭环</title>
-      <link>https://36kr.com/p/3899556701128578?f=rss</link>
-      <description>7月17日，2026世界人工智能大会在上海开场。作为36氪连续第三年深入WAIC现场的重要内容窗口，「氪话未来」直播间也在大会首日同步开启现场对话。森博科技董事长于林义在WAIC现场接受36氪「氪话未来」特邀专访，围绕企业级AI、智能体落地、行业know-how与业务闭环等话题，分享了森博从营销服务公司转向AI驱动科技服务公司的实践路径。
-  本届WAIC以“智能伙伴，共创未来”为主题。相比过去几年行业对模型能力、参数规模和Demo效果的集中关注，2026年的AI产业讨论正在明显后移：企业更关心AI能否进入真实流程，能否承担具体任务，能否被业务结果验证。换句话说，AI不再只是一个“会回答”的工</description>
-      <pubDate>Fri, 17 Jul 2026 18:51:22 +0800</pubDate>
-      <guid isPermaLink="true">https://36kr.com/p/3899556701128578?f=rss</guid>
-      <source url="https://36kr.com/p/3899556701128578?f=rss">36Kr</source>
+      <title>IMEX 基于交互的模型解释</title>
+      <link>https://arxiv.org/abs/2607.14096</link>
+      <description>arXiv:2607.14096v1 Announce Type: new 
+Abstract: In predictive modeling, the ability to explain why a model produces a given target prediction has become increasingly important [5, 10]. Black-box models do not provide a transparent description of the internal mechanisms that generate the prediction,</description>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 -0400</pubDate>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.14096</guid>
+      <source url="https://arxiv.org/abs/2607.14096">ArXiv AI</source>
     </item>
     <item>
-      <title>2026最受投资人关注人工智能/具身智能企业50揭晓</title>
-      <link>https://36kr.com/p/3899597215745664?f=rss</link>
-      <description>&amp;nbsp;
-  人工智能正在进入一个新的产业周期。
-  过去一年，大模型能力持续演进，生成式AI、多模态交互、智能体等技术方向快速推进；而具身智能也从早期的技术探索阶段，逐渐步入产业验证的深水区，机器人开始成为人工智能与现实世界的重要载体。
-  市场率先给出了回应。据36氪研究院测算，中国具身智能市场规模已从2018年的2133亿元增长至2025年的9150亿元，2026年有望突破万亿关口。IT桔子数据显示，2026上半年具身智能融资总金额达到935亿元，较2025上半年提升近5倍，投融资事件达到322起，同比增长137%。
-  但硬币的另一面同样刺眼。智源研究院在《2026十大AI技术趋势</description>
-      <pubDate>Fri, 17 Jul 2026 18:45:58 +0800</pubDate>
-      <guid isPermaLink="true">https://36kr.com/p/3899597215745664?f=rss</guid>
-      <source url="https://36kr.com/p/3899597215745664?f=rss">36Kr</source>
+      <title>RegNetAgents：癌症基因组学中跨网络监管驱动因素识别的多代理框架</title>
+      <link>https://arxiv.org/abs/2607.14097</link>
+      <description>arXiv:2607.14097v1 Announce Type: new 
+Abstract: We introduce RegNetAgents, an AI-oriented multi-agent framework for structured, query-driven regulatory candidate identification across heterogeneous gene regulatory networks. The system enables unified analysis of bulk tumor and single-cell-derived A</description>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 -0400</pubDate>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.14097</guid>
+      <source url="https://arxiv.org/abs/2607.14097">ArXiv AI</source>
     </item>
     <item>
-      <title>本周看什么 | 最近值得一看的 10 部作品</title>
-      <link>https://sspai.com/post/112444</link>
-      <description>📅本周新预告《蓦然回首》正式预告7月15日，电影《蓦然回首》发布了正式预告，将于9月11日在日本上映。是枝裕和执导、编剧、剪辑，出口夏希、莳田彩珠主演，菅田将晖、宫藤官九郎、野吕佳代、山田真步等出演， ...查看全文</description>
-      <pubDate>Fri, 17 Jul 2026 17:57:46 +0800</pubDate>
-      <guid isPermaLink="true">https://sspai.com/post/112444</guid>
-      <source url="https://sspai.com/post/112444">少数派</source>
+      <title>DialogueVPR：迈向对话式视觉地点识别</title>
+      <link>https://arxiv.org/abs/2607.14115</link>
+      <description>arXiv:2607.14115v1 Announce Type: new 
+Abstract: Inspired by how humans communicate spatial information, language-guided geo-localization has gained significant traction for its intuitive and practical value. Despite this progress, most methods still rely on a static, one-shot retrieval paradigm, wh</description>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 -0400</pubDate>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.14115</guid>
+      <source url="https://arxiv.org/abs/2607.14115">ArXiv AI</source>
     </item>
     <item>
-      <title>逛完WAIC 2026我悟了：国产AI芯片的真对手，根本不是英伟达的GPU</title>
-      <link>https://www.qbitai.com/2026/07/453352.html</link>
-      <description>发布芯片只是拿到了入场券</description>
-      <pubDate>Fri, 17 Jul 2026 17:09:14 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453352.html</guid>
-      <source url="https://www.qbitai.com/2026/07/453352.html">量子位</source>
+      <title>立场：可解释性研究必须优先考虑基础而非临时方法</title>
+      <link>https://arxiv.org/abs/2607.14123</link>
+      <description>arXiv:2607.14123v1 Announce Type: new 
+Abstract: Despite the proliferation of Explainable AI (XAI) techniques -- from feature attributions to sparse autoencoders -- explanations rarely influence real-world workflows. In practice, they are often generated and discarded without guiding meaningful acti</description>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 -0400</pubDate>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.14123</guid>
+      <source url="https://arxiv.org/abs/2607.14123">ArXiv ML</source>
     </item>
     <item>
-      <title>给AI发工号、定岗位、做绩效，数字员工终于能落地了</title>
-      <link>https://www.qbitai.com/2026/07/453245.html</link>
-      <description>面壁智能开源StaffDeck</description>
-      <pubDate>Fri, 17 Jul 2026 16:40:47 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453245.html</guid>
-      <source url="https://www.qbitai.com/2026/07/453245.html">量子位</source>
+      <title>CARPRT：黑盒视觉语言模型的类感知零样本提示重新加权</title>
+      <link>https://arxiv.org/abs/2607.14125</link>
+      <description>arXiv:2607.14125v1 Announce Type: new 
+Abstract: Pre-trained vision-language models (VLMs) enable zero-shot image classification by computing the similarity score between an image and textual descriptions, typically formed by inserting a class label (e.g., "cat") into a prompt (e.g., "a photo of a")</description>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 -0400</pubDate>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.14125</guid>
+      <source url="https://arxiv.org/abs/2607.14125">ArXiv ML</source>
     </item>
     <item>
-      <title>WAIC直击 | 十大开源社区「挤」进了一家GPU展台，沐曦凭什么？</title>
-      <link>https://www.qbitai.com/2026/07/453246.html</link>
-      <description>每个Token背后，都是一次开源协作</description>
-      <pubDate>Fri, 17 Jul 2026 16:24:49 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453246.html</guid>
-      <source url="https://www.qbitai.com/2026/07/453246.html">量子位</source>
+      <title>使用激光雷达衍生的地形智能进行卫星地面站选址的可解释地理空间人工智能</title>
+      <link>https://arxiv.org/abs/2607.14127</link>
+      <description>arXiv:2607.14127v1 Announce Type: new 
+Abstract: Representative clutter height (RCH) is a key parameter in radio propagation and interference analysis because it captures the dominant height of local obstructions that drive terminal clutter loss. Current practice often relies on fixed clutter height</description>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 -0400</pubDate>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.14127</guid>
+      <source url="https://arxiv.org/abs/2607.14127">ArXiv ML</source>
     </item>
     <item>
-      <title>最前线｜中科天塔星载激光通信终端智能产线投产，一期年产能规划600套</title>
-      <link>https://36kr.com/p/3899439565325953?f=rss</link>
-      <description>随着低轨卫星星座建设提速，卫星之间需要传输的数据量持续增长，星间激光通信正成为卫星互联网的重要基础设施。相比传统微波通信，激光通信具备更高带宽、更低时延以及更强抗干扰能力，已成为大型卫星星座组网的重要技术方向。
-  7月16日，中科天塔星载激光通信智能产线正式在西安投产，一期规划年产能600套，公司计划到2027年将年产能提升至千套以上。
-  据中科天塔总经理曾伟刚介绍，此次投产的智能产线占地约2000平方米，位于西安高新区曲率引擎光子制造园，覆盖零部件装调、整机集成、精密调试、空间环境模拟及自动化检测等生产环节，并配套数字化管理系统和自动化测试平台，可同步完成多台设备性能检测，并通过智能系统</description>
-      <pubDate>Fri, 17 Jul 2026 15:55:26 +0800</pubDate>
-      <guid isPermaLink="true">https://36kr.com/p/3899439565325953?f=rss</guid>
-      <source url="https://36kr.com/p/3899439565325953?f=rss">36Kr</source>
+      <title>多域检索的域一致性认证：具有保形风险保证的无标签每域污染控制</title>
+      <link>https://arxiv.org/abs/2607.14157</link>
+      <description>arXiv:2607.14157v1 Announce Type: new 
+Abstract: Retrieval over corpora that mix several domains often returns relevant but wrong-domain evidence that ranking metrics miss and that conformal risk control bounds only marginally, under-covering the worst domains. This work introduces C3R, a drop-in co</description>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 -0400</pubDate>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.14157</guid>
+      <source url="https://arxiv.org/abs/2607.14157">ArXiv ML</source>
     </item>
     <item>
-      <title>我们有多久，没长久地喜欢过一个东西了？</title>
-      <link>https://36kr.com/p/3899428949132932?f=rss</link>
-      <description>我们有多久没有长久地喜欢过一个东西了？
-  在这个注意力被成倍压缩、审美红利稍纵即逝的快消时代，新鲜感的贬值速度快得惊人。换一部手机，追一个新坑，或者刷完几个短视频，我们的注意力就被迅速瓜分干净，连喜爱都变得行色匆匆。
-  但在这个热闹又健忘的环境里，却存在着反常的例外——一个不说话，甚至从不微笑的潮流手办，竟然被人们安静地喜爱了整整二十年。 &amp;nbsp;
-  为什么不同年龄、不同背景的人，都愿意和她建立情感链接？为什么每个人眼里的她，好像都不太一样，却又都觉得她始终陪伴着自己？
-  带着这些疑问，我们一起重新回看MOLLY这个潮流手办的20年。
-  不被定义的“不讨好”
-  北京798的展厅</description>
-      <pubDate>Fri, 17 Jul 2026 15:46:38 +0800</pubDate>
-      <guid isPermaLink="true">https://36kr.com/p/3899428949132932?f=rss</guid>
-      <source url="https://36kr.com/p/3899428949132932?f=rss">36Kr</source>
-    </item>
-    <item>
-      <title>科氪 | 中国联通携华为发布全球最大规模 5G-A百兆大上行网络</title>
-      <link>https://36kr.com/p/3899398088509319?f=rss</link>
-      <description>[中国，北京，2026年7月15日]今日，中国联通北京市分公司携华为发布全球最大规模5G-A大上行商用网络。该创新网络在北京全域重点区域实现百兆大上行网络连续覆盖，基站数超10000。经现场路测，七家受邀第三方媒体作为体验官共同见证了该网络“网络覆盖好，业务体验稳”——上行100MHz生效比83%、上行边缘差点（&amp;lt;20Mbps）占比仅0.1%。优异的现网测评结果标志着联通好网络在北京区域已经从5G-A全城点亮迈向全域大上行的发展新阶段。
-  
-  “5G Capital”路上见媒体路测
-  在现场路测中，中国联通北京市分公司通过3.5G+2.1G协同组网支撑了大上行网络指标测评和AI终端</description>
-      <pubDate>Fri, 17 Jul 2026 15:13:05 +0800</pubDate>
-      <guid isPermaLink="true">https://36kr.com/p/3899398088509319?f=rss</guid>
-      <source url="https://36kr.com/p/3899398088509319?f=rss">36Kr</source>
-    </item>
-    <item>
-      <title>具透 | watchOS 27 公测版一览：动态应用网格、Liquid Glass 微调……</title>
-      <link>https://sspai.com/post/112430</link>
-      <description>AI 之外，watchOS 27 中还有这些新功能。查看全文</description>
-      <pubDate>Fri, 17 Jul 2026 15:00:00 +0800</pubDate>
-      <guid isPermaLink="true">https://sspai.com/post/112430</guid>
-      <source url="https://sspai.com/post/112430">少数派</source>
-    </item>
-    <item>
-      <title>震业新材完成超亿元A轮融资，招商致远、玉柴股份、海富产业基金领投｜36氪首发</title>
-      <link>https://36kr.com/p/3898476192941697?f=rss</link>
-      <description>36氪获悉，ADI金属材料企业震业新材近期完成超亿元A轮融资。
-  本轮融资由招商致远资本、玉柴股份、海富产业基金领投，中金资本、江苏省沿海集团、黄海金控跟投，所融资金将主要用于ADI材料产线扩建、核心工艺迭代研发，以及乘用车、商用车、工程机械等下游场景的商业化落地。
-  震业新材告诉36氪：“在ADI行业，1200MPa抗拉强度、4%延伸率是行业通用性能标准。延伸率达到5%~6%以上，才算真正意义的高韧性结构材料，这也是行业关键技术分水岭，高强韧性可满足齿轮、底盘、重载传动等核心安全件的抗冲击、抗疲劳、不断裂要求。”
-  而行业主流厂商的技术水平，普遍停留在QTD 900-8（900MPa抗</description>
-      <pubDate>Fri, 17 Jul 2026 13:41:21 +0800</pubDate>
-      <guid isPermaLink="true">https://36kr.com/p/3898476192941697?f=rss</guid>
-      <source url="https://36kr.com/p/3898476192941697?f=rss">36Kr</source>
-    </item>
-    <item>
-      <title>达卯科技WAIC首发算电协同2.0：构筑AI算力与绿色能源融合新范式</title>
-      <link>https://www.qbitai.com/2026/07/453237.html</link>
-      <description>打造AIDC绿电直连能源运营操作系统</description>
-      <pubDate>Fri, 17 Jul 2026 12:00:56 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453237.html</guid>
-      <source url="https://www.qbitai.com/2026/07/453237.html">量子位</source>
-    </item>
-    <item>
-      <title>WAIC 2026 | 如果Agent有性格，你的智能伙伴会是什么样的？</title>
-      <link>https://www.qbitai.com/2026/07/453217.html</link>
-      <description>北电数智带来AI赋能民生的真实答卷</description>
-      <pubDate>Fri, 17 Jul 2026 11:34:02 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453217.html</guid>
-      <source url="https://www.qbitai.com/2026/07/453217.html">量子位</source>
-    </item>
-    <item>
-      <title>不听劝的阶跃闯进手机战场，造一台为人机共生的终端｜WAIC</title>
-      <link>https://www.ifanr.com/1672281?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</link>
-      <description>现在是最好的试错时机。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</description>
-      <pubDate>Fri, 17 Jul 2026 11:31:43 +0000</pubDate>
-      <guid isPermaLink="true">https://www.ifanr.com/1672281?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</guid>
-      <source url="https://www.ifanr.com/1672281?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
+      <title>QFireNet：用于从 Sentinel-2 图像中进行野火分割的量子增强型 U-Net</title>
+      <link>https://arxiv.org/abs/2607.14160</link>
+      <description>arXiv:2607.14160v1 Announce Type: new 
+Abstract: Wildfire detection from satellite imagery is a semantic image segmentation problem that has proven to be difficult due to challenges such as class imbalance, feature complexity, and atmospheric interference. In this paper, we build on the foundational</description>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 -0400</pubDate>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.14160</guid>
+      <source url="https://arxiv.org/abs/2607.14160">ArXiv ML</source>
     </item>
   </channel>
 </rss>
