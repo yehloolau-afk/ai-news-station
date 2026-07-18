@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 18 Jul 2026 10:40:09 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 12:06:53 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>小米 NAS 拆解与初步上手：它会是你的第一台 NAS 吗？</title>
@@ -14,6 +14,14 @@
       <pubDate>Sat, 18 Jul 2026 11:10:35 +0800</pubDate>
       <guid isPermaLink="true">https://sspai.com/post/112398</guid>
       <source url="https://sspai.com/post/112398">少数派</source>
+    </item>
+    <item>
+      <title>WAIC 2026现场发布AI商业落地报告，海亮科服同时入选产业图谱、Top50</title>
+      <link>https://www.qbitai.com/2026/07/453889.html</link>
+      <description>全面演进为赋能千行百业的新型数字基础设施</description>
+      <pubDate>Sat, 18 Jul 2026 10:12:52 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453889.html</guid>
+      <source url="https://www.qbitai.com/2026/07/453889.html">量子位</source>
     </item>
     <item>
       <title>9点1氪丨ofo停更5年突然发文，运营主体仍处存续状态；苹果市值重返全球第一；乐事回应“蓝色薯片”来源</title>
@@ -72,6 +80,14 @@
       <pubDate>Sat, 18 Jul 2026 06:47:24 +0000</pubDate>
       <guid isPermaLink="true">https://www.ifanr.com/1672364?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</guid>
       <source url="https://www.ifanr.com/1672364?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
+    </item>
+    <item>
+      <title>2026年世界人工智能大会，7月17-7月20上海举办</title>
+      <link>https://www.qbitai.com/2026/07/436498.html</link>
+      <description>180家企业携成果入驻</description>
+      <pubDate>Sat, 18 Jul 2026 05:33:28 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/436498.html</guid>
+      <source url="https://www.qbitai.com/2026/07/436498.html">量子位</source>
     </item>
     <item>
       <title>6 台机器人拼长城、首款智能体手机首秀：阶跃把 AI 塞进了现实世界｜WAIC 2026</title>
@@ -166,24 +182,6 @@ Abstract: We introduce RegNetAgents, an AI-oriented multi-agent framework for st
       <pubDate>Sat, 18 Jul 2026 00:00:00 -0400</pubDate>
       <guid isPermaLink="true">https://arxiv.org/abs/2607.14097</guid>
       <source url="https://arxiv.org/abs/2607.14097">ArXiv AI</source>
-    </item>
-    <item>
-      <title>DialogueVPR：迈向对话式视觉地点识别</title>
-      <link>https://arxiv.org/abs/2607.14115</link>
-      <description>arXiv:2607.14115v1 Announce Type: new 
-Abstract: Inspired by how humans communicate spatial information, language-guided geo-localization has gained significant traction for its intuitive and practical value. Despite this progress, most methods still rely on a static, one-shot retrieval paradigm, wh</description>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 -0400</pubDate>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.14115</guid>
-      <source url="https://arxiv.org/abs/2607.14115">ArXiv AI</source>
-    </item>
-    <item>
-      <title>立场：可解释性研究必须优先考虑基础而非临时方法</title>
-      <link>https://arxiv.org/abs/2607.14123</link>
-      <description>arXiv:2607.14123v1 Announce Type: new 
-Abstract: Despite the proliferation of Explainable AI (XAI) techniques -- from feature attributions to sparse autoencoders -- explanations rarely influence real-world workflows. In practice, they are often generated and discarded without guiding meaningful acti</description>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 -0400</pubDate>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.14123</guid>
-      <source url="https://arxiv.org/abs/2607.14123">ArXiv ML</source>
     </item>
   </channel>
 </rss>
