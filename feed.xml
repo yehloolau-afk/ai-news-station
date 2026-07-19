@@ -5,8 +5,23 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 19 Jul 2026 09:16:13 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 11:21:32 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>科氪 | 从生命预警到七诊合参，安顿“双核首发”的技术密码</title>
+      <link>https://36kr.com/p/3902428274427525?f=rss</link>
+      <description>在2026世界人工智能大会（WAIC 2026）上，安顿健康以两项首发引发广泛关注：我国首个生命预警表标准，以及行业首个七诊合参中医机器人——安顿中医机器人。
+  
+  WAIC现场图片
+  两项首发背后，是一套从感知层到算法层再到输出层的完整技术体系。
+  核心引擎：天回·AI脉诊算法与三重置信体系
+  安顿双核首发的技术底座，是一套名为"天回·AI脉诊算法"的自研核心技术。该算法首次将中医24种脉象细分为120余个可量化的特征点，实现了中医脉诊从经验判断到数据驱动的范式转换。
+  算法之上，安顿构建了三重置信体系：天回中医药大模型、西医临床诊断模型、以及个人专属健康模型协同评估。
+  在数</description>
+      <pubDate>Sun, 19 Jul 2026 18:35:30 +0800</pubDate>
+      <guid isPermaLink="true">https://36kr.com/p/3902428274427525?f=rss</guid>
+      <source url="https://36kr.com/p/3902428274427525?f=rss">36Kr</source>
+    </item>
     <item>
       <title>TDS REVIEW | 索尼 WH-1000XX 无线降噪头戴耳机体验</title>
       <link>https://sspai.com/post/112374</link>
@@ -14,6 +29,14 @@
       <pubDate>Sun, 19 Jul 2026 11:00:00 +0800</pubDate>
       <guid isPermaLink="true">https://sspai.com/post/112374</guid>
       <source url="https://sspai.com/post/112374">少数派</source>
+    </item>
+    <item>
+      <title>看了20万小时「人类干活实录」，机器人悟了</title>
+      <link>https://www.qbitai.com/2026/07/454592.html</link>
+      <description>黎曼动力正式发布Riemann-1.0</description>
+      <pubDate>Sun, 19 Jul 2026 08:32:36 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/454592.html</guid>
+      <source url="https://www.qbitai.com/2026/07/454592.html">量子位</source>
     </item>
     <item>
       <title>不换模型，效果提升104%！上海AI Lab让Harness也能自进化了</title>
@@ -96,14 +119,6 @@
       <source url="https://www.qbitai.com/2026/07/453802.html">量子位</source>
     </item>
     <item>
-      <title>WAIC看了一圈，这家公司的机器人在认真打工</title>
-      <link>https://www.qbitai.com/2026/07/454040.html</link>
-      <description>机器人真正具备了干活的完整能力</description>
-      <pubDate>Sat, 18 Jul 2026 13:23:21 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/454040.html</guid>
-      <source url="https://www.qbitai.com/2026/07/454040.html">量子位</source>
-    </item>
-    <item>
       <title>小米 NAS 拆解与初步上手：它会是你的第一台 NAS 吗？</title>
       <link>https://sspai.com/post/112398</link>
       <description>小米智能存储最适合两类用户：家里已经有较多米家设备的人，以及小米手机用户。查看全文</description>
@@ -174,15 +189,6 @@
       <pubDate>Fri, 17 Jul 2026 21:01:42 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3896564485572489?f=rss</guid>
       <source url="https://36kr.com/p/3896564485572489?f=rss">36Kr</source>
-    </item>
-    <item>
-      <title>对话森博科技董事长于林义：AI应用拼的不只是技术，更是实证有效的业务闭环</title>
-      <link>https://36kr.com/p/3899556701128578?f=rss</link>
-      <description>7月17日，2026世界人工智能大会在上海开场。作为36氪连续第三年深入WAIC现场的重要内容窗口，「氪话未来」直播间也在大会首日同步开启现场对话。森博科技董事长于林义在WAIC现场接受36氪「氪话未来」特邀专访，围绕企业级AI、智能体落地、行业know-how与业务闭环等话题，分享了森博从营销服务公司转向AI驱动科技服务公司的实践路径。
-  本届WAIC以“智能伙伴，共创未来”为主题。相比过去几年行业对模型能力、参数规模和Demo效果的集中关注，2026年的AI产业讨论正在明显后移：企业更关心AI能否进入真实流程，能否承担具体任务，能否被业务结果验证。换句话说，AI不再只是一个“会回答”的工</description>
-      <pubDate>Fri, 17 Jul 2026 18:51:22 +0800</pubDate>
-      <guid isPermaLink="true">https://36kr.com/p/3899556701128578?f=rss</guid>
-      <source url="https://36kr.com/p/3899556701128578?f=rss">36Kr</source>
     </item>
   </channel>
 </rss>
