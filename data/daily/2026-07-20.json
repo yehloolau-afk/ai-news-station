@@ -1,0 +1,46 @@
+{
+  "date": "2026-07-19",
+  "attribution": {
+    "source": "AI HOT",
+    "canonical": "https://aihot.virxact.com/daily/2026-07-19"
+  },
+  "generatedAt": "2026-07-19T00:00:00.559Z",
+  "windowStart": "2026-07-18T00:00:00.000Z",
+  "windowEnd": "2026-07-19T00:00:00.000Z",
+  "lead": null,
+  "sections": [
+    {
+      "label": "产品发布/更新",
+      "items": [
+        {
+          "title": "Claude Code v2.1.214 发布：修复权限绕过、添加 EndConversation 工具与多项 Bash 权限检查改进",
+          "summary": "Claude Code v2.1.214 修复了 Windows PowerShell 5.1 中的权限检查绕过漏洞，以及 Bash 权限检查对超长命令（超过 10,000 字符）和 zsh 变量下标比较的误判问题。",
+          "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.214",
+          "sourceName": "Claude Code：GitHub Releases（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrpp5dgu0434bisrm2cs33xt",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrpp5dgu0434bisrm2cs33xt"
+          }
+        }
+      ]
+    },
+    {
+      "label": "技巧与观点",
+      "items": [
+        {
+          "title": "Index Ventures 联合创始人 Neil Rimer 认为 AI 财富将面临“再分配”",
+          "summary": "Index Ventures 联合创始人 Neil Rimer 表示，围绕 AI 积累的巨额财富将面临“某种形式的再分配”，无论是自愿还是强制。他呼吁科技领袖在推动自愿再分配中发挥主导作用。与此同时，美国慈善捐赠总额虽创新高，但捐赠人数持续下降，而加州正考虑对亿万富翁征收 5% 的一次性财富税。",
+          "sourceUrl": "https://techcrunch.com/2026/07/17/neil-rimer-thinks-the-ai-money-is-coming-back-out",
+          "sourceName": "TechCrunch：AI（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrpwwjho06djbisr218fe8ro",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrpwwjho06djbisr218fe8ro"
+          }
+        }
+      ]
+    }
+  ],
+  "flashes": []
+}
