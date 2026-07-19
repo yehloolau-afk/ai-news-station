@@ -5,8 +5,18 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 19 Jul 2026 17:16:32 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 19:26:04 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>与你一起庆祝200万！</title>
+      <link>https://www.youtube.com/watch?v=AopewjYV1Ho</link>
+      <description>From launches and livestreams to the moments in between, thank you for watching, learning, and building with us.
+
+Here’s a look back at some of what we’ve shared on the way to 2 million subscribers. We’re grateful you’ve been part of it—and excited for what’s next.</description>
+      <pubDate>Sun, 19 Jul 2026 18:46:37 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=AopewjYV1Ho</guid>
+      <source url="https://www.youtube.com/watch?v=AopewjYV1Ho">OpenAI</source>
+    </item>
     <item>
       <title>科氪 | 从生命预警到七诊合参，安顿“双核首发”的技术密码</title>
       <link>https://36kr.com/p/3902428274427525?f=rss</link>
@@ -177,18 +187,6 @@
       <pubDate>Sat, 18 Jul 2026 00:49:59 +0000</pubDate>
       <guid isPermaLink="true">https://www.ifanr.com/1672338?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</guid>
       <source url="https://www.ifanr.com/1672338?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
-    </item>
-    <item>
-      <title>氪星晚报｜阿里1688将推出AI时代B2B交易互联互通开放标准；英特尔与Google Cloud宣布深化战略合作；铁路部门试点提前60天预约购票服务</title>
-      <link>https://36kr.com/p/3896564485572489?f=rss</link>
-      <description>大公司：
-  成大生物：流感病毒裂解疫苗（高剂量）进入I期临床试验
-  36氪获悉，成大生物公告，公司全资子公司成大生物(本溪)研发的流感病毒裂解疫苗（高剂量）已获国家药监局临床试验批准，并完成I期临床试验筹备工作，正式进入I期临床试验阶段。该疫苗抗原含量为常规剂量四倍，适用于60岁以上老年人群及高风险人群，国内尚无同类产品获批上市，有望填补市场空白。
-  苏宁易购携手人工智能合作伙伴，布局家用服务机器人
-  36氪获悉，近日，苏宁易购旗下碧英科技入围工信部人工智能揭榜挂帅项目，将联合产业生态合作伙伴研发智能家庭陪护机器人。该项目面向老龄化背景下的居家照护需求，结合具身智能技术，探索家用机器人</description>
-      <pubDate>Fri, 17 Jul 2026 21:01:42 +0800</pubDate>
-      <guid isPermaLink="true">https://36kr.com/p/3896564485572489?f=rss</guid>
-      <source url="https://36kr.com/p/3896564485572489?f=rss">36Kr</source>
     </item>
   </channel>
 </rss>
