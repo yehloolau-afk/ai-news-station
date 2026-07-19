@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 19 Jul 2026 15:12:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 16:11:44 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>科氪 | 从生命预警到七诊合参，安顿“双核首发”的技术密码</title>
@@ -37,14 +37,6 @@
       <pubDate>Sun, 19 Jul 2026 11:55:52 +0000</pubDate>
       <guid isPermaLink="true">https://www.qbitai.com/2026/07/455031.html</guid>
       <source url="https://www.qbitai.com/2026/07/455031.html">量子位</source>
-    </item>
-    <item>
-      <title>西部数据首次亮相WAIC：瞄准100TB硬盘，给AI修一座数据底座</title>
-      <link>https://www.qbitai.com/2026/07/454824.html</link>
-      <description>当AI进入规模化，存储开始决定成本</description>
-      <pubDate>Sun, 19 Jul 2026 11:51:51 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/454824.html</guid>
-      <source url="https://www.qbitai.com/2026/07/454824.html">量子位</source>
     </item>
     <item>
       <title>不靠英伟达网卡，国产GPU直通方案实测出炉：吞吐飙升、延迟砍半</title>
@@ -109,6 +101,14 @@
       <pubDate>Sun, 19 Jul 2026 08:32:36 +0000</pubDate>
       <guid isPermaLink="true">https://www.qbitai.com/2026/07/454592.html</guid>
       <source url="https://www.qbitai.com/2026/07/454592.html">量子位</source>
+    </item>
+    <item>
+      <title>不换模型，效果提升104%！上海AI Lab让Harness也能自进化了</title>
+      <link>https://www.qbitai.com/2026/07/454441.html</link>
+      <description>Harness本身也可以被搜索、验证和迭代</description>
+      <pubDate>Sun, 19 Jul 2026 07:00:47 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/454441.html</guid>
+      <source url="https://www.qbitai.com/2026/07/454441.html">量子位</source>
     </item>
     <item>
       <title>这幅 5999 元的眼镜，配不配当电竞玩家的「新装备」｜ROG XREAL R1 体验</title>
