@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 19 Jul 2026 11:21:32 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 13:50:15 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>科氪 | 从生命预警到七诊合参，安顿“双核首发”的技术密码</title>
@@ -23,12 +23,84 @@
       <source url="https://36kr.com/p/3902428274427525?f=rss">36Kr</source>
     </item>
     <item>
+      <title>冷门的哲学，成了“治”AI的热门</title>
+      <link>https://www.qbitai.com/2026/07/455041.html</link>
+      <description>智能进了社会，治理不能慢半拍</description>
+      <pubDate>Sun, 19 Jul 2026 12:34:01 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/455041.html</guid>
+      <source url="https://www.qbitai.com/2026/07/455041.html">量子位</source>
+    </item>
+    <item>
+      <title>围观WAIC模型「读心术」！现场火火火火火</title>
+      <link>https://www.qbitai.com/2026/07/455031.html</link>
+      <description>主观世界模型</description>
+      <pubDate>Sun, 19 Jul 2026 11:55:52 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/455031.html</guid>
+      <source url="https://www.qbitai.com/2026/07/455031.html">量子位</source>
+    </item>
+    <item>
+      <title>西部数据首次亮相WAIC：瞄准100TB硬盘，给AI修一座数据底座</title>
+      <link>https://www.qbitai.com/2026/07/454824.html</link>
+      <description>当AI进入规模化，存储开始决定成本</description>
+      <pubDate>Sun, 19 Jul 2026 11:51:51 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/454824.html</guid>
+      <source url="https://www.qbitai.com/2026/07/454824.html">量子位</source>
+    </item>
+    <item>
+      <title>不靠英伟达网卡，国产GPU直通方案实测出炉：吞吐飙升、延迟砍半</title>
+      <link>https://www.qbitai.com/2026/07/454932.html</link>
+      <description>奇异摩尔首次亮相WAIC 2026</description>
+      <pubDate>Sun, 19 Jul 2026 11:50:28 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/454932.html</guid>
+      <source url="https://www.qbitai.com/2026/07/454932.html">量子位</source>
+    </item>
+    <item>
+      <title>逛了趟WAIC，我只想说，AI在物理世界都快卷疯了……</title>
+      <link>https://www.qbitai.com/2026/07/454802.html</link>
+      <description>还得是AI圈春晚</description>
+      <pubDate>Sun, 19 Jul 2026 11:43:25 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/454802.html</guid>
+      <source url="https://www.qbitai.com/2026/07/454802.html">量子位</source>
+    </item>
+    <item>
+      <title>聚焦WAIC｜端侧原生架构获产业共识，Om AI联汇正式发起物理AI协同发展倡议</title>
+      <link>https://www.qbitai.com/2026/07/454791.html</link>
+      <description></description>
+      <pubDate>Sun, 19 Jul 2026 11:24:04 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/454791.html</guid>
+      <source url="https://www.qbitai.com/2026/07/454791.html">量子位</source>
+    </item>
+    <item>
+      <title>2026世界人工智能大会“未来计算·未来算力”专题论坛在沪召开，共识凝聚五问</title>
+      <link>https://www.qbitai.com/2026/07/454774.html</link>
+      <description></description>
+      <pubDate>Sun, 19 Jul 2026 11:01:00 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/454774.html</guid>
+      <source url="https://www.qbitai.com/2026/07/454774.html">量子位</source>
+    </item>
+    <item>
       <title>TDS REVIEW | 索尼 WH-1000XX 无线降噪头戴耳机体验</title>
       <link>https://sspai.com/post/112374</link>
       <description>这篇文章是TDSStudio在少数派上的第26篇文章，依然是全平台首发。1000XTheColleXion，这是索尼1000X系列的十周年纪念产品线。完全想不到跟群友们畅聊MDR-1000X的时代已经 ...查看全文</description>
       <pubDate>Sun, 19 Jul 2026 11:00:00 +0800</pubDate>
       <guid isPermaLink="true">https://sspai.com/post/112374</guid>
       <source url="https://sspai.com/post/112374">少数派</source>
+    </item>
+    <item>
+      <title>商汤大装置与国信数算达成战略合作，共建全国一体化算力网试验场</title>
+      <link>https://www.qbitai.com/2026/07/454771.html</link>
+      <description>极响应全国一体化算力网建设部署</description>
+      <pubDate>Sun, 19 Jul 2026 09:40:18 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/454771.html</guid>
+      <source url="https://www.qbitai.com/2026/07/454771.html">量子位</source>
+    </item>
+    <item>
+      <title>危！GPT-5.6会自动删文件，AI初创老板痛失整台Mac</title>
+      <link>https://www.qbitai.com/2026/07/454689.html</link>
+      <description>黎曼动力正式发布Rienmann-1.0</description>
+      <pubDate>Sun, 19 Jul 2026 09:39:02 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/454689.html</guid>
+      <source url="https://www.qbitai.com/2026/07/454689.html">量子位</source>
     </item>
     <item>
       <title>看了20万小时「人类干活实录」，机器人悟了</title>
@@ -39,84 +111,12 @@
       <source url="https://www.qbitai.com/2026/07/454592.html">量子位</source>
     </item>
     <item>
-      <title>不换模型，效果提升104%！上海AI Lab让Harness也能自进化了</title>
-      <link>https://www.qbitai.com/2026/07/454441.html</link>
-      <description>Harness本身也可以被搜索、验证和迭代</description>
-      <pubDate>Sun, 19 Jul 2026 07:00:47 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/454441.html</guid>
-      <source url="https://www.qbitai.com/2026/07/454441.html">量子位</source>
-    </item>
-    <item>
-      <title>供需失衡的窗口期里，商汤大装置把国产算力做成了正毛利生意</title>
-      <link>https://www.qbitai.com/2026/07/454426.html</link>
-      <description>端到端整合、能跨场景复用的操作方法论</description>
-      <pubDate>Sun, 19 Jul 2026 06:56:25 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/454426.html</guid>
-      <source url="https://www.qbitai.com/2026/07/454426.html">量子位</source>
-    </item>
-    <item>
-      <title>WAIC 2026｜从纳米抗体到环肽：分子之心30天两度验证AI底层设计力，筑牢生物经济“多模态新基建”</title>
-      <link>https://www.qbitai.com/2026/07/454423.html</link>
-      <description></description>
-      <pubDate>Sun, 19 Jul 2026 06:40:12 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/454423.html</guid>
-      <source url="https://www.qbitai.com/2026/07/454423.html">量子位</source>
-    </item>
-    <item>
-      <title>以场景为牵引，推动工业AI从单点实效迈向生产力跃迁</title>
-      <link>https://www.qbitai.com/2026/07/454419.html</link>
-      <description></description>
-      <pubDate>Sun, 19 Jul 2026 06:34:28 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/454419.html</guid>
-      <source url="https://www.qbitai.com/2026/07/454419.html">量子位</source>
-    </item>
-    <item>
-      <title>WAIC 2026 | 摩尔线程首次公开多项训练推理实践成果，三大“AI工厂”持续释放算力价值</title>
-      <link>https://www.qbitai.com/2026/07/454170.html</link>
-      <description></description>
-      <pubDate>Sun, 19 Jul 2026 06:23:00 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/454170.html</guid>
-      <source url="https://www.qbitai.com/2026/07/454170.html">量子位</source>
-    </item>
-    <item>
-      <title>WAIC 2026“镇馆之宝”STEPX Neo亮相，引领人机交互新范式</title>
-      <link>https://www.qbitai.com/2026/07/454165.html</link>
-      <description></description>
-      <pubDate>Sun, 19 Jul 2026 05:38:26 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/454165.html</guid>
-      <source url="https://www.qbitai.com/2026/07/454165.html">量子位</source>
-    </item>
-    <item>
       <title>这幅 5999 元的眼镜，配不配当电竞玩家的「新装备」｜ROG XREAL R1 体验</title>
       <link>https://www.ifanr.com/1672380?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</link>
       <description>ROG 想卖给玩家的，不只是一副眼镜。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</description>
       <pubDate>Sun, 19 Jul 2026 03:22:39 +0000</pubDate>
       <guid isPermaLink="true">https://www.ifanr.com/1672380?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</guid>
       <source url="https://www.ifanr.com/1672380?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
-    </item>
-    <item>
-      <title>魔法原子Magic-VLA K02攻克叠盒封胶长程任务，成功率超90%</title>
-      <link>https://www.qbitai.com/2026/07/454155.html</link>
-      <description>WAIC现场叠箱封胶，解锁物理AI新技能</description>
-      <pubDate>Sun, 19 Jul 2026 02:36:39 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/454155.html</guid>
-      <source url="https://www.qbitai.com/2026/07/454155.html">量子位</source>
-    </item>
-    <item>
-      <title>这，可能是今年WAIC最惊艳的图片！</title>
-      <link>https://www.qbitai.com/2026/07/454049.html</link>
-      <description>理解、生成、行动的原生统一</description>
-      <pubDate>Sun, 19 Jul 2026 02:08:41 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/454049.html</guid>
-      <source url="https://www.qbitai.com/2026/07/454049.html">量子位</source>
-    </item>
-    <item>
-      <title>全球市占第一后，普渡在WAIC开始回答机器人下一场战争</title>
-      <link>https://www.qbitai.com/2026/07/453802.html</link>
-      <description>PuduFM+PuduAgent，一并在不同本体上持续落地，共同构成了普渡机器人的顶层战略「一脑多形」。</description>
-      <pubDate>Sun, 19 Jul 2026 01:01:46 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/453802.html</guid>
-      <source url="https://www.qbitai.com/2026/07/453802.html">量子位</source>
     </item>
     <item>
       <title>小米 NAS 拆解与初步上手：它会是你的第一台 NAS 吗？</title>
