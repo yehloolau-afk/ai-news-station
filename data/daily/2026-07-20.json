@@ -1,26 +1,102 @@
 {
-  "date": "2026-07-19",
+  "date": "2026-07-20",
   "attribution": {
     "source": "AI HOT",
-    "canonical": "https://aihot.virxact.com/daily/2026-07-19"
+    "canonical": "https://aihot.virxact.com/daily/2026-07-20"
   },
-  "generatedAt": "2026-07-19T00:00:00.559Z",
-  "windowStart": "2026-07-18T00:00:00.000Z",
-  "windowEnd": "2026-07-19T00:00:00.000Z",
+  "generatedAt": "2026-07-20T00:00:00.546Z",
+  "windowStart": "2026-07-19T00:00:00.000Z",
+  "windowEnd": "2026-07-20T00:00:00.000Z",
   "lead": null,
   "sections": [
+    {
+      "label": "模型发布/更新",
+      "items": [
+        {
+          "title": "Qwen3.8 开源发布，2.4T 参数模型上线",
+          "summary": "Qwen3.8 即将发布并很快开源权重！🌐 该模型拥有 2.4T 海量参数，正在持续进化。我们相信它是目前最强大的模型之一，可与领先的前沿 AI 模型媲美，仅次于 Fable 5。 你无需等待即可测试。就在刚才，Qwen3.8-Max-Preview 已在阿里巴巴的 Token Plan、Qoder 和 QoderWork 上首次亮相。快来抢先体验吧。 期待你的作品。敬请关注！🚀",
+          "sourceUrl": "https://x.com/Alibaba_Qwen/status/2078754377473601787",
+          "sourceName": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+          "permalink": "https://aihot.virxact.com/items/cmrrjaxlv030jbihklywu3xy6",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrrjaxlv030jbihklywu3xy6"
+          }
+        },
+        {
+          "title": "昆仑万维宣布2026为“世界模型元年”，发布Matrix-Game 3.5等模型",
+          "summary": "昆仑万维董事长方汉在WAIC上宣布2026年为“世界模型元年”，并发布Matrix-Game 3.5世界模型、Mureka v9.5与O3音乐模型。Matrix-Game 3.5实现Patch级记忆注入，5B模型在720p分辨率下单卡可达20FPS实时生成，核心架构已开源。",
+          "sourceUrl": "https://mp.weixin.qq.com/s/LidvGePhOOoUY3KTor_w9g",
+          "sourceName": "公众号：昆仑万维（天工）",
+          "permalink": "https://aihot.virxact.com/items/cmrrt03gx00mkbi5qtoim4wvo",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrrt03gx00mkbi5qtoim4wvo"
+          }
+        },
+        {
+          "title": "面壁智能开源 MiniCPM-Robot 具身智能模型系列",
+          "summary": "面壁智能开源首个具身AI模型系列 MiniCPM-Robot，包含 1.5B 参数的通用视觉-语言-动作（VLA）模型 MiniCPM-RobotManip 和用于目标跟踪的 MiniCPM-RobotTrack。同时发布高性能推理框架 PhyAI，旨在让机器人实现理解、记忆与行动。",
+          "sourceUrl": "https://x.com/OpenBMB/status/2078839529591759025",
+          "sourceName": "X：面壁智能 OpenBMB (@OpenBMB)",
+          "permalink": "https://aihot.virxact.com/items/cmrrvig4h01ctbi5qyidwptd7",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrrvig4h01ctbi5qyidwptd7"
+          }
+        },
+        {
+          "title": "MiniCPM5-2B发布：4B以下全球性能第一，适配9款芯片",
+          "summary": "面壁智能联合OpenBMB发布端侧模型MiniCPM5-2B，以2B参数量在AA-Index榜单取得4B以下模型最高分17分，平均分54.26，超越Qwen3.5-2B等竞品。模型原生支持混合思考与512K上下文，已完成华为昇腾、英伟达等9款芯片的Day0适配，即将开源。",
+          "sourceUrl": "https://mp.weixin.qq.com/s/rjFxrUylyGMqa5QtgypCdw",
+          "sourceName": "公众号：面壁智能（MiniCPM）",
+          "permalink": "https://aihot.virxact.com/items/cmrru2n5x00vzbi5qea6youod",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrru2n5x00vzbi5qea6youod"
+          }
+        }
+      ]
+    },
     {
       "label": "产品发布/更新",
       "items": [
         {
-          "title": "Claude Code v2.1.214 发布：修复权限绕过、添加 EndConversation 工具与多项 Bash 权限检查改进",
-          "summary": "Claude Code v2.1.214 修复了 Windows PowerShell 5.1 中的权限检查绕过漏洞，以及 Bash 权限检查对超长命令（超过 10,000 字符）和 zsh 变量下标比较的误判问题。",
-          "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.214",
-          "sourceName": "Claude Code：GitHub Releases（RSS）",
-          "permalink": "https://aihot.virxact.com/items/cmrpp5dgu0434bisrm2cs33xt",
+          "title": "transcribe.cpp 发布：基于 ggml 的跨平台语音转录库，支持 16 个 ASR 模型族",
+          "summary": "transcribe.cpp v0.1.0 发布，一个基于 ggml 的语音转录库，支持 16 个 ASR 模型族（60+ 模型），并通过 Vulkan、Metal、CUDA 和 TinyBLAS 实现 GPU 加速。",
+          "sourceUrl": "https://workshop.cjpais.com/projects/transcribe-cpp",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "permalink": "https://aihot.virxact.com/items/cmrr7sdid02ybbi18afm9lr2i",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrpp5dgu0434bisrm2cs33xt"
+            "canonical": "https://aihot.virxact.com/items/cmrr7sdid02ybbi18afm9lr2i"
+          }
+        },
+        {
+          "title": "ChatGPT Work 功能：建站、邮件、文档处理",
+          "summary": "ChatGPT Work 适用于 ✅ 创建和托管网站 ✅ 为你管理电子邮件 ✅ 总结海量文档 ✅ 制作一流的文档、表格和幻灯片 已在你的移动应用或 http://chatgpt.com 上提供，包含在 Plus、Pro、Business 和 Enterprise 套餐中。",
+          "sourceUrl": "https://x.com/thsottiaux/status/2078697631019303273",
+          "sourceName": "X：Tibo (@thsottiaux)",
+          "permalink": "https://aihot.virxact.com/items/cmrraq5dk03p5bi18vyrt83kp",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrraq5dk03p5bi18vyrt83kp"
+          }
+        }
+      ]
+    },
+    {
+      "label": "行业动态",
+      "items": [
+        {
+          "title": "黄仁勋访日：Nvidia 联手日本打造物理 AI 时代，Noetra 主权 AI 工厂与 Cosmos 机器人联盟落地",
+          "summary": "Nvidia CEO 黄仁勋在 7 月 15-16 日访日期间，宣布为日本建设“Vera Rubin AI 工厂”，配备 13,750 颗 Vera CPU 和 27,500 颗 Rubin GPU，预计 2028 年投运。",
+          "sourceUrl": "https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit",
+          "sourceName": "TechCrunch：AI（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrsbql4401gxbiuaj7s1567n",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrsbql4401gxbiuaj7s1567n"
           }
         }
       ]
@@ -29,14 +105,14 @@
       "label": "技巧与观点",
       "items": [
         {
-          "title": "Index Ventures 联合创始人 Neil Rimer 认为 AI 财富将面临“再分配”",
-          "summary": "Index Ventures 联合创始人 Neil Rimer 表示，围绕 AI 积累的巨额财富将面临“某种形式的再分配”，无论是自愿还是强制。他呼吁科技领袖在推动自愿再分配中发挥主导作用。与此同时，美国慈善捐赠总额虽创新高，但捐赠人数持续下降，而加州正考虑对亿万富翁征收 5% 的一次性财富税。",
-          "sourceUrl": "https://techcrunch.com/2026/07/17/neil-rimer-thinks-the-ai-money-is-coming-back-out",
-          "sourceName": "TechCrunch：AI（RSS）",
-          "permalink": "https://aihot.virxact.com/items/cmrpwwjho06djbisr218fe8ro",
+          "title": "AI 热潮正在瓦解全球决策机制",
+          "summary": "一位拥有 300 多次行业交流经验的从业者观察到，全球公私机构正陷入集体性 AI 狂热，决策层要么没有计划，要么只能低头回避。过去一年半中，其团队所见的所有 AI 项目均以失败告终（成功率 0%），失败原因常与 LLM 能力无关，而是企业本就难以有效运行软件项目，且 AI 项目叠加了额外风险。内部聊天机器人几乎无人使用，客户服务聊天机器人也极少带来良好体验，例如三菱的语音客服承诺回电却六周未兑现。",
+          "sourceUrl": "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "permalink": "https://aihot.virxact.com/items/cmrrd5bjb00cfbikihob9drtj",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrpwwjho06djbisr218fe8ro"
+            "canonical": "https://aihot.virxact.com/items/cmrrd5bjb00cfbikihob9drtj"
           }
         }
       ]
