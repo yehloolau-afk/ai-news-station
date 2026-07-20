@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 20 Jul 2026 14:33:53 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2026 16:44:29 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>氪星晚报｜SpaceX将“星舰”第13次试飞推迟至7月23日；马斯克称特斯拉FSD会模仿驾驶风格；我国人形机器人整机产品超全球半数</title>
@@ -80,6 +80,18 @@
       <source url="https://36kr.com/p/3903739699005058?f=rss">36Kr</source>
     </item>
     <item>
+      <title>维珍航空如何使用 ChatGPT Work 将几周的工作变成几个小时</title>
+      <link>https://www.youtube.com/watch?v=WwxZeU4WH14</link>
+      <description>“It’s weeks to hours.”
+
+Nathan Bolt, Head of Digital Product at Virgin Atlantic, uses ChatGPT Work to synthesize strategy documents, analyze competitors, and turn weeks of work into hours.
+
+Together with Miles King, the team built custom dashboards that connect data from across the business—helping </description>
+      <pubDate>Mon, 20 Jul 2026 16:24:11 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=WwxZeU4WH14</guid>
+      <source url="https://www.youtube.com/watch?v=WwxZeU4WH14">OpenAI</source>
+    </item>
+    <item>
       <title>角落新声 | 把杂乱桌面收拾得像样，只需要一张桌垫</title>
       <link>https://sspai.com/post/112453</link>
       <description>在拥有你我理想的超大自主空间之前，不如用一张桌垫改善一下自己的工作生活环境，过得多舒心一点点吧。查看全文</description>
@@ -132,8 +144,8 @@ For Robin Vince, optimism means action. And that action starts before Monday mor
   编辑｜张雨忻
   在上海世博的WAIC现场，想找初创公司的主场H4得颇费一番功夫。
   经安检进入主会场，远远只看到会场墙壁上H1到H3的标识。跟随汹涌人群挤进一楼主展馆，几名忙着操纵具身智能机器人的知名厂商工程师翻了翻他们群聊里的展会地图，抱歉地告诉我，他们也不清楚：“这里只有H1到H3，没有H4。你是不是去分会场找找？”
-  属于初创团队的场地在主展馆地下一层偏居一隅，一道亮黄色的大门默不作声地支在场馆西北侧��角落。穿过这道大门，就是遍布初创公司的一方天地。
-  来之前，我们知道并非所有的AI创业者与科创公司都对参加WAIC怀抱</description>
+  属于初创团队的场地在主展馆地下一层偏居一隅，一道亮黄色的大门默不作声地支在场馆西北侧的角落。穿过这道大门，就是遍布初创公司的一方天地。
+  来之前，我们知道并非所有的AI创业者与科创公司都对参加WAIC怀抱热</description>
       <pubDate>Mon, 20 Jul 2026 11:02:32 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3903396279125888?f=rss</guid>
       <source url="https://36kr.com/p/3903396279125888?f=rss">36Kr</source>
@@ -211,14 +223,6 @@ For Robin Vince, optimism means action. And that action starts before Monday mor
       <pubDate>Mon, 20 Jul 2026 10:28:43 +0000</pubDate>
       <guid isPermaLink="true">https://www.ifanr.com/1672613?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</guid>
       <source url="https://www.ifanr.com/1672613?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
-    </item>
-    <item>
-      <title>当AI进入最依赖“人”的行业：一家四线城市康复机构利润增长40%</title>
-      <link>https://www.qbitai.com/2026/07/455791.html</link>
-      <description></description>
-      <pubDate>Mon, 20 Jul 2026 09:54:33 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/455791.html</guid>
-      <source url="https://www.qbitai.com/2026/07/455791.html">量子位</source>
     </item>
   </channel>
 </rss>
