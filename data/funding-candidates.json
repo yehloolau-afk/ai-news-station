@@ -12,5 +12,19 @@
     "summary": "开发者Jarred Sumner借助Claude Fable 5模型，11天内将Bun从Zig重写为Rust，64个实例并行编写超100万行代码，API费用约16.5万美元。重构主因是Zig频繁内存错误，Rust可在编译时捕获。Bun v1.4.0以Canary版本发布，修复128个错误，速度提高约2%到5%。Bun团队已于2025年12月被Anthropic收购。",
     "sourceUrl": "https://www.ithome.com/0/975/469.htm",
     "sourceName": "IT之家（RSS）"
+  },
+  {
+    "date": "2026-07-21",
+    "title": "Ollama 获 8800 万美元融资，加速开放模型生态发展",
+    "summary": "Ollama 宣布完成 8800 万美元融资，由 Benchmark、Theory Ventures 和 8VC 等领投。该平台已服务 890 万开发者，并被 85% 的财富 500 强企业使用，其云端 token 用量月均翻倍。资金将用于支持无缝混合推理、新模型发布当日集成，以及让开发者在不牺牲所有权和隐私的前提下使用最强开放模型。",
+    "sourceUrl": "https://ollama.com/blog/all-aboard-open-models",
+    "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
+    "date": "2026-07-21",
+    "title": "中国AI几乎追平美国，Kimi K3开源模型引发市场震荡",
+    "summary": "中国公司月之暗面（Moonshot.AI）发布Kimi K3模型，性能与最佳美国模型相当，且为开源权重模型，用户可免费下载本地运行。受此消息影响，美国股市上周五下跌，OpenAI和Anthropic的商业模式及IPO前景受到严重质疑。美国在AI软件领域的护城河已不如预期，AI竞赛正演变为工业系统竞争。",
+    "sourceUrl": "https://garymarcus.substack.com/p/china-has-all-but-caught-up-the-us",
+    "sourceName": "Gary Marcus：The Road to AI We Can Trust（RSS）"
   }
 ]

@@ -201,5 +201,33 @@
     "summary": "面壁智能联合OpenBMB发布端侧模型MiniCPM5-2B，以2B参数量在AA-Index榜单取得4B以下模型最高分17分，平均分54.26，超越Qwen3.5-2B等竞品。模型原生支持混合思考与512K上下文，已完成华为昇腾、英伟达等9款芯片的Day0适配，即将开源。",
     "sourceUrl": "https://mp.weixin.qq.com/s/rjFxrUylyGMqa5QtgypCdw",
     "sourceName": "公众号：面壁智能（MiniCPM）"
+  },
+  {
+    "date": "2026-07-21",
+    "title": "面壁智能发布首个具身智能成果 MiniCPM-Robot 系列模型，含 1.5B VLA 与 0.9B 跟踪模型",
+    "summary": "面壁智能联合 OpenBMB 发布并开源 MiniCPM-Robot 系列，包括通用 VLA 模型 MiniCPM-RobotManip（1.5B 参数）与移动跟踪模型 MiniCPM-RobotTrack（0.9B 参数）。",
+    "sourceUrl": "https://mp.weixin.qq.com/s/KwBAC8TFa846WFj-DHrgIQ",
+    "sourceName": "公众号：面壁智能（MiniCPM）"
+  },
+  {
+    "date": "2026-07-21",
+    "title": "NVIDIA 发布 Cosmos 3 Edge：4B 参数开源世界模型，为机器人及边缘 AI 提供实时推理与动作生成",
+    "summary": "NVIDIA 在 Hugging Face 上开源了 Cosmos 3 Edge，一个 40 亿参数的世界模型，旨在帮助机器人和视觉 AI 智能体在边缘设备上理解环境、实时推理并生成动作。",
+    "sourceUrl": "https://huggingface.co/blog/nvidia/cosmos3edge",
+    "sourceName": "Hugging Face：Blog（RSS）"
+  },
+  {
+    "date": "2026-07-21",
+    "title": "通义实验室发布 Qwen-Audio-3.0-TTS 实时语音合成模型",
+    "summary": "通义实验室发布 Qwen-Audio-3.0-TTS，含 Flash（首包延迟约300ms）和 Plus 两个版本。Plus 版本在 Artificial Analysis 榜单夺冠，支持16种语言和20种中文方言，平均 WER/CER 低至3.87（Flash），说话人相似度最高达82.75（Plus）。",
+    "sourceUrl": "https://mp.weixin.qq.com/s/INvrqTrWLMm2WCLIqhqTrg",
+    "sourceName": "公众号：通义实验室（千问）"
+  },
+  {
+    "date": "2026-07-21",
+    "title": "上海科学智能研究院开放科学多模态基础模型“神珍”",
+    "summary": "上海科学智能研究院开放科学多模态基础模型“神珍”，总参数约110亿，可处理DNA、RNA、蛋白质、小分子、地球系统和医学影像六类数据。在生物序列20项任务中，该模型9项取得最优结果；医学影像分割平均Dice得分91.20，在7种参评方法中最优。模型权重及代码已在星河启智、Hugging Face和GitHub开放。",
+    "sourceUrl": "https://www.ithome.com/0/979/017.htm",
+    "sourceName": "IT之家（RSS）"
   }
 ]
