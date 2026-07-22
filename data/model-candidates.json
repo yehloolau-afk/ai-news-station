@@ -229,5 +229,26 @@
     "summary": "上海科学智能研究院开放科学多模态基础模型“神珍”，总参数约110亿，可处理DNA、RNA、蛋白质、小分子、地球系统和医学影像六类数据。在生物序列20项任务中，该模型9项取得最优结果；医学影像分割平均Dice得分91.20，在7种参评方法中最优。模型权重及代码已在星河启智、Hugging Face和GitHub开放。",
     "sourceUrl": "https://www.ithome.com/0/979/017.htm",
     "sourceName": "IT之家（RSS）"
+  },
+  {
+    "date": "2026-07-22",
+    "title": "小红书 dots 模型获 IMO 2026 满分金牌",
+    "summary": "小红书 dots 团队携内部版本 dots-note 3.0 参加第 67 届 IMO 2026，六道题均获满分，以 42/42 分取得满分金牌，全球仅 7 位人类选手获此成绩。模型不依赖形式化语言，直接读取原始 LaTeX 题目，通过递归自我批判能力端到端完成解题。dots-note 3.0 是 dots3 系列最轻量级模型，预期将开源。",
+    "sourceUrl": "https://mp.weixin.qq.com/s/EITf-SrP5o62Ljp7UGzPVw",
+    "sourceName": "公众号：小红书技术（dots.llm）"
+  },
+  {
+    "date": "2026-07-22",
+    "title": "Google DeepMind 发布三款新 Gemini 模型，但未包含 3.5 Pro",
+    "summary": "Google DeepMind 发布 Gemini 3.6 Flash、3.5 Flash-Lite 和 3.5 Flash Cyber 三款新模型。其中 3.6 Flash 在编码和多模态性能上提升，token 用量降低 17%，成本低于前代；3.5 Flash Cyber 专为修复网络安全漏洞微调，仅限政府及可信合作伙伴使用。",
+    "sourceUrl": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro",
+    "sourceName": "TechCrunch：AI（RSS）"
+  },
+  {
+    "date": "2026-07-22",
+    "title": "Google DeepMind 发布 Gemini 3.6 Flash、3.5 Flash-Lite 与 3.5 Flash Cyber 三款新模型",
+    "summary": "Google DeepMind 推出 Gemini 3.6 Flash、3.5 Flash-Lite 和 3.5 Flash Cyber 三款新模型。其中 Gemini 3.6 Flash 为最新主力模型，3.5 Flash-Lite 主打更低成本与更高效率，3.5 Flash Cyber 则针对网络安全场景优化。三款模型均通过 Google AI 开发者平台提供 API 访问。",
+    "sourceUrl": "https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber",
+    "sourceName": "Google DeepMind：Blog（RSS）"
   }
 ]
