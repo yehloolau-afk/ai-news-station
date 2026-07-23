@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 23 Jul 2026 12:51:16 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 15:24:31 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>氪星晚报 ｜DeepSeek今年已增资65%；马斯克：FSD是拉动特斯拉汽车需求的核心驱动力</title>
@@ -73,6 +73,19 @@
       <pubDate>Thu, 23 Jul 2026 15:00:00 +0800</pubDate>
       <guid isPermaLink="true">https://sspai.com/post/112428</guid>
       <source url="https://sspai.com/post/112428">少数派</source>
+    </item>
+    <item>
+      <title>在 ChatGPT 中处理文档、工作表和幻灯片</title>
+      <link>https://www.youtube.com/watch?v=E3dDr_QtBuo</link>
+      <description>See how you can use ChatGPT to bring context together from your apps and files, make focused edits, analyze data, and use templates to create polished documents, spreadsheets, and presentations for you to review and share.
+
+Learn more: https://learn.chatgpt.com/
+
+Chapters:
+00:00 Documents, spreadshe</description>
+      <pubDate>Thu, 23 Jul 2026 14:17:31 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=E3dDr_QtBuo</guid>
+      <source url="https://www.youtube.com/watch?v=E3dDr_QtBuo">OpenAI</source>
     </item>
     <item>
       <title>不拼通用能力、聚焦端侧，腾讯副总裁林松涛：Marvis专注做好系统级操作</title>
@@ -203,14 +216,6 @@
       <pubDate>Thu, 23 Jul 2026 09:08:03 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3907532622648453?f=rss</guid>
       <source url="https://36kr.com/p/3907532622648453?f=rss">36Kr</source>
-    </item>
-    <item>
-      <title>派早报：三星发布多款折叠屏新品、索尼发布 FX5 电影摄影机等</title>
-      <link>https://sspai.com/post/112647</link>
-      <description>OpenAI 发布面向企业用户的 OpenAI Presence，耐克宣布重构大中华区市场生态等。查看全文</description>
-      <pubDate>Thu, 23 Jul 2026 08:50:21 +0800</pubDate>
-      <guid isPermaLink="true">https://sspai.com/post/112647</guid>
-      <source url="https://sspai.com/post/112647">少数派</source>
     </item>
   </channel>
 </rss>
