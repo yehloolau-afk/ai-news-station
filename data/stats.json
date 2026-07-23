@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-07-23T04:49:29.421Z",
+  "generatedAt": "2026-07-23T15:31:21.662Z",
   "umami": {
     "error": null,
     "today": {
-      "visitors": 0,
-      "pageviews": 0
+      "visitors": 1,
+      "pageviews": 1
     },
     "last30d": {
       "visitors": 36,
-      "pageviews": 532,
-      "visits": 117
+      "pageviews": 533,
+      "visits": 118
     },
     "series": [
       {
@@ -154,8 +154,8 @@
       },
       {
         "date": "2026-07-22",
-        "pageviews": 0,
-        "visitors": 0
+        "pageviews": 1,
+        "visitors": 1
       },
       {
         "date": "2026-07-23",
