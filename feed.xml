@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 23 Jul 2026 11:05:55 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 12:51:16 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>氪星晚报 ｜DeepSeek今年已增资65%；马斯克：FSD是拉动特斯拉汽车需求的核心驱动力</title>
@@ -85,6 +85,14 @@
       <pubDate>Thu, 23 Jul 2026 12:23:24 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3907676111983745?f=rss</guid>
       <source url="https://36kr.com/p/3907676111983745?f=rss">36Kr</source>
+    </item>
+    <item>
+      <title>智能体政策新闻相关背景和简要解读</title>
+      <link>https://www.qbitai.com/2026/07/457787.html</link>
+      <description></description>
+      <pubDate>Thu, 23 Jul 2026 11:08:31 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/457787.html</guid>
+      <source url="https://www.qbitai.com/2026/07/457787.html">量子位</source>
     </item>
     <item>
       <title>对话FutureTech张梦钊：从“一个人+一群Agent”到超级个体，AI正在重塑创业范式</title>
@@ -203,14 +211,6 @@
       <pubDate>Thu, 23 Jul 2026 08:50:21 +0800</pubDate>
       <guid isPermaLink="true">https://sspai.com/post/112647</guid>
       <source url="https://sspai.com/post/112647">少数派</source>
-    </item>
-    <item>
-      <title>Kimi 叫停新订阅后，如何用上 K3｜实测避坑</title>
-      <link>https://www.ifanr.com/1672800?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</link>
-      <description>同一个模型，进入不同的壳，就不再是同一个「设计师」，这中间是 harness 的差异#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</description>
-      <pubDate>Thu, 23 Jul 2026 06:43:19 +0000</pubDate>
-      <guid isPermaLink="true">https://www.ifanr.com/1672800?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</guid>
-      <source url="https://www.ifanr.com/1672800?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
     </item>
   </channel>
 </rss>
