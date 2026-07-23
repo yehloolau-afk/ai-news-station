@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 23 Jul 2026 15:24:31 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 17:46:53 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>氪星晚报 ｜DeepSeek今年已增资65%；马斯克：FSD是拉动特斯拉汽车需求的核心驱动力</title>
@@ -36,6 +36,18 @@
       <pubDate>Thu, 23 Jul 2026 17:38:21 +0800</pubDate>
       <guid isPermaLink="true">https://sspai.com/post/112668</guid>
       <source url="https://sspai.com/post/112668">少数派</source>
+    </item>
+    <item>
+      <title>ChatGPT 中的健康功能即将向美国用户开放</title>
+      <link>https://www.youtube.com/watch?v=lR58Dge8jE8</link>
+      <description>Health in ChatGPT is starting to roll out to U.S. users.
+
+You can securely connect Apple Health and supported medical records to understand your information in context, track what has changed, and have more informed conversations.
+
+We built this experience based on feedback from early testers and ph</description>
+      <pubDate>Thu, 23 Jul 2026 17:03:29 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=lR58Dge8jE8</guid>
+      <source url="https://www.youtube.com/watch?v=lR58Dge8jE8">OpenAI</source>
     </item>
     <item>
       <title>专访郭列：做出脸萌、FaceU、剪映等爆款后，他第一次阐释如何在AI时代做产品</title>
@@ -200,22 +212,6 @@ Chapters:
       <pubDate>Thu, 23 Jul 2026 09:12:15 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3907536767833473?f=rss</guid>
       <source url="https://36kr.com/p/3907536767833473?f=rss">36Kr</source>
-    </item>
-    <item>
-      <title>36氪首发 | 同济博士做几何、物理AI重构设计制造，累计获超3亿元融资</title>
-      <link>https://36kr.com/p/3907532622648453?f=rss</link>
-      <description>图源/企业
-  
-   本文约1400字，建议阅读3分钟
-  
-  作者丨欧雪
-  编辑丨袁斯来
-  硬氪获悉，工业AI设计研发解决方案供应商「设序科技」于近日正式完成B轮超亿元融资，累计获超3亿元融资，投资方包括深产投、合鼎共及老股东涌铧投资等。融资将用于市场开拓（含出海）及核心模型技术研发。
-  设序科技成立于2020年，旗下产品“则形AI”是基于自研工业世界模型与自然语言大模型封装的面向硬件工程的设计研发智能体平台，提供云架构下的3D设计方案与2D工程图纸智能生成功能。创始人兼CEO吴泳荣为同济大学先进制造方向博士，曾任通用先进制造实验室研究员、蔚来汽车智能制造专家。
-  相比去年，设序</description>
-      <pubDate>Thu, 23 Jul 2026 09:08:03 +0800</pubDate>
-      <guid isPermaLink="true">https://36kr.com/p/3907532622648453?f=rss</guid>
-      <source url="https://36kr.com/p/3907532622648453?f=rss">36Kr</source>
     </item>
   </channel>
 </rss>
