@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 24 Jul 2026 15:44:14 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 17:51:51 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>AnySearch 面向全球推出 “学生与开发者成长计划”</title>
@@ -72,6 +72,14 @@
       <pubDate>Fri, 24 Jul 2026 15:00:00 +0800</pubDate>
       <guid isPermaLink="true">https://sspai.com/post/112232</guid>
       <source url="https://sspai.com/post/112232">少数派</source>
+    </item>
+    <item>
+      <title>合肥又押中AI独角兽：多模态赛道，3个月融了21亿</title>
+      <link>https://www.qbitai.com/2026/07/460154.html</link>
+      <description>跑出原生全模态新路径</description>
+      <pubDate>Fri, 24 Jul 2026 14:42:32 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/460154.html</guid>
+      <source url="https://www.qbitai.com/2026/07/460154.html">量子位</source>
     </item>
     <item>
       <title>国产世界模型登顶李飞飞团队榜单！适配国产昇腾算力、代码权重全开源</title>
@@ -150,7 +158,7 @@
       <source url="https://www.ifanr.com/1673042?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
     </item>
     <item>
-      <title>紧跟人工智能创新的步伐 |格兰特·李，伽玛</title>
+      <title>紧跟人工智能创新的步伐 |格兰特·李，伽马</title>
       <link>https://www.youtube.com/watch?v=PB7DBemxl3E</link>
       <description>We caught up with Grant Lee, Founder and CEO of Gamma, at RAISE Summit in Paris to discuss what it takes to build at the pace of AI innovation. As AI capabilities continue to evolve, the companies that move fastest are those that can quickly turn new breakthroughs into better products and better cus</description>
       <pubDate>Fri, 24 Jul 2026 09:12:21 +0000</pubDate>
@@ -199,14 +207,6 @@
       <pubDate>Fri, 24 Jul 2026 08:00:48 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3908881985901959?f=rss</guid>
       <source url="https://36kr.com/p/3908881985901959?f=rss">36Kr</source>
-    </item>
-    <item>
-      <title>近百名玩家涌入具身数据：一年融资44.7亿，谁能真靠“卖数据”赚钱？</title>
-      <link>https://www.qbitai.com/2026/07/459262.html</link>
-      <description></description>
-      <pubDate>Fri, 24 Jul 2026 07:49:44 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/459262.html</guid>
-      <source url="https://www.qbitai.com/2026/07/459262.html">量子位</source>
     </item>
   </channel>
 </rss>
