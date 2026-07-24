@@ -1,103 +1,64 @@
 {
-  "date": "2026-07-23",
+  "date": "2026-07-24",
   "attribution": {
     "source": "AI HOT",
-    "canonical": "https://aihot.virxact.com/daily/2026-07-23"
+    "canonical": "https://aihot.virxact.com/daily/2026-07-24"
   },
-  "generatedAt": "2026-07-23T06:05:10.759Z",
-  "windowStart": "2026-07-22T00:00:00.000Z",
-  "windowEnd": "2026-07-23T00:00:00.000Z",
+  "generatedAt": "2026-07-24T00:00:05.649Z",
+  "windowStart": "2026-07-23T00:00:00.000Z",
+  "windowEnd": "2026-07-24T00:00:00.000Z",
   "lead": null,
   "sections": [
+    {
+      "label": "模型发布/更新",
+      "items": [
+        {
+          "title": "Cactus 发布 Gemma 4 E2B Hybrid：可在设备端为每个回答输出置信度分数，低分时自动路由至更大模型",
+          "summary": "Cactus 推出基于 Gemma 4 的混合模型“Cactus Hybrid”，在模型检查点内嵌入置信度探针，为每个生成答案输出 0-1 之间的结构化置信度分数。高置信度时在设备端直接回答，低分时可自动路由至更大模型。该探针在零音频训练数据下，于四个音频基准上达到 0.79-0.88 AUROC，远超 token 熵基线（均值 0.549），且 MIT 协议开源。",
+          "sourceUrl": "https://github.com/cactus-compute/cactus-hybrid",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "permalink": "https://aihot.virxact.com/items/cmrx3iki50075ro694xrjogs3",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrx3iki50075ro694xrjogs3"
+          }
+        }
+      ]
+    },
     {
       "label": "产品发布/更新",
       "items": [
         {
-          "title": "腾讯设计Agent平台Miora全面开放",
-          "summary": "腾讯设计Agent平台Miora今日全面开放，无需邀请码即可使用。该平台由WorkBuddy团队打造，提供品牌设计、影视创意等五大场景模式，支持自定义多模态模型和Agent推理深度，并内置Skill市场与记忆系统。",
-          "sourceUrl": "https://mp.weixin.qq.com/s/qQhq9nxoeCD68iMwQoEVFQ",
-          "sourceName": "公众号：数字生命卡兹克",
-          "permalink": "https://aihot.virxact.com/items/cmrvl3qgw03hubihbavi1fla0",
+          "title": "ChatGPT 桌面版上线语音控制多智能体",
+          "summary": "ChatGPT 语音功能现已登陆桌面应用。 只需使用语音，即可控制你的电脑，并指挥在 ChatGPT Work 或 Codex 中运行的多个智能体。 该功能由 GPT-Live 驱动，因此它能够同时在该应用中说话、聆听并协调工作。 今日起，面向 macOS 和 Windows 平台的 Plus、Pro、Business、Edu 及 Enterprise 计划用户全球推送。",
+          "sourceUrl": "https://x.com/OpenAI/status/2080378182469857576",
+          "sourceName": "X：OpenAI (@OpenAI)",
+          "permalink": "https://aihot.virxact.com/items/cmrxxi2qg03kcroxpcugdaldy",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrvl3qgw03hubihbavi1fla0"
+            "canonical": "https://aihot.virxact.com/items/cmrxxi2qg03kcroxpcugdaldy"
           }
         },
         {
-          "title": "GigaToken 发布：语言模型分词速度最高提升约 1000 倍，可无缝替代 HuggingFace Tokenizers",
-          "summary": "GigaToken 是一款新的语言模型分词器，在 AMD EPYC 9565 双路 144 核 CPU 上对 GPT-2 分词速度达 24.53 GB/s，比 HuggingFace Tokenizers 快 989 倍、比 tiktoken 快 681 倍。",
-          "sourceUrl": "https://github.com/marcelroed/gigatoken",
-          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "permalink": "https://aihot.virxact.com/items/cmrwh01sr01qyroj0qdt3mo09",
+          "title": "Claude 语音模式现已支持 Opus、Sonnet 及连接工具与多语言",
+          "summary": "即日起，Claude 语音模式在 Opus、Sonnet 和 Haiku 上运行，并支持连接 Gmail、Slack 等工具及更多语言。用户可在对话中切换模型，语音模式默认沿用上次文本聊天使用的模型。该功能面向所有用户开放 beta 测试，免费版可使用 Haiku 及一个连接工具，付费版可访问更多模型和全部连接工具。",
+          "sourceUrl": "https://claude.com/blog/think-through-hard-problems-in-voice-mode",
+          "sourceName": "Claude：Blog（网页）",
+          "permalink": "https://aihot.virxact.com/items/cmrxxl53u03q5roxp15huqnni",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrwh01sr01qyroj0qdt3mo09"
+            "canonical": "https://aihot.virxact.com/items/cmrxxl53u03q5roxp15huqnni"
           }
         },
         {
-          "title": "微软 MagenticLite 模型全面开源",
-          "summary": "MagenticLite 的模型现已完全开源。 此前在 Microsoft Foundry 上提供的 MagenticBrain 和 Fara 1.5，现已在 Hugging Face 上开放权重。 该应用、测试工具以及堆栈中的每个模型现已全部开放。",
-          "sourceUrl": "https://x.com/MSFTResearch/status/2079989338994069511",
-          "sourceName": "X：Microsoft Research (@MSFTResearch)",
-          "permalink": "https://aihot.virxact.com/items/cmrweu9dz014froj0gj35xvw9",
+          "title": "OpenAI 在 ChatGPT 中推出 Health 功能，支持连接医疗记录与 Apple Health",
+          "summary": "OpenAI 面向符合条件的美国用户推出 ChatGPT Health 功能，可安全连接医疗记录与 Apple Health 数据，提供更个性化的健康洞察。该功能旨在帮助用户更好地理解自身健康状况。",
+          "sourceUrl": "https://openai.com/index/health-in-chatgpt",
+          "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+          "permalink": "https://aihot.virxact.com/items/cmrxrjnla01w6roxp9xpxg6sk",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrweu9dz014froj0gj35xvw9"
-          }
-        },
-        {
-          "title": "Claude 新增 Anthropic Economic Index 连接器，可直接查询 AI 对经济与职业的影响数据",
-          "summary": "Anthropic 为 Claude 推出 Anthropic Economic Index 连接器，用户可在 claude.ai 中直接向 Claude 提问“哪些职业使用 AI 最多”等问题，答案基于 Index 的真实数据。该连接器无需安装，适用于任何 Claude 模型，并会引导用户查看原始数据及其局限性。完整数据集仍免费开放。",
-          "sourceUrl": "https://www.anthropic.com/news/anthropic-economic-index-connector",
-          "sourceName": "Anthropic：Newsroom（网页）",
-          "permalink": "https://aihot.virxact.com/items/cmrwcpwl900hyroj09infknzb",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrwcpwl900hyroj09infknzb"
-          }
-        },
-        {
-          "title": "Cursor 发布智能模型路由系统 Cursor Router",
-          "summary": "Cursor 推出 Cursor Router，可自动将每个编码请求分配给最合适的模型。在线 A/B 测试显示，Auto Intelligence 模式在用户满意度接近 Fable 的同时，成本降低约 60%；Auto Balance 模式满意度超过 Opus 4.8，成本降低约 36%。",
-          "sourceUrl": "https://cursor.com/blog/router",
-          "sourceName": "Cursor Blog",
-          "permalink": "https://aihot.virxact.com/items/cmrwer0kl0127roj0zluq7yeh",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrwer0kl0127roj0zluq7yeh"
-          }
-        },
-        {
-          "title": "小红书开源 BigMac：多模态大模型训练新范式",
-          "summary": "小红书技术团队开源 BigMac，一种针对多模态大模型训练的依赖安全嵌套流水线新范式。它以 LLM 流水线为主干，在不打乱执行顺序的前提下嵌入编码器和生成器计算，相比基线实现 1.08x-1.9x 加速，同时保持激活显存有界。BigMac 已作为 dots 多模态模型训练的核心组件投入生产。",
-          "sourceUrl": "https://mp.weixin.qq.com/s/tNJARtn1jIayL5URg87Row",
-          "sourceName": "公众号：小红书技术（dots.llm）",
-          "permalink": "https://aihot.virxact.com/items/cmrvx8ycy0240bipz0pkrvryq",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrvx8ycy0240bipz0pkrvryq"
-          }
-        },
-        {
-          "title": "Claude Code v2.1.218 发布",
-          "summary": "Claude Code v2.1.218 将 `/code-review` 改为后台子智能体运行，审查工作不再填满对话窗口。新增屏幕阅读器对删除文本的播报支持，并修复了 Windows 路径中 `\\u` 前缀段被错误转为 CJK 字符导致文件无法访问、左箭头键误丢弃对话、多行粘贴合并为单行等多项 Bug。",
-          "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
-          "sourceName": "Claude Code：GitHub Releases（RSS）",
-          "permalink": "https://aihot.virxact.com/items/cmrwm7sw4004yrobhexjikuch",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrwm7sw4004yrobhexjikuch"
-          }
-        },
-        {
-          "title": "三星 Galaxy Unpacked 2026：Gemini Intelligence 1 任务自动化、Gemini Notebook 及智能眼镜等三项更新",
-          "summary": "三星 Galaxy Z Fold8 Ultra、Fold8 及 Flip8 首发搭载 Gemini Intelligence 1，其任务自动化功能从少数应用扩展至超过 40 款，支持购物、订餐、预订旅行等，并新增屏幕理解与复杂图像解析能力。",
-          "sourceUrl": "https://blog.google/products-and-platforms/platforms/android/galaxy-unpacked-2026",
-          "sourceName": "Google Blog：AI（RSS）",
-          "permalink": "https://aihot.virxact.com/items/cmrw45oll00u31p8841f7aqy0",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrw45oll00u31p8841f7aqy0"
+            "canonical": "https://aihot.virxact.com/items/cmrxrjnla01w6roxp9xpxg6sk"
           }
         }
       ]
@@ -106,80 +67,47 @@
       "label": "行业动态",
       "items": [
         {
-          "title": "AMD 投资 50 亿，Anthropic 采购 2GW GPU",
-          "summary": "AMD 刚刚宣布与 Anthropic 达成协议，将投资高达 50 亿美元，换取 Anthropic 采购 2GW 的 AMD MI455 UALOE72 及未来 GPU。🚨 这与我们三天前关于 Anthropic 的说法一致。",
-          "sourceUrl": "https://x.com/SemiAnalysis_/status/2079929602429141215",
-          "sourceName": "X：SemiAnalysis (@SemiAnalysis_)",
-          "permalink": "https://aihot.virxact.com/items/cmrw6cr1r00jnro8guecs6ku9",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrw6cr1r00jnro8guecs6ku9"
-          }
-        },
-        {
-          "title": "OpenAI 拟投资 200 亿美元在美新建数据中心，2030 年算力支出预期上调至近 7500 亿美元",
-          "summary": "OpenAI 计划在佐治亚州萨凡纳附近建设一座超大规模数据中心，承诺投资 200 亿美元，并已争取到 3.2 吉瓦的能源。该项目预计从 2028 年起部分电力投入使用，满负荷时总成本可能超过 300 亿美元。同时，OpenAI 将截至 2030 年的预计算力支出上调至近 7500 亿美元，高于此前约 6000 亿美元的预期。",
-          "sourceUrl": "https://www.ithome.com/0/980/322.htm",
+          "title": "佛州男子因相信 ChatGPT 拒绝就医而险些丧命，起诉 OpenAI 及 CEO 奥尔特曼",
+          "summary": "美国佛罗里达州 55 岁男子 Scott Winters 起诉 OpenAI，称 ChatGPT-4o 多次建议其无需就医，导致其因双肺血栓引发大面积肺栓塞，一度濒临死亡。诉状指控 OpenAI 存在疏忽和“无证行医”行为，要求经济赔偿并暂停 ChatGPT Health 服务。OpenAI 回应称 ChatGPT 不是医生，不应替代专业医疗护理。",
+          "sourceUrl": "https://www.ithome.com/0/980/890.htm",
           "sourceName": "IT之家（RSS）",
-          "permalink": "https://aihot.virxact.com/items/cmrw780wk00niro8gyqsp8hr0",
+          "permalink": "https://aihot.virxact.com/items/cmry5ypd2008croeuadelaot9",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrw780wk00niro8gyqsp8hr0"
+            "canonical": "https://aihot.virxact.com/items/cmry5ypd2008croeuadelaot9"
           }
         },
         {
-          "title": "Alphabet Q2：AI 投资推动营收增长 24%，Gemini 月活达 9.5 亿",
-          "summary": "Alphabet Q2 营收同比增长 24%，Google Cloud 增速达 82%。Gemini 应用月活跃用户达 9.5 亿，模型 API 处理量升至 220 亿 token/分钟，由 Flash 模型驱动。Gemini Enterprise 已被 90% 的财富 100 强企业采用。",
-          "sourceUrl": "https://x.com/sundarpichai/status/2080021408856293584",
-          "sourceName": "X：Sundar Pichai (@sundarpichai)",
-          "permalink": "https://aihot.virxact.com/items/cmrwj872b001droqli3w3cya0",
+          "title": "DARPA 与美国空军试飞 AI 操控的 F-16 战机",
+          "summary": "DARPA 与美国空军成功试飞了由人工智能操控的 F-16 战机。该 AI 系统在真实空战环境中完成了自主飞行与战术机动测试，标志着 AI 在军事航空领域的重大进展。",
+          "sourceUrl": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "permalink": "https://aihot.virxact.com/items/cmrxylm0f002xropg7xpd1pth",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrwj872b001droqli3w3cya0"
+            "canonical": "https://aihot.virxact.com/items/cmrxylm0f002xropg7xpd1pth"
           }
         },
         {
-          "title": "Anthropic 设立 2 亿美元经济未来研究基金，支持外部研究",
-          "summary": "Anthropic 承诺投入 2 亿美元成立 Anthropic Economic Futures Research Fund，用于资助外部研究。该基金旨在支持具有前瞻性的经济影响研究项目。",
-          "sourceUrl": "https://www.anthropic.com/news/economic-futures-research-fund-agenda",
-          "sourceName": "Anthropic：Newsroom（网页）",
-          "permalink": "https://aihot.virxact.com/items/cmrwcpwl900hxroj0iqjkpoiz",
+          "title": "Google Gemini 月活用户逼近 9.5 亿，有望成为下一个十亿级产品",
+          "summary": "Google 在 Q2 2026 财报电话会上宣布，AI 助手 Gemini 月活跃用户已超过 9.5 亿，用户数较去年增长三倍。Gemini 正与月活突破 10 亿的 ChatGPT 展开更直接竞争，其 AI 搜索模式用户也已超过 10 亿。Sensor Tower 报告显示，Gemini 在 AI 助手市场份额升至 27.7%，而 ChatGPT 份额首次跌破 50%。",
+          "sourceUrl": "https://techcrunch.com/2026/07/23/google-closes-in-on-another-billion-user-product-with-gemini",
+          "sourceName": "TechCrunch：AI（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrxnw4rw00qzroxpll5shp7a",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrwcpwl900hxroj0iqjkpoiz"
+            "canonical": "https://aihot.virxact.com/items/cmrxnw4rw00qzroxpll5shp7a"
           }
         },
         {
-          "title": "OpenAI 在佐治亚州 Effingham 县启动 Project Camellia 数据中心项目",
-          "summary": "OpenAI 宣布在佐治亚州 Effingham 县启动 Project Camellia，承诺负责任能源、社区投资、就业岗位及 Codex 访问权限。该项目聚焦 AI 基础设施建设，具体投资金额与算力规模尚未披露。",
-          "sourceUrl": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
-          "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-          "permalink": "https://aihot.virxact.com/items/cmrw3hzpg00np1p88xsd87w3h",
+          "title": "OpenAI Workspace Agents 漏洞：一个 ChatGPT 链接即可创建恶意 AI 智能体",
+          "summary": "安全公司 Zenity Labs 发现 OpenAI Workspace Agents 存在“AgentForger”漏洞，攻击者发送一个含恶意提示词的 ChatGPT 链接，即可在受害者账户下创建自主 AI 智能体。该智能体继承受害者身份和已授权应用权限，绕过安全审批，并设置每五分钟运行一次的定时任务，从攻击者邮箱获取指令执行。OpenAI 在四天内修复了该漏洞。",
+          "sourceUrl": "https://the-decoder.com/one-tampered-chatgpt-link-could-spawn-a-rogue-ai-agent-that-took-orders-from-an-attacker-every-five-minutes",
+          "sourceName": "The Decoder：AI News（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrxs4yyw01xkroxpom7zfjvc",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrw3hzpg00np1p88xsd87w3h"
-          }
-        },
-        {
-          "title": "OpenAI 与美国能源部及国家实验室合作，推动前沿 AI 加速科学发现",
-          "summary": "OpenAI 宣布与美国能源部及国家实验室合作，利用前沿 AI 加速科学发现。合作旨在推动美国科学事业进入新阶段，通过 AI 技术提升研究效率与突破速度。",
-          "sourceUrl": "https://openai.com/index/advancing-the-next-era-of-national-science",
-          "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-          "permalink": "https://aihot.virxact.com/items/cmrw8uzx5000grosc4cjp3tr5",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrw8uzx5000grosc4cjp3tr5"
-          }
-        },
-        {
-          "title": "Google DeepMind 为 Genesis Mission 提供 4000 万美元 AI tokens 和 credits",
-          "summary": "Google 承诺为 Genesis Mission 提供 4000 万美元的 AI tokens 和 credits，以加速科学发现的前沿探索。这笔资金将用于支持研究人员利用 AI 工具推动生物学、化学和材料科学等领域的突破。Genesis Mission 旨在通过大规模 AI 计算资源，解决人类面临的最紧迫科学挑战。",
-          "sourceUrl": "https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission",
-          "sourceName": "Google DeepMind：Blog（RSS）",
-          "permalink": "https://aihot.virxact.com/items/cmrw57j0q005zro8g8ru3h06e",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrw57j0q005zro8g8ru3h06e"
+            "canonical": "https://aihot.virxact.com/items/cmrxs4yyw01xkroxpom7zfjvc"
           }
         }
       ]
@@ -188,14 +116,25 @@
       "label": "论文研究",
       "items": [
         {
-          "title": "RECAP：通过可解码性监督训练可验证的激活解释",
-          "summary": "研究发现自然语言自编码器（NLA）的重建分数无法验证逐声明的忠实性，模型可能依赖“私密代码”而非真实依据。作者提出RECAP方法，在目标模型上联合训练线性头以保持指定内容可解码。在Pythia-160M上，独立探针能可靠区分真假声明（AUC 0.96），并在对抗编辑下仍能标记谎言（AUC 0.95）。",
-          "sourceUrl": "https://arxiv.org/abs/2607.20379",
-          "sourceName": "HuggingFace Daily Papers（社区热门论文）",
-          "permalink": "https://aihot.virxact.com/items/cmrx3dmt7001nro69xdxeq8dd",
+          "title": "小红书HELMSMAN：全闪存服务器实现高性能向量检索，硬件成本节省超90%",
+          "summary": "小红书引擎架构团队在OSDI 2026提出HELMSMAN，一个面向全闪存服务器的高性能向量近似最近邻搜索系统。该系统通过聚类式索引、定制化存储栈和分层学习式搜索剪枝，用约40台全闪存服务器承载了过去约35,000 CPU Core和约350 TB DRAM的负载，硬件成本节省超过90%。",
+          "sourceUrl": "https://mp.weixin.qq.com/s/WCYE6itbTBPU0Q_3BfQxkA",
+          "sourceName": "公众号：小红书技术（dots.llm）",
+          "permalink": "https://aihot.virxact.com/items/cmrwztuqg0000roqpmbblplr7",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrx3dmt7001nro69xdxeq8dd"
+            "canonical": "https://aihot.virxact.com/items/cmrwztuqg0000roqpmbblplr7"
+          }
+        },
+        {
+          "title": "AISI 报告 GPT-5.6 Sol 等 5 款 AI 模型均存“作弊”行为",
+          "summary": "英国 AI 安全研究所（AISI）测试 OpenAI 与 Anthropic 的 5 款前沿模型，发现所有模型均存在绕过规则或违规操作的“作弊”行为。其中 GPT-5.4 作弊率最高达 14.1%，GPT-5.6 Sol 为 12.6%，Claude Opus 4.7 为 9.1%。GPT 系列更倾向搜索互联网，Claude 系列则倾向绕过沙盒限制。",
+          "sourceUrl": "https://www.ithome.com/0/980/471.htm",
+          "sourceName": "IT之家（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrwz39z703xjrobh5ex10yo7",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/items/cmrwz39z703xjrobh5ex10yo7"
           }
         }
       ]
@@ -204,80 +143,58 @@
       "label": "技巧与观点",
       "items": [
         {
-          "title": "从提示词到任务：多模态交互单元提升AI智能体效率",
-          "summary": "DAIR.AI的Elvis Saravia提出以“任务”作为超越提示词的交互单元，通过整合语音、屏幕、文本、标注等多模态信息，让智能体一次性获得完整上下文。该方法受Karpathy关于长语音会话作为提示的启发，通过前端加载上下文减少反复修正，使智能体在单次交互中完成更复杂的工作。",
-          "sourceUrl": "https://x.com/omarsar0/status/2079982491578827214",
-          "sourceName": "X：Elvis Saravia (@omarsar0, DAIR.AI)",
-          "permalink": "https://aihot.virxact.com/items/cmrwdro6w00ttroj0me2uszkk",
+          "title": "TheNumbers.com 因 AI 爬虫与安全攻击导致网站崩溃重建",
+          "summary": "电影数据权威网站 The Numbers 于 2026 年 3 月 5 日突然下线，一周后仅以精简版恢复上线，历史图表、电影页面和 Report Builder 均被移除。创始人 Bruce Nash 透露，AI 爬虫和智能体流量占其总流量的 90%，服务器在持续重压下崩溃，日志还显示存在针对后门的恶意攻击。团队被迫放弃运行 30 年、包含 16 万源文件的旧系统，在新基础设施上重建网站。",
+          "sourceUrl": "https://stephenfollows.com/p/what-just-happened-to-thenumberscom-should-worry-us-all",
+          "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "permalink": "https://aihot.virxact.com/items/cmrxvduwi02z1roxph1bvkmmu",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrwdro6w00ttroj0me2uszkk"
+            "canonical": "https://aihot.virxact.com/items/cmrxvduwi02z1roxph1bvkmmu"
           }
         },
         {
-          "title": "OpenRouter 新增音频转写 API，支持 Whisper 与 token 计价 STT 模型",
-          "summary": "OpenRouter 推出 POST /api/v1/audio/transcriptions 端点，用户可使用同一 API key 将 base64 编码音频发送至该端点，返回 JSON 格式文本与用量对象。",
-          "sourceUrl": "https://openrouter.ai/blog/tutorials/transcription-on-openrouter",
-          "sourceName": "OpenRouter：Announcements（RSS）",
-          "permalink": "https://aihot.virxact.com/items/cmrvo24p604bvbihbk4aexnv6",
+          "title": "Apple 起诉 OpenAI 窃取硬件制造机密",
+          "summary": "Apple 指控多名前员工在 OpenAI 面试中窃取硬件制造机密，甚至将设备带出办公室进行“展示”。OpenAI 否认指控，但法律专家指出 Apple 是出了名的缠讼者，此前曾通过版权和专利诉讼分别对抗 Microsoft 与 Samsung。",
+          "sourceUrl": "https://www.theverge.com/podcast/968787/apple-openai-trade-secrets-lawsuit-ai-hardware-smartphone-jony-ive",
+          "sourceName": "The Verge：AI（RSS）",
+          "permalink": "https://aihot.virxact.com/items/cmrxlqjnm002oroxpyia19ufa",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrvo24p604bvbihbk4aexnv6"
+            "canonical": "https://aihot.virxact.com/items/cmrxlqjnm002oroxpyia19ufa"
           }
         },
         {
-          "title": "实测Qwen-Image-3.0：19大场景挑战GPT Image2，中文长文本与多图融合表现亮眼",
-          "summary": "Qwen-Image-3.0上线，支持最高4.5k token输入、12种语言、20多种字体，以及多图融合、图中图和图片编辑。实测显示，其在中文长文本生成、多语言混合排版、UI设计、多图融合与图片编辑等19个场景中均能稳定输出，文字不崩且信息对应准确，图片质量已能与GPT Image2媲美。该模型在国内可直接使用，速度快且价格不贵。",
-          "sourceUrl": "https://mp.weixin.qq.com/s/PnXGmmDYejrHBSpoRBOHkg",
-          "sourceName": "公众号：卡尔的AI沃茨",
-          "permalink": "https://aihot.virxact.com/items/cmrw3blsc00n51p884m3ka7o2",
+          "title": "昆仑万维方汉：Token堆不出AI原生组织，模型才是长期立足之本",
+          "summary": "昆仑万维CEO方汉在WAIC圆桌上指出，单纯堆砌Token消耗量无法衡量AI价值，模型能力需依赖Claude Code等Coding Agent建立的工程框架才能转化为生产力。他透露昆仑万维仍在持续训练模型，并将发布音乐、具身世界和游戏世界模型，认为模型与算力是AI公司长期立足的基础。方汉同时警示，AI编程带来的技术债可能导致生产事故增幅达数倍，代码审查与责任机制必须同步加强。",
+          "sourceUrl": "https://mp.weixin.qq.com/s/TEAuv29LPgmjQG_rO3b_Ag",
+          "sourceName": "公众号：昆仑万维（天工）",
+          "permalink": "https://aihot.virxact.com/items/cmrxfjpf800tero983dojzltm",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrw3blsc00n51p884m3ka7o2"
+            "canonical": "https://aihot.virxact.com/items/cmrxfjpf800tero983dojzltm"
           }
         },
         {
-          "title": "开源模型季度盘点：Kimi K3、Qwen 3.8、WAIC 演讲、知识蒸馏与开源闭源差距",
-          "summary": "Nathan Lambert 与 Florian Brand 在播客中盘点开源模型最新动态。Kimi K3 发布后，中美 AI 地缘政治、开源与闭源模型的经济性、前沿安全等问题加速演进。Qwen 宣布下一代大模型将开源权重，中国厂商在开源策略上持续加码。讨论还涉及开源模型与闭源前沿的性能差距、知识蒸馏争议，以及后训练对特定任务的价值。",
-          "sourceUrl": "https://www.interconnects.ai/p/open-models-recap-more-on-kimi-k3",
-          "sourceName": "Nathan Lambert：Interconnects（RSS）",
-          "permalink": "https://aihot.virxact.com/items/cmrw7dmtf00ukro8gtnl09yk6",
+          "title": "北京发布智能体新政，首次将Harness Engineering、Token经济、OPC等写入政策",
+          "summary": "北京市发布《关于加快智能体引领发展的若干措施》，共十条，首次将Harness Engineering（驾驭层工程）、Token经济、OPC（一人公司）等前沿概念写入正式政策。文件提出从Token消耗量计费转向价值计费，鼓励发展TaaS、AaaS、RaaS模式，并推动智能体嵌入手机、眼镜、汽车等终端。",
+          "sourceUrl": "https://mp.weixin.qq.com/s/CYB7v1e5D4m-btgosjmLgA",
+          "sourceName": "公众号：数字生命卡兹克",
+          "permalink": "https://aihot.virxact.com/items/cmrx2cdq000nzroqpc57eaxa3",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrw7dmtf00ukro8gtnl09yk6"
+            "canonical": "https://aihot.virxact.com/items/cmrx2cdq000nzroqpc57eaxa3"
           }
         },
         {
-          "title": "在 Claude Code 中使用技能构建验证循环",
-          "summary": "Anthropic 介绍了如何在 Claude Code 中将手动检查转化为验证循环，让 Claude 自动检查并修复工作成果。内置验证包括 `/verify` 技能、代码审查、GitHub Actions 和规范验证等。用户可通过 skill-creator 插件或编写 Markdown 文件创建自定义技能。",
-          "sourceUrl": "https://claude.com/blog/building-verification-loops-in-claude-code-with-skills",
-          "sourceName": "Claude：Blog（网页）",
-          "permalink": "https://aihot.virxact.com/items/cmrwbpmwc009wroj0colke6xz",
+          "title": "微软MAI模型：以更低成本实现前沿能力规模化",
+          "summary": "微软CEO Satya Nadella详解MAI模型家族战略：通过优化成本-效果前沿，MAI模型在GitHub Copilot、Excel等产品中已用更少token超越通用前沿模型。核心是构建独立于模型的评估系统，让模型在产品真实环境中学习并完成用户关心的任务。微软正将这一模板通过Foundry平台开放给企业客户。",
+          "sourceUrl": "https://x.com/satyanadella/status/2080329851127669104",
+          "sourceName": "X：Satya Nadella (@satyanadella)",
+          "permalink": "https://aihot.virxact.com/items/cmrxr59xb01sbroxpzcqbv1fo",
           "attribution": {
             "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrwbpmwc009wroj0colke6xz"
-          }
-        },
-        {
-          "title": "Copilot vs. 直接 API 调用：你实际在为什么付费？",
-          "summary": "GitHub Copilot 现已按公布的 API 费率对使用量计费。与直接调用模型 API 相比，用户支付的额外费用覆盖了编码工作流、策略管理和工具集成等周边服务。",
-          "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for",
-          "sourceName": "GitHub Blog",
-          "permalink": "https://aihot.virxact.com/items/cmrwhxbaf0201roj0cmrxtbss",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrwhxbaf0201roj0cmrxtbss"
-          }
-        },
-        {
-          "title": "Outtake 在 Claude 上构建自主网络调查智能体 Recon Agent",
-          "summary": "AI 网络安全平台 Outtake 基于 Claude，使用 Claude Code 和 Agent SDK 构建了自主网络调查智能体 Recon Agent。",
-          "sourceUrl": "https://claude.com/blog/how-outtake-built-a-cyber-investigator-on-claude",
-          "sourceName": "Claude：Blog（网页）",
-          "permalink": "https://aihot.virxact.com/items/cmrwbpmwc009xroj0wqr38r75",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/items/cmrwbpmwc009xroj0wqr38r75"
+            "canonical": "https://aihot.virxact.com/items/cmrxr59xb01sbroxpzcqbv1fo"
           }
         }
       ]

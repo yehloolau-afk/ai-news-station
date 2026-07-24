@@ -250,5 +250,12 @@
     "summary": "Google DeepMind 推出 Gemini 3.6 Flash、3.5 Flash-Lite 和 3.5 Flash Cyber 三款新模型。其中 Gemini 3.6 Flash 为最新主力模型，3.5 Flash-Lite 主打更低成本与更高效率，3.5 Flash Cyber 则针对网络安全场景优化。三款模型均通过 Google AI 开发者平台提供 API 访问。",
     "sourceUrl": "https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber",
     "sourceName": "Google DeepMind：Blog（RSS）"
+  },
+  {
+    "date": "2026-07-24",
+    "title": "Cactus 发布 Gemma 4 E2B Hybrid：可在设备端为每个回答输出置信度分数，低分时自动路由至更大模型",
+    "summary": "Cactus 推出基于 Gemma 4 的混合模型“Cactus Hybrid”，在模型检查点内嵌入置信度探针，为每个生成答案输出 0-1 之间的结构化置信度分数。高置信度时在设备端直接回答，低分时可自动路由至更大模型。该探针在零音频训练数据下，于四个音频基准上达到 0.79-0.88 AUROC，远超 token 熵基线（均值 0.549），且 MIT 协议开源。",
+    "sourceUrl": "https://github.com/cactus-compute/cactus-hybrid",
+    "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
   }
 ]
