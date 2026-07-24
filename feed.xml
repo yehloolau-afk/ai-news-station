@@ -5,8 +5,18 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 24 Jul 2026 19:47:04 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 21:21:48 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>构建时间：使用 GPT-5.6 的 Valuemaxxing</title>
+      <link>https://www.youtube.com/watch?v=jyuyY86GJnA</link>
+      <description>Get more useful work from every token with GPT‑5.6. In this Build Hour, you’ll learn how to choose the right model for your workload—and migrate production agents while improving speed, cost, and performance.
+
+Charlie Guo (DevEx), Bryant Chou (Founder, Ploy) and Lorenzo Gentile (AI Engineer, Ploy) w</description>
+      <pubDate>Fri, 24 Jul 2026 19:47:16 +0000</pubDate>
+      <guid isPermaLink="true">https://www.youtube.com/watch?v=jyuyY86GJnA</guid>
+      <source url="https://www.youtube.com/watch?v=jyuyY86GJnA">OpenAI</source>
+    </item>
     <item>
       <title>AnySearch 面向全球推出 “学生与开发者成长计划”</title>
       <link>https://36kr.com/p/3909565569324163?f=rss</link>
@@ -188,25 +198,6 @@
       <pubDate>Fri, 24 Jul 2026 08:14:41 +0000</pubDate>
       <guid isPermaLink="true">https://www.ifanr.com/1673069?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</guid>
       <source url="https://www.ifanr.com/1673069?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
-    </item>
-    <item>
-      <title>8点1氪丨段永平称10年内大概率不会卖泡泡玛特；中国数学家王虹、邓煜获得菲尔兹奖；宜家回应甩卖8处物业：不代表退出中国市场</title>
-      <link>https://36kr.com/p/3908881985901959?f=rss</link>
-      <description>今日热点导览
-  
-   混元多模态理解负责人胡瀚离职创业，原团队或将聚焦世界模型
-   极氪回应“海外锁车”事件
-   客服回应滔搏暴力打折甩卖耐克库存：没有收到降价通知
-   哈兰德和亚马尔2.2亿欧元身价破纪录
-   张雪峰女儿再接手三家公司股份
-  
-  TOP 3 大新闻
-  段永平：10年内大概率不会卖泡泡玛特
-  7月23日，段永平在社交媒体平台雪球上发表了他对近期投资操作的最新想法。雪球上有用户向知名投资人段永平提问：“阿段不会要减点泡泡玛特仓位去买马斯克的SpaceX吧？”对此，段永平回应称：
-  泡泡玛特我才刚开始买啊！我猜10年内大概率是不会卖的。不过，我的水果（苹果）已</description>
-      <pubDate>Fri, 24 Jul 2026 08:00:48 +0800</pubDate>
-      <guid isPermaLink="true">https://36kr.com/p/3908881985901959?f=rss</guid>
-      <source url="https://36kr.com/p/3908881985901959?f=rss">36Kr</source>
     </item>
   </channel>
 </rss>
