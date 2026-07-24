@@ -5,7 +5,7 @@
     <link>https://yehloolau-afk.github.io/designer-tool/ai-station.html</link>
     <description>每 2 小时自动更新的 AI 行业精选资讯</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 24 Jul 2026 11:56:27 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 15:44:14 +0000</lastBuildDate>
     <atom:link href="https://yehloolau-afk.github.io/designer-tool/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>AnySearch 面向全球推出 “学生与开发者成长计划”</title>
@@ -74,7 +74,15 @@
       <source url="https://sspai.com/post/112232">少数派</source>
     </item>
     <item>
-      <title>DeepSeek不是理想��义公司，它只是把现实服务于理想</title>
+      <title>国产世界模型登顶李飞飞团队榜单！适配国产昇腾算力、代码权重全开源</title>
+      <link>https://www.qbitai.com/2026/07/460041.html</link>
+      <description>给它一张图，还你整个世界</description>
+      <pubDate>Fri, 24 Jul 2026 14:19:06 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/460041.html</guid>
+      <source url="https://www.qbitai.com/2026/07/460041.html">量子位</source>
+    </item>
+    <item>
+      <title>DeepSeek不是理想主义公司，它只是把现实服务于理想</title>
       <link>https://36kr.com/p/3909084356433025?f=rss</link>
       <description>&amp;nbsp;
   DeepSeek的答案，不是只仰望星空，也不是只脚踏实地，而是用现实问题去支撑一个足够远的目标。
@@ -91,6 +99,14 @@
       <pubDate>Fri, 24 Jul 2026 12:26:38 +0800</pubDate>
       <guid isPermaLink="true">https://36kr.com/p/3909084356433025?f=rss</guid>
       <source url="https://36kr.com/p/3909084356433025?f=rss">36Kr</source>
+    </item>
+    <item>
+      <title>菲尔兹奖得主王虹，也发过NeurIPS</title>
+      <link>https://www.qbitai.com/2026/07/460042.html</link>
+      <description>王虹主页唯一没挂链接的论文</description>
+      <pubDate>Fri, 24 Jul 2026 11:10:26 +0000</pubDate>
+      <guid isPermaLink="true">https://www.qbitai.com/2026/07/460042.html</guid>
+      <source url="https://www.qbitai.com/2026/07/460042.html">量子位</source>
     </item>
     <item>
       <title>赛博对话｜对话潘玮哲x老麦煮机：电子产品在悄悄变贵！</title>
@@ -191,22 +207,6 @@
       <pubDate>Fri, 24 Jul 2026 07:49:44 +0000</pubDate>
       <guid isPermaLink="true">https://www.qbitai.com/2026/07/459262.html</guid>
       <source url="https://www.qbitai.com/2026/07/459262.html">量子位</source>
-    </item>
-    <item>
-      <title>对话腾讯副总裁林松涛：意图正在代替入口，Agent 需要一颗「小脑」</title>
-      <link>https://www.ifanr.com/1673039?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</link>
-      <description>大模型是「大脑」，Marvis 想补上「小脑」#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。</description>
-      <pubDate>Fri, 24 Jul 2026 07:43:20 +0000</pubDate>
-      <guid isPermaLink="true">https://www.ifanr.com/1673039?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=</guid>
-      <source url="https://www.ifanr.com/1673039?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=">爱范儿</source>
-    </item>
-    <item>
-      <title>世界模型“六小龙”在WAIC吵起来了！行业红利就在非共识里</title>
-      <link>https://www.qbitai.com/2026/07/458617.html</link>
-      <description></description>
-      <pubDate>Fri, 24 Jul 2026 07:29:57 +0000</pubDate>
-      <guid isPermaLink="true">https://www.qbitai.com/2026/07/458617.html</guid>
-      <source url="https://www.qbitai.com/2026/07/458617.html">量子位</source>
     </item>
   </channel>
 </rss>
